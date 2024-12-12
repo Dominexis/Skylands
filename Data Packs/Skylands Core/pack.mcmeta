@@ -1,0 +1,14 @@
+{
+    "pack": {
+        "pack_format": 61,
+        "description": "Skylands Core Data Pack"
+    },
+    "filter": {
+        "block": [
+            {
+                "namespace": "minecraft",
+                "path": "advancements/.*"
+            }
+        ]
+    }
+}
