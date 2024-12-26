@@ -1,6 +1,6 @@
 # Convert plot coordinates to a plot ID
-scoreboard players operation #math_x sl.value = #plot_x sl.value
-scoreboard players operation #math_z sl.value = #plot_z sl.value
+scoreboard players operation #math_x sl.value = #x sl.value
+scoreboard players operation #math_z sl.value = #z sl.value
 scoreboard players operation #math_x sl.value /= #512 sl.value
 scoreboard players operation #math_z sl.value /= #512 sl.value
 scoreboard players operation #math_x sl.value %= #32768 sl.value

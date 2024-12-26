@@ -15,11 +15,18 @@ scoreboard objectives add sl.uuid_1 dummy
 scoreboard objectives add sl.uuid_2 dummy
 scoreboard objectives add sl.uuid_3 dummy
 
+scoreboard objectives add sl.checkpoint_x dummy
+scoreboard objectives add sl.checkpoint_y dummy
+scoreboard objectives add sl.checkpoint_z dummy
+scoreboard objectives add sl.checkpoint_yaw dummy
+scoreboard objectives add sl.checkpoint_pitch dummy
+
 scoreboard objectives add lobby trigger
 scoreboard objectives add play trigger
 scoreboard objectives add spectate trigger
 scoreboard objectives add checkpoint trigger
 scoreboard objectives add night_vision trigger
+scoreboard objectives add plot trigger
 
 
 
@@ -114,9 +121,23 @@ scoreboard players add #dev_mode sl.value 0
 
 
 
+# Initialize weighty plot counts
+scoreboard players add #heavy_plot_count sl.value 0
+scoreboard players add #medium_plot_count sl.value 0
+
+scoreboard players set #max_heavy_plots sl.value 1
+scoreboard players set #max_medium_plots sl.value 10
+
+
+
+# Initialize generated plot data
+function sl:generated/initialize_data
+
+
+
 # Compute spawn plot ID
-scoreboard players set #plot_x sl.value 0
-scoreboard players set #plot_z sl.value 0
+scoreboard players set #x sl.value 0
+scoreboard players set #z sl.value 0
 function sl:plot/coords_to_id
 scoreboard players operation #spawn_plot sl.value = #plot_id sl.value
 

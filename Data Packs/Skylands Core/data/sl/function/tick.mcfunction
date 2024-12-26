@@ -35,6 +35,7 @@ scoreboard players enable @a play
 scoreboard players enable @a spectate
 scoreboard players enable @a checkpoint
 scoreboard players enable @a night_vision
+scoreboard players enable @a plot
 
 # Handle player logins
 scoreboard players add #global sl.ticks 1
@@ -61,11 +62,12 @@ execute as @a[scores={checkpoint=1..},team=sl.spectator] run scoreboard players 
 execute as @a[team=] run trigger spectate
 
 # Manage triggers
-# execute as @a[scores={lobby=1..}] run function sl:player/checkpoint/lobby
+execute as @a[scores={lobby=1..}] run function sl:player/lobby
 # execute as @a[scores={play=1..}] run function sl:player/play
-# execute as @a[scores={spectate=1..}] run function sl:player/spectate
+execute as @a[scores={spectate=1..}] run function sl:player/spectate
 # execute as @a[scores={checkpoint=1..}] run function sl:player/checkpoint/send_to
 # execute as @a[scores={night_vision=1..}] at @s run function sl:player/night_vision
+execute as @a[scores={plot=1..}] at @s run function sl:plot/warp/main
 
 # Manage speedrun timer
 # execute as @a if score @s sl.plot = #spawn_plot sl.value run scoreboard players set @s sl.time 0
@@ -97,7 +99,7 @@ execute as @a[gamemode=!spectator] at @s if block ~00.3 ~-1 ~00.3 minecraft:farm
 
 
 # Tick plots
-function sl:plot/main
+function sl:generated/tick
 
 
 
