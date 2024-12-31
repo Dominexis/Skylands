@@ -2,7 +2,7 @@
 scoreboard players set @s plot 0
 
 # Get position
-function sl:generic/get_pos
+function sl:api/get_pos
 
 # Determine if player is in lobby
 execute store result score #in_lobby sl.value positioned -64.0 0 -64.0 if entity @s[dx=127,dy=10,dz=127]
