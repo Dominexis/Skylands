@@ -54,10 +54,6 @@ execute as @e[type=minecraft:player,scores={sl.death=1..}] at @s run function sl
 # execute as @a[tag=sl.plate_checkpoint,tag=!sl.plate_checkpoint_cooldown,tag=sl.is_on_plate_checkpoint,team=sl.player] at @s run function sl:player/checkpoint/plate
 # execute as @a[tag=sl.plate_checkpoint_cooldown,tag=!sl.is_on_plate_checkpoint] at @s run tag @s remove sl.plate_checkpoint_cooldown
 
-# Handle checkpoint trigger for spectators
-execute as @a[scores={checkpoint=1..},team=sl.spectator] run scoreboard players set @s lobby 1
-execute as @a[scores={checkpoint=1..},team=sl.spectator] run scoreboard players set @s checkpoint 0
-
 # Auto-spectate players not on a team
 execute as @a[team=] run trigger spectate
 
@@ -65,13 +61,13 @@ execute as @a[team=] run trigger spectate
 execute as @a[scores={lobby=1..}] run function sl:player/lobby
 # execute as @a[scores={play=1..}] run function sl:player/play
 execute as @a[scores={spectate=1..}] run function sl:player/spectate
-# execute as @a[scores={checkpoint=1..}] run function sl:player/checkpoint/send_to
+execute as @a[scores={checkpoint=1..}] run function sl:player/checkpoint
 # execute as @a[scores={night_vision=1..}] at @s run function sl:player/night_vision
 execute as @a[scores={plot=1..}] at @s run function sl:plot/warp/main
 
 # Manage speedrun timer
-# execute as @a if score @s sl.plot = #spawn_plot sl.value run scoreboard players set @s sl.time 0
-# execute as @a[team=sl.player] unless score @s sl.plot = #spawn_plot sl.value run function sl:player/time/tick
+# execute as @a if score @s sl.plot = #lobby_plot sl.value run scoreboard players set @s sl.time 0
+# execute as @a[team=sl.player] unless score @s sl.plot = #lobby_plot sl.value run function sl:player/time/tick
 # scoreboard players operation #previous_time sl.value = #time sl.value
 # scoreboard players set @a[team=sl.spectator] sl.time 0
 
@@ -115,7 +111,6 @@ execute if score #tip_timer sl.value matches 2400.. run function sl:tip
 
 
 # Compute MSPT
-
 function sl:time/get
 
 scoreboard players operation #mspt sl.value = #time sl.value

@@ -9,3 +9,6 @@ function demo:plot_off
 
 # Unforceload chunks
 function sl:generated/plot/demo/unforceload
+
+# Send any players that happen to be in the plot to spectator
+execute as @a[scores={sl.plot=3}] at @s run function sl:player/spectate

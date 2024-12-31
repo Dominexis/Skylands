@@ -135,11 +135,8 @@ function sl:generated/initialize_data
 
 
 
-# Compute spawn plot ID
-scoreboard players set #x sl.value 0
-scoreboard players set #z sl.value 0
-function sl:plot/coords_to_id
-scoreboard players operation #spawn_plot sl.value = #plot_id sl.value
+# Set lobby plot ID
+scoreboard players set #lobby_plot sl.value 0
 
 
 
@@ -151,6 +148,13 @@ team modify sl.player color green
 team modify sl.player friendlyFire false
 team modify sl.player collisionRule pushOwnTeam
 team modify sl.player seeFriendlyInvisibles false
+
+team add sl.queue
+team modify sl.queue displayName {"text":"Queue","color":"green"}
+team modify sl.queue color green
+team modify sl.queue friendlyFire false
+team modify sl.queue collisionRule never
+team modify sl.queue seeFriendlyInvisibles false
 
 team add sl.spectator
 team modify sl.spectator displayName {"text":"Spectator","color":"gray"}
@@ -166,9 +170,10 @@ team modify sl.no_collision seeFriendlyInvisibles false
 
 
 # Set gamerules
-gamerule doImmediateRespawn true
-gamerule mobGriefing false
 gamerule commandModificationBlockLimit 2147483647
+gamerule doImmediateRespawn true
+gamerule keepInventory true
+gamerule mobGriefing false
 gamerule maxCommandChainLength 2147483647
 gamerule randomTickSpeed 0
 

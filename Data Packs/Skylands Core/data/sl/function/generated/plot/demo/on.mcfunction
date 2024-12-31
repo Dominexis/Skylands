@@ -8,4 +8,4 @@ scoreboard players add #medium_plot_count sl.value 1
 function demo:plot_on
 
 # Login all players
-execute as @a[scores={sl.plot=3}] run function sl:generated/plot/demo/login
+execute as @a[scores={sl.plot=3}] at @s run function sl:generated/plot/demo/login
