@@ -62,7 +62,7 @@ execute as @a[scores={lobby=1..}] run function sl:player/lobby
 # execute as @a[scores={play=1..}] run function sl:player/play
 execute as @a[scores={spectate=1..}] run function sl:player/spectate
 execute as @a[scores={checkpoint=1..}] run function sl:player/checkpoint
-# execute as @a[scores={night_vision=1..}] at @s run function sl:player/night_vision
+execute as @a[scores={night_vision=1..}] at @s run function sl:player/night_vision
 execute as @a[scores={plot=1..}] at @s run function sl:plot/warp/main
 
 # Manage speedrun timer

@@ -8,7 +8,7 @@ scoreboard objectives add sl.plot dummy
 
 scoreboard objectives add sl.death deathCount
 
-scoreboard objectives add pr.night_vision dummy
+scoreboard objectives add sl.night_vision dummy
 
 scoreboard objectives add sl.uuid_0 dummy
 scoreboard objectives add sl.uuid_1 dummy
