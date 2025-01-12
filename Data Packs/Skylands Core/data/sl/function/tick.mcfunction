@@ -50,14 +50,14 @@ effect give @a[scores={sl.night_vision=1},team=sl.spectator] minecraft:night_vis
 execute as @e[type=minecraft:player,scores={sl.death=1..}] at @s run function sl:player/respawn
 
 # Manage plate checkpoints
-execute as @a[team=sl.player,tag=!sl.disable_plate_checkpoint] at @s run function sl:player/checkpoint/plate/main
+execute as @a[team=sl.player,tag=!sl.disable_plate_checkpoint] at @s unless score @s sl.plot = #lobby_plot sl.value run function sl:player/checkpoint/plate/main
 
 # Auto-spectate players not on a team
 execute as @a[team=] run trigger spectate
 
 # Manage triggers
 execute as @a[scores={lobby=1..}] run function sl:player/lobby
-# execute as @a[scores={play=1..}] run function sl:player/play
+execute as @a[scores={play=1..}] run function sl:player/play
 execute as @a[scores={spectate=1..}] run function sl:player/spectate
 execute as @a[scores={checkpoint=1..}] run function sl:player/checkpoint
 execute as @a[scores={night_vision=1..}] at @s run function sl:player/night_vision
