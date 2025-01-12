@@ -50,9 +50,7 @@ effect give @a[scores={sl.night_vision=1},team=sl.spectator] minecraft:night_vis
 execute as @e[type=minecraft:player,scores={sl.death=1..}] at @s run function sl:player/respawn
 
 # Manage plate checkpoints
-# execute as @a[tag=sl.plate_checkpoint,team=sl.player] at @s run function sl:player/checkpoint/is_on_plate
-# execute as @a[tag=sl.plate_checkpoint,tag=!sl.plate_checkpoint_cooldown,tag=sl.is_on_plate_checkpoint,team=sl.player] at @s run function sl:player/checkpoint/plate
-# execute as @a[tag=sl.plate_checkpoint_cooldown,tag=!sl.is_on_plate_checkpoint] at @s run tag @s remove sl.plate_checkpoint_cooldown
+execute as @a[team=sl.player,tag=!sl.disable_plate_checkpoint] at @s run function sl:player/checkpoint/plate/main
 
 # Auto-spectate players not on a team
 execute as @a[team=] run trigger spectate

@@ -38,6 +38,10 @@ attribute @s minecraft:submerged_mining_speed base reset
 attribute @s minecraft:sweeping_damage_ratio base reset
 attribute @s minecraft:water_movement_efficiency base reset
 
+# Remove tags from player
+tag @s remove sl.plate_checkpoint_cooldown
+tag @s remove sl.disable_plate_checkpoint
+
 # Reset checkpoint
 spawnpoint @s 0 65 0 0
 
