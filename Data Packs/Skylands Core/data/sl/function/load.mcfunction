@@ -5,6 +5,8 @@ scoreboard objectives add sl.ticks dummy
 scoreboard objectives add sl.id dummy
 
 scoreboard objectives add sl.plot dummy
+scoreboard objectives add sl.fade_plot dummy
+scoreboard objectives add sl.fade_timer dummy
 
 scoreboard objectives add sl.death deathCount
 
@@ -20,6 +22,9 @@ scoreboard objectives add sl.checkpoint_y dummy
 scoreboard objectives add sl.checkpoint_z dummy
 scoreboard objectives add sl.checkpoint_yaw dummy
 scoreboard objectives add sl.checkpoint_pitch dummy
+
+scoreboard objectives add sl.timer dummy
+scoreboard objectives add sl.collection_timer dummy
 
 scoreboard objectives add lobby trigger
 scoreboard objectives add play trigger
@@ -84,6 +89,8 @@ scoreboard players set #9 sl.value 9
 scoreboard players set #15 sl.value 15
 scoreboard players set #20 sl.value 20
 scoreboard players set #25 sl.value 25
+scoreboard players set #30 sl.value 30
+scoreboard players set #40 sl.value 40
 scoreboard players set #45 sl.value 45
 scoreboard players set #50 sl.value 50
 scoreboard players set #60 sl.value 60

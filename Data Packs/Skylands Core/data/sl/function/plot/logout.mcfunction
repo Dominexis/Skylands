@@ -4,6 +4,11 @@ execute store result storage sl:data macro.plot_id int 1 run scoreboard players 
 function sl:plot/get_plot_name with storage sl:data macro
 function sl:plot/generated_function_call with storage sl:data macro
 
+# Reset internal data
+tag @s remove sl.plate_checkpoint_cooldown
+tag @s remove sl.disable_plate_checkpoint
+scoreboard players set @s sl.collection_timer 0
+
 # Clear things off of player
 clear @s
 effect clear @s
@@ -38,10 +43,6 @@ attribute @s minecraft:submerged_mining_speed base reset
 attribute @s minecraft:sweeping_damage_ratio base reset
 attribute @s minecraft:water_movement_efficiency base reset
 
-# Remove tags from player
-tag @s remove sl.plate_checkpoint_cooldown
-tag @s remove sl.disable_plate_checkpoint
-
 # Reset checkpoint
 spawnpoint @s 0 65 0 0
 
@@ -53,3 +54,4 @@ scoreboard players set @s sl.checkpoint_pitch 0
 
 # Reset plot ID
 scoreboard players operation @s sl.plot = #lobby_plot sl.value
+scoreboard players operation @s sl.fade_plot = #lobby_plot sl.value

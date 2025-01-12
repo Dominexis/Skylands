@@ -18,15 +18,16 @@ execute if score #dev_mode sl.value matches 0 run gamemode adventure @s[team=!sl
 execute if score #dev_mode sl.value matches 1 if score #initial_login sl.value matches 1 run gamemode adventure @s[team=!sl.spectator]
 
 # Send player to lobby
-execute if score #initial_login sl.value matches 1 run function sl:player/lobby
-execute if score #initial_login sl.value matches 0 if score #dev_mode sl.value matches 0 if score @s sl.plot = #lobby_plot sl.value if entity @s[team=!sl.spectator] run function sl:player/lobby
+scoreboard players set #send_to_lobby sl.value 0
+execute if score #initial_login sl.value matches 1 run scoreboard players set #send_to_lobby sl.value 1
+execute if score #initial_login sl.value matches 0 if score #dev_mode sl.value matches 0 if score @s sl.plot = #lobby_plot sl.value if entity @s[team=!sl.spectator] run scoreboard players set #send_to_lobby sl.value 1
+execute if score #send_to_lobby sl.value matches 0 if score @s sl.plot = #lobby_plot sl.value run function sl:player/title
+execute if score #send_to_lobby sl.value matches 1 run function sl:player/lobby
 
 # Rejoin player to plot they were on previously
 execute unless score @s sl.plot = #lobby_plot sl.value run function sl:plot/rejoin
 
-# Send titles and tellraws to player
-function sl:player/title
-
+# Send tellraws to player
 tellraw @s [{"text":"Welcome to ","color":"white"},{"text":"Skylands","color":"aqua","bold":true}]
 tellraw @s[team=!sl.spectator] [{"text":"Use ","color":"gray"},{"text":"/trigger spectate","color":"white"},{"text":" to spectate the map","color":"gray"}]
 execute unless score @s sl.plot = #lobby_plot sl.value run tellraw @s[team=!sl.spectator] [{"text":"Use ","color":"gray"},{"text":"/trigger lobby","color":"white"},{"text":" to return to the lobby","color":"gray"}]

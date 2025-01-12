@@ -42,6 +42,10 @@ scoreboard players add #global sl.ticks 1
 scoreboard players add @a sl.ticks 1
 execute as @a unless score @s sl.ticks = #global sl.ticks at @s run function sl:player/login
 
+# Handle fade in and fade out
+execute as @a unless score @s sl.fade_timer matches 0 at @s run function sl:player/fade/tick
+execute as @a[scores={sl.collection_timer=1..}] run function sl:player/collection_timer
+
 # Handle night vision for spectators
 execute as @a unless score @s sl.night_vision = @s sl.night_vision run scoreboard players set @s sl.night_vision 1
 effect give @a[scores={sl.night_vision=1},team=sl.spectator] minecraft:night_vision infinite 0 true
@@ -56,12 +60,12 @@ execute as @a[team=sl.player,tag=!sl.disable_plate_checkpoint] at @s unless scor
 execute as @a[team=] run trigger spectate
 
 # Manage triggers
-execute as @a[scores={lobby=1..}] run function sl:player/lobby
-execute as @a[scores={play=1..}] run function sl:player/play
-execute as @a[scores={spectate=1..}] run function sl:player/spectate
-execute as @a[scores={checkpoint=1..}] run function sl:player/checkpoint
-execute as @a[scores={night_vision=1..}] at @s run function sl:player/night_vision
-execute as @a[scores={plot=1..}] at @s run function sl:plot/warp/main
+execute as @a[scores={lobby=1..}] run function sl:player/trigger/lobby
+execute as @a[scores={play=1..}] run function sl:player/trigger/play
+execute as @a[scores={spectate=1..}] run function sl:player/trigger/spectate
+execute as @a[scores={checkpoint=1..}] run function sl:player/trigger/checkpoint
+execute as @a[scores={night_vision=1..}] run function sl:player/trigger/night_vision
+execute as @a[scores={plot=1..}] run function sl:player/trigger/plot
 
 # Manage speedrun timer
 # execute as @a if score @s sl.plot = #lobby_plot sl.value run scoreboard players set @s sl.time 0
@@ -94,6 +98,9 @@ execute as @a[gamemode=!spectator] at @s if block ~00.3 ~-1 ~00.3 minecraft:farm
 
 # Tick plots
 function sl:generated/tick
+
+# Tick collectibles
+execute as @e[type=minecraft:item_display,tag=sl.collectible] at @s if entity @a[distance=..64] run function sl:collectible/tick
 
 
 

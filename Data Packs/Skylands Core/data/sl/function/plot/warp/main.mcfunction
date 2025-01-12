@@ -1,6 +1,3 @@
-# Reset plot trigger
-scoreboard players set @s plot 0
-
 # Get position
 function sl:api/get_pos
 

@@ -7,13 +7,14 @@ function sl:plot/logout
 
 # Set plot ID
 scoreboard players set @s sl.plot 3
+scoreboard players set @s sl.fade_plot 3
 
 # Turn plot on if it is currently off
 execute if score #plot.demo.state sl.value matches 0 run function sl:generated/plot/demo/queue_on
 execute if score #plot.demo.state sl.value matches 2 run function sl:generated/plot/demo/queue_on
 
 # Login immediately if plot is already on
-execute if score #plot.demo.state sl.value matches 1 run function sl:generated/plot/demo/login
+execute if score #plot.demo.state sl.value matches 1 run function sl:generated/plot/demo/initiate_login
 
 # Return 1 to mark success
 return 1
