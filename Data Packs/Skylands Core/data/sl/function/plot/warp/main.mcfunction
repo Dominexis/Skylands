@@ -1,3 +1,15 @@
+# Log player out of their current plot
+execute if entity @s[team=sl.player] run function sl:plot/logout
+
+# Put player onto spectator team
+team join sl.spectator @s[team=!sl.spectator]
+
+# Reset title
+title @s times 10 70 30
+title @s title ""
+title @s subtitle ""
+title @s actionbar ""
+
 # Get position
 function sl:api/get_pos
 

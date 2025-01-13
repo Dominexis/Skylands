@@ -37,7 +37,8 @@ scoreboard players enable @a play
 scoreboard players enable @a spectate
 scoreboard players enable @a checkpoint
 scoreboard players enable @a night_vision
-scoreboard players enable @a plot
+execute if score #dev_mode sl.value matches 0 run scoreboard players reset @a plot
+execute if score #dev_mode sl.value matches 1 run scoreboard players enable @a plot
 
 # Handle player logins
 scoreboard players add #global sl.ticks 1
