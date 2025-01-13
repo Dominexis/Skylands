@@ -183,6 +183,7 @@ gamerule keepInventory true
 gamerule mobGriefing false
 gamerule maxCommandChainLength 2147483647
 gamerule randomTickSpeed 0
+gamerule spawnChunkRadius 8
 
 
 
