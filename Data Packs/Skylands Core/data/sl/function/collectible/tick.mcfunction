@@ -1,7 +1,7 @@
 # Collect the collectible
 scoreboard players operation #plot sl.value = @s sl.plot
 scoreboard players set #boolean sl.value 0
-execute as @a[distance=..1,team=sl.player] unless score @s sl.collection_timer matches 1.. if score @s sl.plot = #plot sl.value run function sl:collectible/collect
+execute as @a[distance=..1,team=sl.player] unless score @s sl.collection_timer matches 1.. if score @s sl.plot = #plot sl.value at @s run function sl:collectible/collect
 execute if score #boolean sl.value matches 1 if score @s sl.collection_timer matches 0 run scoreboard players set @s sl.collection_timer 1
 
 # Process animation

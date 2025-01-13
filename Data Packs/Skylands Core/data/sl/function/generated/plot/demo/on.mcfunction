@@ -6,7 +6,7 @@ scoreboard players add #medium_plot_count sl.value 1
 
 # Spawn collectibles
 scoreboard players set #plot sl.value 3
-execute positioned 1799 65 256 run function sl:collectible/spawn
+execute positioned 1792 85 290 run function sl:collectible/spawn
 
 # Turn on plot
 function demo:plot_on

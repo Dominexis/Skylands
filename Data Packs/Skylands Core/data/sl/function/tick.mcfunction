@@ -28,6 +28,8 @@ scoreboard players operation #time_start sl.value = #time sl.value
 
 # Manage player effects
 effect give @a minecraft:saturation infinite 0 true
+effect clear @a[tag=sl.slow_falling_tick] minecraft:slow_falling
+tag @a remove sl.slow_falling_tick
 
 # Manage triggers
 scoreboard players enable @a lobby

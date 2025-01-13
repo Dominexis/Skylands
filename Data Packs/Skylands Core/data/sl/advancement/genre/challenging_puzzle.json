@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:repeating_command_block"
+        },
+        "title": [
+            {
+                "text": "Challenging Puzzle"
+            }
+        ],
+        "frame": "task",
+        "description": [
+            {
+                "text": "These are challenging puzzle islands!",
+                "color": "green"
+            }
+        ],
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "parent": "sl:genre/difficult_puzzle",
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

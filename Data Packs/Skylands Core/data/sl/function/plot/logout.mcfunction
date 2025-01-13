@@ -2,7 +2,7 @@
 data modify storage sl:data macro.function_name set value "logout"
 execute store result storage sl:data macro.plot_id int 1 run scoreboard players get @s sl.plot
 function sl:plot/get_plot_name with storage sl:data macro
-function sl:plot/generated_function_call with storage sl:data macro
+execute at @s run function sl:plot/generated_function_call with storage sl:data macro
 
 # Reset internal data
 tag @s remove sl.plate_checkpoint_cooldown
@@ -12,6 +12,8 @@ scoreboard players set @s sl.collection_timer 0
 # Clear things off of player
 clear @s
 effect clear @s
+experience set @s 0 points
+experience set @s 0 levels
 
 # Reset base attributes
 attribute @s minecraft:armor base reset
