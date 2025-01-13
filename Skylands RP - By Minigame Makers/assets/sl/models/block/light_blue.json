@@ -1,0 +1,6 @@
+{
+	"parent": "sl:block/background",
+	"textures": {
+		"texture": "sl:block/light_blue"
+	}
+}
