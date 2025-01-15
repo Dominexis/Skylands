@@ -41,9 +41,9 @@ execute if score #dev_mode sl.value matches 0 run scoreboard players reset @a pl
 execute if score #dev_mode sl.value matches 1 run scoreboard players enable @a plot
 
 # Handle player logins
-scoreboard players add #global sl.ticks 1
+scoreboard players add #ticks sl.value 1
 scoreboard players add @a sl.ticks 1
-execute as @a unless score @s sl.ticks = #global sl.ticks at @s run function sl:player/login
+execute as @a unless score @s sl.ticks = #ticks sl.value at @s run function sl:player/login
 
 # Handle fade in and fade out
 execute as @a unless score @s sl.fade_timer matches 0 at @s run function sl:player/fade/tick
@@ -101,6 +101,11 @@ execute as @a[gamemode=!spectator] at @s if block ~00.3 ~-1 ~00.3 minecraft:farm
 
 # Tick plots
 function sl:generated/tick
+
+# Resync plot counts every second
+scoreboard players operation #cycle sl.value = #ticks sl.value
+scoreboard players operation #cycle sl.value %= #20 sl.value
+execute if score #cycle sl.value matches 0 run function sl:generated/sync_plot_counts
 
 # Tick collectibles
 execute as @e[type=minecraft:item_display,tag=sl.collectible] at @s if entity @a[distance=..64] run function sl:collectible/tick

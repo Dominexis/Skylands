@@ -9,3 +9,4 @@ execute store result score #is_loaded sl.value run function sl:generated/plot/de
 
 execute if score #plot.demo.state sl.value matches 2 if score #is_loaded sl.value matches 1 run function sl:generated/plot/demo/off
 execute if score #plot.demo.state sl.value matches 3 if score #is_loaded sl.value matches 1 run function sl:generated/plot/demo/on
+execute if score #plot.demo.state sl.value matches 4 if score #is_loaded sl.value matches 1 run function sl:generated/plot/demo/reset

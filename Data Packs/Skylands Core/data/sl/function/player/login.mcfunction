@@ -1,5 +1,5 @@
 # Sync ticks
-scoreboard players operation @s sl.ticks = #global sl.ticks
+scoreboard players operation @s sl.ticks = #ticks sl.value
 
 # Get UUID
 data modify storage sl:data tag.UUID set from entity @s UUID

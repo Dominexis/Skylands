@@ -1,9 +1,6 @@
 # Set state of plot
 scoreboard players set #plot.demo.state sl.value 1
 
-# Increment weighty plot count
-scoreboard players add #medium_plot_count sl.value 1
-
 # Spawn collectibles
 scoreboard players set #plot sl.value 3
 execute positioned 1792 85 290 run function sl:collectible/spawn
