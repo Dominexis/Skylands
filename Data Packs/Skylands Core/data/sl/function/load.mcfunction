@@ -156,6 +156,13 @@ team modify sl.player friendlyFire false
 team modify sl.player collisionRule pushOwnTeam
 team modify sl.player seeFriendlyInvisibles false
 
+team add sl.player_pvp
+team modify sl.player_pvp displayName {"text":"Player","color":"green"}
+team modify sl.player_pvp color green
+team modify sl.player_pvp friendlyFire true
+team modify sl.player_pvp collisionRule always
+team modify sl.player_pvp seeFriendlyInvisibles false
+
 team add sl.queue
 team modify sl.queue displayName {"text":"Queue","color":"green"}
 team modify sl.queue color green

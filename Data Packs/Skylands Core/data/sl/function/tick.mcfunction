@@ -57,7 +57,7 @@ effect give @a[scores={sl.night_vision=1},team=sl.spectator] minecraft:night_vis
 execute as @e[type=minecraft:player,scores={sl.death=1..}] at @s run function sl:player/respawn
 
 # Manage plate checkpoints
-execute as @a[team=sl.player,tag=!sl.disable_plate_checkpoint] at @s unless score @s sl.plot = #lobby_plot sl.value run function sl:player/checkpoint/plate/main
+execute as @a[predicate=sl:player,tag=!sl.disable_plate_checkpoint] at @s unless score @s sl.plot = #lobby_plot sl.value run function sl:player/checkpoint/plate/main
 
 # Auto-spectate players not on a team
 execute as @a[team=] run trigger spectate
@@ -72,7 +72,7 @@ execute as @a[scores={plot=1..}] run function sl:player/trigger/plot
 
 # Manage speedrun timer
 # execute as @a if score @s sl.plot = #lobby_plot sl.value run scoreboard players set @s sl.time 0
-# execute as @a[team=sl.player] unless score @s sl.plot = #lobby_plot sl.value run function sl:player/time/tick
+# execute as @a[predicate=sl:player] unless score @s sl.plot = #lobby_plot sl.value run function sl:player/time/tick
 # scoreboard players operation #previous_time sl.value = #time sl.value
 # scoreboard players set @a[team=sl.spectator] sl.time 0
 

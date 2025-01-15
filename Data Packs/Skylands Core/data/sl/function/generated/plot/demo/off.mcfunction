@@ -15,3 +15,5 @@ function sl:generated/plot/demo/unforceload
 
 # Send any players that happen to be in the plot to lobby
 execute as @a[scores={sl.plot=3}] at @s run function sl:player/lobby
+
+summon minecraft:armor_stand 1792 65 256

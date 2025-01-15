@@ -1,5 +1,5 @@
 # Log player out of their current plot
-execute if entity @s[team=sl.player] run function sl:plot/logout
+execute if entity @s[predicate=sl:player] run function sl:plot/logout
 
 # Put player onto spectator team
 team join sl.spectator @s[team=!sl.spectator]
