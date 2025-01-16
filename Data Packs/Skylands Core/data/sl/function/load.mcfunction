@@ -184,6 +184,8 @@ team modify sl.no_collision seeFriendlyInvisibles false
 
 
 # Set gamerules
+defaultgamemode adventure
+
 gamerule commandModificationBlockLimit 2147483647
 gamerule doImmediateRespawn true
 gamerule keepInventory true
