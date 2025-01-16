@@ -1,0 +1,1 @@
+## This function runs as and at a player when they log out of the plot
