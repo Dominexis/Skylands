@@ -11,6 +11,7 @@ if not (
 from pathlib import Path
 from typing import Any
 import json
+import shutil
 
 PROGRAM_PATH = Path(__file__).parent
 PLOT_DEFINITIONS = PROGRAM_PATH / "Plots.json"
@@ -69,10 +70,12 @@ def deduplicate_coords(coord_list: list[list[int]]) -> list[list[int]]:
 
 
 def create_file(path: Path, contents: str):
+    path.parent.mkdir(exist_ok=True, parents=True)
     with path.open("w", encoding="utf-8") as file:
         file.write(contents.strip())
 
 def create_json_file(path: Path, contents):
+    path.parent.mkdir(exist_ok=True, parents=True)
     with path.open("w", encoding="utf-8") as file:
         json.dump(contents, file, indent=4)
 
@@ -112,7 +115,6 @@ def create_plot_files(plot: dict[str, Any], global_data: dict[str, list[str]]):
     # Prepare file paths
     plot_path = PLOT_FUNCTION_PATH / namespace
     api_path = plot_path / "api"
-    api_path.mkdir(exist_ok=True, parents=True)
 
     # Push data to globals
     global_data["initialize_states"].append(f"scoreboard players add #plot.{namespace}.state sl.value 0")
@@ -435,6 +437,12 @@ teleport @s {pack_coords(plot_center, False, True, 65)}
 
 
 def create_files():
+    # Delete generated files
+    if FUNCTION_PATH.exists():
+        shutil.rmtree(FUNCTION_PATH)
+    if ADVANCEMENT_PATH.exists():
+        shutil.rmtree(ADVANCEMENT_PATH)
+
     # Initialize global data
     global_data: dict[str, list[str]] = {
         "initialize_states": [],
@@ -452,6 +460,8 @@ def create_files():
 
     # Iterate through plots
     for plot in plot_definitions["plots"]:
+        if "disabled" in plot and plot["disabled"]:
+            continue
         create_plot_files(plot, global_data)
 
     # Create global files
