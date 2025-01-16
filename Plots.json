@@ -1,0 +1,26 @@
+{
+    "plots": [
+        {
+            "name": "Demo Island",
+            "namespace": "demo",
+            "description": "Demo island to showcase how the Skylands mechanics work",
+            "authors": [
+                "Dominexis"
+            ],
+            "icon": {
+                "id": "minecraft:grass_block"
+            },
+            "spawn": "1792 65 256 0 0",
+            "collectibles": [
+                "1792 85 290"
+            ],
+            "required_chunks": [],
+            "regions": [],
+            "genre": "parkour",
+            "difficulty": "easy",
+            "pvp": true,
+            "max_players": 10,
+            "weight": "medium"
+        }
+    ]
+}

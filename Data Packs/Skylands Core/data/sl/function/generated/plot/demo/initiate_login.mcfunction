@@ -1,5 +1,5 @@
 # Set checkpoint
-spawnpoint @s 1792 65 256 0
+spawnpoint @s 1792 65 256
 
 scoreboard players set @s sl.checkpoint_x 1792
 scoreboard players set @s sl.checkpoint_y 65
