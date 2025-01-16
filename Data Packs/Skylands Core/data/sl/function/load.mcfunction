@@ -186,13 +186,57 @@ team modify sl.no_collision seeFriendlyInvisibles false
 # Set gamerules
 defaultgamemode adventure
 
+gamerule announceAdvancements false
+gamerule blockExplosionDropDecay false
+gamerule commandBlockOutput false
 gamerule commandModificationBlockLimit 2147483647
+gamerule disableElytraMovementCheck true
+gamerule disablePlayerMovementCheck true
+gamerule disableRaids true
+gamerule doDaylightCycle false
+gamerule doEntityDrops true
+gamerule doFireTick false
+gamerule doInsomnia false
 gamerule doImmediateRespawn true
+gamerule doLimitedCrafting false
+gamerule doMobLoot true
+gamerule doMobSpawning false
+gamerule doPatrolSpawning false
+gamerule doTileDrops true
+gamerule doTraderSpawning false
+gamerule doVinesSpread false
+gamerule doWeatherCycle false
+gamerule doWardenSpawning false
+gamerule drowningDamage true
+gamerule enderPearlsVanishOnDeath true
+gamerule fallDamage true
+gamerule fireDamage true
+gamerule forgiveDeadPlayers true
+gamerule freezeDamage true
+gamerule globalSoundEvents false
 gamerule keepInventory true
-gamerule mobGriefing false
+gamerule lavaSourceConversion false
+gamerule logAdminCommands true
 gamerule maxCommandChainLength 2147483647
+gamerule maxCommandForkCount 2147483647
+gamerule maxEntityCramming 2147483647
+gamerule mobExplosionDropDecay true
+gamerule mobGriefing false
+gamerule naturalRegeneration true
+gamerule playersNetherPortalCreativeDelay 2147483647
+gamerule playersNetherPortalDefaultDelay 2147483647
+gamerule playersSleepingPercentage 100
+gamerule projectilesCanBreakBlocks true
 gamerule randomTickSpeed 0
+gamerule reducedDebugInfo false
+gamerule showDeathMessages false
+gamerule snowAccumulationHeight 1
 gamerule spawnChunkRadius 8
+gamerule spawnRadius 0
+gamerule spectatorsGenerateChunks true
+gamerule tntExplosionDropDecay true
+gamerule universalAnger true
+gamerule waterSourceConversion true
 
 
 
