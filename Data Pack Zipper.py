@@ -11,7 +11,6 @@ if not (
 from pathlib import Path
 import shutil
 import sys
-import os
 
 PROGRAM_PATH = Path(__file__).parent
 DATA_PACKS_PATH = PROGRAM_PATH / "Data Packs"
