@@ -261,6 +261,10 @@ def test_command_arguments(arguments: list[str], line_number: int, path: Path):
     if arguments[0] == "defaultgamemode":
         log_error("Do not modify the default gamemode.", line_number, path)
 
+    # RULE: Do not modify difficulty.
+    if arguments[0] == "difficulty":
+        log_error("Do not modify difficulty.", line_number, path)
+
     # RULE: Do not modify forceloaded chunks.
     if arguments[0] == "forceload":
         log_error("Do not modify forceloaded chunks.", line_number, path)
