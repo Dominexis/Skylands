@@ -21,6 +21,32 @@
             "pvp": true,
             "max_players": 10,
             "weight": "medium"
+        },
+
+        {
+            "name": "Oldschool Skyisland",
+            "namespace": "oldschool_skyisland",
+            "description": "[no description given]",
+            "authors": [
+                "klein_name"
+            ],
+            "icon": {
+                "id": "minecraft:stone",
+                "components": {
+                    "minecraft:item_model": ""
+                }
+            },
+            "spawn": "2807 115 -267 -90 0",
+            "collectibles": [
+                "2835 116 -267"
+            ],
+            "required_chunks": [],
+            "regions": [],
+            "genre": "parkour",
+            "difficulty": "difficult",
+            "pvp": false,
+            "max_players": 0,
+            "weight": "light"
         }
     ]
 }

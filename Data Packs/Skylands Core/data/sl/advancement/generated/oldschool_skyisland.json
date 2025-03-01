@@ -1,0 +1,37 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:stone",
+            "components": {
+                "minecraft:item_model": ""
+            }
+        },
+        "title": [
+            {
+                "text": "Oldschool Skyisland"
+            }
+        ],
+        "frame": "goal",
+        "description": [
+            [
+                {
+                    "text": "[no description given]",
+                    "color": "green"
+                },
+                {
+                    "text": "\n\nklein_name",
+                    "color": "gold"
+                }
+            ]
+        ],
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "parent": "sl:genre/difficult_parkour",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -135,7 +135,7 @@ execute store result score #is_available sl.value run function sl:generated/plot
 execute if score #is_available sl.value matches 0 run return 0
 
 # Schedule login via fade out
-scoreboard players set @s sl.fade_plot 3
+scoreboard players set @s sl.fade_plot {plot_id}
 function sl:player/fade/out
 
 # Return 1 to mark success
@@ -425,7 +425,7 @@ teleport @s {pack_coords(plot_center, False, True, 65)}
         "announce_to_chat": False,
         "hidden": False
     },
-    "parent": f"sl:genre/{plot["genre"]}{"" if plot["difficulty"] == "easy" else f"_{plot["difficulty"]}"}",
+    "parent": f"sl:genre/{"" if plot["difficulty"] == "easy" else f"{plot["difficulty"]}_"}{plot["genre"]}",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:impossible"
