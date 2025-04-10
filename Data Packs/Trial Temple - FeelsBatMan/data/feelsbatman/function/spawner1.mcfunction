@@ -1,0 +1,10 @@
+execute if entity @e[type=!player,distance=..100,tag=feelsbatman.MARK_ZOMBIE] run particle flame -271 46.75 -3785 .35 .35 .35 0 1 force
+execute if entity @e[type=!player,distance=..100,tag=feelsbatman.MARK_SKELETON] run particle flame -276 46.75 -3785 .35 .35 .35 0 1 force
+execute if entity @e[type=!player,distance=..100,tag=feelsbatman.MARK_HUSK] run particle flame -271 46.75 -3790 .35 .35 .35 0 1 force
+execute if entity @e[type=!player,distance=..100,tag=feelsbatman.MARK_SPIDER] run particle flame -276 46.75 -3790 .35 .35 .35 0 1 force
+execute if entity @e[type=!player,distance=..100,tag=feelsbatman.MARK_ENDERMAN] run particle flame -271 46.75 -3795 .35 .35 .35 0 1 force
+execute if entity @e[type=!player,distance=..100,tag=feelsbatman.MARK_STRAY] run particle flame -276 46.75 -3795 .35 .35 .35 0 1 force
+execute if entity @e[type=!player,distance=..100,tag=feelsbatman.MARK_CREEPER] run particle flame -271 46.75 -3800 .35 .35 .35 0 1 force
+execute if entity @e[type=!player,distance=..100,tag=feelsbatman.MARK_SLIME] run particle flame -276 46.75 -3800 .35 .35 .35 0 1 force
+execute if entity @e[type=!player,distance=..100,tag=feelsbatman.MARK_CSPIDER] run particle flame -271 46.75 -3805 .35 .35 .35 0 1 force
+execute if entity @e[type=!player,distance=..100,tag=feelsbatman.MARK_BREEZE] run particle flame -276 46.75 -3805 .35 .35 .35 0 1 force

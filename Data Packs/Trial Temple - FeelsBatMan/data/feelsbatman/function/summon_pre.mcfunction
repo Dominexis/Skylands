@@ -1,0 +1,11 @@
+kill @e[type=!player,distance=..100,tag=feelsbatman.MARKER2]
+execute as @e[type=!player,distance=..100,tag=feelsbatman.MARKER1,tag=feelsbatman.MARK_ZOMBIE] run summon marker -278 39 -3811 {Tags:["feelsbatman.MARKER","feelsbatman.MARKER2","feelsbatman.MARK_ZOMBIE"]}
+execute as @e[type=!player,distance=..100,tag=feelsbatman.MARKER1,tag=feelsbatman.MARK_SKELETON] run summon marker -278 39 -3811 {Tags:["feelsbatman.MARKER","feelsbatman.MARKER2","feelsbatman.MARK_SKELETON"]}
+execute as @e[type=!player,distance=..100,tag=feelsbatman.MARKER1,tag=feelsbatman.MARK_HUSK] run summon marker -278 39 -3811 {Tags:["feelsbatman.MARKER","feelsbatman.MARKER2","feelsbatman.MARK_HUSK"]}
+execute as @e[type=!player,distance=..100,tag=feelsbatman.MARKER1,tag=feelsbatman.MARK_SPIDER] run summon marker -278 39 -3811 {Tags:["feelsbatman.MARKER","feelsbatman.MARKER2","feelsbatman.MARK_SPIDER"]}
+execute as @e[type=!player,distance=..100,tag=feelsbatman.MARKER1,tag=feelsbatman.MARK_ENDERMAN] run summon marker -278 39 -3811 {Tags:["feelsbatman.MARKER","feelsbatman.MARKER2","feelsbatman.MARK_ENDERMAN"]}
+execute as @e[type=!player,distance=..100,tag=feelsbatman.MARKER1,tag=feelsbatman.MARK_STRAY] run summon marker -278 39 -3811 {Tags:["feelsbatman.MARKER","feelsbatman.MARKER2","feelsbatman.MARK_STRAY"]}
+execute as @e[type=!player,distance=..100,tag=feelsbatman.MARKER1,tag=feelsbatman.MARK_CREEPER] run summon marker -278 39 -3811 {Tags:["feelsbatman.MARKER","feelsbatman.MARKER2","feelsbatman.MARK_CREEPER"]}
+execute as @e[type=!player,distance=..100,tag=feelsbatman.MARKER1,tag=feelsbatman.MARK_SLIME] run summon marker -278 39 -3811 {Tags:["feelsbatman.MARKER","feelsbatman.MARKER2","feelsbatman.MARK_SLIME"]}
+execute as @e[type=!player,distance=..100,tag=feelsbatman.MARKER1,tag=feelsbatman.MARK_CSPIDER] run summon marker -278 39 -3811 {Tags:["feelsbatman.MARKER","feelsbatman.MARKER2","feelsbatman.MARK_CSPIDER"]}
+execute as @e[type=!player,distance=..100,tag=feelsbatman.MARKER1,tag=feelsbatman.MARK_BREEZE] run summon marker -278 39 -3811 {Tags:["feelsbatman.MARKER","feelsbatman.MARKER2","feelsbatman.MARK_BREEZE"]}

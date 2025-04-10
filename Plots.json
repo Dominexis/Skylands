@@ -47,6 +47,29 @@
             "pvp": false,
             "max_players": 0,
             "weight": "light"
+        },
+
+        {
+            "name": "Trial Temple",
+            "namespace": "feelsbatman",
+            "description": "A place where only the bravest warriors fight the oncoming waves of enemies.",
+            "authors": [
+                "FeelsBatMan2137"
+            ],
+            "icon": {
+                "id": "minecraft:trial_spawner"
+            },
+            "spawn": "-256 40 -3840 0 0",
+            "collectibles": [
+                "-256 40 -3770"
+            ],
+            "required_chunks": [],
+            "regions": [],
+            "genre": "pve",
+            "difficulty": "difficult",
+            "pvp": false,
+            "max_players": 1,
+            "weight": "light"
         }
     ]
 }
