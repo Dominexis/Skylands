@@ -123,8 +123,9 @@ scoreboard players operation #previous_world_border_diameter sl.value = #world_b
 
 
 
-# Initialize dev mode flag
+# Initialize mode flags
 scoreboard players add #dev_mode sl.value 0
+scoreboard players add #debug_mode sl.value 0
 
 
 

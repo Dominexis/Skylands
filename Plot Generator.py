@@ -147,6 +147,7 @@ f"""
 # Return 1 if the plot can be logged into by all metrics
 {
     "return 1" if "max_players" not in plot or plot["max_players"] <= 0 else f"""execute store result score #player_count sl.value if entity @a[team=!sl.spectator,scores={{sl.plot={plot_id}}}]
+execute if entity @s[team=!sl.spectator,scores={{sl.plot={plot_id}}}] run scoreboard players remove #player_count sl.value 1
 return run execute if score #player_count sl.value matches ..{plot["max_players"]-1}"""
 }
 """)
@@ -303,6 +304,7 @@ execute if score #plot.{namespace}.state sl.value matches 4 if score #is_loaded 
 f"""
 # Cancel if the plot is not available
 execute store result score #is_available sl.value run function sl:generated/plot/{namespace}/is_available
+execute if score #debug_mode sl.value matches 1 if score #is_available sl.value matches 0 run tellraw @s {{"text":"The plot {namespace} is not available","color":"red"}}
 execute if score #is_available sl.value matches 0 run return 0
 
 # Log out of current plot
