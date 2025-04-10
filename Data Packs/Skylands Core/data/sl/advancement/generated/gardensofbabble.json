@@ -1,0 +1,37 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:stone",
+            "components": {
+                "minecraft:item_model": ""
+            }
+        },
+        "title": [
+            {
+                "text": "The Gardens of Babble"
+            }
+        ],
+        "frame": "task",
+        "description": [
+            [
+                {
+                    "text": "These islands are a treasure hunt in a relaxing environment, navigated through via signs tucked away in secret rooms. Might be easy, might be a little more challenging- but either way, it should be nice and calming!",
+                    "color": "green"
+                },
+                {
+                    "text": "\n\nDeuxiemeCarlin",
+                    "color": "gold"
+                }
+            ]
+        ],
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "parent": "sl:genre/puzzle",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

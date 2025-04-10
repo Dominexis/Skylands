@@ -70,6 +70,35 @@
             "pvp": false,
             "max_players": 1,
             "weight": "light"
+        },
+
+        {
+            "name": "The Gardens of Babble",
+            "namespace": "gardensofbabble",
+            "description": "These islands are a treasure hunt in a relaxing environment, navigated through via signs tucked away in secret rooms. Might be easy, might be a little more challenging- but either way, it should be nice and calming!",
+            "authors": [
+                "DeuxiemeCarlin"
+            ],
+            "icon": {
+                "id": "minecraft:stone",
+                "components": {
+                    "minecraft:item_model": ""
+                }
+            },
+            "spawn": "2816 65 3840 0 0",
+            "collectibles": [
+                "2816 62 3757",
+                "2879 69 3781",
+                "2828 70 3714",
+                "2697 70 3786"
+            ],
+            "required_chunks": [],
+            "regions": [],
+            "genre": "puzzle",
+            "difficulty": "easy",
+            "pvp": false,
+            "max_players": 0,
+            "weight": "light"
         }
     ]
 }
