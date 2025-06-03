@@ -141,8 +141,9 @@ def test_function(path: Path):
     lines = parse_function(path)
 
     # Test commands
+    is_animated_java = "animated_java" in path.as_posix()
     for i in lines:
-        test_command(lines[i], i, path)
+        test_command(lines[i], i, path, is_animated_java)
 
 def test_plot_on_function(path: Path):
     lines = parse_function(path)
@@ -200,7 +201,7 @@ def test_logout_function(path: Path):
         print(f"ERROR: All player tags must be removed in the logout function: {unaccounted_tags}")
         add_error()
 
-def test_command(command: str, line_number: int, path: Path):
+def test_command(command: str, line_number: int, path: Path, is_animated_java: bool):
     if not command.strip():
         return
     if command.strip().startswith("#"):
@@ -208,6 +209,10 @@ def test_command(command: str, line_number: int, path: Path):
     arguments = parse_tokens(command, " ", True)
 
     test_command_arguments(arguments, line_number, path)
+
+    # Only test target selectors that aren't part of tellraw commands inside of Animated Java
+    if is_animated_java and len(arguments) > 0 and arguments[0] == "tellraw":
+        return
 
     # Test target selectors
     for argument in arguments:
