@@ -13,6 +13,7 @@ from pathlib import Path
 errors = 0
 player_tags: list[str] = []
 scoreboard_objectives: list[str] = []
+scheduled_functions: list[str] = []
 
 def add_error():
     global errors
@@ -28,6 +29,7 @@ def prompt_for_pack():
     global errors
     global player_tags
     global scoreboard_objectives
+    global scheduled_functions
     while True:
         print("")
         path_string = input("Path to pack to test (drag'n'drop, leave blank to exit): ")
@@ -51,6 +53,7 @@ def prompt_for_pack():
         errors = 0
         player_tags = []
         scoreboard_objectives = []
+        scheduled_functions = []
         
         data_path = path / "data"
         if data_path.exists() and data_path.is_dir():
@@ -98,6 +101,16 @@ def test_data_pack_namespace(path: Path):
             add_error()
         else:
             test_plot_on_function(plot_on_path)
+
+    # Test plot off function
+    plot_off_path = function_path / "plot_off.mcfunction"
+    if len(scheduled_functions) > 0:
+        # RULE: All scheduled functions must be cleared in the plot_off function.
+        if not plot_off_path.exists():
+            print("ERROR: All scheduled functions must be cleared in the plot_off function: plot_off function doesn't exist.")
+            add_error()
+        else:
+            test_plot_off_function(plot_off_path)
 
     # Test logout function
     logout_path = function_path / "logout.mcfunction"
@@ -160,7 +173,7 @@ def test_plot_on_function(path: Path):
             continue
 
         if (
-            len(arguments) > 3 and
+            len(arguments) >= 4 and
             arguments[0] == "scoreboard" and
             arguments[1] == "objectives" and
             arguments[2] == "add" and
@@ -171,6 +184,33 @@ def test_plot_on_function(path: Path):
     # RULE: All scoreboard objectives must be defined in the plot_on function.
     if len(unaccounted_objectives) > 0:
         print(f"ERROR: All scoreboard objectives must be defined in the plot_on function: {unaccounted_objectives}")
+        add_error()
+
+def test_plot_off_function(path: Path):
+    lines = parse_function(path)
+    unaccounted_scheduled_functions: list[str] = scheduled_functions.copy()
+
+    for i in lines:
+        command = lines[i]
+        if not command.strip():
+            continue
+        if command.strip().startswith("#"):
+            continue
+        arguments = parse_tokens(command, " ", True)
+        if len(arguments) == 0:
+            continue
+
+        if (
+            len(arguments) >= 3 and
+            arguments[0] == "schedule" and
+            arguments[1] == "clear" and
+            arguments[2] in unaccounted_scheduled_functions
+        ):
+            unaccounted_scheduled_functions.remove(arguments[2])
+
+    # RULE: All scheduled functions must be cleared in the plot_off function.
+    if len(unaccounted_scheduled_functions) > 0:
+        print(f"ERROR: All scheduled functions must be cleared in the plot_off function: {unaccounted_scheduled_functions}")
         add_error()
 
 def test_logout_function(path: Path):
@@ -188,7 +228,7 @@ def test_logout_function(path: Path):
             continue
 
         if (
-            len(arguments) > 3 and
+            len(arguments) >= 4 and
             arguments[0] == "tag" and
             arguments[1] == "@s" and
             arguments[2] == "remove" and
@@ -256,6 +296,11 @@ def test_command_arguments(arguments: list[str], line_number: int, path: Path):
     if arguments[0] == "tag" and len(arguments) >= 4:
         test_tag(arguments[3], is_player_target_selector(arguments[1]), line_number, path)
 
+    # Handle schedule commands
+    if arguments[0] == "schedule" and len(arguments) >= 3:
+        if arguments[1] == "function" and arguments[2] not in scheduled_functions:
+            scheduled_functions.append(arguments[2])
+
     # Simple rules for banned commands
 
     # RULE: Do not modify installed data packs.
@@ -289,10 +334,6 @@ def test_command_arguments(arguments: list[str], line_number: int, path: Path):
     # RULE: Do not broadcast global messages.
     if arguments[0] == "say":
         log_error("Do not broadcast global messages.", line_number, path)
-
-    # RULE: Do not schedule functions.
-    if arguments[0] == "schedule":
-        log_error("Do not schedule functions.", line_number, path)
 
     # RULE: Do not modify world spawn point.
     if arguments[0] == "setworldspawn":
