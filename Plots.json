@@ -80,10 +80,7 @@
                 "DeuxiemeCarlin"
             ],
             "icon": {
-                "id": "minecraft:stone",
-                "components": {
-                    "minecraft:item_model": ""
-                }
+                "id": "minecraft:cherry_sapling"
             },
             "spawn": "2816 65 3840 0 0",
             "collectibles": [
