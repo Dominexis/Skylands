@@ -113,7 +113,7 @@ execute as @e[type=minecraft:item_display,tag=sl.collectible] at @s if entity @a
 
 
 # Make paintings and item frames invulnerable
-execute as @e[type=#sl:hangable,tag=!sl.processed] run function sl:generic/process_hangable
+execute if score #dev_mode sl.value matches 0 as @e[type=#sl:hangable,tag=!sl.processed] run function sl:generic/process_hangable
 
 
 
