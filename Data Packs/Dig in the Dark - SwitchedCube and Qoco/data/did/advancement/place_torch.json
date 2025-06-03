@@ -1,0 +1,30 @@
+{
+    "criteria": {
+      "main": {
+        "trigger": "minecraft:item_used_on_block",
+        "conditions": {
+          "player": {
+            "slots": {}
+          },
+          "location": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:sand"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "main"
+      ]
+    ],
+    "rewards": {
+      "function": "did:setup/place_torch"
+    }
+  }

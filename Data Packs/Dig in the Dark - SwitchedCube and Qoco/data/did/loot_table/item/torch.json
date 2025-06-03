@@ -1,0 +1,37 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:item_frame",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:can_place_on": [
+                    {
+                      "blocks": [
+                        "minecraft:sand"
+                      ]
+                    }
+                  ],
+                "minecraft:custom_data": "{did:{no_drop:1,torch:1,torch-all:1}}",
+                "minecraft:item_name": {translate: "did.item.torch"},
+                "minecraft:lore": [{translate: "did.item.lore.torch"},{translate: "did.item.lore.torch2"}],
+                "minecraft:item_model": "did:torch",
+                "max_stack_size": 1,
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:can_place_on"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

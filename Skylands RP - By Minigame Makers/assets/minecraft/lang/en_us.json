@@ -1,0 +1,27 @@
+{
+    "did.item.brush": "§6Miner'§6s Brush",
+    "did.item.lore.brush": "§b§oUse this to dig up items",
+    "did.item.lore.brush2": "§b§ofrom suspicious sand.",
+
+    "did.item.torch": "§6Miner'§6s Torch",
+    "did.item.lore.torch": "§a§oCan be placed on the ground",
+    "did.item.lore.torch2": "§a§oor held in the off-hand.",
+
+    "did.item.torch_unlit": "§6Burnt Torch",
+    "did.item.lore.torch_unlit": "§c§oUse a lighter to",
+    "did.item.lore.torch_unlit2": "§c§ore-ignite this torch.",
+
+    "did.item.lighter": "§6Miner'§6s Lighter",
+    "did.item.lore.lighter": "§a§oUse this to re-ignite a burnt",
+    "did.item.lore.lighter2": "§a§otorch placed on the ground.",
+
+    "did.item.lighter_unlit": "§6Broken Lighter",
+    "did.item.lore.lighter_unlit": "§c§oUses left: 0",
+    "did.item.lore.lighter_unlit2": "§c§oYou cannot use this item.",
+
+    "did.game.rules": "§6[ᴅɪɢ ɪɴ ᴛʜᴇ ᴅᴀʀᴋ] §aYou're trapped in the dark. Dig up items and sell them to the vendor to obtain the §bcloud in a bottle!",
+    "did.game.actionbar": "§aLighter uses: %s§c/2 §a| Quota: %s§c/690",
+    "did.game.checkpoint": "§6[ᴅɪɢ ɪɴ ᴛʜᴇ ᴅᴀʀᴋ] §cYou've been sent back to the centre!",
+    "did.game.bottle": "§6[ᴅɪɢ ɪɴ ᴛʜᴇ ᴅᴀʀᴋ] §aYou have obtained the §bCloud in a Bottle",
+    "did.game.credits": " \n§e▶ ᴅɪɢ ɪɴ ᴛʜᴇ ᴅᴀʀᴋ - ᴄʀᴇᴅɪᴛꜱ ◀\n\n§6SwitchedCube: §bCoder/Artist\n§6Qoco: §bBuilder\n§6DevsCube: %s"
+}

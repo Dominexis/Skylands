@@ -1,0 +1,15 @@
+{
+	"formatVersion": "1.0.0",
+	"rigs": {
+		"did": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/did/group.json",
+				"assets/animated_java/items/empty.json",
+				"assets/animated_java/models/blueprint/did/evil/group.json",
+				"assets/animated_java/models/blueprint/did/group.json",
+				"assets/animated_java/models/empty.json"
+			]
+		}
+	}
+}

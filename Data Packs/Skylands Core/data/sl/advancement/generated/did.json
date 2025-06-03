@@ -1,0 +1,34 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:brush"
+        },
+        "title": [
+            {
+                "text": "Dig in the Dark"
+            }
+        ],
+        "frame": "task",
+        "description": [
+            [
+                {
+                    "text": "You're trapped in darkness. Dig up items from the ground to escape!",
+                    "color": "green"
+                },
+                {
+                    "text": "\n\nSwitchedCube, Qoco",
+                    "color": "gold"
+                }
+            ]
+        ],
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "parent": "sl:genre/minigame",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

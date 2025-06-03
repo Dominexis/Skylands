@@ -1,0 +1,1 @@
+execute positioned -3014.50 0.50 -3639.50 align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~98 ~7 ~-100 positioned ~1.5 ~-.5 ~ run tp @s ~ ~ ~ 180 0

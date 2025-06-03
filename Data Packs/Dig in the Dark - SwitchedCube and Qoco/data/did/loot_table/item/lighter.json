@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:consumable": {},
+                "minecraft:custom_data": "{did:{no_drop:1,lighter:1,lighter-all:1}}",
+                "minecraft:item_name": {translate: "did.item.lighter"},
+                "minecraft:lore": [{translate: "did.item.lore.lighter"},{translate: "did.item.lore.lighter2"}],
+                "minecraft:item_model": "did:lighter",
+                "max_stack_size": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

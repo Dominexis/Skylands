@@ -1,0 +1,6 @@
+{ 
+	"model": {
+		"type": "model",
+		"model": "did:item/torch"
+	}
+}

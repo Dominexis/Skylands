@@ -4,3 +4,4 @@ execute if score #plot.oldschool_skyisland.state sl.value matches 1.. positioned
 execute if score #plot.feelsbatman.state sl.value matches 1.. positioned -256 0 -3840 run function sl:generated/plot/feelsbatman/main
 execute if score #plot.gardensofbabble.state sl.value matches 1.. positioned 2816 0 3840 run function sl:generated/plot/gardensofbabble/main
 execute if score #plot.itspungpond98.state sl.value matches 1.. positioned 768 0 -5376 run function sl:generated/plot/itspungpond98/main
+execute if score #plot.did.state sl.value matches 1.. positioned -2816 0 -3840 run function sl:generated/plot/did/main

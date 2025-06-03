@@ -1,0 +1,37 @@
+{
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:any_block_use",
+            "conditions": {
+                "player": {
+                    "slots": {
+                        "weapon.mainhand": {
+                            "items": "minecraft:brush",
+                            "components": {
+                                "minecraft:custom_data": "{did:{no_drop:1,brush:1}}"
+                            }
+                        }
+                    }
+                },
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "minecraft:suspicious_sand"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "main"
+        ]
+    ],
+    "rewards": {
+        "function": "did:setup/say"
+    }
+}

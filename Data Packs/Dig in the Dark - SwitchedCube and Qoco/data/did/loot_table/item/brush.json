@@ -1,0 +1,37 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:brush",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:unbreakable": {},
+                  "minecraft:item_name": {translate: "did.item.brush"},
+                  "minecraft:lore": [{translate: "did.item.lore.brush"},{translate: "did.item.lore.brush2"}],
+                  "minecraft:can_place_on": [
+                      {
+                        "blocks": [
+                          "minecraft:suspicious_sand"
+                        ]
+                      }
+                    ],
+                  "minecraft:custom_data": "{did:{no_drop:1,brush:1}}",
+                  "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:unbreakable",
+                    "minecraft:can_place_on"
+                  ]
+                }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

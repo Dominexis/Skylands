@@ -119,6 +119,33 @@
             "pvp": false,
             "max_players": 0,
             "weight": "light"
+        },
+
+        {
+            "name": "Dig in the Dark",
+            "namespace": "did",
+            "description": "You're trapped in darkness. Dig up items from the ground to escape!",
+            "authors": [
+                "SwitchedCube",
+                "Qoco"
+            ],
+            "icon": {
+                "id": "minecraft:brush"
+            },
+            "spawn": "-2915 7 -3739 -180 0",
+            "collectibles": [
+                "-2916 2 -3737"
+            ],
+            "required_chunks": [
+                "-2916 -3740",
+                "-3014 -3639"
+            ],
+            "regions": [],
+            "genre": "minigame",
+            "difficulty": "easy",
+            "pvp": false,
+            "max_players": 8,
+            "weight": "light"
         }
     ]
 }

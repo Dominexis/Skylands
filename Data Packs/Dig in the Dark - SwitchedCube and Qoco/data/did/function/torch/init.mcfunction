@@ -1,0 +1,1 @@
+scoreboard players set .global did.10t 10

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "did:rare",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "did:common",
+          "weight": 5
+        }
+      ],
+      "rolls": 1,
+      "functions": []
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": "{did:{sellable:1}}"
+    }
+  ]
+}
