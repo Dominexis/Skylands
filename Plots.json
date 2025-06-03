@@ -96,6 +96,29 @@
             "pvp": false,
             "max_players": 0,
             "weight": "light"
+        },
+
+        {
+            "name": "Floating Biome Mix",
+            "namespace": "itspungpond98",
+            "description": "An island with many sections of various biomes to parkour through!",
+            "authors": [
+                "ItsPungpond98"
+            ],
+            "icon": {
+                "id": "minecraft:oak_sapling"
+            },
+            "spawn": "731 65 -5287 -152 -5",
+            "collectibles": [
+                "764 88 -5373"
+            ],
+            "required_chunks": [],
+            "regions": [],
+            "genre": "parkour",
+            "difficulty": "difficult",
+            "pvp": false,
+            "max_players": 0,
+            "weight": "light"
         }
     ]
 }
