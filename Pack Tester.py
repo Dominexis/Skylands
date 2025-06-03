@@ -540,7 +540,7 @@ def test_tag(tag: str, is_from_player: bool, line_number: int, path: Path):
     if "." not in tag:
         log_error("All tags must be namespaced, e.g. namespace.my_tag", line_number, path)
 
-    if is_from_player and tag not in player_tags:
+    if is_from_player and tag not in player_tags and not tag.startswith("aj."):
         player_tags.append(tag)
 
 def test_scoreboard_objective(objective: str, line_number: int, path: Path):
