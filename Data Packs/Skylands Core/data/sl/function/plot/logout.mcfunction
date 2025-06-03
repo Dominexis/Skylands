@@ -7,6 +7,7 @@ execute at @s run function sl:plot/generated_function_call with storage sl:data 
 # Reset internal data
 tag @s remove sl.plate_checkpoint_cooldown
 tag @s remove sl.disable_plate_checkpoint
+tag @s remove sl.no_saturation
 scoreboard players set @s sl.collection_timer 0
 
 # Clear things off of player
