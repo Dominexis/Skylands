@@ -8,5 +8,5 @@ execute if entity @s[x=512,y=-64,z=-5632,dx=511,dy=511,dz=511] run return run fu
 execute if entity @s[x=-3072,y=-64,z=-4096,dx=511,dy=511,dz=511] run return run function sl:generated/plot/did/api/login
 
 # Warn player if they aren't in a plot
-tellraw @s {"text":"You are not on an island","color":"red"}
+tellraw @s {text:"You are not on an island",color:"red",type:"text"}
 return 0

@@ -47,7 +47,7 @@ attribute @s minecraft:sweeping_damage_ratio base reset
 attribute @s minecraft:water_movement_efficiency base reset
 
 # Reset checkpoint
-spawnpoint @s 0 65 0 0
+spawnpoint @s 0 65 0 0 0
 
 scoreboard players set @s sl.checkpoint_x 0
 scoreboard players set @s sl.checkpoint_y 65

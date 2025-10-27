@@ -1,6 +1,1 @@
-{ 
-	"model": {
-		"type": "model",
-		"model": "did:item/lighter"
-	}
-}
+{"model": {"type": "model", "model": "did:item/lighter"}, "oversized_in_gui": true}

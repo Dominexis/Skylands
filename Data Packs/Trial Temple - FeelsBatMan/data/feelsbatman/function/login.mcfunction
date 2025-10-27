@@ -1,1 +1,1 @@
-tellraw @s {"text":"<FeelsBatMan2137> Welcome to my Island. I wanted to make a different gameplay than what I had created before. In the end it turned out a bit weird. But you'll see. The book on the nearby lectern should explain some things."}
+tellraw @s {text:"<FeelsBatMan2137> Welcome to my Island. I wanted to make a different gameplay than what I had created before. In the end it turned out a bit weird. But you'll see. The book on the nearby lectern should explain some things.",type:"text"}

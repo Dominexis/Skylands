@@ -1,6 +1,1 @@
-{
-    "model": {
-        "type": "minecraft:model",
-        "model": "sl:block/missing"
-    }
-}
+{"model": {"type": "minecraft:model", "model": "sl:block/missing"}, "oversized_in_gui": true}

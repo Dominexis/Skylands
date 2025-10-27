@@ -1,5 +1,5 @@
 # Set the executing player's checkpoint to the current execution position
-execute align xyz run spawnpoint @s ~0.5 ~ ~0.5 ~
+execute align xyz run spawnpoint @s ~0.5 ~ ~0.5 ~ ~
 
 function sl:api/get_context
 

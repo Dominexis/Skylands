@@ -16,5 +16,5 @@ function sl:plot/get_plot_name with storage sl:data macro
 execute at @s store result score #successful sl.value run function sl:plot/generated_function_call with storage sl:data macro
 
 # Send player into spectator if the login was not successful
-execute if score #successful sl.value matches 0 run tellraw @s {"text":"Could not log into that island","color":"red"}
+execute if score #successful sl.value matches 0 run tellraw @s {text:"Could not log into that island",color:"red",type:"text"}
 execute if score #successful sl.value matches 0 run function sl:player/lobby

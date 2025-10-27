@@ -1,1 +1,1 @@
-execute align xyz positioned ~0.5 ~0.5 ~0.5 unless entity @e[type=marker, tag=did.marker.sus_sand,distance=..0.1] run summon marker ~ ~ ~ {Tags:["did.marker.sus_sand"]}
+execute align xyz positioned ~0.5 ~0.5 ~0.5 unless entity @e[type=minecraft:marker,distance=..0.1,tag=did.marker.sus_sand] run summon minecraft:marker ~ ~ ~ {Tags:["did.marker.sus_sand"]}

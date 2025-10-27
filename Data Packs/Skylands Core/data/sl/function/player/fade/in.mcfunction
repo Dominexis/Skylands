@@ -1,6 +1,6 @@
 # Play a fade in animation
 title @s times 0 0 20
-title @s title {"text":"A","font":"sl:fade"}
+title @s title {text:"A",font:"sl:fade",type:"text"}
 title @s subtitle ""
 title @s actionbar ""
 scoreboard players set @s sl.fade_timer -21

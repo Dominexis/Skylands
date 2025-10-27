@@ -28,9 +28,9 @@ execute if score #send_to_lobby sl.value matches 1 run function sl:player/lobby
 execute unless score @s sl.plot = #lobby_plot sl.value run function sl:plot/rejoin
 
 # Send tellraws to player
-tellraw @s [{"text":"Welcome to ","color":"white"},{"text":"Skylands","color":"aqua","bold":true}]
-tellraw @s[team=!sl.spectator] [{"text":"Use ","color":"gray"},{"text":"/trigger spectate","color":"white"},{"text":" to spectate the map","color":"gray"}]
-execute unless score @s sl.plot = #lobby_plot sl.value run tellraw @s[team=!sl.spectator] [{"text":"Use ","color":"gray"},{"text":"/trigger lobby","color":"white"},{"text":" to return to the lobby","color":"gray"}]
-execute unless score @s sl.plot = #lobby_plot sl.value run tellraw @s[team=!sl.spectator] [{"text":"Use ","color":"gray"},{"text":"/trigger checkpoint","color":"white"},{"text":" to go to the previous checkpoint","color":"gray"}]
-tellraw @s[team=sl.spectator] [{"text":"Use ","color":"gray"},{"text":"/trigger lobby","color":"white"},{"text":" to return to the lobby","color":"gray"}]
-tellraw @s[team=sl.spectator] [{"text":"Use ","color":"gray"},{"text":"/trigger play","color":"white"},{"text":" to play the plot you are spectating","color":"gray"}]
+tellraw @s [{text:"Welcome to ",color:"white",type:"text"},{text:"Skylands",color:"aqua",bold:1b,type:"text"}]
+tellraw @s[team=!sl.spectator] [{text:"Use ",color:"gray",type:"text"},{text:"/trigger spectate",color:"white",type:"text"},{text:" to spectate the map",color:"gray",type:"text"}]
+execute unless score @s sl.plot = #lobby_plot sl.value run tellraw @s[team=!sl.spectator] [{text:"Use ",color:"gray",type:"text"},{text:"/trigger lobby",color:"white",type:"text"},{text:" to return to the lobby",color:"gray",type:"text"}]
+execute unless score @s sl.plot = #lobby_plot sl.value run tellraw @s[team=!sl.spectator] [{text:"Use ",color:"gray",type:"text"},{text:"/trigger checkpoint",color:"white",type:"text"},{text:" to go to the previous checkpoint",color:"gray",type:"text"}]
+tellraw @s[team=sl.spectator] [{text:"Use ",color:"gray",type:"text"},{text:"/trigger lobby",color:"white",type:"text"},{text:" to return to the lobby",color:"gray",type:"text"}]
+tellraw @s[team=sl.spectator] [{text:"Use ",color:"gray",type:"text"},{text:"/trigger play",color:"white",type:"text"},{text:" to play the plot you are spectating",color:"gray",type:"text"}]

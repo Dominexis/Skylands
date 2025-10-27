@@ -1,22 +1,22 @@
-execute as @e[type=!player,distance=..100,tag=feelsbatman.CSPIDER] at @s run rotate @s facing entity @e[limit=1,sort=nearest,type=!player,distance=..100,tag=feelsbatman.RUCH]
-execute as @e[type=!player,distance=..100,tag=feelsbatman.CSPIDER,nbt={OnGround:1b},scores={feelsbatman.ATAK1=..0,feelsbatman.ZDOL1=..0}] at @s unless entity @e[type=!player,tag=feelsbatman.RUCH,distance=..1] run function feelsbatman:ruch/25
-execute as @e[type=!player,distance=..100,tag=feelsbatman.CSPIDER,nbt={OnGround:1b},scores={feelsbatman.ATAK1=..0,feelsbatman.ZDOL1=1..}] at @s unless entity @e[type=!player,tag=feelsbatman.RUCH,distance=..1] run function feelsbatman:ruch/-30
+execute as @e[type=!minecraft:player,distance=..100,tag=feelsbatman.CSPIDER] at @s run rotate @s facing entity @e[type=!minecraft:player,distance=..100,tag=feelsbatman.RUCH,sort=nearest,limit=1]
+execute as @e[type=!minecraft:player,distance=..100,tag=feelsbatman.CSPIDER,scores={feelsbatman.ATAK1=..0,feelsbatman.ZDOL1=..0},nbt={OnGround:1b}] at @s unless entity @e[type=!minecraft:player,distance=..1,tag=feelsbatman.RUCH] run function feelsbatman:ruch/25
+execute as @e[type=!minecraft:player,distance=..100,tag=feelsbatman.CSPIDER,scores={feelsbatman.ATAK1=..0,feelsbatman.ZDOL1=1..},nbt={OnGround:1b}] at @s unless entity @e[type=!minecraft:player,distance=..1,tag=feelsbatman.RUCH] run function feelsbatman:ruch/-30
 
-scoreboard players remove @e[type=!player,distance=..100,tag=feelsbatman.CSPIDER,scores={feelsbatman.ZDOL1=1..}] feelsbatman.ZDOL1 2
+scoreboard players remove @e[type=!minecraft:player,distance=..100,tag=feelsbatman.CSPIDER,scores={feelsbatman.ZDOL1=1..}] feelsbatman.ZDOL1 2
 
-execute as @e[type=!player,distance=..100,tag=feelsbatman.CSPIDER,nbt={OnGround:1b},scores={feelsbatman.ZDOL1=1..}] at @s run effect give @s invisibility 1 0
-execute as @e[type=!player,distance=..100,tag=feelsbatman.CSPIDER,nbt={OnGround:1b},scores={feelsbatman.ZDOL1=..0}] at @s unless entity @e[type=!player,tag=feelsbatman.RUCH,distance=..3] run effect give @s invisibility 1 0
-execute as @e[type=!player,distance=..100,tag=feelsbatman.CSPIDER,nbt={OnGround:1b},scores={feelsbatman.ZDOL1=..0}] at @s if entity @e[type=!player,tag=feelsbatman.RUCH,distance=..3] run effect clear @s invisibility
+execute as @e[type=!minecraft:player,distance=..100,tag=feelsbatman.CSPIDER,scores={feelsbatman.ZDOL1=1..},nbt={OnGround:1b}] at @s run effect give @s minecraft:invisibility 1 0
+execute as @e[type=!minecraft:player,distance=..100,tag=feelsbatman.CSPIDER,scores={feelsbatman.ZDOL1=..0},nbt={OnGround:1b}] at @s unless entity @e[type=!minecraft:player,distance=..3,tag=feelsbatman.RUCH] run effect give @s minecraft:invisibility 1 0
+execute as @e[type=!minecraft:player,distance=..100,tag=feelsbatman.CSPIDER,scores={feelsbatman.ZDOL1=..0},nbt={OnGround:1b}] at @s if entity @e[type=!minecraft:player,distance=..3,tag=feelsbatman.RUCH] run effect clear @s minecraft:invisibility
 
-scoreboard players add @e[type=!player,distance=..100,tag=feelsbatman.CSPIDER,scores={feelsbatman.ATAK=..19,feelsbatman.ATAK1=..0}] feelsbatman.ATAK 2
-execute as @e[type=!player,distance=..100,tag=feelsbatman.CSPIDER,scores={feelsbatman.ATAK=20..}] at @s if entity @e[type=!player,tag=feelsbatman.RUCH,distance=..2] run tag @s add feelsbatman.CSPIDAK
-execute at @e[type=!player,distance=..100,tag=feelsbatman.CSPIDAK] run particle wax_off ~ ~2 ~ .2 0 .2 10 8 force
-scoreboard players set @e[type=!player,distance=..100,tag=feelsbatman.CSPIDAK] feelsbatman.ATAK 0
-scoreboard players set @e[type=!player,distance=..100,tag=feelsbatman.CSPIDAK,predicate=feelsbatman:50_procent] feelsbatman.ATAK -9
-scoreboard players set @e[type=!player,distance=..100,tag=feelsbatman.CSPIDAK] feelsbatman.ATAK1 32
-tag @e[type=!player,distance=..100,tag=feelsbatman.CSPIDAK] remove feelsbatman.CSPIDAK
+scoreboard players add @e[type=!minecraft:player,distance=..100,tag=feelsbatman.CSPIDER,scores={feelsbatman.ATAK=..19,feelsbatman.ATAK1=..0}] feelsbatman.ATAK 2
+execute as @e[type=!minecraft:player,distance=..100,tag=feelsbatman.CSPIDER,scores={feelsbatman.ATAK=20..}] at @s if entity @e[type=!minecraft:player,distance=..2,tag=feelsbatman.RUCH] run tag @s add feelsbatman.CSPIDAK
+execute at @e[type=!minecraft:player,distance=..100,tag=feelsbatman.CSPIDAK] run particle minecraft:wax_off ~ ~2 ~ .2 0 .2 10 8 force
+scoreboard players set @e[type=!minecraft:player,distance=..100,tag=feelsbatman.CSPIDAK] feelsbatman.ATAK 0
+scoreboard players set @e[type=!minecraft:player,distance=..100,tag=feelsbatman.CSPIDAK,predicate=feelsbatman:50_procent] feelsbatman.ATAK -9
+scoreboard players set @e[type=!minecraft:player,distance=..100,tag=feelsbatman.CSPIDAK] feelsbatman.ATAK1 32
+tag @e[type=!minecraft:player,distance=..100,tag=feelsbatman.CSPIDAK] remove feelsbatman.CSPIDAK
 
-scoreboard players remove @e[type=!player,distance=..100,tag=feelsbatman.CSPIDER,scores={feelsbatman.ATAK1=1..}] feelsbatman.ATAK1 2
-execute as @e[type=!player,distance=..100,tag=feelsbatman.CSPIDER,scores={feelsbatman.ATAK1=2}] at @s run particle sweep_attack ^ ^1 ^1.4 0 0 0 0 1 force
-execute as @e[type=!player,distance=..100,tag=feelsbatman.CSPIDER,scores={feelsbatman.ATAK1=2}] at @s run playsound minecraft:entity.player.attack.nodamage master @a[team=sl.player,distance=..100] ~ 63 ~ 3 .6
-execute as @e[type=!player,distance=..100,tag=feelsbatman.CSPIDER,scores={feelsbatman.ATAK1=2}] at @s run tag @e[type=!player,tag=feelsbatman.RUCH,distance=..2] add feelsbatman.HURT
+scoreboard players remove @e[type=!minecraft:player,distance=..100,tag=feelsbatman.CSPIDER,scores={feelsbatman.ATAK1=1..}] feelsbatman.ATAK1 2
+execute as @e[type=!minecraft:player,distance=..100,tag=feelsbatman.CSPIDER,scores={feelsbatman.ATAK1=2}] at @s run particle minecraft:sweep_attack ^ ^1 ^1.4 0 0 0 0 1 force
+execute as @e[type=!minecraft:player,distance=..100,tag=feelsbatman.CSPIDER,scores={feelsbatman.ATAK1=2}] at @s run playsound minecraft:entity.player.attack.nodamage master @a[distance=..100,team=sl.player] ~ 63 ~ 3 .6
+execute as @e[type=!minecraft:player,distance=..100,tag=feelsbatman.CSPIDER,scores={feelsbatman.ATAK1=2}] at @s run tag @e[type=!minecraft:player,distance=..2,tag=feelsbatman.RUCH] add feelsbatman.HURT

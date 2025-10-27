@@ -1,12 +1,14 @@
-{"values":[
-	"minecraft:torch",
-	"minecraft:wall_torch",
-	"minecraft:soul_torch",
-	"minecraft:soul_wall_torch",
-	"minecraft:snow",
-	"minecraft:ladder",
-	"minecraft:cobweb",
-	"minecraft:flower_pot",
-	"minecraft:frogspawn",
-	"minecraft:light"
-	]}
+{
+    "values": [
+        "minecraft:torch",
+        "minecraft:wall_torch",
+        "minecraft:soul_torch",
+        "minecraft:soul_wall_torch",
+        "minecraft:snow",
+        "minecraft:ladder",
+        "minecraft:cobweb",
+        "minecraft:flower_pot",
+        "minecraft:frogspawn",
+        "minecraft:light"
+    ]
+}

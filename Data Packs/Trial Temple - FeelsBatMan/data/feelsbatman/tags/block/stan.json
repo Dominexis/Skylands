@@ -1,5 +1,7 @@
-{"values":[
-	"#feelsbatman:air",
-	"minecraft:water",
-	"minecraft:lava"
-	]}
+{
+    "values": [
+        "#feelsbatman:air",
+        "minecraft:water",
+        "minecraft:lava"
+    ]
+}

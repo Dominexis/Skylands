@@ -1,4 +1,4 @@
-bossbar add feelsbatman.wave {"text":"WAVE"}
+bossbar add feelsbatman.wave {text:"WAVE",type:"text"}
 team add feelsbatman.ENEMY
 team modify feelsbatman.ENEMY seeFriendlyInvisibles false
 team modify feelsbatman.ENEMY collisionRule always

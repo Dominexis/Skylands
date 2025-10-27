@@ -4,4 +4,4 @@ execute store success score #success sl.value run function gardensofbabble:check
 
 # Send message if the function doesn't exist
 execute if score #success sl.value matches 0 run playsound minecraft:entity.experience_orb.pickup master @s
-execute if score #success sl.value matches 0 run tellraw @s {"text":"Checkpoint","color":"green"}
+execute if score #success sl.value matches 0 run tellraw @s {text:"Checkpoint",color:"green",type:"text"}

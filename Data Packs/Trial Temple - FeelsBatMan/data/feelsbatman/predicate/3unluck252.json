@@ -1,11 +1,11 @@
 {
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "effects": {
-      "minecraft:unluck": {
-        "amplifier": 251
-      }
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "effects": {
+            "minecraft:unluck": {
+                "amplifier": 251
+            }
+        }
     }
-  }
 }

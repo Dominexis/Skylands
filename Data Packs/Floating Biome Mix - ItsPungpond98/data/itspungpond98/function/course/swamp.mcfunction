@@ -25,7 +25,7 @@ execute if score #flower itspungpond98.clock matches 51 run clone ~55 ~68 ~38 ~5
 execute if score #flower itspungpond98.clock matches 61 run clone ~55 ~68 ~38 ~55 ~63 ~38 ~72 ~76 ~52
 execute if score #flower itspungpond98.clock matches 71 run clone ~55 ~68 ~38 ~55 ~64 ~38 ~72 ~76 ~52
 
-execute positioned ~61 ~74 ~35 as @e[dx=26,dy=17,dz=26,type=item,nbt={Item:{id:"minecraft:flowering_azalea"}}] run kill @s
+execute positioned ~61 ~74 ~35 as @e[type=minecraft:item,dx=26,dy=17,dz=26,nbt={Item:{id:"minecraft:flowering_azalea"}}] run kill @s
 
 #Flowers
 #clone ~55 ~68 ~38 ~55 ~67 ~38

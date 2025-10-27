@@ -1,6 +1,6 @@
 # Put all players into their queued position
 gamemode spectator @a[gamemode=!spectator,scores={sl.plot=1073709061}]
-team join sl.queue @a[team=!sl.queue,scores={sl.plot=1073709061}]
+team join sl.queue @a[scores={sl.plot=1073709061},team=!sl.queue]
 effect give @a[scores={sl.plot=1073709061}] minecraft:blindness infinite 0 true
 teleport @a[scores={sl.plot=1073709061}] ~ 512 ~ 0 0
 

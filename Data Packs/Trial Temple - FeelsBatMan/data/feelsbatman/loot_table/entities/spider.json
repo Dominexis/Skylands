@@ -1,25 +1,23 @@
 {
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
+    "pools": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:string",
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": {
-                "spiderdeathdrop": 1
-              }
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            }
-          ]
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:string",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{spiderdeathdrop:1}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

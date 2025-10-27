@@ -1,6 +1,6 @@
 execute if score @s did.player.quota matches 690.. at @s run function did:misc/complete_island
 
-title @s[tag=did.player.logged] actionbar {translate:"did.game.actionbar",with: [{color:"red", score: {name:"@s",objective: "did.player.lighter_uses"} },{color:"red",score: {name:"@s",objective: "did.player.quota"} }]}
+title @s[tag=did.player.logged] actionbar {translate:"did.game.actionbar",with:[{color:"red",score:{name:"@s",objective:"did.player.lighter_uses"},type:"score"},{color:"red",score:{name:"@s",objective:"did.player.quota"},type:"score"}],type:"translatable"}
 
 
 execute store result score @s did.player.item_count run clear @s *[minecraft:custom_data~{did:{torch-all:1}}] 0
@@ -10,14 +10,14 @@ execute if score @s did.player.item_count matches 2.. run clear @s *[minecraft:c
 execute store result score @s did.player.item_count run clear @s *[minecraft:custom_data~{did:{brush:1}}] 0
 execute if score @s did.player.item_count matches 2.. run clear @s *[minecraft:custom_data~{did:{brush:1}}]
 
-effect give @s[tag=did.player.logged] blindness 2 0 true
-effect give @s[tag=did.player.logged] strength 2 0 true
+effect give @s[tag=did.player.logged] minecraft:blindness 2 0 true
+effect give @s[tag=did.player.logged] minecraft:strength 2 0 true
 
-execute at @s if entity @s[tag=did.player.logged] if items entity @s player.cursor *[minecraft:custom_data~{did:{no_drop:1}}] run item replace entity @s player.cursor with air
-execute at @s if entity @s[tag=did.player.logged] if items entity @s player.crafting.* *[minecraft:custom_data~{did:{no_drop:1}}] run item replace entity @s player.crafting.0 with air
-execute at @s if entity @s[tag=did.player.logged] if items entity @s player.crafting.* *[minecraft:custom_data~{did:{no_drop:1}}] run item replace entity @s player.crafting.1 with air
-execute at @s if entity @s[tag=did.player.logged] if items entity @s player.crafting.* *[minecraft:custom_data~{did:{no_drop:1}}] run item replace entity @s player.crafting.2 with air
-execute at @s if entity @s[tag=did.player.logged] if items entity @s player.crafting.* *[minecraft:custom_data~{did:{no_drop:1}}] run item replace entity @s player.crafting.3 with air
+execute at @s if entity @s[tag=did.player.logged] if items entity @s player.cursor *[minecraft:custom_data~{did:{no_drop:1}}] run item replace entity @s player.cursor with minecraft:air
+execute at @s if entity @s[tag=did.player.logged] if items entity @s player.crafting.* *[minecraft:custom_data~{did:{no_drop:1}}] run item replace entity @s player.crafting.0 with minecraft:air
+execute at @s if entity @s[tag=did.player.logged] if items entity @s player.crafting.* *[minecraft:custom_data~{did:{no_drop:1}}] run item replace entity @s player.crafting.1 with minecraft:air
+execute at @s if entity @s[tag=did.player.logged] if items entity @s player.crafting.* *[minecraft:custom_data~{did:{no_drop:1}}] run item replace entity @s player.crafting.2 with minecraft:air
+execute at @s if entity @s[tag=did.player.logged] if items entity @s player.crafting.* *[minecraft:custom_data~{did:{no_drop:1}}] run item replace entity @s player.crafting.3 with minecraft:air
 
 execute at @s if entity @s[tag=did.player.logged] if score @s did.player.lighter_uses matches 2.. run clear @s *[minecraft:custom_data~{did:{lighter:1}}]
 execute at @s if entity @s[tag=did.player.logged] unless score @s did.player.lighter_uses matches 2.. run clear @s *[minecraft:custom_data~{did:{lighter_unlit:1}}]

@@ -11,4 +11,4 @@ execute if block ~ 0 ~01 #sl:minimap_void unless block ~ 0 ~-1 #sl:minimap_void 
 
 scoreboard players set #y sl.value 65
 
-tellraw @s {"text":"You've been warped to the plot","color":"green"}
+tellraw @s {text:"You've been warped to the plot",color:"green",type:"text"}

@@ -1,6 +1,1 @@
-{
-	"parent": "animated_java:blueprint/did/group",
-	"textures": {
-		"0": "did:item/vendor_evil"
-	}
-}
+{"parent": "animated_java:blueprint/did/group", "textures": {"0": "did:item/vendor_evil", "particle": "did:item/vendor_evil"}}

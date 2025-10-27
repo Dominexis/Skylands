@@ -1,6 +1,5 @@
 {
     "pack": {
-        "pack_format": 46,
         "description": [
             "",
             {
@@ -25,6 +24,8 @@
                 "text": "0.0.0",
                 "color": "gold"
             }
-        ]
+        ],
+        "min_format": 69,
+        "max_format": 69
     }
 }

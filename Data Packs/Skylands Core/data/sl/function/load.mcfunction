@@ -151,28 +151,28 @@ scoreboard players set #lobby_plot sl.value 0
 # Add teams
 
 team add sl.player
-team modify sl.player displayName {"text":"Player","color":"green"}
+team modify sl.player displayName {text:"Player",color:"green",type:"text"}
 team modify sl.player color green
 team modify sl.player friendlyFire false
 team modify sl.player collisionRule pushOwnTeam
 team modify sl.player seeFriendlyInvisibles false
 
 team add sl.player_pvp
-team modify sl.player_pvp displayName {"text":"Player","color":"green"}
+team modify sl.player_pvp displayName {text:"Player",color:"green",type:"text"}
 team modify sl.player_pvp color green
 team modify sl.player_pvp friendlyFire true
 team modify sl.player_pvp collisionRule always
 team modify sl.player_pvp seeFriendlyInvisibles false
 
 team add sl.queue
-team modify sl.queue displayName {"text":"Queue","color":"green"}
+team modify sl.queue displayName {text:"Queue",color:"green",type:"text"}
 team modify sl.queue color green
 team modify sl.queue friendlyFire false
 team modify sl.queue collisionRule never
 team modify sl.queue seeFriendlyInvisibles false
 
 team add sl.spectator
-team modify sl.spectator displayName {"text":"Spectator","color":"gray"}
+team modify sl.spectator displayName {text:"Spectator",color:"gray",type:"text"}
 team modify sl.spectator color gray
 team modify sl.spectator friendlyFire false
 team modify sl.spectator collisionRule never
@@ -232,7 +232,7 @@ gamerule randomTickSpeed 0
 gamerule reducedDebugInfo false
 gamerule showDeathMessages false
 gamerule snowAccumulationHeight 1
-gamerule spawnChunkRadius 8
+#gamerule spawnChunkRadius 8
 gamerule spawnRadius 0
 gamerule spectatorsGenerateChunks true
 gamerule tntExplosionDropDecay true

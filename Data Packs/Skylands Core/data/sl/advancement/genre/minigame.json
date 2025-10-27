@@ -9,7 +9,7 @@
             }
         ],
         "frame": "task",
-        "background": "sl:textures/block/light_blue.png",
+        "background": "sl:block/light_blue",
         "description": [
             {
                 "text": "Complete minigame islands to gain these advancements!",

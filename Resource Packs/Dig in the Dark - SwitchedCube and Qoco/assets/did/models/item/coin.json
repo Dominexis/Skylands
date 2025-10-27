@@ -1,6 +1,1 @@
-{
-	"parent": "item/generated",
-	"textures": {
-		"layer0": "did:item/coin"
-	}
-}
+{"parent": "item/generated", "textures": {"layer0": "did:item/coin", "particle": "did:item/coin"}}

@@ -2,4 +2,4 @@
 
 function did:logout
 playsound minecraft:entity.experience_orb.pickup master @s
-tellraw @s {translate: "did.game.bottle"}
+tellraw @s {translate:"did.game.bottle",type:"translatable"}

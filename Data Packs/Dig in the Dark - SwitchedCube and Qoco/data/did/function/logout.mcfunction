@@ -12,10 +12,10 @@ tag @s remove did.torch.display.unlit
 tag @s remove did.torch.display
 
 clear @s
-clear @s *[custom_data~{did:{no_drop:1}}]
-clear @s *[custom_data~{did:{sellable:1}}]
+clear @s *[minecraft:custom_data~{did:{no_drop:1}}]
+clear @s *[minecraft:custom_data~{did:{sellable:1}}]
 
-effect give @s saturation 1 255 true
+effect give @s minecraft:saturation 1 255 true
 
 scoreboard players set @s did.player.lighter_uses 0
 scoreboard players set @s did.player.torch_burn_time 0

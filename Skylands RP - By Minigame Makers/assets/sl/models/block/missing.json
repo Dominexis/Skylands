@@ -1,6 +1,1 @@
-{
-	"parent": "sl:block/background",
-	"textures": {
-		"texture": "sl:block/missing"
-	}
-}
+{"parent": "sl:block/background", "textures": {"texture": "sl:block/missing", "particle": "sl:block/missing"}}

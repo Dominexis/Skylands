@@ -2,4 +2,4 @@
 
 # Send message that the player reached a checkpoint
 playsound minecraft:entity.experience_orb.pickup master @s
-tellraw @s {"text":"Checkpoint","color":"green"}
+tellraw @s {text:"Checkpoint",color:"green",type:"text"}

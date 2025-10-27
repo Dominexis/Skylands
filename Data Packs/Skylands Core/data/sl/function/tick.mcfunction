@@ -58,7 +58,7 @@ effect give @a[scores={sl.night_vision=1},team=sl.spectator] minecraft:night_vis
 execute as @e[type=minecraft:player,scores={sl.death=1..}] at @s run function sl:player/respawn
 
 # Manage plate checkpoints
-execute as @a[predicate=sl:player,tag=!sl.disable_plate_checkpoint] at @s unless score @s sl.plot = #lobby_plot sl.value run function sl:player/checkpoint/plate/main
+execute as @a[tag=!sl.disable_plate_checkpoint,predicate=sl:player] at @s unless score @s sl.plot = #lobby_plot sl.value run function sl:player/checkpoint/plate/main
 
 # Auto-spectate players not on a team
 execute as @a[team=] run trigger spectate
@@ -129,7 +129,7 @@ function sl:time/get
 
 scoreboard players operation #mspt sl.value = #time sl.value
 scoreboard players operation #mspt sl.value -= #time_start sl.value
-execute if score #mspt sl.value matches ..20 run title @a[tag=mspt] actionbar [{"text":"MSPT: "},{"score":{"name":"#mspt","objective":"sl.value"},"color":"green"}]
-execute if score #mspt sl.value matches 21..40 run title @a[tag=mspt] actionbar [{"text":"MSPT: "},{"score":{"name":"#mspt","objective":"sl.value"},"color":"yellow"}]
-execute if score #mspt sl.value matches 41..50 run title @a[tag=mspt] actionbar [{"text":"MSPT: "},{"score":{"name":"#mspt","objective":"sl.value"},"color":"gold"}]
-execute if score #mspt sl.value matches 51.. run title @a[tag=mspt] actionbar [{"text":"MSPT: "},{"score":{"name":"#mspt","objective":"sl.value"},"color":"red"}]
+execute if score #mspt sl.value matches ..20 run title @a[tag=mspt] actionbar [{text:"MSPT: ",type:"text"},{score:{name:"#mspt",objective:"sl.value"},color:"green",type:"score"}]
+execute if score #mspt sl.value matches 21..40 run title @a[tag=mspt] actionbar [{text:"MSPT: ",type:"text"},{score:{name:"#mspt",objective:"sl.value"},color:"yellow",type:"score"}]
+execute if score #mspt sl.value matches 41..50 run title @a[tag=mspt] actionbar [{text:"MSPT: ",type:"text"},{score:{name:"#mspt",objective:"sl.value"},color:"gold",type:"score"}]
+execute if score #mspt sl.value matches 51.. run title @a[tag=mspt] actionbar [{text:"MSPT: ",type:"text"},{score:{name:"#mspt",objective:"sl.value"},color:"red",type:"score"}]

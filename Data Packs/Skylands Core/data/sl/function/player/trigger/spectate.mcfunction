@@ -1,5 +1,5 @@
 # Reset spectate trigger
-execute if score @s spectate matches 1.. run tellraw @s {"text":"You are now spectating","color":"gold"}
+execute if score @s spectate matches 1.. run tellraw @s {text:"You are now spectating",color:"gold",type:"text"}
 scoreboard players set @s spectate 0
 
 # Send player to spectator

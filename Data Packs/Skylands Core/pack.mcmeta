@@ -1,7 +1,8 @@
 {
     "pack": {
-        "pack_format": 61,
-        "description": "Skylands Core Data Pack"
+        "description": "Skylands Core Data Pack",
+        "min_format": 88,
+        "max_format": 88
     },
     "filter": {
         "block": [

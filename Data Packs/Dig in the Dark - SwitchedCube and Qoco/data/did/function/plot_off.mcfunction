@@ -1,6 +1,6 @@
 ## This function runs when the plot turns off
 
-execute positioned -3014.50 0.50 -3639.50 align xyz positioned ~0.5 ~0.5 ~0.5 at @n[type=marker,tag=did.marker.main,distance=..1] run function did:marker/plot_off
+execute positioned -3014.50 0.50 -3639.50 align xyz positioned ~0.5 ~0.5 ~0.5 at @n[type=minecraft:marker,distance=..1,tag=did.marker.main] run function did:marker/plot_off
 
 scoreboard objectives remove did.raycast
 scoreboard objectives remove did.sand.random

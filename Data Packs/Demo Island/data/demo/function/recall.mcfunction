@@ -2,4 +2,4 @@
 
 # Tell player that they fell
 playsound minecraft:entity.generic.splash master @s
-tellraw @s {"text":"Oops! Looks like you fell...","color":"red"}
+tellraw @s {text:"Oops! Looks like you fell...",color:"red",type:"text"}

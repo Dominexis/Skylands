@@ -9,12 +9,12 @@
 # kill @e[type=item_frame,dz=-200,dx=200,dy=100]
 # kill @e[type=item,dz=-200,dx=200,dy=100]
 
-execute as @a[team=sl.player,dz=-200,dx=200,dy=100] run function did:logout
+execute as @a[dx=200,dy=100,dz=-200,team=sl.player] run function did:logout
 
-execute positioned ~98 ~7 ~-96 as @n[type=interaction,tag=did.vendor.interact,distance=..1] run kill @s
+execute positioned ~98 ~7 ~-96 as @n[type=minecraft:interaction,distance=..1,tag=did.vendor.interact] run kill @s
 
-execute positioned ~98 ~7 ~-96 as @n[type=item_display, tag=did.vendor.funnydisplay,distance=..1] run kill @s
-kill @e[type=!player,dz=-200,dx=200,dy=100]
+execute positioned ~98 ~7 ~-96 as @n[type=minecraft:item_display,distance=..1,tag=did.vendor.funnydisplay] run kill @s
+kill @e[type=!minecraft:player,dx=200,dy=100,dz=-200]
 
-execute run kill @n[type=marker,tag=did.marker.main,distance=..1]
+kill @n[type=minecraft:marker,distance=..1,tag=did.marker.main]
 

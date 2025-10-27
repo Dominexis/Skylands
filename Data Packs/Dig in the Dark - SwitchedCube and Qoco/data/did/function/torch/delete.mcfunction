@@ -1,2 +1,2 @@
 kill @s
-setblock ~ ~ ~ air
+setblock ~ ~ ~ minecraft:air

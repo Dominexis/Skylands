@@ -1,2 +1,2 @@
-tellraw @s {"text":"<FeelsBatMan2137> Thank you for completing my Island. I hope you enjoyed it despite the weird controls. If you want to try to complete the Trial again, you can do so at any time."}
+tellraw @s {text:"<FeelsBatMan2137> Thank you for completing my Island. I hope you enjoyed it despite the weird controls. If you want to try to complete the Trial again, you can do so at any time.",type:"text"}
 tag @s remove feelsbatman.GRACZ01

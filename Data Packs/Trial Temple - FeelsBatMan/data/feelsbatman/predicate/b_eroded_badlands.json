@@ -1,9 +1,11 @@
 {
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "location": {
-      "biome": "minecraft:eroded_badlands"
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "location": {
+            "biomes": [
+                "minecraft:eroded_badlands"
+            ]
+        }
     }
-  }
 }

@@ -8,4 +8,4 @@ scoreboard players set #bamboo itspungpond98.clock 0
 scoreboard players set #flower itspungpond98.clock 0
 scoreboard players set #swing itspungpond98.clock 0
 
-kill @e[type=chest_minecart,tag=itspungpond98.minecart,distance=..150]
+kill @e[type=minecraft:chest_minecart,distance=..150,tag=itspungpond98.minecart]
