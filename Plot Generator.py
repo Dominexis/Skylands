@@ -71,12 +71,12 @@ def deduplicate_coords(coord_list: list[list[int]]) -> list[list[int]]:
 
 def create_file(path: Path, contents: str):
     path.parent.mkdir(exist_ok=True, parents=True)
-    with path.open("w", encoding="utf-8") as file:
+    with path.open("w", encoding="utf-8", newline="\n") as file:
         file.write(contents.strip())
 
 def create_json_file(path: Path, contents):
     path.parent.mkdir(exist_ok=True, parents=True)
-    with path.open("w", encoding="utf-8") as file:
+    with path.open("w", encoding="utf-8", newline="\n") as file:
         json.dump(contents, file, indent=4)
 
 
@@ -146,8 +146,8 @@ return 1
 f"""
 # Return 1 if the plot can be logged into by all metrics
 {
-    "return 1" if "max_players" not in plot or plot["max_players"] <= 0 else f"""execute store result score #player_count sl.value if entity @a[team=!sl.spectator,scores={{sl.plot={plot_id}}}]
-execute if entity @s[team=!sl.spectator,scores={{sl.plot={plot_id}}}] run scoreboard players remove #player_count sl.value 1
+    "return 1" if "max_players" not in plot or plot["max_players"] <= 0 else f"""execute store result score #player_count sl.value if entity @a[scores={{sl.plot={plot_id}}},team=!sl.spectator]
+execute if entity @s[scores={{sl.plot={plot_id}}},team=!sl.spectator] run scoreboard players remove #player_count sl.value 1
 return run execute if score #player_count sl.value matches ..{plot["max_players"]-1}"""
 }
 """)
@@ -172,7 +172,7 @@ execute store success score #success sl.value run function {namespace}:checkpoin
 
 # Send message if the function doesn't exist
 execute if score #success sl.value matches 0 run playsound minecraft:entity.experience_orb.pickup master @s
-execute if score #success sl.value matches 0 run tellraw @s {{"text":"Checkpoint","color":"green"}}
+execute if score #success sl.value matches 0 run tellraw @s {{text:"Checkpoint",color:"green",type:"text"}}
 """)
 
     create_file(plot_path / "complete.mcfunction",
@@ -288,7 +288,7 @@ execute as @a[scores={{sl.plot={plot_id}}}] at @s run function sl:generated/plot
 f"""
 # Put all players into their queued position
 gamemode spectator @a[gamemode=!spectator,scores={{sl.plot={plot_id}}}]
-team join sl.queue @a[team=!sl.queue,scores={{sl.plot={plot_id}}}]
+team join sl.queue @a[scores={{sl.plot={plot_id}}},team=!sl.queue]
 effect give @a[scores={{sl.plot={plot_id}}}] minecraft:blindness infinite 0 true
 teleport @a[scores={{sl.plot={plot_id}}}] ~ 512 ~ 0 0
 
@@ -304,7 +304,7 @@ execute if score #plot.{namespace}.state sl.value matches 4 if score #is_loaded 
 f"""
 # Cancel if the plot is not available
 execute store result score #is_available sl.value run function sl:generated/plot/{namespace}/is_available
-execute if score #debug_mode sl.value matches 1 if score #is_available sl.value matches 0 run tellraw @s {{"text":"The plot {namespace} is not available","color":"red"}}
+execute if score #debug_mode sl.value matches 1 if score #is_available sl.value matches 0 run tellraw @s {{text:"The plot {namespace} is not available",color:"red",type:"text"}}
 execute if score #is_available sl.value matches 0 run return 0
 
 # Log out of current plot
@@ -485,7 +485,7 @@ f"""
 {"\n".join(global_data["login_from_pos"])}
 
 # Warn player if they aren't in a plot
-tellraw @s {{"text":"You are not on an island","color":"red"}}
+tellraw @s {{text:"You are not on an island",color:"red",type:"text"}}
 return 0
 """)
     
