@@ -187,6 +187,7 @@ team modify sl.no_collision seeFriendlyInvisibles false
 # Set gamerules
 defaultgamemode adventure
 
+gamerule allowEnteringNetherUsingPortals false
 gamerule announceAdvancements false
 gamerule blockExplosionDropDecay false
 gamerule commandBlockOutput false
@@ -197,8 +198,8 @@ gamerule disableRaids true
 gamerule doDaylightCycle false
 gamerule doEntityDrops true
 gamerule doFireTick false
-gamerule doInsomnia false
 gamerule doImmediateRespawn true
+gamerule doInsomnia false
 gamerule doLimitedCrafting false
 gamerule doMobLoot true
 gamerule doMobSpawning false
@@ -227,7 +228,7 @@ gamerule naturalRegeneration true
 gamerule playersNetherPortalCreativeDelay 2147483647
 gamerule playersNetherPortalDefaultDelay 2147483647
 gamerule playersSleepingPercentage 100
-gamerule projectilesCanBreakBlocks true
+gamerule projectilesCanBreakBlocks false
 gamerule randomTickSpeed 0
 gamerule reducedDebugInfo false
 gamerule showDeathMessages false
@@ -236,7 +237,7 @@ gamerule snowAccumulationHeight 1
 gamerule spawnRadius 0
 gamerule spectatorsGenerateChunks true
 gamerule tntExplosionDropDecay true
-gamerule universalAnger true
+gamerule universalAnger false
 gamerule waterSourceConversion true
 
 
