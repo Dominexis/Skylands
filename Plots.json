@@ -146,6 +146,29 @@
             "pvp": false,
             "max_players": 8,
             "weight": "light"
+        },
+
+        {
+            "name": "Andel Manor",
+            "namespace": "piecewiselantern",
+            "description": "Collect clues and solve the mystery of the missing family of Andel Manor.",
+            "authors": [
+                "PiecewiseLantern"
+            ],
+            "icon": {
+                "id": "minecraft:waxed_oxidized_copper_bulb"
+            },
+            "spawn": "-1251 -9 -1352 90 0",
+            "collectibles": [
+                "-1281 16 -1474"
+            ],
+            "required_chunks": [],
+            "regions": [],
+            "genre": "puzzle",
+            "difficulty": "difficult",
+            "pvp": false,
+            "max_players": 1,
+            "weight": "light"
         }
     ]
 }
