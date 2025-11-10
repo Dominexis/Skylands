@@ -1,5 +1,5 @@
 setblock -1281 -18 -1469 minecraft:redstone_block
-setblock -1281 -18 -1468 air
+setblock -1281 -18 -1468 minecraft:air
 setblock -1281 15 -1469 minecraft:oxidized_copper_trapdoor[facing=north,half=top,open=false,powered=false,waterlogged=false]
 
 setblock -1284 -15 -1471 minecraft:oxidized_copper_trapdoor[facing=west,half=bottom,open=true,powered=false,waterlogged=false]

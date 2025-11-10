@@ -1,5 +1,1 @@
-execute if block -1282 -3 -1303 minecraft:waxed_oxidized_copper_bulb[lit=true] \
-if block -1280 -3 -1303 minecraft:waxed_oxidized_copper_bulb[lit=true] \
-if block -1282 -5 -1303 minecraft:waxed_oxidized_copper_bulb[lit=true] \
-if block -1280 -5 -1303 minecraft:waxed_oxidized_copper_bulb[lit=true] \
-run setblock -1281 -5 -1303 minecraft:iron_door[open=true]
+execute if block -1282 -3 -1303 minecraft:waxed_oxidized_copper_bulb[lit=true] if block -1280 -3 -1303 minecraft:waxed_oxidized_copper_bulb[lit=true] if block -1282 -5 -1303 minecraft:waxed_oxidized_copper_bulb[lit=true] if block -1280 -5 -1303 minecraft:waxed_oxidized_copper_bulb[lit=true] run setblock -1281 -5 -1303 minecraft:iron_door[open=true]

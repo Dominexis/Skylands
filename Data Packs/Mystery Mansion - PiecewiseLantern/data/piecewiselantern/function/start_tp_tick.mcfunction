@@ -1,1 +1,1 @@
-execute if entity @p[team=sl.player, x=-1266, y=-9, z=-1352, dx=0, dy=0, dz=0] run tp @p[team=sl.player, x=-1266, y=-9, z=-1352, dx=0, dy=0, dz=0] -1272 -9 -1352
+execute if entity @p[x=-1266,y=-9,z=-1352,dx=0,dy=0,dz=0,team=sl.player] run tp @p[x=-1266,y=-9,z=-1352,dx=0,dy=0,dz=0,team=sl.player] -1272 -9 -1352

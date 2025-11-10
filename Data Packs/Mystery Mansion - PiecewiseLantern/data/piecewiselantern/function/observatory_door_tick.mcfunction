@@ -1,1 +1,1 @@
-execute if entity @p[team=sl.player, x=-1281, y=16, z=-1282, dx=0, dy=0, dz=0, nbt={SelectedItem:{components:{"minecraft:custom_name":'"Observatory"'}}}] run function piecewiselantern:open_observatory_door
+execute if entity @p[x=-1281,y=16,z=-1282,dx=0,dy=0,dz=0,team=sl.player,nbt={SelectedItem:{components:{"minecraft:custom_name":"Observatory"}}}] run function piecewiselantern:open_observatory_door

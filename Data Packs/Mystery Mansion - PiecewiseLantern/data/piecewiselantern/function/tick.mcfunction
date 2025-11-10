@@ -1,4 +1,4 @@
-# Runs every tick while your plot is on at the center of your plot at Y=0. 
+# Runs every tick while your plot is on at the center of your plot at Y=0.
 
 function piecewiselantern:front_door_tick
 

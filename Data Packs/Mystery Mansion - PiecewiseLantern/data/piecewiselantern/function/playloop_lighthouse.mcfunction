@@ -1,2 +1,2 @@
-execute if score music_lighthouse piecewiselantern.data matches ..0 run playsound piecewiselantern:music.lighthouse master @p[team=sl.player, x=-1342, y=-30, z=-1502, dx=124, dy=73, dz=74] -1281 -15 -1470 1 1 1
+execute if score music_lighthouse piecewiselantern.data matches ..0 run playsound piecewiselantern:music.lighthouse master @p[x=-1342,y=-30,z=-1502,dx=124,dy=73,dz=74,team=sl.player] -1281 -15 -1470 1 1 1
 execute if score music_lighthouse piecewiselantern.data matches ..0 run scoreboard players set music_lighthouse piecewiselantern.data 690
