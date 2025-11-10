@@ -250,8 +250,12 @@ def test_command(command: str, line_number: int, path: Path, is_animated_java: b
 
     test_command_arguments(arguments, line_number, path)
 
-    # Only test target selectors that aren't part of tellraw commands inside of Animated Java
+    # Don't test target selectors that are part of tellraw commands inside of Animated Java
     if is_animated_java and len(arguments) > 0 and arguments[0] == "tellraw":
+        return
+    
+    # Don't test target selectors that are part of a playsound command or particle command
+    if len(arguments) > 0 and arguments[0] in ["playsound", "particle"]:
         return
 
     # Test target selectors
