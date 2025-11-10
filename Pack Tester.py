@@ -255,7 +255,7 @@ def test_command(command: str, line_number: int, path: Path, is_animated_java: b
         return
     
     # Don't test target selectors that are part of a playsound command or particle command
-    if len(arguments) > 0 and arguments[0] in ["playsound", "particle"]:
+    if len(arguments) > 0 and arguments[0] in ["playsound", "particle", "stopsound"]:
         return
 
     # Test target selectors
