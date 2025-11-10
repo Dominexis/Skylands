@@ -1,0 +1,1 @@
+execute if entity @p[team=sl.player, x=-1255, y=15, z=-1289, dx=0, dy=0, dz=0, nbt={SelectedItem:{components:{"minecraft:custom_name":'"Screwdriver"'}}}] run function piecewiselantern:open_vent

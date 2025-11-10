@@ -1,0 +1,1 @@
+execute if score campfires piecewiselantern.data matches 5 run function piecewiselantern:black_complete

@@ -1,0 +1,1 @@
+execute if entity @p[team=sl.player, x=-1282, y=-5, z=-1295, dx=0, dy=0, dz=0, nbt={SelectedItem:{components:{"minecraft:custom_name":'"Blue Ring"'}}}] run function piecewiselantern:open_blue_door

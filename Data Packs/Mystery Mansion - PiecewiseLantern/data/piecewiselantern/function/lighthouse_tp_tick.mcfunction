@@ -1,0 +1,3 @@
+execute if entity @p[team=sl.player, x=-1281, y=-5, z=-1305, dx=0, dy=0, dz=0] run effect clear @p[team=sl.player, x=-1281, y=-5, z=-1305, dx=0, dy=0, dz=0]
+execute if entity @p[team=sl.player, x=-1281, y=-5, z=-1305, dx=0, dy=0, dz=0] run tp @p[team=sl.player, x=-1281, y=-5, z=-1305, dx=0, dy=0, dz=0] -1281 -15 -1481
+execute if entity @p[team=sl.player, x=-1281, y=-15, z=-1481, dx=0, dy=0, dz=0] run function piecewiselantern:playloop_lighthouse

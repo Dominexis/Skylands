@@ -1,0 +1,1 @@
+execute if entity @p[team=sl.player, x=-1305, y=2, z=-1276, dx=0, dy=0, dz=0, nbt={SelectedItem:{components:{"minecraft:custom_name":'"Kitchen"'}}}] run function piecewiselantern:open_kitchen_door
