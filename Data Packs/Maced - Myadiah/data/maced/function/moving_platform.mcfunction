@@ -1,5 +1,5 @@
 ## Shulker Rotation
-execute positioned 1792 64 256 as @e[type=minecraft:shulker,distance=..250,tag=maced.moving_platform] at @s run data modify entity @s Rotation set from entity @n[type=minecraft:armor_stand,tag=maced.moving_platform] Rotation
+execute positioned 1792 64 256 as @e[type=minecraft:shulker,distance=..250,tag=maced.moving_platform] at @s run data modify entity @s Rotation set from entity @n[type=minecraft:armor_stand,tag=maced.moving_platform,distance=..250] Rotation
 
 ## Direction Selection
 execute positioned 1792 64 256 as @e[type=minecraft:armor_stand,distance=..250,tag=maced.moving_platform] at @s if block ~ ~-3 ~ minecraft:red_wool run rotate @s 180 0
