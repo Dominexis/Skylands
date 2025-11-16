@@ -1,31 +1,31 @@
-execute positioned 1792 64 256 run kill @e[type=minecraft:pig,distance=..250,tag=maced.mob]
+execute positioned 5888 64 -3328 run kill @e[type=minecraft:pig,distance=..250,tag=maced.mob]
 
 
 
-execute if score checkpoint_count maced.Scores matches 6 run summon minecraft:pig 1785 59 256 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
-execute if score checkpoint_count maced.Scores matches 6 run summon minecraft:pig 1780 63 256 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
+execute if score checkpoint_count maced.Scores matches 6 run summon minecraft:pig 5881 59 -3328 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
+execute if score checkpoint_count maced.Scores matches 6 run summon minecraft:pig 5876 63 -3328 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
 
 
-execute if score checkpoint_count maced.Scores matches 7 run summon minecraft:pig 1771 60 257 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
-execute if score checkpoint_count maced.Scores matches 7 run summon minecraft:pig 1765 59 255 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
+execute if score checkpoint_count maced.Scores matches 7 run summon minecraft:pig 5867 60 -3327 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
+execute if score checkpoint_count maced.Scores matches 7 run summon minecraft:pig 5861 59 -3329 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
 
 
-execute if score checkpoint_count maced.Scores matches 8 run summon minecraft:pig 1758 59 258 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
-execute if score checkpoint_count maced.Scores matches 8 run summon minecraft:pig 1754 59 254 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
-execute if score checkpoint_count maced.Scores matches 8 run summon minecraft:pig 1750 59 258 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
+execute if score checkpoint_count maced.Scores matches 8 run summon minecraft:pig 5854 59 -3326 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
+execute if score checkpoint_count maced.Scores matches 8 run summon minecraft:pig 5850 59 -3330 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
+execute if score checkpoint_count maced.Scores matches 8 run summon minecraft:pig 5846 59 -3326 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
 
 
-execute if score checkpoint_count maced.Scores matches 9 run summon minecraft:pig 1741 63 256 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
-execute if score checkpoint_count maced.Scores matches 9 run summon minecraft:pig 1736 65 257 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
-execute if score checkpoint_count maced.Scores matches 9 run summon minecraft:pig 1730 67 255 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
-execute if score checkpoint_count maced.Scores matches 9 run summon minecraft:pig 1726 69 258 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
-execute if score checkpoint_count maced.Scores matches 9 run summon minecraft:pig 1721 71 255 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
+execute if score checkpoint_count maced.Scores matches 9 run summon minecraft:pig 5837 63 -3328 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
+execute if score checkpoint_count maced.Scores matches 9 run summon minecraft:pig 5832 65 -3327 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
+execute if score checkpoint_count maced.Scores matches 9 run summon minecraft:pig 5826 67 -3329 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
+execute if score checkpoint_count maced.Scores matches 9 run summon minecraft:pig 5822 69 -3326 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
+execute if score checkpoint_count maced.Scores matches 9 run summon minecraft:pig 5817 71 -3329 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
 
 
-execute if score checkpoint_count maced.Scores matches 10 run summon minecraft:pig 1709 65 258 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
-execute if score checkpoint_count maced.Scores matches 10 run summon minecraft:pig 1703 66 254 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
-execute if score checkpoint_count maced.Scores matches 10 run summon minecraft:pig 1699 67 259 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
-execute if score checkpoint_count maced.Scores matches 10 run summon minecraft:pig 1696 68 253 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
-execute if score checkpoint_count maced.Scores matches 10 run summon minecraft:pig 1694 68 260 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
+execute if score checkpoint_count maced.Scores matches 10 run summon minecraft:pig 5805 65 -3326 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
+execute if score checkpoint_count maced.Scores matches 10 run summon minecraft:pig 5799 66 -3330 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
+execute if score checkpoint_count maced.Scores matches 10 run summon minecraft:pig 5795 67 -3325 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
+execute if score checkpoint_count maced.Scores matches 10 run summon minecraft:pig 5792 68 -3331 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
+execute if score checkpoint_count maced.Scores matches 10 run summon minecraft:pig 5790 68 -3324 {Team:"sl.no_collision",Tags:["maced.mob"],NoGravity:1b,Silent:1b,NoAI:1b,Health:1.0f}
 
-execute if score checkpoint_count maced.Scores matches 11 run setblock 1792 64 256 minecraft:gold_block
+execute if score checkpoint_count maced.Scores matches 11 run setblock 5888 64 -3328 minecraft:gold_block

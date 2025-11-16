@@ -1,4 +1,4 @@
-tp @s 1792 65 258 180 ~
+tp @s 5888 65 -3326 180 ~
 clear @s
 
 tag @s[team=sl.player] add maced.in_game
