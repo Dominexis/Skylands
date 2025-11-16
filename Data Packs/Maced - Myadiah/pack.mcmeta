@@ -1,6 +1,7 @@
 {
     "pack": {
-        "pack_format": 61,
-        "description": "Datapack for the island 'Maced' in the Skylands Minecraft Map"
+        "description": "Datapack for the island 'Maced' in the Skylands Minecraft Map",
+        "min_format": 88,
+        "max_format": 88
     }
 }
