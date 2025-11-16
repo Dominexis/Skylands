@@ -1,0 +1,2 @@
+# Return 1 if all the necessary chunks are loaded
+return run execute if loaded 5888 0 -3328 if loaded 5888 0 -3376 if loaded 5888 0 -3440 if loaded 5888 0 -3408 if loaded 5888 0 -3344 if loaded 5776 0 -3328 if loaded 5808 0 -3328 if loaded 5840 0 -3328 if loaded 5856 0 -3328 if loaded 5872 0 -3328 if loaded 5904 0 -3328 if loaded 5920 0 -3328 if loaded 5952 0 -3328

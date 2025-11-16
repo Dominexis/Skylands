@@ -1,0 +1,34 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:mace"
+        },
+        "title": [
+            {
+                "text": "Maced"
+            }
+        ],
+        "frame": "goal",
+        "description": [
+            [
+                {
+                    "text": "A vanilla minecraft item pushed to its limits",
+                    "color": "green"
+                },
+                {
+                    "text": "\n\nMyadiah",
+                    "color": "gold"
+                }
+            ]
+        ],
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "parent": "sl:genre/difficult_parkour",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
