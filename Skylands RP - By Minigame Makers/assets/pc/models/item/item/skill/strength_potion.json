@@ -1,0 +1,1 @@
+{"parent": "minecraft:item/generated", "textures": {"layer0": "pc:item/item/skill/strength_potion", "particle": "pc:item/item/skill/strength_potion"}}

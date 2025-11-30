@@ -1,0 +1,1 @@
+{"parent": "minecraft:item/handheld", "textures": {"layer0": "pc:item/shop/epmax", "particle": "pc:item/shop/epmax"}}

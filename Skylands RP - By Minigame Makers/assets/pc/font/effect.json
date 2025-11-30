@@ -1,0 +1,263 @@
+{
+    "providers": [
+        {
+            "type": "space",
+            "advances": {
+                " ": 4,
+                "\ue000": -4
+            }
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:font/effect/number.png",
+            "ascent": 6,
+            "height": 6,
+            "chars": [
+                "0123456789-"
+            ]
+        },
+        {
+            "chars": [
+                "\u0001"
+            ],
+            "file": "pc:font/effect/weakness.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u0002"
+            ],
+            "file": "pc:font/effect/vulnerable.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u0003"
+            ],
+            "file": "pc:font/effect/regeneration.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u0004"
+            ],
+            "file": "pc:font/effect/crit_attack.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u0005"
+            ],
+            "file": "pc:font/effect/robust.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u0006"
+            ],
+            "file": "pc:font/effect/revive.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u0007"
+            ],
+            "file": "pc:font/effect/strength.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\b"
+            ],
+            "file": "pc:font/effect/no_heal.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\t"
+            ],
+            "file": "pc:font/effect/entangled.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u0010"
+            ],
+            "file": "pc:font/effect/poison.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u0011"
+            ],
+            "file": "pc:font/effect/rusty.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u0012"
+            ],
+            "file": "pc:font/effect/strength_wearoff.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u0013"
+            ],
+            "file": "pc:font/effect/once_attack.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u0014"
+            ],
+            "file": "pc:font/effect/stone_form.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u0015"
+            ],
+            "file": "pc:font/effect/erosion.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u0016"
+            ],
+            "file": "pc:font/effect/dragon_scale.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u1001"
+            ],
+            "file": "pc:font/effect/frighten.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u1002"
+            ],
+            "file": "pc:font/effect/heal_overdose.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u1003"
+            ],
+            "file": "pc:font/effect/shield_buffer.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u1004"
+            ],
+            "file": "pc:font/effect/glass_cannon.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u1005"
+            ],
+            "file": "pc:font/effect/thorn.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u1006"
+            ],
+            "file": "pc:font/effect/undying_shell.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u1007"
+            ],
+            "file": "pc:font/effect/enraged.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u2001"
+            ],
+            "file": "pc:font/effect/fire_area.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u2002"
+            ],
+            "file": "pc:font/effect/rail_area.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u2003"
+            ],
+            "file": "pc:font/effect/crimson_area.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        },
+        {
+            "chars": [
+                "\u2004"
+            ],
+            "file": "pc:font/effect/dragonbreath_area.png",
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 10
+        }
+    ]
+}
