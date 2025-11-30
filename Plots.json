@@ -206,6 +206,36 @@
             "pvp": false,
             "max_players": 1,
             "weight": "light"
+        },
+
+        {
+            "name": "VitreArena",
+            "namespace": "pc",
+            "description": "A turn-based, roguelike board game where you battle against unique Minecraft monsters with different skills.",
+            "authors": [
+                "Paper_Cricel"
+            ],
+            "icon": {
+                "id": "minecraft:white_stained_glass"
+            },
+            "spawn": "2536 63 5608 180 0",
+            "collectibles": [
+                "2176 17 5453"
+            ],
+            "required_chunks": [
+                "2536 5624",
+                "2520 5603",
+                "2525 5595",
+                "2531 5592",
+                "2549 5598",
+                "2176 5453"
+            ],
+            "regions": [],
+            "genre": "minigame",
+            "difficulty": "difficult",
+            "pvp": false,
+            "max_players": 1,
+            "weight": "medium"
         }
     ]
 }

@@ -1,0 +1,4 @@
+# Return 1 if the plot can be logged into by all metrics
+execute store result score #player_count sl.value if entity @a[scores={sl.plot=327684},team=!sl.spectator]
+execute if entity @s[scores={sl.plot=327684},team=!sl.spectator] run scoreboard players remove #player_count sl.value 1
+return run execute if score #player_count sl.value matches ..0

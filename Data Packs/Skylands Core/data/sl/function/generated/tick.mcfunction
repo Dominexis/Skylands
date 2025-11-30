@@ -7,3 +7,4 @@ execute if score #plot.itspungpond98.state sl.value matches 1.. positioned 768 0
 execute if score #plot.did.state sl.value matches 1.. positioned -2816 0 -3840 run function sl:generated/plot/did/main
 execute if score #plot.piecewiselantern.state sl.value matches 1.. positioned -1280 0 -1280 run function sl:generated/plot/piecewiselantern/main
 execute if score #plot.maced.state sl.value matches 1.. positioned 5888 0 -3328 run function sl:generated/plot/maced/main
+execute if score #plot.pc.state sl.value matches 1.. positioned 2304 0 5376 run function sl:generated/plot/pc/main

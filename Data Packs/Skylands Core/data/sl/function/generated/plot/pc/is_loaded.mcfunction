@@ -1,0 +1,2 @@
+# Return 1 if all the necessary chunks are loaded
+return run execute if loaded 2528 0 5600 if loaded 2176 0 5440 if loaded 2528 0 5616 if loaded 2512 0 5600 if loaded 2512 0 5584 if loaded 2528 0 5584 if loaded 2544 0 5584
