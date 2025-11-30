@@ -12,5 +12,5 @@ execute as @e[type=!minecraft:player,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.
 function pc:sys/grid/select/clear
 
 # fx
-particle minecraft:flash ~ ~1 ~
+particle minecraft:flash{color:[1,1,1,1]} ~ ~1 ~
 particle minecraft:sweep_attack ~ ~1 ~ 0 0 0 0 0 force

@@ -11,7 +11,7 @@ execute as @e[type=!minecraft:player,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.
 function pc:sys/grid/select/clear
 
 # fx
-particle minecraft:flash ~ ~ ~
+particle minecraft:flash{color:[1,1,1,1]} ~ ~ ~
 particle minecraft:entity_effect{color:[0.616,0.18,1.0,1.0]} ~1.5 ~ ~0.0 0 0 0 1 0 normal
 particle minecraft:entity_effect{color:[0.616,0.18,1.0,1.0]} ~1.41 ~ ~0.513 0 0 0 1 0 normal
 particle minecraft:entity_effect{color:[0.616,0.18,1.0,1.0]} ~1.149 ~ ~0.964 0 0 0 1 0 normal

@@ -8,5 +8,5 @@ function pc:sys/object/damage/atker
 function pc:sys/grid/select/clear
 
 # fx
-particle minecraft:flash ~ ~1 ~
+particle minecraft:flash{color:[1,1,1,1]} ~ ~1 ~
 particle minecraft:sweep_attack ~ ~1 ~ 0 0 0 0 0 force
