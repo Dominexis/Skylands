@@ -1,2 +1,2 @@
 
-data modify entity @s data.avail set from entity @n[type=marker,tag=pc.intent.now,distance=..100] data.avail
+data modify entity @s data.avail set from entity @n[type=minecraft:marker,distance=..100,tag=pc.intent.now] data.avail

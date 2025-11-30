@@ -5,5 +5,5 @@ function pc:sys/utils/math/calculate {id:"entity @s data.in_combat.skill.cactus.
 function pc:item/skill/cactus/new_turn/lore
 
 # durability
-data modify storage pc:temp repair set value {value:-1,item:'cactus'}
+data modify storage pc:temp repair set value {value:-1,item:"cactus"}
 function pc:sys/item/durability/use

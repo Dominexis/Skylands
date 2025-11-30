@@ -1,6 +1,1 @@
-{
-    "model": {
-      "type": "minecraft:model",
-      "model": "pc:item/shop/epmax"
-    }
-}
+{"model": {"type": "minecraft:model", "model": "pc:item/shop/epmax"}, "oversized_in_gui": true}

@@ -1,4 +1,4 @@
 
 # effect
-execute unless entity @n[type=item_display,tag=pc.select,distance=..1.65] as @e[type=item_display,tag=pc.select.selected,distance=..100] at @s run function pc:sys/player/select/player/lookat/reset
-execute as @n[type=item_display,tag=pc.select,tag=!pc.select.selected,distance=..1.65] at @s run function pc:sys/player/select/player/lookat/4
+execute unless entity @n[type=minecraft:item_display,distance=..1.65,tag=pc.select] as @e[type=minecraft:item_display,distance=..100,tag=pc.select.selected] at @s run function pc:sys/player/select/player/lookat/reset
+execute as @n[type=minecraft:item_display,distance=..1.65,tag=pc.select,tag=!pc.select.selected] at @s run function pc:sys/player/select/player/lookat/4

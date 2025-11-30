@@ -2,7 +2,7 @@
 
 # Init
 scoreboard players set #line.index pc.main 0
-data merge storage pc:temp {line:{state:{select:true, next:true}}}
+data merge storage pc:temp {line:{state:{select:1b,next:1b}}}
 execute store result score #line.block pc.main run data get storage pc:temp line.block
 
 # Straight Diagonal

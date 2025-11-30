@@ -3,8 +3,8 @@
 function pc:object/ender_dragon/interphase/2
 
 # fx
-playsound minecraft:entity.ender_dragon.growl master @a[predicate=pc:player/ingame,predicate=sl:player,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0] ~ ~ ~ 1 1.25 1
-playsound minecraft:block.end_portal_frame.fill master @a[predicate=pc:player/ingame,predicate=sl:player,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0] ~ ~ ~ 1 0 1
+playsound minecraft:entity.ender_dragon.growl master @a[x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0,predicate=pc:player/ingame,predicate=sl:player] ~ ~ ~ 1 1.25 1
+playsound minecraft:block.end_portal_frame.fill master @a[x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0,predicate=pc:player/ingame,predicate=sl:player] ~ ~ ~ 1 0 1
 
 function pc:object/ender_dragon/interphase/around/use
 

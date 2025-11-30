@@ -1,6 +1,6 @@
 
 # effect
-setblock ~ -64 ~ shulker_box
+setblock ~ -64 ~ minecraft:shulker_box
 function pc:sys/player/data/load
 data modify storage pc:temp inventory set from storage pc:data root.inventory
 
@@ -66,6 +66,6 @@ execute if data storage pc:temp inventory.equipment.feet run item replace entity
 data modify block ~ -64 ~ Items append from storage pc:temp inventory.equipment.offhand
 execute if data storage pc:temp inventory.equipment.offhand run item replace entity @s weapon.offhand from block ~ -64 ~ container.0
 
-    # Reset
+# Reset
 data remove storage pc:temp inventory
-setblock ~ -64 ~ air
+setblock ~ -64 ~ minecraft:air

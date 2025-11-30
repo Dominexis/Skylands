@@ -1,12 +1,12 @@
 {
-  "condition": "minecraft:all_of",
-  "terms": [
-    {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "nbt": "{data:{occupy:{mob:true}}}"
-      }
-    }
-  ]
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{data:{occupy:{mob:1b}}}"
+            }
+        }
+    ]
 }

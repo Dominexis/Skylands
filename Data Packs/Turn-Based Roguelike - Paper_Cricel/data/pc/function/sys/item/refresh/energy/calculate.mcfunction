@@ -1,8 +1,8 @@
 
 # effect
-execute if data storage pc:temp {desc:{energy:"reset"}} run return run data modify entity @s item.components.minecraft:custom_data.pc.energy set from entity @s item.components.minecraft:custom_data.pc.energy_original
-execute store result score #energy pc.main run data get entity @s item.components.minecraft:custom_data.pc.energy
+execute if data storage pc:temp {desc:{energy:"reset"}} run return run data modify entity @s item.components."minecraft:custom_data".pc.energy set from entity @s item.components."minecraft:custom_data".pc.energy_original
+execute store result score #energy pc.main run data get entity @s item.components."minecraft:custom_data".pc.energy
 execute store result score #value pc.main run data get storage pc:temp desc.energy
 
-execute store result entity @s item.components.minecraft:custom_data.pc.energy int 1 run scoreboard players operation #energy pc.main += #value pc.main
-execute if score #energy pc.main matches ..-1 run data modify entity @s item.components.minecraft:custom_data.pc.energy set value 0
+execute store result entity @s item.components."minecraft:custom_data".pc.energy int 1 run scoreboard players operation #energy pc.main += #value pc.main
+execute if score #energy pc.main matches ..-1 run data modify entity @s item.components."minecraft:custom_data".pc.energy set value 0

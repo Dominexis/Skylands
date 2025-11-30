@@ -1,31 +1,113 @@
 {
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
+    "pools": [
         {
-          "type": "minecraft:item",
-          "name": "paper",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": "{pc:{category:'end_turn',durability:-1,energy:0,rc:true,game_item:true}}",
-                "minecraft:item_model": "pc:item/end_turn","minecraft:max_stack_size": 1,"minecraft:consumable": {"consume_seconds": 94879487},
-                "minecraft:item_name": [{"color":"#4ab274","text":"End Turn"}],
-                "minecraft:lore": [
-                  [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Ability","color": "#f5b055","bold": true}],
-                  [{"text":"","italic": false,"color": "white"},{"text":"End your turn."}],
-                  "",
-                  [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Details","color": "#3fa0e1","bold": true}],
-                  [{"text":"","italic": false,"color":"gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴅᴜʀᴀʙɪʟɪᴛʏ : ∞"},{"font":"pc:default","text":"1","color": "white"}],
-                  [{"text":"","italic": false,"color":"gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴄᴀᴛᴇɢᴏʀʏ : ɴ/ᴀ"}]
-                ]
-              }
-            }
-          ]
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:paper",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "pc:item/end_turn",
+                                "minecraft:max_stack_size": 1,
+                                "minecraft:consumable": {
+                                    "consume_seconds": 94879487
+                                },
+                                "minecraft:item_name": {
+                                    "color": "#4AB274",
+                                    "text": "End Turn"
+                                },
+                                "minecraft:lore": [
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "extra": [
+                                            {
+                                                "text": ">>",
+                                                "color": "gray"
+                                            },
+                                            {
+                                                "text": "> ",
+                                                "color": "#72BD7A",
+                                                "bold": true
+                                            },
+                                            {
+                                                "text": "Ability",
+                                                "color": "#F5B055",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "white",
+                                        "extra": [
+                                            "End your turn."
+                                        ]
+                                    },
+                                    "",
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "extra": [
+                                            {
+                                                "text": ">>",
+                                                "color": "gray"
+                                            },
+                                            {
+                                                "text": "> ",
+                                                "color": "#72BD7A",
+                                                "bold": true
+                                            },
+                                            {
+                                                "text": "Details",
+                                                "color": "#3FA0E1",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "gray",
+                                        "extra": [
+                                            {
+                                                "text": "\u25cf ",
+                                                "color": "#72BD7A"
+                                            },
+                                            "\u1d05\u1d1c\u0280\u1d00\u0299\u026a\u029f\u026a\u1d1b\u028f : \u221e",
+                                            {
+                                                "font": "pc:default",
+                                                "text": "1",
+                                                "color": "white"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "gray",
+                                        "extra": [
+                                            {
+                                                "text": "\u25cf ",
+                                                "color": "#72BD7A"
+                                            },
+                                            "\u1d04\u1d00\u1d1b\u1d07\u0262\u1d0f\u0280\u028f : \u0274/\u1d00"
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{pc:{category:\"end_turn\",durability:-1,energy:0,rc:1b,game_item:1b}}"
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

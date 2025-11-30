@@ -1,6 +1,6 @@
 
 # effect
-execute as @e[type=marker,tag=pc.intent.now,nbt={data:{id:"attack"}},x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0] at @s run function pc:object/mature_hoglin/attack1/3
+execute as @e[type=minecraft:marker,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0,tag=pc.intent.now,nbt={data:{id:"attack"}}] at @s run function pc:object/mature_hoglin/attack1/3
 
 # fx
-playsound minecraft:entity.hoglin.attack master @a[predicate=sl:player,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0] ~ ~ ~ 1 1.25
+playsound minecraft:entity.hoglin.attack master @a[x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0,predicate=sl:player] ~ ~ ~ 1 1.25

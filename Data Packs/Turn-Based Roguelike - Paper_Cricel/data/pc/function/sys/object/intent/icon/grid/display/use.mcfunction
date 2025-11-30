@@ -1,13 +1,13 @@
 
 # effect
-    # No Damage
+# No Damage
 execute unless data storage pc:temp icon.damage run return run data modify storage pc:temp icon.damage set value ''
 execute if data storage pc:temp {icon:{damage:0}} run return run data modify storage pc:temp icon.damage set value ''
 
-    # Damage
+# Damage
 execute store result score #damage pc.main run data get storage pc:temp icon.damage 1
-execute as @e[predicate=pc:object/all,type=!player,tag=pc.select.object,limit=1,distance=..100] at @s run function pc:sys/object/intent/icon/grid/display/atker
-execute as @e[predicate=pc:object/all,type=!player,tag=pc.intent.in_range,limit=1,distance=..100] at @s run function pc:sys/object/intent/icon/grid/display/victim
+execute as @e[type=!minecraft:player,distance=..100,tag=pc.select.object,limit=1,predicate=pc:object/all] at @s run function pc:sys/object/intent/icon/grid/display/atker
+execute as @e[type=!minecraft:player,distance=..100,tag=pc.intent.in_range,limit=1,predicate=pc:object/all] at @s run function pc:sys/object/intent/icon/grid/display/victim
 execute store result storage pc:temp icon.damage int 1 run scoreboard players get #damage pc.main
 data remove storage pc:temp damage
 

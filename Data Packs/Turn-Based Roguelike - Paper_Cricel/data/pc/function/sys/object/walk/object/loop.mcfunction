@@ -1,6 +1,6 @@
 
 # effect
-tag @n[type=marker,tag=pc.walk.now,distance=..100] remove pc.walk.now
+tag @n[type=minecraft:marker,distance=..100,tag=pc.walk.now] remove pc.walk.now
 tag @s add pc.walk.now
 tag @s remove pc.walk.intent
 

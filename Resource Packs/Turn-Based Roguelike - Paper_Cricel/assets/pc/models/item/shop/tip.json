@@ -1,7 +1,1 @@
-{
-    "parent": "minecraft:item/handheld",
-    "textures": {
-      "layer0": "pc:item/shop/tip"
-    }
-  }
-  
+{"parent": "minecraft:item/handheld", "textures": {"layer0": "pc:item/shop/tip", "particle": "pc:item/shop/tip"}}

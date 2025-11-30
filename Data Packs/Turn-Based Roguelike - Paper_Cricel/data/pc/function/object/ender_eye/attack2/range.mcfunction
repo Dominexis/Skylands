@@ -1,8 +1,8 @@
 
 # effect
-data modify entity @s data.intent.self set value [{"translate":"pc.intent.effect",font:"pc:intent"}]
-execute facing entity @n[predicate=pc:object/ally,type=!player,distance=..100] eyes run function pc:sys/object/rotate/proofread45
+data modify entity @s data.intent.self set value [{translate:"pc.intent.effect",font:"pc:intent"}]
+execute facing entity @n[type=!minecraft:player,distance=..100,predicate=pc:object/ally] eyes run function pc:sys/object/rotate/proofread45
 
-data modify storage pc:temp intent set value {text:[{"translate":"pc.intent.effect",font:"pc:intent"}]}
-data modify storage pc:temp line set value {block:8, mode:any, unhindered:true}
+data modify storage pc:temp intent set value {text:[{translate:"pc.intent.effect",font:"pc:intent"}]}
+data modify storage pc:temp line set value {block:8,mode:"any",unhindered:1b}
 execute at @s run function pc:sys/grid/select/line

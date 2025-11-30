@@ -1,30 +1,114 @@
 {
     "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "paper",
-            "functions": [
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:custom_data": "{pc:{item_name:[{color:'#FF8787',text:'P',bold:true},{color:'#FFAA86',text:'o'},{color:'#FFCE84',text:'t'},{color:'#FFF183',text:'i'},{color:'#EBFF84',text:'o'},{color:'#CAFF88',text:'n '},{color:'#A9FF8C',text:'o'},{color:'#8FFF96',text:'f '},{color:'#8FFEB7',text:'O'},{color:'#8FFCD7',text:'V'},{color:'#8FFBF8',text:'E'},{color:'#90E3FF',text:'R'},{color:'#92C4FF',text:'P'},{color:'#93A6FF',text:'O'},{color:'#A093FF',text:'W'},{color:'#BE91FF',text:'E'},{color:'#FB8CFF',text:'R'}],category:'skill',item:'op_potion',durability:10,tip:{strength:true},energy:1,rc:true,game_item:true}}",
-                  "minecraft:item_model": "pc:item/skill/strength_potion","minecraft:max_stack_size": 1,"minecraft:consumable": {"consume_seconds": 94879487},
-                  "minecraft:lore": [
-                    [{"text": "","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Ability","color": "#f5b055","bold": true}],
-                    [{"text": "", "italic": false, "color": "white"}, {"text": "Apply 20 "}, {"text": "Strength", "color": "#7abff1"}, {"text": "."}],
-                    "",
-                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Details","color": "#3fa0e1","bold": true}],
-                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴅᴜʀᴀʙɪʟɪᴛʏ : 10"},{"font":"pc:default","text":"1","color":"white"}],
-                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴄᴀᴛᴇɢᴏʀʏ : ꜱᴋɪʟʟ"}]
-                  ]
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:paper",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "pc:item/skill/strength_potion",
+                                "minecraft:max_stack_size": 1,
+                                "minecraft:consumable": {
+                                    "consume_seconds": 94879487
+                                },
+                                "minecraft:lore": [
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "extra": [
+                                            {
+                                                "text": ">>",
+                                                "color": "gray"
+                                            },
+                                            {
+                                                "text": "> ",
+                                                "color": "#72BD7A",
+                                                "bold": true
+                                            },
+                                            {
+                                                "text": "Ability",
+                                                "color": "#F5B055",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "white",
+                                        "extra": [
+                                            "Apply 20 ",
+                                            {
+                                                "text": "Strength",
+                                                "color": "#7ABFF1"
+                                            },
+                                            "."
+                                        ]
+                                    },
+                                    "",
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "extra": [
+                                            {
+                                                "text": ">>",
+                                                "color": "gray"
+                                            },
+                                            {
+                                                "text": "> ",
+                                                "color": "#72BD7A",
+                                                "bold": true
+                                            },
+                                            {
+                                                "text": "Details",
+                                                "color": "#3FA0E1",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "gray",
+                                        "extra": [
+                                            {
+                                                "text": "\u25cf ",
+                                                "color": "#72BD7A"
+                                            },
+                                            "\u1d05\u1d1c\u0280\u1d00\u0299\u026a\u029f\u026a\u1d1b\u028f : 10",
+                                            {
+                                                "font": "pc:default",
+                                                "text": "1",
+                                                "color": "white"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "gray",
+                                        "extra": [
+                                            {
+                                                "text": "\u25cf ",
+                                                "color": "#72BD7A"
+                                            },
+                                            "\u1d04\u1d00\u1d1b\u1d07\u0262\u1d0f\u0280\u028f : \ua731\u1d0b\u026a\u029f\u029f"
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{pc:{item_name:[{color:\"#FF8787\",text:\"P\",bold:1b},{color:\"#FFAA86\",text:\"o\"},{color:\"#FFCE84\",text:\"t\"},{color:\"#FFF183\",text:\"i\"},{color:\"#EBFF84\",text:\"o\"},{color:\"#CAFF88\",text:\"n \"},{color:\"#A9FF8C\",text:\"o\"},{color:\"#8FFF96\",text:\"f \"},{color:\"#8FFEB7\",text:\"O\"},{color:\"#8FFCD7\",text:\"V\"},{color:\"#8FFBF8\",text:\"E\"},{color:\"#90E3FF\",text:\"R\"},{color:\"#92C4FF\",text:\"P\"},{color:\"#93A6FF\",text:\"O\"},{color:\"#A093FF\",text:\"W\"},{color:\"#BE91FF\",text:\"E\"},{color:\"#FB8CFF\",text:\"R\"}],category:\"skill\",item:\"op_potion\",durability:10,tip:{strength:1b},energy:1,rc:1b,game_item:1b}}"
+                        }
+                    ]
                 }
-              }
             ]
-          }
-        ]
-      }
+        }
     ]
 }

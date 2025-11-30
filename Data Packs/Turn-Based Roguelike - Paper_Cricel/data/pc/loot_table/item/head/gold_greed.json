@@ -1,33 +1,137 @@
 {
     "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "netherite_helmet",
-            "functions": [
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:custom_data": "{pc:{category:'head',item:'gold_greed',game_item:true}}",
-                  "minecraft:trim": {"pattern": "shaper","material": "gold"},
-                  "minecraft:max_stack_size": 1,"minecraft:attribute_modifiers": [],"unbreakable": {},"tooltip_display":{"hidden_components":["unbreakable","trim"]},
-                  "minecraft:item_name": [{"text":"","color":"white"},"Gold Greed"],
-                  "minecraft:lore": [
-                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Ability","color": "#f5b055","bold": true}],
-                    [{"text": "", "italic": false, "color": "gray"}, {"text": "End of combat:"}],
-                    [{"text": "", "italic": false, "color": "white"}, {"text": "Gain 50% additional "}, {"text": "Money", "color": "#f1de61"}, {"text": "."}],
-                    "",
-                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Details","color": "#3fa0e1","bold": true}],
-                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴅᴜʀᴀʙɪʟɪᴛʏ : ∞"},{"font":"pc:default","text":"1","color": "white"}],
-                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴄᴀᴛᴇɢᴏʀʏ : ʜᴇᴀᴅ"}]
-                  ]
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:netherite_helmet",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:trim": {
+                                    "pattern": "shaper",
+                                    "material": "gold"
+                                },
+                                "minecraft:max_stack_size": 1,
+                                "minecraft:attribute_modifiers": [],
+                                "minecraft:unbreakable": {},
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "unbreakable",
+                                        "trim"
+                                    ]
+                                },
+                                "minecraft:item_name": {
+                                    "text": "",
+                                    "color": "white",
+                                    "extra": [
+                                        "Gold Greed"
+                                    ]
+                                },
+                                "minecraft:lore": [
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "extra": [
+                                            {
+                                                "text": ">>",
+                                                "color": "gray"
+                                            },
+                                            {
+                                                "text": "> ",
+                                                "color": "#72BD7A",
+                                                "bold": true
+                                            },
+                                            {
+                                                "text": "Ability",
+                                                "color": "#F5B055",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "gray",
+                                        "extra": [
+                                            "End of combat:"
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "white",
+                                        "extra": [
+                                            "Gain 50% additional ",
+                                            {
+                                                "text": "Money",
+                                                "color": "#F1DE61"
+                                            },
+                                            "."
+                                        ]
+                                    },
+                                    "",
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "extra": [
+                                            {
+                                                "text": ">>",
+                                                "color": "gray"
+                                            },
+                                            {
+                                                "text": "> ",
+                                                "color": "#72BD7A",
+                                                "bold": true
+                                            },
+                                            {
+                                                "text": "Details",
+                                                "color": "#3FA0E1",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "gray",
+                                        "extra": [
+                                            {
+                                                "text": "\u25cf ",
+                                                "color": "#72BD7A"
+                                            },
+                                            "\u1d05\u1d1c\u0280\u1d00\u0299\u026a\u029f\u026a\u1d1b\u028f : \u221e",
+                                            {
+                                                "font": "pc:default",
+                                                "text": "1",
+                                                "color": "white"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "gray",
+                                        "extra": [
+                                            {
+                                                "text": "\u25cf ",
+                                                "color": "#72BD7A"
+                                            },
+                                            "\u1d04\u1d00\u1d1b\u1d07\u0262\u1d0f\u0280\u028f : \u029c\u1d07\u1d00\u1d05"
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{pc:{category:\"head\",item:\"gold_greed\",game_item:1b}}"
+                        }
+                    ]
                 }
-              }
             ]
-          }
-        ]
-      }
+        }
     ]
 }

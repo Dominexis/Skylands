@@ -1,3 +1,3 @@
 
 # effect
-execute positioned ~-13.5 ~-100 ~-13.5 if entity @n[predicate=pc:object/ally,type=!player,dx=26,dy=200,dz=26] run return 1
+execute positioned ~-13.5 ~-100 ~-13.5 if entity @n[type=!minecraft:player,dx=26,dy=200,dz=26,predicate=pc:object/ally] run return 1

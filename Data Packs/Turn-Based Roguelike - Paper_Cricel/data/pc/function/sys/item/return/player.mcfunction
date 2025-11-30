@@ -1,6 +1,6 @@
 
 # Replace
-execute unless items entity @a[predicate=sl:player,tag=pc.temp,limit=1,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0] weapon.mainhand * run return run function pc:sys/item/return/replace
+execute unless items entity @a[x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0,tag=pc.temp,limit=1,predicate=sl:player] weapon.mainhand * run return run function pc:sys/item/return/replace
 
 # Give
 data modify entity @s Age set value -32768s

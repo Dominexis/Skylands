@@ -1,22 +1,38 @@
 {
-  "providers": [
-    {
-      "type": "bitmap",
-      "file": "pc:font/fx/debuff.png",
-      "ascent": 8, "height": 8,
-      "chars": ["1"]
-    },
-    {
-      "type": "bitmap",
-      "file": "pc:font/fx/buff.png",
-      "ascent": 8, "height": 8,
-      "chars": ["2"]
-    },
-    {
-      "type": "bitmap",
-      "file": "pc:font/fx/pause.png",
-      "ascent": 8, "height": 8,
-      "chars": ["3"]
-    }
-  ]
+    "providers": [
+        {
+            "type": "space",
+            "advances": {
+                " ": 4,
+                "\u200c": 0
+            }
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:font/fx/debuff.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": [
+                "1"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:font/fx/buff.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": [
+                "2"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:font/fx/pause.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": [
+                "3"
+            ]
+        }
+    ]
 }

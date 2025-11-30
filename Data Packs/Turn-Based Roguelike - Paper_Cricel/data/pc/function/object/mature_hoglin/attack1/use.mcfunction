@@ -9,4 +9,4 @@ function pc:sys/object/schedule/use {func:"function pc:object/mature_hoglin/atta
 function pc:sys/object/schedule/use {func:"function pc:object/mature_hoglin/attack1/2",delay:20}
 
 # fx
-playsound minecraft:item.trident.riptide_1 master @a[predicate=sl:player,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0] ~ ~ ~ 1 0
+playsound minecraft:item.trident.riptide_1 master @a[x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0,predicate=sl:player] ~ ~ ~ 1 0

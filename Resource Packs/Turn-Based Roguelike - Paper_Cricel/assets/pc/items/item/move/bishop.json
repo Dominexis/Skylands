@@ -1,6 +1,1 @@
-{
-    "model": {
-      "type": "minecraft:model",
-      "model": "pc:item/item/move/bishop"
-    }
-}
+{"model": {"type": "minecraft:model", "model": "pc:item/item/move/bishop"}, "oversized_in_gui": true}

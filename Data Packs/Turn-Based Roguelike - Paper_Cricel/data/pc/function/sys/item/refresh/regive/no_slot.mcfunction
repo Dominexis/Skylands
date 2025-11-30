@@ -1,2 +1,2 @@
 
-$item replace entity @s container.$(real_item_slot) from entity @n[type=item_display,tag=pc.item.refresh,distance=..0.1] contents
+$item replace entity @s container.$(real_item_slot) from entity @n[type=minecraft:item_display,distance=..0.1,tag=pc.item.refresh] contents

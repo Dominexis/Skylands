@@ -1,10 +1,10 @@
 {
     "function": "minecraft:set_components",
     "components": {
-      "minecraft:lock": {
-        "components": {
-          "minecraft:item_name": "Dev Item"
+        "minecraft:lock": {
+            "components": {
+                "minecraft:item_name": "Dev Item"
+            }
         }
-      }
     }
 }

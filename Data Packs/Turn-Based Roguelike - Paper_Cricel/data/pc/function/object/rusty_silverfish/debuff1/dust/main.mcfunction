@@ -9,5 +9,5 @@ execute if score #temp pc.main matches 0 run function pc:object/rusty_silverfish
 execute if score @s pc.duration matches 40.. run kill @s
 
 # fx
-particle dust{color:[0.780,0.545,0.282],scale:2} ~ ~ ~ 1 0.5 1 0 4 force
-particle angry_villager ~ ~ ~ 1 0.2 1 0 1 force
+particle minecraft:dust{color:[0.78,0.545,0.282],scale:2.0f} ~ ~ ~ 1 0.5 1 0 4 force
+particle minecraft:angry_villager ~ ~ ~ 1 0.2 1 0 1 force

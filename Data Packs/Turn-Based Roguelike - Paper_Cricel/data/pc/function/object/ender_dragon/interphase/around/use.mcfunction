@@ -1,5 +1,5 @@
 
-kill @e[type=marker,tag=pc.fx.ender_dragon.around,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0]
+kill @e[type=minecraft:marker,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0,tag=pc.fx.ender_dragon.around]
 function pc:object/ender_dragon/interphase/around/2
 function pc:object/ender_dragon/interphase/around/2
 function pc:object/ender_dragon/interphase/around/2

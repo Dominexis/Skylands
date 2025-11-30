@@ -13,14 +13,14 @@ trigger pc.trigger set 0
 
 clear @s
 gamemode adventure @s
-effect clear @s night_vision
+effect clear @s minecraft:night_vision
 attribute @s minecraft:scale base reset
-attribute @s minecraft:entity_interaction_range modifier remove no_interact
+attribute @s minecraft:entity_interaction_range modifier remove minecraft:no_interact
 function pc:sys/player/data/clear
 execute at @s run function sl:api/set_checkpoint
 
 # fx
 title @s times 0 0 20
-title @s title {text:"A",font:"sl:fade"}
-tellraw @s [{text:"* Your Journey Ends Here.",color: "gray"}]
+title @s title {text:"A",font:"sl:fade",type:"text"}
+tellraw @s [{text:"* Your Journey Ends Here.",color:"gray",type:"text"}]
 execute at @s run playsound minecraft:entity.evoker.cast_spell master @s ~ ~ ~ 1 1.25

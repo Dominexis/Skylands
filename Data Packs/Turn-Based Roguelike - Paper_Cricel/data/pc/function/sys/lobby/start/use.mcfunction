@@ -21,7 +21,7 @@ schedule function pc:sys/game/combat/time 1s
 
 function pc:sys/lobby/start/player
 function pc:sys/game/combat/end/return/use
-data modify entity @e[type=item_display,tag=pc.lobby.start,distance=..8,limit=1] CustomName set value [{text:"Start the Game",color: "dark_gray"}]
-data modify entity @e[type=text_display,tag=pc.lobby.start_info,distance=..8,limit=1] text set value [{text:"* The game has started *",color: "gray"}]
+data modify entity @e[type=minecraft:item_display,distance=..8,tag=pc.lobby.start,limit=1] CustomName set value {text:"Start the Game",color:"dark_gray"}
+data modify entity @e[type=minecraft:text_display,distance=..8,tag=pc.lobby.start_info,limit=1] text set value [{text:"* The game has started *",color:"gray",type:"text"}]
 
 schedule function pc:sys/lobby/start/2 2s replace

@@ -13,6 +13,6 @@ execute if entity @s[tag=pc.mob.ender_dragon.interphase] run return run function
 
 # Idle
 scoreboard players add @s pc.duration 1
-execute if score @s pc.duration matches ..20 run data merge entity @s {transformation: {translation: [0.0f, -0.4f, 0.0f]},start_interpolation:0,interpolation_duration:25}
-execute if score @s pc.duration matches 21.. run data merge entity @s {transformation: {translation: [0.0f, 0.0f, 0.0f]},start_interpolation:0,interpolation_duration:25}
+execute if score @s pc.duration matches ..20 run data merge entity @s {transformation:{translation:[0.0f,-0.4f,0.0f]},start_interpolation:0,interpolation_duration:25}
+execute if score @s pc.duration matches 21.. run data merge entity @s {transformation:{translation:[0.0f,0.0f,0.0f]},start_interpolation:0,interpolation_duration:25}
 execute if score @s pc.duration matches 40.. run scoreboard players reset @s pc.duration

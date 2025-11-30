@@ -8,4 +8,4 @@ function pc:sys/object/damage/atker
 function pc:sys/grid/select/clear
 
 # fx
-particle sweep_attack ~ ~1 ~ 0 0 0 0 0 force
+particle minecraft:sweep_attack ~ ~1 ~ 0 0 0 0 0 force

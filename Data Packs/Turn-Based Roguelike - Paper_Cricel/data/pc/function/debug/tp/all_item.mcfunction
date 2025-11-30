@@ -1,11 +1,11 @@
 
 # Player Only
 tp @s 2516 1 5548 -90 0
-tellraw @s [{text:"* Teleport you to Debug Platform!",color:"gray"}]
+tellraw @s [{text:"* Teleport you to Debug Platform!",color:"gray",type:"text"}]
 execute at @s run playsound minecraft:entity.enderman.teleport master @s
 
 # Item
-    # Armor & Move & Repair
+# Armor & Move & Repair
 loot replace block 2519 2 5548 container.0 loot pc:item/head/frenzied
 loot replace block 2519 2 5548 container.9 loot pc:item/head/gold_greed
 loot replace block 2519 2 5548 container.18 loot pc:item/head/min_passion
@@ -34,7 +34,7 @@ loot replace block 2519 2 5548 container.15 loot pc:item/repair/rugged
 loot replace block 2519 2 5548 container.16 loot pc:item/repair/teen
 loot replace block 2519 2 5548 container.17 loot pc:item/repair/wireless
 
-    # Skill
+# Skill
 loot replace block 2519 1 5548 container.0 loot pc:item/skill/attack_momentum
 loot replace block 2519 1 5548 container.1 loot pc:item/skill/bandage
 loot replace block 2519 1 5548 container.2 loot pc:item/skill/blazing_strike
