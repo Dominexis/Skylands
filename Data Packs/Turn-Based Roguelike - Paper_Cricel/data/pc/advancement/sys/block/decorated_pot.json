@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "pottery": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:decorated_pot"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "pc:sys/player/decorated_pot/use"
+  }
+}

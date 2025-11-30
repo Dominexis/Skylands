@@ -1,0 +1,12 @@
+{
+    "pc.intent.attack": "0",
+    "pc.intent.walk": "1",
+    "pc.intent.effect": "2",
+    "pc.intent.repair": "3",
+    
+    "pc.intent.attack+walk": "01",
+    "pc.intent.attack+effect": "02",
+    "pc.intent.walk+effect": "12",
+    
+    "pc.no_comma": "No Comma At Right!"
+}

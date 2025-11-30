@@ -1,0 +1,38 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "paper",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_data": "{pc:{item_name:{text:'Teen Repair'},category:'repair',item:'teen',tip:{strength:true},durability:2,energy:1,rc:true,game_item:true}}",
+                  "minecraft:item_model": "anvil","minecraft:max_stack_size": 1,"minecraft:consumable": {"consume_seconds": 94879487},
+                  "minecraft:lore": [
+                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Ability","color": "#f5b055","bold": true}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "Place a 8 "}, {"text": "HP", "color": "#f1de61"}, {"font": "pc:default", "text": "8", "color": "white"}, {"text": " Anvil. It takes"}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "2 rounds to repair 3 "}, {"text": "Durability", "color": "#f1de61"}, {"font": "pc:default", "text": "1", "color": "white"}, {"text": ","}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "apply the repairing player 2 "}, {"text": "Strength", "color": "#7abff1"}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "for each enemy within 1 block. Each"}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "enemy can only be trigger for once."}],
+                    "",
+                    [{"text": "", "italic": false, "color": "gray"}, {"text": "Every 2 turn:"}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "Restore 2 "}, {"text": "Durability", "color": "#f1de61"}, {"font": "pc:default", "text": "1", "color": "white"}, {"text": "."}],
+                    [{"text": "", "italic": false, "color": "gray"}, {"text": "● ", "color": "#72bd7a"}, {"text": "ᴛᴜʀɴ : ɴ/ᴀ"}],
+                    "",
+                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Details","color": "#3fa0e1","bold": true}],
+                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴅᴜʀᴀʙɪʟɪᴛʏ : 2"},{"font":"pc:default","text":"1","color": "white"}],
+                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴄᴀᴛᴇɢᴏʀʏ : ʀᴇᴘᴀɪʀ"}]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}

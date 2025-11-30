@@ -1,0 +1,30 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "paper",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_data": "{pc:{sys.shop:true,category:'shop/campfire',item:'epmax',game_item:true}}",
+                  "minecraft:item_model": "pc:shop/epmax",
+                  "minecraft:item_name": [{"text":"Energy Boost","color":"yellow"}],
+                  "minecraft:lore": [
+                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Ability","color": "#f5b055","bold": true}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "Increase 1 "}, {"text": "Max Energy", "color": "#f1de61"}, {"font": "pc:default", "text": "0", "color": "white"}, {"text": "."}],
+                    "",
+                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Details","color": "#3fa0e1","bold": true}],
+                    [{"text":"","italic": false,"color": "white"},{"text":"● ","color":"#72bd7a"},{"text":"ᴄᴀᴛᴇɢᴏʀʏ : ᴏᴘᴛɪᴏɴ","color":"gray"}]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}

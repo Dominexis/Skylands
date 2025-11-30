@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "rc": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": {
+          "slots": {"weapon.mainhand": {"predicates": {"minecraft:custom_data": "{pc:{rc:1b}}"}}},
+          "nbt": "{Tags:[pc.your_turn]}"
+        },
+        "item": {
+          "components": {
+            "minecraft:consumable": {
+              "consume_seconds": 94879487
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "pc:sys/player/rc/using"
+  }
+}

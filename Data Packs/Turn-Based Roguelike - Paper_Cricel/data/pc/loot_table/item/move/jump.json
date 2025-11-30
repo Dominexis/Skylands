@@ -1,0 +1,34 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "paper",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_data": "{pc:{item_name:{text:'Jump'},category:'move',item:'jump',durability:2,energy:2,tip:{critical_hit:true},rc:true,game_item:true}}",
+                  "minecraft:item_model": "minecraft:rabbit_foot","minecraft:max_stack_size": 1,"minecraft:consumable": {"consume_seconds": 94879487},
+                  "minecraft:lore": [
+                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Ability","color": "#f5b055","bold": true}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "Jump up to 4 blocks, ignoring walls and"}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "occupied blocks. Apply 1 "}, {"text": "Critical Hit", "color": "#7abff1"}, {"text": "."}],
+                    "",
+                    [{"text": "", "italic": false, "color": "gray"}, {"text": "Every turn:"}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "Restore 2 "}, {"text": "Durability", "color": "#f1de61"}, {"font": "pc:default", "text": "1", "color": "white"}, {"text": "."}],
+                    "",
+                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Details","color": "#3fa0e1","bold": true}],
+                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴅᴜʀᴀʙɪʟɪᴛʏ : 2"},{"font":"pc:default","text":"1","color": "white"}],
+                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴄᴀᴛᴇɢᴏʀʏ : ᴍᴏᴠᴇ"}]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}

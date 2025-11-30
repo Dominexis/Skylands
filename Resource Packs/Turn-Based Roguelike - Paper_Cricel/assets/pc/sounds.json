@@ -1,0 +1,13 @@
+{
+    "sword_pull_up": {"sounds": ["pc:sword_pull_up"]},
+    "buff": {"sounds": ["pc:buff"]},
+    "pinpoint_strike": {"sounds": ["pc:pinpoint_strike"]},
+    "magical_spike": {"sounds": ["pc:magical_spike"]},
+    "teleport": {"sounds": ["pc:teleport"]},
+    "electricity": {"sounds": ["pc:electricity"]},
+    "squeak": {"sounds": ["pc:squeak"]},
+    "shut_up": {"sounds": ["pc:shut_up"]},
+    "ender_dragon_roar": {"sounds": ["pc:ender_dragon_roar"]},
+    "nine_sols_parry": {"sounds": ["pc:nine_sols_parry"]},
+    "decorated_pot": {"sounds": ["pc:decorated_pot"]}
+}

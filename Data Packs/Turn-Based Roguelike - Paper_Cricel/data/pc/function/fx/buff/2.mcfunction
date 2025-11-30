@@ -1,0 +1,29 @@
+
+# effect
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3
+execute summon text_display run function pc:fx/buff/3

@@ -1,0 +1,14 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "pc:player/inplot"
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {"pc.player.inlobby": 1}
+      }
+    ]
+  }

@@ -1,0 +1,33 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "netherite_helmet",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_data": "{pc:{category:'head',item:'gold_greed',game_item:true}}",
+                  "minecraft:trim": {"pattern": "shaper","material": "gold"},
+                  "minecraft:max_stack_size": 1,"minecraft:attribute_modifiers": [],"unbreakable": {},"tooltip_display":{"hidden_components":["unbreakable","trim"]},
+                  "minecraft:item_name": [{"text":"","color":"white"},"Gold Greed"],
+                  "minecraft:lore": [
+                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Ability","color": "#f5b055","bold": true}],
+                    [{"text": "", "italic": false, "color": "gray"}, {"text": "End of combat:"}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "Gain 50% additional "}, {"text": "Money", "color": "#f1de61"}, {"text": "."}],
+                    "",
+                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Details","color": "#3fa0e1","bold": true}],
+                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴅᴜʀᴀʙɪʟɪᴛʏ : ∞"},{"font":"pc:default","text":"1","color": "white"}],
+                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴄᴀᴛᴇɢᴏʀʏ : ʜᴇᴀᴅ"}]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}

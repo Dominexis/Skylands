@@ -1,0 +1,5 @@
+
+# fx
+tellraw @a[predicate=pc:player/ingame,predicate=sl:player,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0] ["",{color:"gray",text:"* During combat, "},{color:"blue",text:"holding an item"},{color:"gray",text:" will show its "},{color:"yellow",text:"ability range"},{color:"gray",text:". To"}," ",{color:"yellow",text:"use it"},{color:"gray",text:","},{color:"yellow",text:" "},{color:"blue",text:"look at grid square"},{color:"gray",text:" and click "},{color:"white",text:"[",extra:[{keybind:"key.use"},"]"]},{color:"gray",text:"."},"\n\n",{color:"gray",text:"* To "},{color:"yellow",text:"check enemies' intent"},{color:"gray",text:", "},{color:"blue",text:"look at them"},{color:"gray",text:" and press "},{color:"white",text:"[",extra:[{keybind:"key.sneak"},"]"]},{color:"gray",text:"."}]
+
+playsound minecraft:block.amethyst_block.resonate master @a[predicate=pc:player/ingame,predicate=sl:player,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0] ~ ~ ~ 1 1.25 1

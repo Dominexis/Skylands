@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "pc:mob/ender_dragon",
+    "tints": [
+      {
+        "type": "minecraft:custom_model_data",
+        "default": 15921906
+      }
+    ]
+  }
+}

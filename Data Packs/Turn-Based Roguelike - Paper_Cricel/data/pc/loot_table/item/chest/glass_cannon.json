@@ -1,0 +1,36 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "golden_chestplate",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_data": "{pc:{category:'chest',item:'glass_cannon',game_item:true}}",
+                  "minecraft:trim": {"pattern": "sentry","material": "amethyst"},
+                  "minecraft:max_stack_size": 1,"minecraft:attribute_modifiers": [],"unbreakable": {},"tooltip_display":{"hidden_components":["unbreakable","trim"]},
+                  "minecraft:item_name": [{"text":"","color":"white"},"Glass Cannon"],
+                  "minecraft:lore": [
+                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Ability","color": "#f5b055","bold": true}],
+                    [{"text": "", "italic": false, "color": "gray"}, {"text": "On hurt:"}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "Takes 50% more damage."}],
+                    "",
+                    [{"text": "", "italic": false, "color": "gray"}, {"text": "On hit:"}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "Deals 50% more damage."}],
+                    "",
+                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Details","color": "#3fa0e1","bold": true}],
+                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴅᴜʀᴀʙɪʟɪᴛʏ : ∞"},{"font":"pc:default","text":"1","color": "white"}],
+                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴄᴀᴛᴇɢᴏʀʏ : ᴄʜᴇꜱᴛ"}]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}

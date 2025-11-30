@@ -1,0 +1,13 @@
+
+# ID
+$tag @e[predicate=pc:object/all_neutral,type=!player,tag=pc.sys.atker,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0] add pc.damage.$(id)
+$tag @e[predicate=pc:object/all_neutral,type=!player,tag=pc.damage.$(id),x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0] remove pc.sys.atker
+
+# Value
+$scoreboard players operation #damage.$(id) pc.main = #damage pc.main
+
+# Storage
+$execute if data storage pc:temp damage run data modify storage pc:temp damage_temp_$(id) set from storage pc:temp damage
+$execute unless data storage pc:temp damage run data modify storage pc:temp damage_temp_$(id) set value {}
+
+$data modify storage pc:temp passive_temp_$(id) set from storage pc:temp passive

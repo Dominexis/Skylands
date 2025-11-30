@@ -1,0 +1,35 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "leather_helmet",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_data": "{pc:{category:'head',item:'frenzied',game_item:true}}",
+                  "minecraft:dyed_color": 14166056,"minecraft:trim": {"pattern": "flow","material": "gold"},
+                  "minecraft:max_stack_size": 1,"minecraft:attribute_modifiers": [],"unbreakable": {},"tooltip_display":{"hidden_components":["unbreakable","trim","dyed_color"]},
+                  "minecraft:item_name": [{"text":"","color":"white"},"Frenzied"],
+                  "minecraft:lore": [
+                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Ability","color": "#f5b055","bold": true}],
+                    [{"text": "", "italic": false, "color": "gray"}, {"text": "Every 5th attack:"}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "Deal 100% more damage, gain 1 "}, {"text": "Energy", "color": "#f1de61"}, {"font": "pc:default", "text": "0", "color": "white"}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "and restore 1 "}, {"text": "Durability", "color": "#f1de61"}, {"font": "pc:default", "text": "1", "color": "white"}, {"text": " of the using item."}],
+                    [{"text": "", "italic": false, "color": "gray"}, {"text": "● ", "color": "#72bd7a"}, {"text": "ᴄᴏᴜɴᴛ : ɴ/ᴀ"}],
+                    "",
+                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Details","color": "#3fa0e1","bold": true}],
+                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴅᴜʀᴀʙɪʟɪᴛʏ : ∞"},{"font":"pc:default","text":"1","color": "white"}],
+                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴄᴀᴛᴇɢᴏʀʏ : ʜᴇᴀᴅ"}]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}

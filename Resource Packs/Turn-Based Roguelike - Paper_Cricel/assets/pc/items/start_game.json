@@ -1,0 +1,6 @@
+{
+    "model": {
+      "type": "minecraft:model",
+      "model": "pc:item/start_game"
+    }
+}

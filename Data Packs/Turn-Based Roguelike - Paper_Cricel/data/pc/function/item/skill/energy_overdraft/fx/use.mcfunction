@@ -1,0 +1,22 @@
+
+# effect
+function pc:item/skill/energy_overdraft/fx/2
+function pc:item/skill/energy_overdraft/fx/2
+function pc:item/skill/energy_overdraft/fx/2
+function pc:item/skill/energy_overdraft/fx/2
+function pc:item/skill/energy_overdraft/fx/2
+function pc:item/skill/energy_overdraft/fx/2
+function pc:item/skill/energy_overdraft/fx/2
+function pc:item/skill/energy_overdraft/fx/2
+function pc:item/skill/energy_overdraft/fx/2
+function pc:item/skill/energy_overdraft/fx/2
+function pc:item/skill/energy_overdraft/fx/2
+function pc:item/skill/energy_overdraft/fx/2
+function pc:item/skill/energy_overdraft/fx/2
+function pc:item/skill/energy_overdraft/fx/2
+function pc:item/skill/energy_overdraft/fx/2
+function pc:item/skill/energy_overdraft/fx/2
+function pc:item/skill/energy_overdraft/fx/2
+function pc:item/skill/energy_overdraft/fx/2
+function pc:item/skill/energy_overdraft/fx/2
+function pc:item/skill/energy_overdraft/fx/2

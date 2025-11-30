@@ -1,0 +1,35 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "paper",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_data": "{pc:{item_name:{text:'Minecart'},category:'move',item:'minecart',tip:{rail_area:true},durability:6,energy:2,rc:true,game_item:true}}",
+                  "minecraft:item_model": "minecart","minecraft:max_stack_size": 1,"minecraft:consumable": {"consume_seconds": 94879487},
+                  "minecraft:lore": [
+                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Ability","color": "#f5b055","bold": true}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "If you're not standing on "}, {"text": "Rail Area", "color": "#7abff1"}, {"text": ","}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "place 7 "}, {"text": "Rail Area", "color": "#7abff1"}, {"text": " on your current block."}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "Move 1 block or any block has "}, {"text": "Rail Area", "color": "#7abff1"}, {"text": "."}],
+                    "",
+                    [{"text": "", "italic": false, "color": "gray"}, {"text": "Every turn:"}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "Restore 3 "}, {"text": "Durability", "color": "#f1de61"}, {"font": "pc:default", "text": "1", "color": "white"}, {"text": "."}],
+                    "",
+                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Details","color": "#3fa0e1","bold": true}],
+                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴅᴜʀᴀʙɪʟɪᴛʏ : 6"},{"font":"pc:default","text":"1","color": "white"}],
+                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴄᴀᴛᴇɢᴏʀʏ : ᴍᴏᴠᴇ"}]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}

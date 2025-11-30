@@ -1,0 +1,30 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {"text": "● ","color": "#72bd7a","italic": false},
+        {"text": "ᴘʀɪᴄᴇ : ","color": "gray","italic": false},
+        {"score": {"objective": "pc.main","name": "#money"},"color": "gray","italic": false},
+        {"text": "4","color": "white","italic": false,"font": "pc:default"}
+      ]
+    ],
+    "mode": "append",
+    "conditions": [{"condition": "minecraft:value_check","value": {"type": "minecraft:score","target": {"type": "minecraft:fixed","name": "#money"},"score": "pc.main"},"range": {"max": {"type": "minecraft:score","target": {"type": "minecraft:fixed","name": "#cost"},"score": "pc.main"}}}]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {"text": "● ","color": "#72bd7a","italic": false},
+        {"text": "ᴘʀɪᴄᴇ : ","color": "red","italic": false},
+        {"score": {"objective": "pc.main","name": "#money"},"color": "red","italic": false},
+        {"text": "4","color": "white","italic": false,"font": "pc:default"}
+      ]
+    ],
+    "mode": "append",
+    "conditions": [{"condition": "minecraft:value_check","value": {"type": "minecraft:score","target": {"type": "minecraft:fixed","name": "#money"},"score": "pc.main"},"range": {"min": {"type": "minecraft:score","target": {"type": "minecraft:fixed","name": "#cost_unafford"},"score": "pc.main"}}}]
+  }
+]

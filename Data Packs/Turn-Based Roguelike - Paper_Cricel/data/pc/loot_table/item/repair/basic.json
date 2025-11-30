@@ -1,0 +1,34 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "paper",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_data": "{pc:{item_name:{text:'Repair'},category:'repair',item:'basic',durability:1,energy:1,rc:true,game_item:true}}",
+                  "minecraft:item_model": "anvil","minecraft:max_stack_size": 1,"minecraft:consumable": {"consume_seconds": 94879487},
+                  "minecraft:lore": [
+                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Ability","color": "#f5b055","bold": true}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "Place a 5 "}, {"text": "HP", "color": "#f1de61"}, {"font": "pc:default", "text": "8", "color": "white"}, {"text": " Anvil. It takes"}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "2 rounds to repair 3 "}, {"text": "Durability", "color": "#f1de61"}, {"font": "pc:default", "text": "1", "color": "white"}, {"text": "."}],
+                    "",
+                    [{"text": "", "italic": false, "color": "gray"}, {"text": "Every turn:"}],
+                    [{"text": "", "italic": false, "color": "white"}, {"text": "Restore 1 "}, {"text": "Durability", "color": "#f1de61"}, {"font": "pc:default", "text": "1", "color": "white"}, {"text": "."}],
+                    "",
+                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Details","color": "#3fa0e1","bold": true}],
+                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴅᴜʀᴀʙɪʟɪᴛʏ : 1"},{"font":"pc:default","text":"1","color": "white"}],
+                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴄᴀᴛᴇɢᴏʀʏ : ʀᴇᴘᴀɪʀ"}]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}

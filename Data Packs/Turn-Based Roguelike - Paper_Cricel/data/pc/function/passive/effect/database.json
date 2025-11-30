@@ -1,0 +1,177 @@
+{
+    "effect": [
+        {
+            "id": "weakness",
+            "icon": "\\u0001",
+            "name": "Weakness",
+            "description": "Target deals 25% less damage."
+        },
+        {
+            "id": "vulnerable",
+            "icon": "\\u0002",
+            "name": "Vulnerable",
+            "description": "Target takes 50% more damage."
+        },
+        {
+            "id": "regeneration",
+            "icon": "\\u0003",
+            "name": "Regeneration",
+            "description": "At the start of your turn, restore 1 HP."
+        },
+        {
+            "id": "critical_hit",
+            "icon": "\\u0004",
+            "name": "Critical Hit",
+            "description": "Target deals 50% more damage."
+        },
+        {
+            "id": "robust",
+            "icon": "\\u0005",
+            "name": "Robust",
+            "description": "Target takes 25% less damage."
+        },
+        {
+            "id": "revive",
+            "icon": "\\u0006",
+            "name": "Revive",
+            "description": "When taking fatal damage, restore to Max HP and refresh intent."
+        },
+        {
+            "id": "strength",
+            "icon": "\\u0007",
+            "name": "Strength",
+            "description": "Increases damage by X."
+        },
+        {
+            "id": "no_heal",
+            "icon": "\\u0008",
+            "name": "No Heal",
+            "description": "You cannot heal."
+        },
+        {
+            "id": "entangled",
+            "icon": "\\u0009",
+            "name": "Entangled",
+            "description": "Increases Move Item's Energy cost by 1."
+        },
+        {
+            "id": "poison",
+            "icon": "\\u0010",
+            "name": "Poison",
+            "description": "At the start of your turn, lose 1 HP."
+        },
+        {
+            "id": "rusty",
+            "icon": "\\u0011",
+            "name": "Rusty",
+            "description": "Double your Skill Item's Durability loss."
+        },
+        {
+            "id": "strength_down",
+            "icon": "\\u0012",
+            "name": "Strength Down",
+            "description": "Decrease your attack damage by X this turn."
+        },
+        {
+            "id": "oneuse_strength",
+            "icon": "\\u0013",
+            "name": "One-use Strength",
+            "description": "Increase your next attack damage by X."
+        },
+        {
+            "id": "stone_form",
+            "icon": "\\u0014",
+            "name": "Stone Form",
+            "description": "Reduces all damage taken to 0. Target will not have intent this turn."
+        },
+        {
+            "id": "erosion",
+            "icon": "\\u0015",
+            "name": "Erosion",
+            "description": "When taking fatal damage, turn into Stone Form for 2 turn, rallies 2 new silverfish, increases Max HP and attack count."
+        },
+        {
+            "id": "dragon_scale",
+            "icon": "\\u0016",
+            "name": "Dragon Scale",
+            "description": "Can only lose X more HP this turn."
+        }
+    ],
+    "power": [
+        {
+            "id": "frighten",
+            "icon": "\\u1001",
+            "name": "Frighten",
+            "description": "When taking more than 15 damage, randomly teleports 1 block and gains 1 Strength."
+        },
+        {
+            "id": "heal_overdose",
+            "icon": "\\u1002",
+            "name": "Heal Overdose",
+            "description": "At the start of your turn, evoke all Regeneration at once."
+        },
+        {
+            "id": "shield_buffer",
+            "icon": "\\u1003",
+            "name": "Shield Buffer",
+            "description": "Shield won't wears off at the start of your turn."
+        },
+        {
+            "id": "glass_cannon",
+            "icon": "\\u1004",
+            "name": "Glass Cannon",
+            "description": "Target takes 50% more damage and deals 50% more damage."
+        },
+        {
+            "id": "thorn",
+            "icon": "\\u1005",
+            "name": "Thorn",
+            "description": "On hurt, deal 4 damage back to the attacker."
+        },
+        {
+            "id": "undying_shell",
+            "icon": "\\u1006",
+            "name": "Undying Shell",
+            "description": "When taking fatal damage, revives after 5 rounds. Dies when the Boss is defeated."
+        },
+        {
+            "id": "enraged",
+            "icon": "\\u1007",
+            "name": "Enraged",
+            "description": "Any player summon an anvil, gains 1 Strength."
+        }
+    ],
+    "area_effect": [
+        {
+            "id": "fire_area",
+            "icon": "\\u2001",
+            "name": "Fire Area",
+            "description": "At the start of each turn, takes X*2 damage."
+        },
+        {
+            "id": "rail_area",
+            "icon": "\\u2002",
+            "name": "Rail Area",
+            "description": "Your Move Item's Energy cost is set to 0."
+        },
+        {
+            "id": "crimson_area",
+            "icon": "\\u2003",
+            "name": "Crimson Area",
+            "description": "When losing HP, gains 5 Shield and 5 Regeneration."
+        },
+        {
+            "id": "dragonbreath_area",
+            "icon": "\\u2004",
+            "name": "DragonBreath Area",
+            "description": "At the end of each turn, loses (your current energy * 2 + 1) health."
+        }
+    ],
+    "item_passive": [
+        {
+            "id": "shield",
+            "name": "Shield",
+            "description": "On hurt, lose Shield first."
+        }
+    ]
+}

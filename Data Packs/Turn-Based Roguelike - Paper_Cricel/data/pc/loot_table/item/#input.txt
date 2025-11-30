@@ -1,0 +1,7 @@
+Deal (2 + X) damage 3 times.
+
+$condition$On hurt:
+Deal (4 + X) damage to the attacker.
+If this item has Durability remaining,
+consume 1 Durability and increase X by 1.
+$branch$x : ɴ/ᴀ

@@ -1,0 +1,31 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "slots": {
+            "container.0": {
+              "count": {
+                "max": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "slots": {
+            "container.0": {
+              "predicates": {
+                "minecraft:custom_data": "{pc:{category:'move'}}"
+              }
+            }
+          }
+        }
+      }
+    ]
+}

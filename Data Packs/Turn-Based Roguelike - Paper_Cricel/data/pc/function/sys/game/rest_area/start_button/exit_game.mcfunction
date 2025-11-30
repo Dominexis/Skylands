@@ -1,0 +1,3 @@
+
+summon text_display ~ ~0.5 ~ {Tags:[pc.rest_area],CustomName: {color: "dark_gray", text: "Exit Game"}, CustomNameVisible: 1b, alignment: "center", background: 0, billboard: "vertical", brightness: {block: 0, sky: 15}, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, shadow_strength: 0.0f, text: {font: "pc:fx", text: "3"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [3.0f, 3.0f, 3.0f], translation: [-0.1f, -0.45f, 0.0f]}, view_range: 2.0f}
+summon interaction ~ ~0.25 ~ {Tags:[pc.rest_area,pc.sys.button],width:0.5,height:0.5,data:{command:'function pc:sys/lobby/end/use'}}
