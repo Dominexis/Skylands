@@ -1,0 +1,1 @@
+# Runs as and at the player when they reach a new checkpoint. Use this for any additional effects you want for when they reach a checkpoint.

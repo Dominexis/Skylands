@@ -1,0 +1,9 @@
+execute unless entity @e[tag=l1, tag=ORIGIN] at @n[tag=ISLE1] run summon marker ~-23 ~0 ~12 {Tags:["l1","ORIGIN"]}
+execute unless entity @e[tag=l2, tag=ORIGIN] at @n[tag=ISLE1] run summon marker ~-7 ~0 ~-5 {Tags:["l2","ORIGIN"]}
+execute unless entity @e[tag=l3, tag=ORIGIN] at @n[tag=ISLE1] run summon marker ~11 ~0 ~-1 {Tags:["l3","ORIGIN"]}
+execute unless entity @e[tag=l4, tag=ORIGIN] at @n[tag=ISLE2] run summon marker ~9 ~0 ~0 {Tags:["l4","ORIGIN"]}
+execute unless entity @e[tag=l5, tag=ORIGIN] at @n[tag=ISLE3] run summon marker ~-3 ~0 ~-12 {Tags:["l5","ORIGIN"]}
+execute unless entity @e[tag=l6, tag=ORIGIN] at @n[tag=ISLE4] run summon marker ~13 ~0 ~-22 {Tags:["l6","ORIGIN"]}
+execute unless entity @e[tag=l7, tag=ORIGIN] at @n[tag=ISLE4] run summon marker ~-17 ~-18 ~-2 {Tags:["l7","ORIGIN"]}
+execute unless entity @e[tag=l8, tag=ORIGIN] at @n[tag=ISLE5] run summon marker ~9 ~-31 ~3 {Tags:["l8","ORIGIN"]}
+execute unless entity @e[tag=l9, tag=ORIGIN] at @n[tag=ISLE5] run summon marker ~-15 ~-8 ~-3 {Tags:["l9","ORIGIN"]}

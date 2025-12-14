@@ -1,0 +1,12 @@
+ # runs a function for the current level of the player
+$execute at @e[type=marker, tag=CENTER] as @p[distance=..256] if score @s curr_level matches 0 run function epc:l0/$(function)
+$execute at @e[type=marker, tag=CENTER] as @p[distance=..256] if score @s curr_level matches 1 run function epc:l1/$(function)
+$execute at @e[type=marker, tag=CENTER] as @p[distance=..256] if score @s curr_level matches 2 run function epc:l2/$(function)
+$execute at @e[type=marker, tag=CENTER] as @p[distance=..256] if score @s curr_level matches 3 run function epc:l3/$(function)
+$execute at @e[type=marker, tag=CENTER] as @p[distance=..256] if score @s curr_level matches 4 run function epc:l4/$(function)
+$execute at @e[type=marker, tag=CENTER] as @p[distance=..256] if score @s curr_level matches 5 run function epc:l5/$(function)
+$execute at @e[type=marker, tag=CENTER] as @p[distance=..256] if score @s curr_level matches 6 run function epc:l6/$(function)
+$execute at @e[type=marker, tag=CENTER] as @p[distance=..256] if score @s curr_level matches 7 run function epc:l7/$(function)
+$execute at @e[type=marker, tag=CENTER] as @p[distance=..256] if score @s curr_level matches 8 run function epc:l8/$(function)
+$execute at @e[type=marker, tag=CENTER] as @p[distance=..256] if score @s curr_level matches 9 run function epc:l9/$(function)
+$execute at @e[type=marker, tag=CENTER] as @p[distance=..256] if score @s curr_level matches 10.. run function epc:$(function)
