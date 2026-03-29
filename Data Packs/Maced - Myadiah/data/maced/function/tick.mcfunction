@@ -18,5 +18,5 @@ execute positioned 5888 64 -3328 if block 5781 73 -3328 #minecraft:buttons[power
 execute positioned 5888 64 -3328 if block 5781 73 -3328 #minecraft:buttons[powered=true] run setblock 5781 73 -3328 minecraft:polished_blackstone_button[face=floor,facing=west]
 
 execute positioned 5888 64 -3328 if block 5970 80 -3328 #minecraft:buttons[powered=true] run tp @a[distance=..250,tag=maced.in_game,team=sl.player] 5888 65 -3328 0 0
-execute positioned 5888 64 -3328 if block 5970 80 -3328 #minecraft:buttons[powered=true] run setblock 5970 80 -3328 minecraft:polished_blackstone_button[face=floor,facing=east]
 execute positioned 5888 64 -3328 if block 5970 80 -3328 #minecraft:buttons[powered=true] run fill 5887 65 -3324 5889 65 -3319 minecraft:spruce_slab[type=bottom]
+execute positioned 5888 64 -3328 if block 5970 80 -3328 #minecraft:buttons[powered=true] run setblock 5970 80 -3328 minecraft:polished_blackstone_button[face=floor,facing=east]
