@@ -236,6 +236,30 @@
             "pvp": false,
             "max_players": 1,
             "weight": "medium"
+        },
+
+        {
+            "name": "Sci-fi Outpost",
+            "namespace": "futuristic",
+            "description": "Fun Parkour spread out amongst a futuristic cityscape.",
+            "authors": [
+                "MegaMinerDL",
+                "elscreato"
+            ],
+            "icon": {
+                "id": "minecraft:purpur_block"
+            },
+            "spawn": "-3381 70 4882 -180 0",
+            "collectibles": [
+                "-3355 160 4860"
+            ],
+            "required_chunks": [],
+            "regions": [],
+            "genre": "parkour",
+            "difficulty": "difficult",
+            "pvp": false,
+            "max_players": 0,
+            "weight": "light"
         }
     ]
 }

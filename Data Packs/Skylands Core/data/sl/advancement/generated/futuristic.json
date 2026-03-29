@@ -1,0 +1,34 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:purpur_block"
+        },
+        "title": [
+            {
+                "text": "Sci-fi Outpost"
+            }
+        ],
+        "frame": "goal",
+        "description": [
+            [
+                {
+                    "text": "Fun Parkour spread out amongst a futuristic cityscape.",
+                    "color": "green"
+                },
+                {
+                    "text": "\n\nMegaMinerDL, elscreato",
+                    "color": "gold"
+                }
+            ]
+        ],
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "parent": "sl:genre/difficult_parkour",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
