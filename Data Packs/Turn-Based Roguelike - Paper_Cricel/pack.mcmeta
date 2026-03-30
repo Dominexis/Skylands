@@ -1,7 +1,6 @@
 {
     "pack": {
-        "description": "VitreArena Data Pack",
-        "min_format": 88,
-        "max_format": 88
+        "pack_format": 71,
+        "description": "VitreArena Data Pack"
     }
 }

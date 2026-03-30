@@ -1,2 +1,2 @@
 
-summon minecraft:marker ~ ~1 ~ {Tags:["pc.fx.panic_strike"]}
+summon marker ~ ~1 ~ {Tags:[pc.fx.panic_strike]}

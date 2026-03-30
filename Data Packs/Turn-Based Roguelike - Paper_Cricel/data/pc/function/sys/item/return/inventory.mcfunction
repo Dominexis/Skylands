@@ -1,6 +1,6 @@
 
 # effect
-setblock ~ -64 ~ minecraft:shulker_box
+setblock ~ -64 ~ shulker_box
 function pc:sys/player/data/load
 data modify storage pc:temp inventory set from storage pc:data root.inventory
 
@@ -34,15 +34,24 @@ item replace entity @s container.25 from block ~ -64 ~ container.25
 item replace entity @s container.26 from block ~ -64 ~ container.26
 
 data remove block ~ -64 ~ Items
-data modify storage pc:temp inventory.container[{Slot:27b}].Slot set value 0b
-data modify storage pc:temp inventory.container[{Slot:28b}].Slot set value 1b
-data modify storage pc:temp inventory.container[{Slot:29b}].Slot set value 2b
-data modify storage pc:temp inventory.container[{Slot:30b}].Slot set value 3b
-data modify storage pc:temp inventory.container[{Slot:31b}].Slot set value 4b
-data modify storage pc:temp inventory.container[{Slot:32b}].Slot set value 5b
-data modify storage pc:temp inventory.container[{Slot:33b}].Slot set value 6b
-data modify storage pc:temp inventory.container[{Slot:34b}].Slot set value 7b
-data modify storage pc:temp inventory.container[{Slot:35b}].Slot set value 8b
+data remove storage pc:temp inventory.container[{Slot:0b}]
+data remove storage pc:temp inventory.container[{Slot:1b}]
+data remove storage pc:temp inventory.container[{Slot:2b}]
+data remove storage pc:temp inventory.container[{Slot:3b}]
+data remove storage pc:temp inventory.container[{Slot:4b}]
+data remove storage pc:temp inventory.container[{Slot:5b}]
+data remove storage pc:temp inventory.container[{Slot:6b}]
+data remove storage pc:temp inventory.container[{Slot:7b}]
+data remove storage pc:temp inventory.container[{Slot:8b}]
+execute if data storage pc:temp inventory.container[{Slot:27b}] run data modify storage pc:temp inventory.container[{Slot:27b}].Slot set value 0b
+execute if data storage pc:temp inventory.container[{Slot:28b}] run data modify storage pc:temp inventory.container[{Slot:28b}].Slot set value 1b
+execute if data storage pc:temp inventory.container[{Slot:29b}] run data modify storage pc:temp inventory.container[{Slot:29b}].Slot set value 2b
+execute if data storage pc:temp inventory.container[{Slot:30b}] run data modify storage pc:temp inventory.container[{Slot:30b}].Slot set value 3b
+execute if data storage pc:temp inventory.container[{Slot:31b}] run data modify storage pc:temp inventory.container[{Slot:31b}].Slot set value 4b
+execute if data storage pc:temp inventory.container[{Slot:32b}] run data modify storage pc:temp inventory.container[{Slot:32b}].Slot set value 5b
+execute if data storage pc:temp inventory.container[{Slot:33b}] run data modify storage pc:temp inventory.container[{Slot:33b}].Slot set value 6b
+execute if data storage pc:temp inventory.container[{Slot:34b}] run data modify storage pc:temp inventory.container[{Slot:34b}].Slot set value 7b
+execute if data storage pc:temp inventory.container[{Slot:35b}] run data modify storage pc:temp inventory.container[{Slot:35b}].Slot set value 8b
 
 data modify block ~ -64 ~ Items set from storage pc:temp inventory.container
 item replace entity @s container.27 from block ~ -64 ~ container.0
@@ -66,6 +75,6 @@ execute if data storage pc:temp inventory.equipment.feet run item replace entity
 data modify block ~ -64 ~ Items append from storage pc:temp inventory.equipment.offhand
 execute if data storage pc:temp inventory.equipment.offhand run item replace entity @s weapon.offhand from block ~ -64 ~ container.0
 
-# Reset
+    # Reset
 data remove storage pc:temp inventory
-setblock ~ -64 ~ minecraft:air
+setblock ~ -64 ~ air

@@ -8,4 +8,4 @@ function pc:sys/object/damage/atker
 function pc:sys/grid/select/clear
 
 # fx
-particle minecraft:gust ~ ~1 ~
+particle gust ~ ~1 ~
