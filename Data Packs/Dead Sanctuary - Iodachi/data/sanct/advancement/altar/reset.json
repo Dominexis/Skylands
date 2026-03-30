@@ -1,0 +1,42 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "pickup": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#altar_requires_reset"
+                            },
+                            "score": "sanct.numbers"
+                        },
+                        "range": 1
+                    }
+                ],
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:custom_data": {
+                                "rune": {
+                                    "void": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:plot/altar/reset"
+    }
+}

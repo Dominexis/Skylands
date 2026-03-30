@@ -1,0 +1,2 @@
+execute at @e[x=-2352,y=48,z=2256,dx=94,dy=62,dz=94,type=minecraft:vindicator,tag=sanct.hit_invulnerable] as @e[x=-2384,y=-16,z=2224,dx=158,dy=158,dz=158,type=minecraft:bat] if score @s sanct.id = @e[type=minecraft:vindicator,distance=0,limit=1] sanct.id run function sanct:mob/vampire/form/teleport_bats_apply
+tag @e[x=-2352,y=48,z=2256,dx=94,dy=62,dz=94,type=minecraft:vindicator,tag=sanct.hit_invulnerable] remove sanct.hit_invulnerable

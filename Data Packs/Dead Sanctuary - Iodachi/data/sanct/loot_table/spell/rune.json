@@ -1,0 +1,140 @@
+{
+    "type": "minecraft:command",
+    "pools": [{
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:blade_pottery_sherd",
+                "functions": [{
+                    "function": "minecraft:set_components",
+                    "components": {
+                        "minecraft:max_stack_size": 1,
+                        "minecraft:enchantment_glint_override": false,
+                        "minecraft:enchantments": {
+                            "minecraft:channeling": 1
+                        },
+                        "minecraft:tooltip_display": {
+                            "hidden_components": [
+                                "minecraft:enchantments"
+                            ]
+                        },
+                        "minecraft:item_name": "§3Rune §f(Air)",
+                        "minecraft:item_model": "minecraft:flow_armor_trim_smithing_template",
+                        "minecraft:custom_data": {
+                            "rune": {
+                                "air": true
+                            }
+                        },
+                        "minecraft:lore": [
+                            "",
+                            "§7When in Inventory:",
+                            "§9+1 Attack Damage",
+                            "§9+1.5 Attack Speed",
+                            "§9+Knockback Immunity"
+                        ]
+                    }
+                }]
+            },
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:blade_pottery_sherd",
+                "functions": [{
+                    "function": "minecraft:set_components",
+                    "components": {
+                        "minecraft:max_stack_size": 1,
+                        "minecraft:enchantment_glint_override": false,
+                        "minecraft:enchantments": {
+                            "minecraft:channeling": 1
+                        },
+                        "minecraft:tooltip_display": {
+                            "hidden_components": [
+                                "minecraft:enchantments"
+                            ]
+                        },
+                        "minecraft:item_name": "§3Rune §2(Earth)",
+                        "minecraft:item_model": "minecraft:wild_armor_trim_smithing_template",
+                        "minecraft:custom_data": {
+                            "rune": {
+                                "earth": true
+                            }
+                        },
+                        "minecraft:lore": [
+                            "",
+                            "§7When in Inventory:",
+                            "§9+1 Attack Damage",
+                            "§9+5 Armor",
+                            "§9+2 Armor Toughness"
+                        ]
+                    }
+                }]
+            },
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:blade_pottery_sherd",
+                "functions": [{
+                    "function": "minecraft:set_components",
+                    "components": {
+                        "minecraft:max_stack_size": 1,
+                        "minecraft:enchantment_glint_override": false,
+                        "minecraft:enchantments": {
+                            "minecraft:channeling": 1
+                        },
+                        "minecraft:tooltip_display": {
+                            "hidden_components": [
+                                "minecraft:enchantments"
+                            ]
+                        },
+                        "minecraft:item_name": "§3Rune §6(Fire)",
+                        "minecraft:item_model": "minecraft:bolt_armor_trim_smithing_template",
+                        "minecraft:custom_data": {
+                            "rune": {
+                                "fire": true
+                            }
+                        },
+                        "minecraft:lore": [
+                            "",
+                            "§7When in Inventory:",
+                            "§9+2.5 Attack Damage",
+                            "§9+10% Attack Reach"
+                        ]
+                    }
+                }]
+            },
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:blade_pottery_sherd",
+                "functions": [{
+                    "function": "minecraft:set_components",
+                    "components": {
+                        "minecraft:max_stack_size": 1,
+                        "minecraft:enchantment_glint_override": false,
+                        "minecraft:enchantments": {
+                            "minecraft:channeling": 1
+                        },
+                        "minecraft:tooltip_display": {
+                            "hidden_components": [
+                                "minecraft:enchantments"
+                            ]
+                        },
+                        "minecraft:item_name": "§3Rune §b(Water)",
+                        "minecraft:item_model": "minecraft:tide_armor_trim_smithing_template",
+                        "minecraft:custom_data": {
+                            "rune": {
+                                "water": true
+                            }
+                        },
+                        "minecraft:lore": [
+                            "",
+                            "§7When in Inventory:",
+                            "§9+1 Attack Damage",
+                            "§9+1 Jump Height",
+                            "§9+0.5 Step Height",
+                            "§9+Fall Damage Immunity"
+                        ]
+                    }
+                }]
+            }
+        ]
+    }]
+}

@@ -1,0 +1,373 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "sanct:material/flesh"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:splash_potion",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:strong_swiftness"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:raw_copper",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:max_stack_size": 99,
+                                "minecraft:use_cooldown": {
+                                    "seconds": 10,
+                                    "cooldown_group": "sanct:pill_health"
+                                },
+                                "minecraft:potion_contents": {
+                                    "potion": "minecraft:healing"
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 0.15,
+                                    "animation": "drink",
+                                    "has_consume_particles": false,
+                                    "sound": "entity.generic.drink"
+                                },
+                                "minecraft:item_name": "Health Brew",
+                                "minecraft:item_model": "minecraft:potion"
+                            }
+                        }
+                    ]
+                },
+
+
+
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_apple",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:max_stack_size": 99
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:raw_iron",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type_specific": {
+                                    "type": "minecraft:player",
+                                    "advancements": {
+                                        "sanct:tags": {
+                                            "totem": false
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_name": "Potion of Strength",
+                                "minecraft:item_model": "minecraft:potion",
+                                "minecraft:max_stack_size": 1,
+                                "minecraft:potion_contents": {
+                                    "custom_effects": [{
+                                        "id": "minecraft:strength",
+                                        "duration": 1800
+                                    }]
+                                },
+                                "minecraft:consumable": {
+                                    "animation": "drink",
+                                    "has_consume_particles": false,
+                                    "sound": "entity.generic.drink"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:blade_pottery_sherd",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": {
+                                "rune": {}
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "mode": "replace_all",
+                            "lore": [
+                                "§7§oCraft with §f1 Bone§3§7§o to upgrade.",
+                                "",
+                                "§7When in Inventory:",
+                                "§9+0.5 Attack Damage"
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_name": "§3Rune",
+                                "minecraft:max_stack_size": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:crossbow",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_name": "Firework Launcher",
+                                "minecraft:damage": 464,
+                                "minecraft:charged_projectiles": [{
+                                    "id": "minecraft:firework_rocket",
+                                    "components": {
+                                        "minecraft:fireworks": {
+                                            "flight_duration": 3,
+                                            "explosions": [
+                                                {
+                                                    "shape":"small_ball",
+                                                    "colors":[12582938]
+                                                },{
+                                                    "shape":"small_ball",
+                                                    "colors":[14670554]
+                                                },{
+                                                    "shape":"small_ball",
+                                                    "colors":[15466496]
+                                                },{
+                                                    "shape":"small_ball",
+                                                    "colors":[1445947]
+                                                },{
+                                                    "shape":"small_ball",
+                                                    "colors":[16777215]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }]
+                            }
+                        }
+                    ]
+                },
+
+
+
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "sanct:material/bone"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "sanct:spell/rune",
+                    "weight": 2
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_golden_apple",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:max_stack_size": 99,
+                                "minecraft:food": {
+                                    "nutrition":20,
+                                    "saturation":9.6,
+                                    "can_always_eat":true
+                                },
+                                "minecraft:consumable": {
+                                    "on_consume_effects": [
+                                        {
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:absorption",
+                                                    "duration": 2400,
+                                                    "amplifier": 3
+                                                },
+                                                {
+                                                    "id": "minecraft:regeneration",
+                                                    "duration": 400,
+                                                    "amplifier": 1
+                                                },
+                                                {
+                                                        "id": "minecraft:resistance",
+                                                        "duration": 6000
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:trial_key",
+                    "functions": [{
+                        "function": "minecraft:set_components",
+                        "components": {
+                            "minecraft:item_name": "Slot Key",
+                            "minecraft:lore": [
+                                "§8§o§mUse to unlock 1 inventory.",
+                                "§7§oUse to get 1 random item.",
+                                "",
+                                "§9Modified by:",
+                                " §9⋅ §4§lDIMENSION BREAK"
+                            ],
+                            "minecraft:consumable": {
+                                "animation": "brush",
+                                "consume_seconds": 0.5,
+                                "has_consume_particles": false,
+                                "sound": "minecraft:block.metal.step"
+                            },
+                            "minecraft:max_stack_size": 1,
+                            "minecraft:custom_data": {
+                                "inventory_item": {
+                                    "empty_inventory": true
+                                }
+                            }
+                        }
+                    }]
+                },
+                {
+                    "type": "minecraft:alternatives",
+                    "conditions": [{
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:score",
+                                "target": {
+                                    "type": "minecraft:fixed",
+                                    "name": "#weapon_sweeping_introduce"
+                                },
+                                "score": "sanct.numbers"
+                            },
+                            "range": {
+                                "min": 1
+                            }
+                        }
+                    }],
+                    "children": [
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:diamond_sword",
+                            "conditions": [{
+                                "condition": "minecraft:value_check",
+                                "value": {
+                                    "type": "minecraft:uniform",
+                                    "min": 0,
+                                    "max": 1
+                                },
+                                "range": 0
+                            }],
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_components",
+                                    "components": {
+                                        "minecraft:item_name": "Diamond Sword",
+                                        "minecraft:damage": 1532
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:diamond_axe",
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_components",
+                                    "components": {
+                                        "minecraft:item_name": "Diamond Axe",
+                                        "minecraft:damage": 1515
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+
+
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:clock",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_name": "§aRewinding Clock",
+                                "minecraft:consumable": {
+                                    "animation": "spear",
+                                    "has_consume_particles": false,
+                                    "sound": "minecraft:block.note_block.chime",
+                                    "on_consume_effects": [
+                                        {
+                                            "type": "minecraft:play_sound",
+                                            "sound": "minecraft:block.glass.break"
+                                        }
+                                    ]
+                                },
+                                "minecraft:custom_data": {
+                                    "item_respawn": true
+                                },
+                                "minecraft:max_stack_size": 99,
+                                "minecraft:lore": [
+                                    "§9Respawn Items",
+                                    "§9Restore Hunger",
+                                    "§9Regenerate Health"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "sanct:spell/empty_inventory/armor",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "sanct:spell/empty_inventory/food",
+                    "weight": 2,
+                    "conditions": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type_specific": {
+                                    "type": "minecraft:player",
+                                    "advancements": {
+                                        "sanct:tags": {
+                                            "saturation": false
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

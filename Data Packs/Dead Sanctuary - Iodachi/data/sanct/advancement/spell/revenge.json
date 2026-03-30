@@ -1,0 +1,47 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "level1": {"trigger": "minecraft:impossible"},
+        "level2": {"trigger": "minecraft:impossible"},
+        "level3": {"trigger": "minecraft:impossible"},
+        "level4": {"trigger": "minecraft:impossible"},
+
+        "damage": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "sanct:spell/revenge": {
+                                        "level1": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "taken": {
+                        "min": 0.5
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["level1","level2","level3","level4"],
+        ["damage"]
+    ],
+    "rewards": {
+        "function": "sanct:spell/buff/revenge/effect/activate"
+    }
+}

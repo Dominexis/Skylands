@@ -1,0 +1,10 @@
+{
+    "values": [
+        "minecraft:zombie",
+        "minecraft:skeleton",
+        "minecraft:skeleton_horse",
+        "minecraft:silverfish",
+        "minecraft:vindicator",
+        "minecraft:pillager"
+    ]
+}

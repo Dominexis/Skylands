@@ -1,0 +1,24 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "reload": {
+            "trigger": "minecraft:shot_crossbow",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "horse_crossbow": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:spell/alchemy/horse_crossbow/shoot"
+    }
+}

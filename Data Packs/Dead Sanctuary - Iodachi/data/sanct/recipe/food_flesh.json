@@ -1,0 +1,58 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": ["minecraft:bread","minecraft:rotten_flesh"],
+    "result": {
+        "id": "minecraft:wooden_axe",
+        "components": {
+            "minecraft:item_name": "Sandwich",
+            "minecraft:item_model": "sanct:food_flesh",
+            "minecraft:attribute_modifiers": [
+                {
+                    "id": "sanct:food_flesh_upgrade",
+                    "type": "minecraft:attack_damage",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                },
+                {
+                    "id": "sanct:food_flesh_upgrade",
+                    "type": "minecraft:attack_speed",
+                    "amount": -3,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                }
+            ],
+            "minecraft:tooltip_display": {
+                "hidden_components": [
+                    "minecraft:attribute_modifiers"
+                ]
+            },
+            "minecraft:lore": [
+                "§9Saturation",
+                "",
+                "§7When in Main Hand:",
+                " §23 Attack Damage",
+                " §21 Attack Speed"
+            ],
+            "minecraft:consumable": {
+                "on_consume_effects": [
+                    {
+                        "type": "minecraft:apply_effects",
+                        "effects": [
+                            {
+                                "id": "minecraft:saturation",
+                                "duration": 7
+                            }
+                        ]
+                    }
+                ]
+            },
+            "minecraft:food": {
+                "nutrition": 5,
+                "saturation": 6
+            },
+            "!minecraft:max_damage": {},
+            "minecraft:max_stack_size": 99
+        }
+    }
+}

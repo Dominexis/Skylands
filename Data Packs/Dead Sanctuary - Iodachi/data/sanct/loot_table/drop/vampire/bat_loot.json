@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [{
+                "type": "minecraft:loot_table",
+                "value": "sanct:material/flesh"
+            }]
+        },
+        {
+            "rolls": 1,
+            "entries": [{
+                "type": "minecraft:loot_table",
+                "value": "sanct:drop/weapon_harvest_flesh"
+            }]
+        }
+    ]
+}

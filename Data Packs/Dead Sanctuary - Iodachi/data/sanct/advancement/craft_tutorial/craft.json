@@ -1,0 +1,19 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "started": {"trigger": "minecraft:impossible"},
+        "weapon_sweeping_bone": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "recipe_id": "sanct:weapon_sweeping/bone"
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:inventory/craft_tutorial/craft"
+    }
+}

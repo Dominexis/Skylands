@@ -1,0 +1,266 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "diamond": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "armor.chest": {
+                                    "items": "minecraft:diamond_chestplate",
+                                    "predicates": {
+                                        "minecraft:damage": {
+                                            "damage": {
+                                                "min": 1
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "gamemode": ["adventure","survival"]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:any_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "slots": {
+                                        "hotbar.*": {
+                                            "items": "#sanct:zombie_armor_repair/diamond/chestplate"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "slots": {
+                                        "inventory.*": {
+                                            "items": "#sanct:zombie_armor_repair/diamond/chestplate"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "items": [{
+                    "items": "#sanct:zombie_armor_repair/diamond/chestplate"
+                }]
+            }
+        },
+
+        "iron": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "armor.chest": {
+                                    "items": "minecraft:iron_chestplate",
+                                    "predicates": {
+                                        "minecraft:damage": {
+                                            "damage": {
+                                                "min": 1
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "gamemode": ["adventure","survival"]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:any_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "slots": {
+                                        "hotbar.*": {
+                                            "items": "#sanct:zombie_armor_repair/iron/chestplate"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "slots": {
+                                        "inventory.*": {
+                                            "items": "#sanct:zombie_armor_repair/iron/chestplate"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "items": [{
+                    "items": "#sanct:zombie_armor_repair/iron/chestplate"
+                }]
+            }
+        },
+
+        "chainmail": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "armor.chest": {
+                                    "items": "minecraft:chainmail_chestplate",
+                                    "predicates": {
+                                        "minecraft:damage": {
+                                            "damage": {
+                                                "min": 1
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "gamemode": ["adventure","survival"]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:any_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "slots": {
+                                        "hotbar.*": {
+                                            "items": "#sanct:zombie_armor_repair/chainmail/chestplate"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "slots": {
+                                        "inventory.*": {
+                                            "items": "#sanct:zombie_armor_repair/chainmail/chestplate"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "items": [{
+                    "items": "#sanct:zombie_armor_repair/chainmail/chestplate"
+                }]
+            }
+        },
+
+        "leather": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "armor.chest": {
+                                    "items": "minecraft:leather_chestplate",
+                                    "predicates": {
+                                        "minecraft:damage": {
+                                            "damage": {
+                                                "min": 1
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "gamemode": ["adventure","survival"]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:any_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "slots": {
+                                        "hotbar.*": {
+                                            "items": "minecraft:leather_chestplate"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "slots": {
+                                        "inventory.*": {
+                                            "items": "minecraft:leather_chestplate"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "items": [{
+                    "items": "minecraft:leather_chestplate"
+                }]
+            }
+        }
+    },
+    "requirements": [
+        ["chainmail","diamond","iron","leather"]
+    ],
+    "rewards": {
+        "function": "sanct:spell/ritual/zombie_armor/repair/chestplate"
+    }
+}

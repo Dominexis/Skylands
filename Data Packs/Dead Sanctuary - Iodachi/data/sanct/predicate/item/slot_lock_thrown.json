@@ -1,0 +1,16 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "slots": {
+            "contents": {
+                "items": "minecraft:skull_pottery_sherd",
+                "predicates": {
+                    "minecraft:custom_data": {
+                        "slot_lock": {}
+                    }
+                }
+            }
+        }
+    }
+}

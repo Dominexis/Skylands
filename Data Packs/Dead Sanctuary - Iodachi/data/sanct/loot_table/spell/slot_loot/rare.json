@@ -1,0 +1,217 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "sanct:material/bone",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "sanct:spell/rune",
+                    "weight": 2
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "sanct:spell/slot_loot/armor_upgrade",
+                    "weight": 3,
+                    "conditions": [{
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#zombie_armor"
+                            },
+                            "score": "sanct.numbers"
+                        },
+                        "range": {
+                            "max": 3
+                        }
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_golden_apple",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:max_stack_size": 99,
+                                "minecraft:food": {
+                                    "nutrition":20,
+                                    "saturation":9.6,
+                                    "can_always_eat":true
+                                },
+                                "minecraft:consumable": {
+                                    "on_consume_effects": [
+                                        {
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:absorption",
+                                                    "duration": 2400,
+                                                    "amplifier": 3
+                                                },
+                                                {
+                                                    "id": "minecraft:regeneration",
+                                                    "duration": 400,
+                                                    "amplifier": 1
+                                                },
+                                                {
+                                                        "id": "minecraft:resistance",
+                                                        "duration": 6000
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:trial_key",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_name": "Slot Key",
+                                "minecraft:consumable": {
+                                    "animation": "brush",
+                                    "consume_seconds": 0.5,
+                                    "has_consume_particles": false,
+                                    "sound": "minecraft:block.metal.step"
+                                },
+                                "minecraft:max_stack_size": 1
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_data": {
+                                    "inventory_item": {
+                                        "empty_inventory": false
+                                    }
+                                },
+                                "minecraft:lore": [
+                                    "§7§oUse to unlock 1 inventory."
+                                ]
+                            },
+                            "conditions": [{
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "type_specific": {
+                                        "type": "minecraft:player",
+                                        "advancements": {
+                                            "sanct:tags": {
+                                                "empty_inventory": false
+                                            }
+                                        }
+                                    }
+                                }
+                            }]
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_data": {
+                                    "inventory_item": {
+                                        "empty_inventory": false
+                                    }
+                                },
+                                "minecraft:lore": [
+                                    "§8§o§mUse to unlock 1 inventory.",
+                                    "§7§oUse to get 1 random item.",
+                                    "",
+                                    "§9Modified by:",
+                                    " §9⋅ §4§lDIMENSION BREAK"
+                                ]
+                            },
+                            "conditions": [{
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "type_specific": {
+                                        "type": "minecraft:player",
+                                        "advancements": {
+                                            "sanct:tags": {
+                                                "empty_inventory": true
+                                            }
+                                        }
+                                    }
+                                }
+                            }]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:alternatives",
+                    "conditions": [{
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:score",
+                                "target": {
+                                    "type": "minecraft:fixed",
+                                    "name": "#weapon_sweeping_introduce"
+                                },
+                                "score": "sanct.numbers"
+                            },
+                            "range": {
+                                "min": 1
+                            }
+                        }
+                    }],
+                    "children": [
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:diamond_sword",
+                            "weight": 2,
+                            "conditions": [{
+                                "condition": "minecraft:value_check",
+                                "value": {
+                                    "type": "minecraft:uniform",
+                                    "min": 0,
+                                    "max": 1
+                                },
+                                "range": 0
+                            }],
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_components",
+                                    "components": {
+                                        "minecraft:item_name": "Diamond Sword",
+                                        "minecraft:damage": 1532
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:diamond_axe",
+                            "weight": 2,
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_components",
+                                    "components": {
+                                        "minecraft:item_name": "Diamond Axe",
+                                        "minecraft:damage": 1515
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

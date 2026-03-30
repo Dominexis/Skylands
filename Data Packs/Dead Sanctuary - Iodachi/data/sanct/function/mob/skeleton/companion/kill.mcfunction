@@ -1,0 +1,2 @@
+execute as @e[x=-2352,y=48,z=2256,dx=94,dy=62,dz=94,type=minecraft:stray] on vehicle if entity @s[nbt={Health:0.0f}] on controller run kill @s
+advancement revoke @s only sanct:mob/skeleton/kill_companion

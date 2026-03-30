@@ -1,0 +1,27 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "slay_horse": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "entity": {
+                    "type": "minecraft:skeleton_horse"
+                },
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "type": "minecraft:arrow"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:spell/alchemy/horse_crossbow/slay_horse"
+    }
+}

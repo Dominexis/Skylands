@@ -1,0 +1,28 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "vampire_kill_blood": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "entity": {
+                    "type": "minecraft:silverfish",
+                    "passenger": {
+                        "type": "minecraft:item_display"
+                    }
+                },
+                "damage": {
+                    "type": {
+                        "is_direct": true
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:mob/vampire/blood/block_change"
+    }
+}

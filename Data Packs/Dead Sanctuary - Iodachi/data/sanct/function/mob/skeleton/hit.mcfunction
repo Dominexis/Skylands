@@ -1,0 +1,3 @@
+execute if entity @s[advancements={sanct:mob/skeleton/hit={hit_mount=true}}] as @e[type=minecraft:skeleton_horse,distance=..10,nbt={HurtTime:10s},limit=1] on controller run function sanct:mob/skeleton/hit_apply
+execute if entity @s[advancements={sanct:mob/skeleton/hit={hit_skeleton=true}}] as @e[type=minecraft:skeleton,distance=..10,predicate=!sanct:mob/skeleton/has_mount,nbt={HurtTime:10s},limit=1] run function sanct:mob/skeleton/hit_apply
+advancement revoke @s only sanct:mob/skeleton/hit

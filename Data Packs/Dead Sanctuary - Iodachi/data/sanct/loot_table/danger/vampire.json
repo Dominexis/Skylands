@@ -1,0 +1,129 @@
+{
+    "type": "minecraft:command",
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "minecraft:alternatives",
+            "children": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:decorated_pot",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:uniform",
+                                "min": 0,
+                                "max": 3
+                            },
+                            "range": {
+                                "max": 0
+                            }
+                        }
+                    ],
+                    "functions": [{
+                        "function": "minecraft:set_custom_data",
+                        "tag": {
+                            "arguments": {
+                                "power_scale": 0,
+                                "fetch": "vampire.bat_count",
+                                "operation": "add #count sanct.numbers 1",
+                                "return": "vampire.bat_count byte 1",
+                                "message": "[{text:\" - Vampire bats \",color:light_purple,italic:true},{score:{name:\"#var\",objective:\"sanct.numbers\"}},\" -> \",{score:{name:\"#count\",objective:\"sanct.numbers\"}}]",
+                                "command": "return 1"
+                            }
+                        }
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:decorated_pot",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:storage",
+                                "storage": "sanct:storage",
+                                "path": "root.summon.vampire.stat.danger_movement_speed"
+                            },
+                            "range": {
+                                "max": 140
+                            }
+                        },
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:uniform",
+                                "min": 0,
+                                "max": 2
+                            },
+                            "range": {
+                                "max": 0
+                            }
+                        }
+                    ],
+                    "functions": [{
+                        "function": "minecraft:set_custom_data",
+                        "tag": {
+                            "arguments": {
+                                "power_scale": 1,
+                                "fetch": "vampire.stat.danger_movement_speed",
+                                "operation": "operation #count sanct.numbers += #danger_increase sanct.numbers",
+                                "return": "vampire.stat.danger_movement_speed short 1",
+                                "message": "[{text:\" - Vampire speed \",color:red,italic:true},{score:{name:\"#var\",objective:\"sanct.numbers\"}},\"% -> \",{score:{name:\"#count\",objective:\"sanct.numbers\"}},\"%\"]",
+                                "command": "execute as @e[x=-2352,y=48,z=2256,dx=94,dy=62,dz=94,type=#sanct:vampire/main] run attribute @s minecraft:movement_speed modifier add sanct:danger_update .03 add_multiplied_base"
+                            }
+                        }
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:decorated_pot",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:uniform",
+                                "min": 0,
+                                "max": 1
+                            },
+                            "range": {
+                                "max": 0
+                            }
+                        }
+                    ],
+                    "functions": [{
+                        "function": "minecraft:set_custom_data",
+                        "tag": {
+                            "arguments": {
+                                "power_scale": 1.5,
+                                "fetch": "vampire.stat.danger_attack_damage",
+                                "operation": "operation #count sanct.numbers += #danger_increase sanct.numbers",
+                                "return": "vampire.stat.danger_attack_damage short 1",
+                                "message": "[{text:\" - Vampire damage \",color:red,italic:true},{score:{name:\"#var\",objective:\"sanct.numbers\"}},\"% -> \",{score:{name:\"#count\",objective:\"sanct.numbers\"}},\"%\"]",
+                                "command": "execute store result storage sanct:storage root.summon.vampire.arrow.damage float 0.15 run data get storage sanct:storage root.summon.vampire.stat.danger_attack_damage"
+                            }
+                        }
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:decorated_pot",
+                    "functions": [{
+                        "function": "minecraft:set_custom_data",
+                        "tag": {
+                            "arguments": {
+                                "power_scale": 2,
+                                "fetch": "vampire.stat.danger_max_health",
+                                "operation": "operation #count sanct.numbers += #danger_increase sanct.numbers",
+                                "return": "vampire.stat.danger_max_health short 1",
+                                "message": "[{text:\" - Vampire health \",color:red,italic:true},{score:{name:\"#var\",objective:\"sanct.numbers\"}},\"% -> \",{score:{name:\"#count\",objective:\"sanct.numbers\"}},\"%\"]",
+                                "command": "return 1"
+                            }
+                        }
+                    }]
+                }
+            ]
+        }]
+    }]
+}

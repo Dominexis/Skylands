@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:rotten_flesh",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_name": "Rotten Flesh",
+                                "minecraft:max_stack_size": 99
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

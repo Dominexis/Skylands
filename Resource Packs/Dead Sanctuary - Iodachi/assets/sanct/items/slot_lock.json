@@ -1,0 +1,7 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "sanct:item/slot_lock"
+    },
+    "hand_animation_on_swap": false
+}

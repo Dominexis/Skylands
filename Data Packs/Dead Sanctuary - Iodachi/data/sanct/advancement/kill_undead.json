@@ -1,0 +1,22 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "kill_undead": {
+            "trigger": "player_killed_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    }
+                ],
+                "entity": {
+                    "type": "#sanct:kill_xp"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:player/kill_undead"
+    }
+}

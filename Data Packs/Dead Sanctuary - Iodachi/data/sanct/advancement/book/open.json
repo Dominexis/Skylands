@@ -1,0 +1,28 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "open": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "player":
+                [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    }
+                ],
+                "item": {
+                    "items": "minecraft:book",
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "spellbook": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:book/open/open"
+    }
+}

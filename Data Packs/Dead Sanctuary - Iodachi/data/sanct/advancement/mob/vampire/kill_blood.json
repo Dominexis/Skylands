@@ -1,0 +1,23 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "vampire_kill_blood": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "entity": {
+                    "type": "minecraft:silverfish",
+                    "passenger": {
+                        "type": "minecraft:item_display"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:mob/vampire/blood/kill"
+    }
+}

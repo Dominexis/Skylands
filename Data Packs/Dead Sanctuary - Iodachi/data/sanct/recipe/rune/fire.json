@@ -1,0 +1,41 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:blade_pottery_sherd",
+        "X": "minecraft:bone"
+    },
+    "pattern": [
+        " X",
+        "# "
+    ],
+    "result": {
+        "id": "minecraft:blade_pottery_sherd",
+        "components": {
+            "minecraft:item_name": "§3Rune §6(Fire)",
+            "minecraft:item_model": "minecraft:bolt_armor_trim_smithing_template",
+            "minecraft:lore": [
+                "",
+                "§7When in Inventory:",
+                "§9+2.5 Attack Damage",
+                "§9+10% Attack Reach"
+            ],
+            "minecraft:max_stack_size": 1,
+            "minecraft:custom_data": {
+                "rune":{
+                    "upgraded": true,
+                    "fire": true
+                }
+            },
+            "minecraft:enchantments": {
+                "channeling": 1
+            },
+            "minecraft:tooltip_display": {
+                "hidden_components": [
+                    "minecraft:enchantments"
+                ]
+            },
+            "minecraft:enchantment_glint_override": false
+        }
+    },
+    "category": "building"
+}

@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [{
+                "type": "minecraft:loot_table",
+                "value": "sanct:material/blood"
+            }],
+            "conditions": [{
+                "condition": "minecraft:damage_source_properties",
+                "predicate": {
+                    "tags": [{
+                        "id": "sanct:kill_command",
+                        "expected": false
+                    }]
+                }
+            }]
+        }
+    ]
+}

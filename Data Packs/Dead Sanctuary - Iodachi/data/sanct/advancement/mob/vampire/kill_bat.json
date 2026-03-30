@@ -1,0 +1,20 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "kill_bat": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "entity": {
+                    "type": "minecraft:bat"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:mob/vampire/form/kill_bat"
+    }
+}

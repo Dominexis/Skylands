@@ -1,0 +1,1 @@
+$execute as @e[type=#sanct:undead,tag=sanct.damage_target,distance=..8] run damage @s $(damage) minecraft:mace_smash by @a[distance=0,limit=1]

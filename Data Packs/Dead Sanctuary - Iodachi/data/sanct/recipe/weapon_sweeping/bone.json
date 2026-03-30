@@ -1,0 +1,51 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": ["minecraft:wooden_sword","minecraft:bone"],
+    "result": {
+        "id": "minecraft:iron_sword",
+        "components": {
+            "minecraft:item_name": "§6Sternum Blade",
+            "minecraft:attribute_modifiers": [
+                {
+                    "id": "sanct:weapon_sweeping",
+                    "type": "minecraft:attack_damage",
+                    "amount": 5,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                },{
+                    "id": "sanct:weapon_sweeping",
+                    "type": "minecraft:attack_speed",
+                    "amount":-2,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                },{
+                    "id": "sanct:weapon_sweeping",
+                    "type": "minecraft:sweeping_damage_ratio",
+                    "amount": 0.75,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                }
+            ],
+            "!minecraft:max_damage": {},
+            "minecraft:tooltip_display": {
+                "hidden_components": [
+                    "attribute_modifiers"
+                ]
+            },
+            "minecraft:lore": [
+                "§7§oCraft with §41 Blood§7§o to upgrade.",
+                "",
+                "§7When in Main Hand:",
+                " §26 Attack Damage",
+                " §22 Attack Speed",
+                "§9+0.75 Sweeping Damage Ratio"
+            ],
+            "minecraft:custom_data": {
+                "weapon_sweeping": {
+                    "upgraded": true
+                }
+            }
+        }
+    },
+    "category": "equipment"
+}

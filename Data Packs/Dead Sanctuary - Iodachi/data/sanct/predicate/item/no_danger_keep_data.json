@@ -1,0 +1,17 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "slots": {
+            "contents": {
+                "predicates": {
+                    "minecraft:custom_data": {
+                        "no_danger": {
+                            "keep_data": true
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

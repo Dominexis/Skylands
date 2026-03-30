@@ -1,0 +1,1 @@
+$clear @s minecraft:rotten_flesh $(price)

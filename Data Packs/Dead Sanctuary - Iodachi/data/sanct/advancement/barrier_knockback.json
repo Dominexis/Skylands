@@ -1,0 +1,27 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "barrier_knockback": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "damage": {
+                    "source_entity": {
+                        "type": "minecraft:slime",
+                        "effects": {
+                            "minecraft:invisibility": {
+                                "duration": -1
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:plot/goal/barrier/knockback"
+    }
+}

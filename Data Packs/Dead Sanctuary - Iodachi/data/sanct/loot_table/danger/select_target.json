@@ -1,0 +1,230 @@
+{
+    "type": "minecraft:command",
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "minecraft:alternatives",
+            "children": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "sanct:spell/no_danger_stat",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:score",
+                                "target": {
+                                    "type": "minecraft:fixed",
+                                    "name": "#no_danger"
+                                },
+                                "score": "sanct.numbers"
+                            },
+                            "range": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:decorated_pot",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:value_check",
+                                "value": {
+                                    "type": "minecraft:score",
+                                    "score": "sanct.numbers",
+                                    "target": {
+                                        "type": "minecraft:fixed",
+                                        "name": "#skeleton_summoned"
+                                    }
+                                },
+                                "range": 1
+                            }
+                        },
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:value_check",
+                                "value": {
+                                    "type": "minecraft:score",
+                                    "score": "sanct.numbers",
+                                    "target": {
+                                        "type": "minecraft:fixed",
+                                        "name": "#vampire_summoned"
+                                    }
+                                },
+                                "range": 1
+                            }
+                        },
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:score",
+                                "target": {
+                                    "type": "minecraft:fixed",
+                                    "name": "#experience_total"
+                                },
+                                "score": "sanct.numbers"
+                            },
+                            "range": {
+                                "min": 160
+                            }
+                        }
+                    ],
+                    "functions": [{
+                        "function": "minecraft:set_custom_data",
+                        "tag": {
+                            "arguments": {
+                                "power_scale": 0,
+                                "fetch": "zombie.count.count",
+                                "operation": "add #skeleton_summoned sanct.numbers 1",
+                                "return": "zombie.count.count int 1",
+                                "message": "\"§9§o - A §7§lSkeleton Rider§9§o has been summoned\"",
+                                "command": "function sanct:mob/autospawn"
+                            }
+                        }
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:decorated_pot",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:value_check",
+                                "value": {
+                                    "type": "minecraft:score",
+                                    "score": "sanct.numbers",
+                                    "target": {
+                                        "type": "minecraft:fixed",
+                                        "name": "#vampire_summoned"
+                                    }
+                                },
+                                "range": 1
+                            }
+                        },
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:score",
+                                "target": {
+                                    "type": "minecraft:fixed",
+                                    "name": "#experience_total"
+                                },
+                                "score": "sanct.numbers"
+                            },
+                            "range": {
+                                "min": 612
+                            }
+                        }
+                    ],
+                    "functions": [{
+                        "function": "minecraft:set_custom_data",
+                        "tag": {
+                            "arguments": {
+                                "power_scale": 0,
+                                "fetch": "skeleton.count.count",
+                                "operation": "add #vampire_summoned sanct.numbers 1",
+                                "return": "skeleton.count.count int 1",
+                                "message": "\"§9§o - A §4§lVampire§9§o has been summoned\"",
+                                "command": "function sanct:mob/autospawn"
+                            }
+                        }
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:decorated_pot",
+                    "conditions": [{
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:storage",
+                            "storage": "sanct:storage",
+                            "path": "root.danger_increase"
+                        },
+                        "range": 0
+                    }],
+                    "functions": [{
+                        "function": "minecraft:set_custom_data",
+                        "tag": {
+                            "arguments": {
+                                "power_scale": 0,
+                                "fetch": "zombie.stat.danger_max_health",
+                                "operation": "add #count sanct.numbers 1",
+                                "return": "zombie.stat.danger_max_health short 1",
+                                "message": "[{text:\" - Zombie health \",color:red,italic:true},{score:{name:\"#var\",objective:\"sanct.numbers\"}},\"% -> \",{score:{name:\"#count\",objective:\"sanct.numbers\"}},\"%\"]",
+                                "command": "return 1"
+                            }
+                        }
+                    }]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "sanct:danger/vampire",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:score",
+                                "target": {
+                                    "type": "minecraft:fixed",
+                                    "name": "#level"
+                                },
+                                "score": "sanct.numbers"
+                            },
+                            "range": 3
+                        },
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:uniform",
+                                "min": 0,
+                                "max": 3
+                            },
+                            "range": {
+                                "min": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "sanct:danger/skeleton",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:score",
+                                "target": {
+                                    "type": "minecraft:fixed",
+                                    "name": "#level"
+                                },
+                                "score": "sanct.numbers"
+                            },
+                            "range": {
+                                "min": 2
+                            }
+                        },
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:uniform",
+                                "min": 0,
+                                "max": 2
+                            },
+                            "range": {
+                                "min": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "sanct:danger/zombie"
+                }
+            ]
+        }]
+    }]
+}

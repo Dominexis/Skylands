@@ -1,0 +1,102 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "sanct:material/flesh",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:baked_potato",
+                    "weight": 4,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:max_stack_size": 99
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type_specific": {
+                                    "type": "minecraft:player",
+                                    "advancements": {
+                                        "sanct:tags": {
+                                            "saturation": false
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:splash_potion",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:strong_swiftness"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "sanct:spell/slot_loot/armor_repair",
+                    "weight": 3,
+                    "conditions": [{
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#zombie_armor"
+                            },
+                            "score": "sanct.numbers"
+                        },
+                        "range": {
+                            "min": 1
+                        }
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:raw_copper",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:max_stack_size": 99,
+                                "minecraft:use_cooldown": {
+                                    "seconds": 10,
+                                    "cooldown_group": "sanct:pill_health"
+                                },
+                                "minecraft:potion_contents": {
+                                    "potion": "minecraft:healing"
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 0.15,
+                                    "animation": "drink",
+                                    "has_consume_particles": false,
+                                    "sound": "entity.generic.drink"
+                                },
+                                "minecraft:item_name": "Health Brew",
+                                "minecraft:item_model": "minecraft:potion"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

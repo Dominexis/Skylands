@@ -1,0 +1,38 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "minecraft:value_check",
+            "value": {
+                "type": "minecraft:storage",
+                "storage": "sanct:storage",
+                "path": "root.death.flesh"
+            },
+            "range": {
+                "min": 1
+            }
+        },
+        {
+            "condition": "minecraft:value_check",
+            "value": {
+                "type": "minecraft:storage",
+                "storage": "sanct:storage",
+                "path": "root.death.bone"
+            },
+            "range": {
+                "min": 1
+            }
+        },
+        {
+            "condition": "minecraft:value_check",
+            "value": {
+                "type": "minecraft:storage",
+                "storage": "sanct:storage",
+                "path": "root.death.blood"
+            },
+            "range": {
+                "min": 1
+            }
+        }
+    ]
+}

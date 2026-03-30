@@ -1,0 +1,6 @@
+{
+    "parent": "sanct:item/gui_icon",
+    "textures": {
+        "layer0": "minecraft:item/flow_banner_pattern"
+    }
+}

@@ -1,0 +1,168 @@
+{
+    "function": "minecraft:sequence",
+    "functions": [
+        {
+            "function": "minecraft:set_written_book_pages",
+            "mode": "replace_section",
+            "offset": 8,
+            "pages": [
+                [
+                    "",
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": "Spawns a §6Husk§r nearby that drops\n§2Rotten Flesh§r but §cno experience§r."
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 50"
+                            }
+                        },
+                        {
+                            "text": "CREATE HUSK",
+                            "color": "gold",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        "\nCost: §22 hearts"
+                    ],
+                    "\n§1§o-------------------",
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": [
+                                    "Summons ",
+                                    {
+                                        "score": {
+                                            "name": "#summon_zombie_count",
+                                            "objective": "sanct.numbers"
+                                        },
+                                        "color": "green"
+                                    },
+                                    " §2Zombies§r around the island\nthat drop §2Rotten Flesh§r and §e5 experience§r.",
+                                    {
+                                        "storage": "sanct:storage",
+                                        "nbt": "root.build_book.summon.list[0].ritual_list",
+                                        "interpret": true
+                                    }
+                                ]
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 51"
+                            }
+                        },
+                        {
+                            "text": "RAISE ZOMBIES",
+                            "color": "dark_green",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        "\nCost: ",
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.summon.list[0].price"
+                        }
+                    ],
+                    "\n§1§o-------------------",
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": [
+                                    "Summons ",
+                                    {
+                                        "score": {
+                                            "name": "#summon_skeleton_count",
+                                            "objective": "sanct.numbers"
+                                        },
+                                        "color": "green"
+                                    },
+                                    " §7Skeleton Rider§r around the\nisland that drops §7Bone§r and §e30 experience§r.",
+                                    {
+                                        "storage": "sanct:storage",
+                                        "nbt": "root.build_book.summon.list[1].ritual_list",
+                                        "interpret": true
+                                    }
+                                ]
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 52"
+                            }
+                        },
+                        {
+                            "text": "RAISE SKELETON",
+                            "color": "gray",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        "\nCost: ",
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.summon.list[1].price"
+                        }
+                    ],
+                    "\n§1§o-------------------\n",
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": [
+                                    "Summons ",
+                                    {
+                                        "score": {
+                                            "name": "#summon_vampire_count",
+                                            "objective": "sanct.numbers"
+                                        },
+                                        "color": "green"
+                                    },
+                                    " §4Vampire§r around the island\nthat drops §4Blood§r and §e200 experience§r.",
+                                    {
+                                        "storage": "sanct:storage",
+                                        "nbt": "root.build_book.summon.list[2].ritual_list",
+                                        "interpret": true
+                                    }
+                                ]
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 53"
+                            }
+                        },
+                        {
+                            "text": "RAISE VAMPIRE",
+                            "color": "dark_red",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        "\nCost: ",
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.summon.list[2].price"
+                        }
+                    ],
+                    "\n§1§o-------------------\n",
+                    {
+                        "text": "§1§l[§1back§l]",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": "Table of Contents"
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 1
+                        }
+                    },
+                    "          1/1"
+                ]
+            ]
+        }
+    ]
+}

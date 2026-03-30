@@ -1,0 +1,47 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": ["minecraft:iron_sword","minecraft:fermented_spider_eye"],
+    "result": {
+        "id": "minecraft:netherite_shovel",
+        "components": {
+            "minecraft:item_name": "§c§nBleeding Edge",
+            "minecraft:item_model": "minecraft:netherite_sword",
+            "minecraft:attribute_modifiers": [
+                {
+                    "id": "sanct:weapon_sweeping",
+                    "type": "minecraft:attack_damage",
+                    "amount": 7,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                },{
+                    "id": "sanct:weapon_sweeping",
+                    "type": "minecraft:attack_speed",
+                    "amount":-1.4,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                }
+            ],
+            "!minecraft:max_damage": {},
+            "minecraft:tooltip_display": {
+                "hidden_components": [
+                    "attribute_modifiers"
+                ]
+            },
+            "minecraft:lore": [
+                "§7§oSweep attacks hit all enemies within 8 blocks.",
+                "",
+                "§7When in Main Hand:",
+                " §28 Attack Damage",
+                " §22.6 Attack Speed",
+                "§9+1 Sweeping Damage Ratio",
+                "§9+8 Sweeping Range"
+            ],
+            "minecraft:custom_data": {
+                "weapon_sweeping": {
+                    "blood": true
+                }
+            }
+        }
+    },
+    "category": "equipment"
+}

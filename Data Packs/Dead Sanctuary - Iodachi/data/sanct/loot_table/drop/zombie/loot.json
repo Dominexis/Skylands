@@ -1,0 +1,69 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [{
+                "type": "minecraft:loot_table",
+                "value": "sanct:material/flesh"
+            }],
+            "conditions": [{
+                "condition": "minecraft:damage_source_properties",
+                "predicate": {
+                    "tags": [{
+                        "id": "sanct:kill_command",
+                        "expected": false
+                    }]
+                }
+            }]
+        },
+        {
+            "rolls": 1,
+            "entries": [{
+                "type": "minecraft:loot_table",
+                "value": "sanct:drop/zombie/more_flesh"
+            }],
+            "conditions": [{
+                "condition": "minecraft:damage_source_properties",
+                "predicate": {
+                    "tags": [{
+                        "id": "sanct:kill_command",
+                        "expected": false
+                    }]
+                }
+            }]
+        },
+        {
+            "rolls": 1,
+            "entries": [{
+                "type": "minecraft:loot_table",
+                "value": "sanct:drop/zombie/helmet"
+            }],
+            "conditions": [{
+                "condition": "minecraft:damage_source_properties",
+                "predicate": {
+                    "tags": [{
+                        "id": "sanct:kill_command",
+                        "expected": false
+                    }]
+                }
+            }]
+        },
+        {
+            "rolls": 1,
+            "entries": [{
+                "type": "minecraft:loot_table",
+                "value": "sanct:drop/weapon_harvest_flesh"
+            }],
+            "conditions": [{
+                "condition": "minecraft:damage_source_properties",
+                "predicate": {
+                    "tags": [{
+                        "id": "sanct:kill_command",
+                        "expected": false
+                    }]
+                }
+            }]
+        }
+    ]
+}

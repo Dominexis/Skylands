@@ -1,0 +1,32 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:custom_data": {
+                                "food_flesh": {}
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+
+        "acknowledged": {"trigger": "minecraft:impossible"}
+    },
+    "requirements": [["acquired","acknowledged"]],
+    "rewards": {
+        "recipes": [
+            "sanct:food_flesh"
+        ],
+        "function": "sanct:player/recipe_acquire"
+    }
+}

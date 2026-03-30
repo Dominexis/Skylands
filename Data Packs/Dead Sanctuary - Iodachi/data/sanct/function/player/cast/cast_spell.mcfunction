@@ -1,0 +1,1 @@
+$function sanct:spell/$(category)/$(spell)/cast

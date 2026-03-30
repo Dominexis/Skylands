@@ -1,0 +1,5 @@
+
+summon minecraft:skeleton_horse ~ ~ ~ {Team:"sanct.skeleton",Tags:["sanct.damage_target"],Tame:1b,DeathLootTable:"sanct:drop/skeleton/horse_check",PersistenceRequired:1b,attributes:[{id:"minecraft:scale",base:0.8},{id:"minecraft:movement_speed",base:0.28},{"id":"minecraft:max_health",base:20}],active_effects:[{id:"minecraft:resistance",duration:20,amplifier:100}],Passengers:[{id:"minecraft:stray",Invulnerable:1b,PersistenceRequired:1b,Silent:1b,DeathLootTable:"",equipment:{mainhand:{id:"minecraft:egg",components:{"minecraft:item_model":"minecraft:air"}},head:{id:"minecraft:egg",components:{"minecraft:item_model":"minecraft:air"}}},attributes:[{id:"minecraft:scale",base:0},{id:"minecraft:attack_damage",base:3.5}],active_effects:[{id:"minecraft:invisibility",duration:-1,show_particles:0b}]}]}
+
+scoreboard players remove #count sanct.numbers 1
+execute if score #count sanct.numbers matches 1.. run function sanct:mob/skeleton/companion/summon

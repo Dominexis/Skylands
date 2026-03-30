@@ -1,0 +1,35 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:custom_data": {
+                                "rune": {}
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+
+        "acknowledged": {"trigger": "minecraft:impossible"}
+    },
+    "requirements": [["acquired","acknowledged"]],
+    "rewards": {
+        "recipes": [
+            "sanct:rune/air",
+            "sanct:rune/earth",
+            "sanct:rune/fire",
+            "sanct:rune/water"
+        ],
+        "function": "sanct:player/recipe_acquire"
+    }
+}

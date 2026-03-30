@@ -1,0 +1,23 @@
+{
+    "condition": "minecraft:value_check",
+    "value": {
+        "type": "minecraft:score",
+        "target": {
+            "type": "minecraft:context",
+            "target": "this"
+        },
+        "score": "sl.id"
+    },
+    "range": {
+        "min": {
+            "type": "minecraft:storage",
+            "storage": "sanct:storage",
+            "path": "root.loaded_player_id.id"
+        },
+        "max": {
+            "type": "minecraft:storage",
+            "storage": "sanct:storage",
+            "path": "root.loaded_player_id.id"
+        }
+    }
+}

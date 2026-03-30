@@ -1,0 +1,1 @@
+$attribute @s minecraft:attack_speed modifier add sanct:slot_attack_speed $(attack_speed) add_value

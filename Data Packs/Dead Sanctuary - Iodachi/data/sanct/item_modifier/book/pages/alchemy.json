@@ -1,0 +1,545 @@
+{
+    "function": "minecraft:sequence",
+    "functions": [
+        {
+            "function": "minecraft:set_written_book_pages",
+            "mode": "replace_section",
+            "offset": 29,
+            "pages": [
+                [
+                    "",
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.alchemy.list[0].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 200"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[0].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[0].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.alchemy.seperators[0]",
+                        "interpret": true
+                    },
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.alchemy.list[1].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 201"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[1].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[1].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.alchemy.seperators[1]",
+                        "interpret": true
+                    },
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.alchemy.list[2].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 202"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[2].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[2].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.alchemy.seperators[2]",
+                        "interpret": true
+                    },
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.alchemy.list[3].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 203"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[3].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[3].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.alchemy.seperators[3]",
+                        "interpret": true
+                    },
+                    {
+                        "text": "§3§l[§3back§l]",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": "Table of Contents"
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 1
+                        }
+                    },
+                    "          1/",
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.alchemy.page_count"
+                    },
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.alchemy.page_arrows[0]",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": "Next Page"
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 31
+                        }
+                    }
+                ]
+            ]
+        },
+        {
+            "function": "minecraft:set_written_book_pages",
+            "mode": "replace_section",
+            "offset": 30,
+            "conditions": [{
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "sanct:storage",
+                    "path": "root.build_book.alchemy.page_count"
+                },
+                "range": {
+                    "min": 2
+                }
+            }],
+            "pages": [
+                [
+                    "",
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.alchemy.list[4].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 204"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[4].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[4].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.alchemy.seperators[4]",
+                        "interpret": true
+                    },
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.alchemy.list[5].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 205"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[5].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[5].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.alchemy.seperators[5]",
+                        "interpret": true
+                    },
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.alchemy.list[6].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 206"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[6].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[6].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.alchemy.seperators[6]",
+                        "interpret": true
+                    },
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.alchemy.list[7].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 207"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[7].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[7].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.alchemy.seperators[7]",
+                        "interpret": true
+                    },
+                    {
+                        "text": "§3§l[§3back§l]",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": "Table of Contents"
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 1
+                        }
+                    },
+                    "     ",
+                    {
+                        "text": "§3§l[§3<§l]",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": "Previous Page"
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 30
+                        }
+                    },
+                    " 2/",
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.alchemy.page_count"
+                    },
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.alchemy.page_arrows[1]",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": "Next Page"
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 32
+                        }
+                    }
+                ]
+            ]
+        },
+        {
+            "function": "minecraft:set_written_book_pages",
+            "mode": "replace_section",
+            "offset": 31,
+            "conditions": [{
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "sanct:storage",
+                    "path": "root.build_book.alchemy.page_count"
+                },
+                "range": {
+                    "min": 3
+                }
+            }],
+            "pages": [
+                [
+                    "",
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.alchemy.list[8].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 208"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[8].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[8].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.alchemy.seperators[8]",
+                        "interpret": true
+                    },
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.alchemy.list[9].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 209"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[9].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[9].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.alchemy.seperators[9]",
+                        "interpret": true
+                    },
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.alchemy.list[10].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 210"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[10].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[10].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.alchemy.seperators[10]",
+                        "interpret": true
+                    },
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.alchemy.list[11].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 211"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[11].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.alchemy.list[11].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.alchemy.seperators[11]",
+                        "interpret": true
+                    },
+                    {
+                        "text": "§3§l[§3back§l]",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": "Table of Contents"
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 1
+                        }
+                    },
+                    "     ",
+                    {
+                        "text": "§3§l[§3<§l]",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": "Previous Page"
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 31
+                        }
+                    },
+                    " 3/3"
+                ]
+            ]
+        }
+    ]
+}

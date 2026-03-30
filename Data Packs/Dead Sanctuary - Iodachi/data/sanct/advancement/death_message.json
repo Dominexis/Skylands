@@ -1,0 +1,364 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+
+        "husk": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "sanct.death": {
+                                "min": 1
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "type": "minecraft:husk"
+                        }
+                    }
+                }
+            }
+        },
+
+        "husk_summon": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "sanct.death": {
+                                "min": 1
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "minecraft:no_impact",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+
+        "zombie": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "sanct.death": {
+                                "min": 1
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "type": "minecraft:zombie"
+                        }
+                    }
+                }
+            }
+        },
+
+        "skeleton": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "sanct.death": {
+                                "min": 1
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "type": "minecraft:skeleton"
+                        }
+                    }
+                }
+            }
+        },
+
+        "skeleton_arrow": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "sanct.death": {
+                                "min": 1
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "type": "minecraft:arrow"
+                        },
+                        "source_entity": {
+                            "type": "minecraft:skeleton"
+                        }
+                    }
+                }
+            }
+        },
+
+        "skeleton_companion": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "sanct.death": {
+                                "min": 1
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "type": "minecraft:stray"
+                        }
+                    }
+                }
+            }
+        },
+
+        "vampire": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "sanct.death": {
+                                "min": 1
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "type": "#sanct:vampire/main"
+                        }
+                    }
+                }
+            }
+        },
+
+        "vampire_blood": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "sanct.death": {
+                                "min": 1
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "sanct:death_message/wither",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+
+        "vampire_arrow": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "sanct.death": {
+                                "min": 1
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "source_entity": {
+                            "type": "minecraft:pillager"
+                        }
+                    }
+                }
+            }
+        },
+
+        "vampire_arrow_effect": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "sanct.death": {
+                                "min": 1
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "sanct:death_message/vampire_arrow",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+
+        "fall": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "sanct.death": {
+                                "min": 1
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "sanct:death_message/fall",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+
+        "out_of_world": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "sanct.death": {
+                                "min": 1
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "sanct:kill_command",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+
+    },
+    "requirements": [["husk","husk_summon","zombie","skeleton","skeleton_arrow","skeleton_companion","vampire","vampire_blood","vampire_arrow","vampire_arrow_effect","fall","out_of_world"]],
+    "rewards": {
+        "function": "sanct:player/death/message"
+    }
+}

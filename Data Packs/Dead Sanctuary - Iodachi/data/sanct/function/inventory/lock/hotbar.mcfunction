@@ -1,0 +1,6 @@
+execute if score @s sanct.locked_inventory matches 33.. unless data entity @s Inventory[{Slot:3b}].components.minecraft:custom_data.slot_lock."hotbar.3" run function sanct:inventory/lock/reset_slot_hotbar {slot:"hotbar.3"}
+execute if score @s sanct.locked_inventory matches 32.. unless data entity @s Inventory[{Slot:4b}].components.minecraft:custom_data.slot_lock."hotbar.4" run function sanct:inventory/lock/reset_slot_hotbar {slot:"hotbar.4"}
+execute if score @s sanct.locked_inventory matches 31.. unless data entity @s Inventory[{Slot:5b}].components.minecraft:custom_data.slot_lock."hotbar.5" run function sanct:inventory/lock/reset_slot_hotbar {slot:"hotbar.5"}
+execute if score @s sanct.locked_inventory matches 30.. unless data entity @s Inventory[{Slot:6b}].components.minecraft:custom_data.slot_lock."hotbar.6" run function sanct:inventory/lock/reset_slot_hotbar {slot:"hotbar.6"}
+execute if score @s sanct.locked_inventory matches 29.. unless data entity @s Inventory[{Slot:7b}].components.minecraft:custom_data.slot_lock."hotbar.7" run function sanct:inventory/lock/reset_slot_hotbar {slot:"hotbar.7"}
+execute if score @s sanct.locked_inventory matches 28.. unless data entity @s Inventory[{Slot:8b}].components.minecraft:custom_data.slot_lock."hotbar.8" run function sanct:inventory/lock/reset_slot_hotbar {slot:"hotbar.8"}

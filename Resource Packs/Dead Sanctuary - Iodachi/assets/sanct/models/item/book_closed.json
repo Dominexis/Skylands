@@ -1,0 +1,78 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "minecraft:entity/enchanting_table_book"
+	},
+	"elements": [
+		{
+			"from": [7, 3.4, 8.5],
+			"to": [9, 11.4, 13.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.4, 10]},
+			"faces": {
+				"south": {"uv": [1.5, 5.5, 1.75, 9.5], "texture": "#1"},
+				"up": {"uv": [0.25, 5, 1.5, 5.5], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [1.5, 5, 2.75, 5.5], "texture": "#1"}
+			}
+		},
+		{
+			"from": [9, 2.4, 8.5],
+			"to": [9, 12.4, 14.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.4, 10]},
+			"faces": {
+				"east": {"uv": [7, 0, 5.5, 5], "rotation": 180, "texture": "#1"},
+				"west": {"uv": [4, 0, 5.5, 5], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7, 2.4, 8.5],
+			"to": [7, 12.4, 14.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.4, 10]},
+			"faces": {
+				"east": {"uv": [0, 5, 1.5, 0], "texture": "#1"},
+				"west": {"uv": [1.5, 0, 3, 5], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7, 2.4, 8.5],
+			"to": [9, 12.4, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.4, 10]},
+			"faces": {
+				"north": {"uv": [3, 0, 3.5, 5], "rotation": 180, "texture": "#1"},
+				"south": {"uv": [3.5, 0, 4, 5], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -12, 0],
+			"translation": [-0.5, 0, 0]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -12, 0],
+			"translation": [-0.5, 0, 0]
+		},
+		"firstperson_righthand": {
+			"rotation": [-24, 0, -12],
+			"translation": [2, -2, -4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-24, 0, -12],
+			"translation": [2, -2, -4]
+		},
+		"ground": {
+			"rotation": [0, 0, 90],
+			"translation": [0, 0, -2.5],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"gui": {
+			"rotation": [45, 45, -90],
+			"translation": [-2.75, 3, 0],
+			"scale": [1.35, 1.35, 1.4]
+		},
+		"fixed": {
+			"rotation": [0, -90, 0],
+			"translation": [5.25, 1, -0.5],
+			"scale": [1.5, 1.5, 1.5]
+		}
+	}
+}

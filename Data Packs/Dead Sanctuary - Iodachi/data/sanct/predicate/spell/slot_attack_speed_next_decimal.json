@@ -1,0 +1,23 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "minecraft:value_check",
+            "value": {
+                "type": "minecraft:storage",
+                "storage": "sanct:storage",
+                "path": "root.loaded_player.buff.slot_attack_speed.count_next"
+            },
+            "range": 1
+        },
+        {
+            "condition": "minecraft:value_check",
+            "value": {
+                "type": "minecraft:storage",
+                "storage": "sanct:storage",
+                "path": "root.loaded_player.buff.slot_attack_speed.count_next"
+            },
+            "range": 3
+        }
+    ]
+}

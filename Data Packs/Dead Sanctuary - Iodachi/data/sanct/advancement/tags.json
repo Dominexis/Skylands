@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "impossible"                            :{"trigger":"minecraft:impossible"},
+        
+        "active"                                :{"trigger":"minecraft:impossible"},
+        "acquired_recipe"                       :{"trigger":"minecraft:impossible"},
+        "free_checkpoint_used"                  :{"trigger":"minecraft:impossible"},
+        "target"                                :{"trigger":"minecraft:impossible"},
+
+        "shield"                                :{"trigger":"minecraft:impossible"},
+        "totem"                                 :{"trigger":"minecraft:impossible"},
+        "slot_loot_dead"                        :{"trigger":"minecraft:impossible"},
+        "saturation"                            :{"trigger":"minecraft:impossible"},
+        "empty_inventory"                       :{"trigger":"minecraft:impossible"},
+        "weapon_sweeping_introduce"             :{"trigger":"minecraft:impossible"}
+    }
+}

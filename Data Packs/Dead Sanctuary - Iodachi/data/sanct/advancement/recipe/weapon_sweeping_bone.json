@@ -1,0 +1,32 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "items": [{
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "weapon_sweeping": {
+                                "upgraded": false
+                            }
+                        }
+                    }
+                }]
+            }
+        },
+
+        "acknowledged": {"trigger": "minecraft:impossible"}
+    },
+    "requirements": [["acquired","acknowledged"]],
+    "rewards": {
+        "recipes": [
+            "sanct:weapon_sweeping/bone"
+        ],
+        "function": "sanct:player/recipe_acquire"
+    }
+}

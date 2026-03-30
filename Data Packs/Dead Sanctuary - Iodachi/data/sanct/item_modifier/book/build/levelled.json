@@ -1,0 +1,84 @@
+{
+    "function": "minecraft:sequence",
+    "functions": [
+        {
+            "function": "minecraft:reference",
+            "name": "sanct:book/pages/title",
+            "conditions": [{
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                            "type": "minecraft:fixed",
+                            "name": "#barrier_unlocked"
+                        },
+                        "score": "sanct.numbers"
+                    },
+                    "range": 1
+                }
+            }]
+        },
+        {
+            "function": "minecraft:reference",
+            "name": "sanct:book/pages/title_finale",
+            "conditions": [{
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                        "type": "minecraft:fixed",
+                        "name": "#barrier_unlocked"
+                    },
+                    "score": "sanct.numbers"
+                },
+                "range": 1
+            }]
+        },
+        {
+            "function": "minecraft:reference",
+            "name": "sanct:book/pages/summon"
+        },
+        {
+            "function": "minecraft:reference",
+            "name": "sanct:book/pages/ritual",
+            "conditions": [{
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                        "type": "minecraft:fixed",
+                        "name": "#ritual_count"
+                    },
+                    "score": "sanct.numbers"
+                },
+                "range": {
+                    "min": 1
+                }
+            }]
+        },
+        {
+            "function": "minecraft:reference",
+            "name": "sanct:book/pages/buff",
+            "conditions": [{
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                        "type": "minecraft:fixed",
+                        "name": "#buff_count"
+                    },
+                    "score": "sanct.numbers"
+                },
+                "range": {
+                    "min": 1
+                }
+            }]
+        },
+        {
+            "function": "minecraft:reference",
+            "name": "sanct:book/pages/alchemy"
+        }
+    ]
+}

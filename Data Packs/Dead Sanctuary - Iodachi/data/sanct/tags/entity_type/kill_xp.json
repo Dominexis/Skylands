@@ -1,0 +1,11 @@
+{
+    "values": [
+        "minecraft:husk",
+        "minecraft:zombie",
+        "minecraft:skeleton_horse",
+        "minecraft:skeleton",
+        "minecraft:silverfish",
+        "minecraft:vindicator",
+        "minecraft:pillager"
+    ]
+}

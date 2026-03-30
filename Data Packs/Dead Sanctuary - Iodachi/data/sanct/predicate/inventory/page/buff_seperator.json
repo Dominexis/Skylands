@@ -1,0 +1,21 @@
+{
+    "condition": "minecraft:inverted",
+    "term": {
+        "condition": "minecraft:value_check",
+        "value": {
+            "type": "minecraft:score",
+            "score": "sanct.numbers",
+            "target": {
+                "type": "minecraft:fixed",
+                "name": "#increment"
+            }
+        },
+        "range": {
+            "min": {
+                "type": "minecraft:storage",
+                "storage": "sanct:storage",
+                "path": "root.build_page.buff_count"
+            }
+        }
+    }
+}

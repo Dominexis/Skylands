@@ -1,0 +1,86 @@
+{
+    "type": "minecraft:command",
+    "pools": [{
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:decorated_pot",
+                "functions": [{
+                    "function": "minecraft:set_custom_data",
+                    "tag": {
+                        "arguments": {
+                            "stat": "movement_speed",
+                            "message": "movement speed"
+                        }
+                    }
+                }]
+            },
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:decorated_pot",
+                "functions": [{
+                    "function": "minecraft:set_custom_data",
+                    "tag": {
+                        "arguments": {
+                            "stat": "attack_damage",
+                            "message": "damage"
+                        }
+                    }
+                }]
+            },
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:decorated_pot",
+                "functions": [{
+                    "function": "minecraft:set_custom_data",
+                    "tag": {
+                        "arguments": {
+                            "stat": "max_health",
+                            "message": "health"
+                        }
+                    }
+                }]
+            },
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:decorated_pot",
+                "functions": [{
+                    "function": "minecraft:set_custom_data",
+                    "tag": {
+                        "arguments": {
+                            "stat": "armor",
+                            "message": "armor"
+                        }
+                    }
+                }]
+            },
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:decorated_pot",
+                "functions": [{
+                    "function": "minecraft:set_custom_data",
+                    "tag": {
+                        "arguments": {
+                            "stat": "attack_speed",
+                            "message": "attack speed"
+                        }
+                    }
+                }]
+            },
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:decorated_pot",
+                "functions": [{
+                    "function": "minecraft:set_custom_data",
+                    "tag": {
+                        "arguments": {
+                            "stat": "entity_interaction_range",
+                            "message": "attack reach"
+                        }
+                    }
+                }]
+            }
+        ]
+    }]
+}

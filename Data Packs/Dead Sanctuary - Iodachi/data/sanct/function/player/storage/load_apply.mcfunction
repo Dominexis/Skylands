@@ -1,0 +1,1 @@
+$data modify storage sanct:storage root.loaded_player set from storage sanct:storage root.player_list.$(id)

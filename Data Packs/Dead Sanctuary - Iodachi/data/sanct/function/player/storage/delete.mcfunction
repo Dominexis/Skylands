@@ -1,0 +1,1 @@
+$data remove storage sanct:storage root.player_list.$(id)

@@ -1,0 +1,10 @@
+
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "has_buff_low"      :{"trigger": "minecraft:impossible"},
+        "has_buff_medium"   :{"trigger": "minecraft:impossible"},
+        "has_buff_high"     :{"trigger": "minecraft:impossible"}
+    },
+    "requirements": [["has_buff_low","has_buff_medium","has_buff_high"]]
+}

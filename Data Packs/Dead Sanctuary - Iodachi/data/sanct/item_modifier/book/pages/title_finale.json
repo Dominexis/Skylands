@@ -1,0 +1,84 @@
+{
+    "function": "minecraft:set_written_book_pages",
+    "mode": "insert",
+    "pages": [
+        [
+            "   §4§l§nThe Necradage§7§o\n \"Raise the dead. Slay the dead. Raise more dead.\"\n\n  ",
+            {
+                "text": "§8§l§m [ NECROMANCY ] ",
+                "shadow_color": 1375731712,
+                "hover_event": {
+                    "action": "show_text",
+                    "value": {
+                        "text": "§4§oNot up to you anymore."
+                    }
+                }
+            },
+            {
+                "storage": "sanct:storage",
+                "nbt": "root.build_book.ritual.link",
+                "interpret": true
+            },
+            {
+                "storage": "sanct:storage",
+                "nbt": "root.build_book.buff.link",
+                "interpret": true
+            },
+            "\n\n     ",
+            {
+                "text": "§3§l[ ALCHEMY ]",
+                "shadow_color": -922746880,
+                "hover_event": {
+                    "action": "show_text",
+                    "value": {
+                        "text": "Create useful items."
+                    }
+                },
+                "click_event": {
+                    "action": "change_page",
+                    "page": 30
+                }
+            },
+            "\n\n                         ",
+            {
+                "storage": "sanct:storage",
+                "nbt": "root.build_book.recipe.icon",
+                "color": "dark_gray",
+                "shadow_color": 1375731712,
+                "bold": false,
+                "underlined": true,
+                "strikethrough": true,
+                "hover_event": {
+                    "action": "show_text",
+                    "value": [
+                        {
+                            "text": "§2§lAvailable Recipes:",
+                            "color": "gray"
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.recipe.list[0]"
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.recipe.list[1]"
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.recipe.list[2]"
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.recipe.list[3]"
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.recipe.list[4]"
+                        },
+                        "\n\n§f§oSee Recipe Book for details."
+                    ]
+                }
+            }
+        ]
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "condition": "minecraft:value_check",
+    "value": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 15
+    },
+    "range": {
+        "max": {
+            "type": "minecraft:score",
+            "target": {
+                "type": "minecraft:fixed",
+                "name": "#spring_health_skips"
+            },
+            "score": "sanct.numbers"
+        }
+    }
+}

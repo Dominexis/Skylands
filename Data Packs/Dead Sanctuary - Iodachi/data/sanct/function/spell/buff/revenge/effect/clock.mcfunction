@@ -1,0 +1,3 @@
+execute as @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126,predicate=sl:player,scores={sanct.spell.revenge=1}] run attribute @s minecraft:attack_damage modifier remove sanct:revenge
+scoreboard players remove @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126,predicate=sl:player,scores={sanct.spell.revenge=1..}] sanct.spell.revenge 1
+execute if entity @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126,predicate=sl:player,scores={sanct.spell.revenge=1..},limit=1] run schedule function sanct:spell/buff/revenge/effect/clock 10

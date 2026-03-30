@@ -1,0 +1,24 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "place": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "totem": {}
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:spell/alchemy/totem/place"
+    }
+}

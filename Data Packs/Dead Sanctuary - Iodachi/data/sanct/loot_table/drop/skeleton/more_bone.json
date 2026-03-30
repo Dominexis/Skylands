@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:entity",
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "minecraft:loot_table",
+            "value": "sanct:material/bone",
+            "functions": [{
+                "function": "minecraft:set_count",
+                "count": {
+                    "type": "minecraft:storage",
+                    "storage": "sanct:storage",
+                    "path": "root.ritual.more_bone.count"
+                }
+            }]
+        }]
+    }]
+}

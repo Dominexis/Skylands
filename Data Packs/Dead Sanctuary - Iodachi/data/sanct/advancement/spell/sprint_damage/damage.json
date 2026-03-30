@@ -1,0 +1,70 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "level1": {"trigger": "minecraft:impossible"},
+        "level2": {"trigger": "minecraft:impossible"},
+        "level3": {"trigger": "minecraft:impossible"},
+        "level4": {"trigger": "minecraft:impossible"},
+
+        "damage": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "sanct:spell/sprint_damage/begin_sprinting": true
+                                }
+                            }
+                        }
+                    }
+                ],
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "#sanct:undead"
+                        }
+                    },
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "effects": {
+                                    "minecraft:resistance": {
+                                        "amplifier": {
+                                            "min": 50
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "is_direct": true
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["damage"],
+        ["level1","level2","level3","level4"]
+    ],
+    "rewards": {
+        "function": "sanct:spell/buff/sprint_damage/effect/target"
+    }
+}

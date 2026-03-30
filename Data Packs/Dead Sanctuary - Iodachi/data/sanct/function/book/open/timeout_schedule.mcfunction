@@ -1,0 +1,1 @@
+execute as @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126,predicate=sl:player,predicate=sanct:inventory/book/holding_unresolved] run function sanct:book/open/timeout

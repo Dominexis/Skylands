@@ -1,0 +1,36 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "begin_sprinting": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "flags": {
+                                "is_sprinting": true
+                            },
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "sanct:spell/sprint_damage/damage": {
+                                        "level1": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:spell/buff/sprint_damage/effect/begin_sprinting"
+    }
+}
