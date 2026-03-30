@@ -10,3 +10,4 @@ execute if score #plot.maced.state sl.value matches 1.. positioned 5888 0 -3328 
 execute if score #plot.pc.state sl.value matches 1.. positioned 2304 0 5376 run function sl:generated/plot/pc/main
 execute if score #plot.futuristic.state sl.value matches 1.. positioned -3328 0 4864 run function sl:generated/plot/futuristic/main
 execute if score #plot.sanct.state sl.value matches 1.. positioned -2304 0 2304 run function sl:generated/plot/sanct/main
+execute if score #plot.skywardsteam.state sl.value matches 1.. positioned 3840 0 256 run function sl:generated/plot/skywardsteam/main

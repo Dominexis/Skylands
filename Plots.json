@@ -305,6 +305,29 @@
             "pvp": false,
             "max_players": 0,
             "weight": "light"
+        },
+
+        {
+            "name": "Skyward Steam",
+            "namespace": "skywardsteam",
+            "description": "Dive into a steampunk universe where mines, minecarts, and flying ships await. Explore aerial landscapes, travel across suspended rails, and uncover secrets hidden beneath the steam-powered engines. Jump from platform to platform, searching for new adventures around every corner of the sky!",
+            "authors": [
+                "WizzarD_"
+            ],
+            "icon": {
+                "id": "minecraft:iron_pickaxe"
+            },
+            "spawn": "3869 57 201 0 0",
+            "collectibles": [
+                "3859 65 202"
+            ],
+            "required_chunks": [],
+            "regions": [],
+            "genre": "parkour",
+            "difficulty": "easy",
+            "pvp": false,
+            "max_players": 0,
+            "weight": "light"
         }
     ]
 }
