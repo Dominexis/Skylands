@@ -1,0 +1,2 @@
+# Return 1 if all the necessary chunks are loaded
+return run execute if loaded -2320 0 2304 if loaded -2352 0 2288 if loaded -2336 0 2272 if loaded -2336 0 2288 if loaded -2336 0 2304 if loaded -2336 0 2320 if loaded -2320 0 2256 if loaded -2320 0 2272 if loaded -2320 0 2288 if loaded -2320 0 2320 if loaded -2304 0 2256 if loaded -2304 0 2272 if loaded -2304 0 2288 if loaded -2304 0 2304 if loaded -2304 0 2320 if loaded -2304 0 2336 if loaded -2288 0 2272 if loaded -2288 0 2288 if loaded -2288 0 2320 if loaded -2272 0 2288 if loaded -2272 0 2304

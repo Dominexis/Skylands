@@ -260,6 +260,51 @@
             "pvp": false,
             "max_players": 0,
             "weight": "light"
+        },
+
+        {
+            "name": "Dead Sanctuary",
+            "namespace": "sanct",
+            "description": "A peaceful resting place for the deceased. Or, for sorcerers like yourself, a source of limitless corpses! Raise the dead, slay the dead, use their remains to perform powerful wizardry and ascend yourself to godhood! All for the purpose of passing that stupid barrier and claiming your Cloud in a Bottle.",
+            "authors": [
+                "Iodachi"
+            ],
+            "icon": {
+                "id": "minecraft:pale_oak_sapling"
+            },
+            "spawn": "-2310 7 2307 0 0",
+            "collectibles": [
+                "-2318 84 2309"
+            ],
+            "required_chunks": [
+                "-2345 2295",
+                "-2329 2279",
+                "-2329 2295",
+                "-2329 2311",
+                "-2329 2327",
+                "-2313 2263",
+                "-2313 2279",
+                "-2313 2295",
+                "-2313 2311",
+                "-2313 2327",
+                "-2297 2263",
+                "-2297 2279",
+                "-2297 2295",
+                "-2297 2311",
+                "-2297 2327",
+                "-2297 2343",
+                "-2281 2279",
+                "-2281 2295",
+                "-2281 2327",
+                "-2265 2295",
+                "-2265 2311"
+            ],
+            "regions": [],
+            "genre": "pve",
+            "difficulty": "challenging",
+            "pvp": false,
+            "max_players": 0,
+            "weight": "light"
         }
     ]
 }
