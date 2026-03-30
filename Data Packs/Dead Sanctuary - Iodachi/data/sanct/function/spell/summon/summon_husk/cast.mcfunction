@@ -8,7 +8,7 @@ execute unless entity @s[nbt={HurtTime:0s}] run return run tellraw @s "§cYou ca
 
 # Summon husk
 function sanct:mob/husk/spawn
-tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126] [{"text":"","color":"blue"},{"selector":"@s"},{"text":" casts §6§lCREATE HUSK"}]
+tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126,team=sl.player] [{"text":"","color":"blue"},{"selector":"@s"},{"text":" casts §6§lCREATE HUSK"}]
 
 # Knockback effect
 attribute @s minecraft:knockback_resistance modifier add sanct:summon_husk -1 add_multiplied_total

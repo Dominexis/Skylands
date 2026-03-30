@@ -27,6 +27,6 @@ data remove storage sanct:storage root.ritual.spring_health.count[-1]
 data remove storage sanct:storage root.ritual.spring_health.description[-1]
 
 # Announcement
-tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126] [{"text":"","color":"light_purple"},{"selector":"@s"}," casts ",{"storage":"sanct:storage","nbt":"root.ritual.spring_health.title_page"}]
+tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126,team=sl.player] [{"text":"","color":"light_purple"},{"selector":"@s"}," casts ",{"storage":"sanct:storage","nbt":"root.ritual.spring_health.title_page"}]
 function sanct:inventory/page/update
 execute as @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126,predicate=sl:player] unless entity @s[distance=..0.0001] run function sanct:inventory/page/update

@@ -10,7 +10,7 @@ execute if data storage sanct:storage {root:{execute_result:0b}} run return run 
 scoreboard players add #player_power sanct.numbers 1600
 
 # Apply upgrade
-tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126] [{"text":"","color":"yellow"},{"selector":"@s"},{"text":" casts §4§lIMMORTALITY"}]
+tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126,team=sl.player] [{"text":"","color":"yellow"},{"selector":"@s"},{"text":" casts §4§lIMMORTALITY"}]
 advancement grant @s only sanct:tags saturation
 
 function sanct:inventory/page/update

@@ -7,7 +7,7 @@ execute if score #var sanct.numbers matches 100.. run return run tellraw @s "§c
 execute store success storage sanct:storage root.execute_result byte 1 run clear @s minecraft:rotten_flesh 1
 execute if data storage sanct:storage {root:{execute_result:0b}} run return run tellraw @s "§cYou don't have the materials to cast §2§lRAISE ZOMBIES"
 
-tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126] [{"text":"","color":"blue"},{"selector":"@s"},{"text":" casts §2§lRAISE ZOMBIES"}]
+tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126,team=sl.player] [{"text":"","color":"blue"},{"selector":"@s"},{"text":" casts §2§lRAISE ZOMBIES"}]
 
 # Tutorial spawning locations
 execute unless score #tutorial_zombies sanct.numbers matches 1.. run return run function sanct:spell/summon/summon_zombie/first_cast

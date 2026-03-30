@@ -12,8 +12,8 @@ scoreboard players set @s[scores={sanct.spell.revenge=1..}] sanct.spell.revenge 
 advancement revoke @s[advancements={sanct:spell/swarm_damage/active_buff=true}] only sanct:spell/swarm_damage/active_buff
 
 # Kill ender pearls
-execute as @e[x=-2352,y=48,z=2256,dx=94,dy=62,dz=94,type=minecraft:marker,tag=sanct.teleport_item] if score @s sanct.id = @a[distance=0,limit=1] sl.id on vehicle run kill @s
-execute as @e[x=-2352,y=48,z=2256,dx=94,dy=62,dz=94,type=minecraft:marker,tag=sanct.teleport_item] if score @s sanct.id = @a[distance=0,limit=1] sl.id run kill @s
+execute as @e[x=-2352,y=48,z=2256,dx=94,dy=62,dz=94,type=minecraft:marker,tag=sanct.teleport_item] if score @s sanct.id = @a[distance=0,limit=1,team=sl.player] sl.id on vehicle run kill @s
+execute as @e[x=-2352,y=48,z=2256,dx=94,dy=62,dz=94,type=minecraft:marker,tag=sanct.teleport_item] if score @s sanct.id = @a[distance=0,limit=1,team=sl.player] sl.id run kill @s
 
 advancement revoke @s only sanct:death_location
 scoreboard players set @s sanct.death 0

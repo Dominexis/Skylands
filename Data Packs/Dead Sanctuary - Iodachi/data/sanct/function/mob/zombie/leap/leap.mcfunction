@@ -11,7 +11,7 @@ execute if score @s sanct.spell.revenge matches -1 run data modify entity @s Sil
 
 # Leap towards target
 execute on target run advancement grant @s only sanct:tags target
-execute facing entity @a[distance=..35,advancements={sanct:tags={target=true}},limit=1] eyes run damage @s 0.0000001 minecraft:arrow at ^ ^ ^-1
+execute facing entity @a[distance=..35,advancements={sanct:tags={target=true}},limit=1,team=sl.player] eyes run damage @s 0.0000001 minecraft:arrow at ^ ^ ^-1
 execute on target run advancement revoke @s only sanct:tags target
 
 execute if score @s sanct.spell.revenge matches 0 run data modify entity @s Silent set value 0b

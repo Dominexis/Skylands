@@ -10,7 +10,7 @@ execute if data storage sanct:storage {root:{execute_result:0b}} run return run 
 scoreboard players add #player_power sanct.numbers 100
 
 # Apply upgrade
-tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126] [{"text":"","color":"light_purple"},{"selector":"@s"},{"text":" casts §7§lDEATH IDOL"}]
+tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126,team=sl.player] [{"text":"","color":"light_purple"},{"selector":"@s"},{"text":" casts §7§lDEATH IDOL"}]
 scoreboard players set #player_drops sanct.numbers 1
 
 function sanct:inventory/page/update

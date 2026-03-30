@@ -7,7 +7,7 @@ execute store success storage sanct:storage root.execute_result byte 1 run clear
 execute if data storage sanct:storage {root:{execute_result:0b}} run return run tellraw @s "§cYou don't have the materials to cast §4§lPURIFICATION"
 
 # Apply upgrade
-tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126] [{"text":"","color":"light_purple"},{"selector":"@s"},{"text":" casts §4§lPURIFICATION"}]
+tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126,team=sl.player] [{"text":"","color":"light_purple"},{"selector":"@s"},{"text":" casts §4§lPURIFICATION"}]
 
 data merge entity @e[x=-2310,y=28,z=2307,distance=..1,type=minecraft:wither,limit=1] {CustomName:{text:"§6§l[!]"}}
 scoreboard players set #no_danger sanct.numbers 1

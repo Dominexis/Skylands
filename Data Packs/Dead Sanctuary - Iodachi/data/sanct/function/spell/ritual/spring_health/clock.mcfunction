@@ -10,7 +10,7 @@ execute if score #var sanct.numbers >= #spring_health sanct.numbers run return 1
 execute unless predicate sanct:spell/spring_health_chance run return run scoreboard players add #spring_health_skips sanct.numbers 1
 
 # Check if there is an undead that qualifies to spawn a spring
-execute as @e[x=-2352,y=48,z=2256,dx=94,dy=62,dz=94,type=#sanct:spell/spring_health,predicate=sanct:on_ground] at @s unless block ~ ~-0.2 ~ #sanct:empty unless entity @e[type=minecraft:marker,distance=..3,tag=sanct.spawner,limit=1] unless entity @a[distance=..12,limit=1] unless entity @e[type=minecraft:area_effect_cloud,distance=..12,tag=sanct.spring_health,limit=1] run tag @s add sanct.can_spawn_spring
+execute as @e[x=-2352,y=48,z=2256,dx=94,dy=62,dz=94,type=#sanct:spell/spring_health,predicate=sanct:on_ground] at @s unless block ~ ~-0.2 ~ #sanct:empty unless entity @e[type=minecraft:marker,distance=..3,tag=sanct.spawner,limit=1] unless entity @a[distance=..12,limit=1,team=sl.player] unless entity @e[type=minecraft:area_effect_cloud,distance=..12,tag=sanct.spring_health,limit=1] run tag @s add sanct.can_spawn_spring
 execute unless entity @e[x=-2352,y=48,z=2256,dx=94,dy=62,dz=94,type=#sanct:spell/spring_health,tag=sanct.can_spawn_spring,limit=1] run return run scoreboard players add #spring_health_skips sanct.numbers 1
 
 # Spawn spring

@@ -9,5 +9,5 @@ clear @s minecraft:rotten_flesh 2
 scoreboard players add #player_power sanct.numbers 100
 
 # Give item
-tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126] [{"text":"","color":"aqua"},{"selector":"@s"},{"text":" creates §2§lLANTERN"}]
+tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126,team=sl.player] [{"text":"","color":"aqua"},{"selector":"@s"},{"text":" creates §2§lLANTERN"}]
 give @s minecraft:lantern[minecraft:item_name="Lantern",minecraft:custom_data={undead_finder:{}},minecraft:lore=["§7§oUse to give §2Zombies§7§o the §eGlowing§7§o effect.","","§7§oCraft with §f1 Bone§7§o to upgrade."],minecraft:max_stack_size=1,minecraft:consumable={animation:"spear",consume_seconds:999999,has_consume_particles:false,sound:"minecraft:block.amethyst_block.resonate"}]

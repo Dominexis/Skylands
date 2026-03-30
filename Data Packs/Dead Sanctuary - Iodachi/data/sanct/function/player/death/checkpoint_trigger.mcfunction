@@ -1,7 +1,7 @@
 
 # Announcement
 damage @s 0.0000001
-tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126] [{"selector":"@s"}," checked out of existence"]
+tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126,team=sl.player] [{"selector":"@s"}," checked out of existence",team=sl.player]
 
 # Reset status
 effect give @s minecraft:instant_health 1 92 true

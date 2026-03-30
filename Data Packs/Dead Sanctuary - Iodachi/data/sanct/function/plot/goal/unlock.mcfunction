@@ -5,7 +5,7 @@ title @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126,predicate=sl:player] subtitle
 title @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126,predicate=sl:player] title "§aLevel 30 Reached!"
 schedule function sanct:plot/goal/title_delay 90
 
-execute as @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126] run playsound minecraft:item.goat_horn.sound.7 hostile @s ~ ~ ~ 8 0 1
+execute as @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126,team=sl.player] run playsound minecraft:item.goat_horn.sound.7 hostile @s ~ ~ ~ 8 0 1
 
 # Update tower
 summon minecraft:text_display -2318 86 2311 {text:["Thanks for playing!\n",{text:" - Iodachi",color:gray}]}

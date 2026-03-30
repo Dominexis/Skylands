@@ -14,7 +14,7 @@ clear @s minecraft:skull_pottery_sherd[minecraft:custom_data~{slot_lock:{}}]
 scoreboard players remove @s sanct.locked_inventory 33
 
 # Announcement
-tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126] [{"text":"","color":"yellow"},{"selector":"@s"},{"text":" casts §4§lDIMENSION BREAK"}]
+tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126,team=sl.player] [{"text":"","color":"yellow"},{"selector":"@s"},{"text":" casts §4§lDIMENSION BREAK"}]
 
 function sanct:inventory/page/update
 

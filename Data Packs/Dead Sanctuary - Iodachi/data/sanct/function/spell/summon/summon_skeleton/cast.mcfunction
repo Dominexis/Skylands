@@ -22,4 +22,4 @@ tag @e[x=-2352,y=48,z=2256,dx=94,dy=62,dz=94,type=minecraft:marker,tag=sanct.spa
 
 schedule function sanct:mob/skeleton/lightning_delay 40
 
-tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126] [{"text":"","color":"blue"},{"selector":"@s"},{"text":" casts §7§lRAISE SKELETON"}]
+tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126,team=sl.player] [{"text":"","color":"blue"},{"selector":"@s"},{"text":" casts §7§lRAISE SKELETON"}]

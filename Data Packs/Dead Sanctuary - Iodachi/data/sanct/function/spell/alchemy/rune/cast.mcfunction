@@ -9,5 +9,5 @@ clear @s minecraft:rotten_flesh 2
 scoreboard players add #player_power sanct.numbers 100
 
 # Give item
-tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126] [{"text":"","color":"aqua"},{"selector":"@s"},{"text":" creates §2§lRUNE"}]
+tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126,team=sl.player] [{"text":"","color":"aqua"},{"selector":"@s"},{"text":" creates §2§lRUNE"}]
 give @s minecraft:blade_pottery_sherd[minecraft:item_name="§3Rune",minecraft:lore=["§7§oCraft with §f1 Bone§3§7§o to upgrade.","","§7When in Inventory:","§9+0.5 Attack Damage"],minecraft:max_stack_size=1,minecraft:custom_data={rune:{}}]

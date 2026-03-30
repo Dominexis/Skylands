@@ -30,7 +30,7 @@ data remove storage sanct:storage root.loaded_player.buff.slot_health.title_book
 data remove storage sanct:storage root.loaded_player.buff.slot_health.price[-1]
 
 # Announcement
-tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126] [{"text":"","color":"yellow"},{"selector":"@s"}," casts ",{"storage":"sanct:storage","nbt":"root.loaded_player.buff.slot_health.title_page"}]
+tellraw @a[x=-2368,y=-16,z=2240,dx=126,dy=158,dz=126,team=sl.player] [{"text":"","color":"yellow"},{"selector":"@s"}," casts ",{"storage":"sanct:storage","nbt":"root.loaded_player.buff.slot_health.title_page"}]
 function sanct:inventory/page/update
 
 # Gain random item from empty_inventory
