@@ -1,0 +1,1 @@
+scoreboard players reset @s synb.Item.foreign_goods.reroll_count

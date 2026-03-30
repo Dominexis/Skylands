@@ -1,0 +1,1 @@
+$tellraw @a[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,team=sl.player,tag=synb.ctx.generic_player_src] [{"text":"\n[Synb] ","color":"gray"},{"text":"You used True Vision to look at ","color":"gray"},$(item_label),{"text":" :\n"},$(text_array),{"text":"\n"}]

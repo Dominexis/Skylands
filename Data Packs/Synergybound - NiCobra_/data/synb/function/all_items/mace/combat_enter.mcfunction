@@ -1,0 +1,1 @@
+scoreboard players add @s synb.Item.mace.charges_count 3

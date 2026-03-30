@@ -1,0 +1,2 @@
+scoreboard players operation @s[tag=synb.item.melee_bravery.buffed] synb.IEStat.MeleeDmg *= num15 synb.Const
+scoreboard players operation @s[tag=synb.item.melee_bravery.buffed] synb.IEStat.MeleeDmg /= num10 synb.Const

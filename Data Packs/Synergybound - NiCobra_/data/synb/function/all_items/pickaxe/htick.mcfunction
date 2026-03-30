@@ -1,0 +1,1 @@
+execute as @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.ctx.local,tag=synb.item.pickaxe.will_destroy,tag=!synb.status.frozen] at @s run function synb:all_items/pickaxe/_destroy

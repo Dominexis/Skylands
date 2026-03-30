@@ -1,0 +1,1 @@
+execute if entity @s[tag=synb.attr.player_in_arena] run function synb:all_items/logistics/_incr_cauldron

@@ -1,0 +1,1 @@
+function synb:utils/spawn_money {amount:15}

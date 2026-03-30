@@ -1,0 +1,1 @@
+scoreboard objectives add synb.Item.thunder.strike_count dummy

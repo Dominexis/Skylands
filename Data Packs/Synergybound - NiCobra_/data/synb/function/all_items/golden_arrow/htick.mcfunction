@@ -1,0 +1,1 @@
+execute at @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=minecraft:arrow,tag=synb.item.golden_arrow.special,tag=synb.ctx.local] run particle minecraft:totem_of_undying ~ ~ ~ 0 0 0 0.5 2

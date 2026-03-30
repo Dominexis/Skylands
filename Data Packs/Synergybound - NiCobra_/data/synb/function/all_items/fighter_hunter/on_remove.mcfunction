@@ -1,0 +1,1 @@
+scoreboard players reset @s synb.Item.fighter_hunter.swap

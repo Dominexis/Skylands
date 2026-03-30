@@ -1,0 +1,1 @@
+$data modify entity @s CustomName set value [{"text":"$(hp_whole).$(hp_decimal) $(hp_bar)",color:"$(color)",bold:false}]

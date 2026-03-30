@@ -1,0 +1,1 @@
+scoreboard players operation @s synb.IEStat.Reward /= num2 synb.Const

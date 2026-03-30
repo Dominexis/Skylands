@@ -1,0 +1,1 @@
+scoreboard objectives remove synb.Item.thunder.strike_count

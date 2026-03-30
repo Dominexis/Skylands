@@ -1,0 +1,1 @@
+execute as @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.ctx.enemy_hurt_target] on passengers run tag @s add synb.item.arrow_ripper.marked

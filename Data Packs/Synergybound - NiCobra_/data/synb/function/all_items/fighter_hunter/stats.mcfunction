@@ -1,0 +1,2 @@
+execute unless score @s synb.Item.fighter_hunter.swap matches 1 run scoreboard players add @s synb.IEStat.MeleeDmg 30
+execute if score @s synb.Item.fighter_hunter.swap matches 1 run scoreboard players add @s synb.IEStat.RangedDmg 30

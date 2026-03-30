@@ -1,0 +1,1 @@
+scoreboard players set @s synb.Item.ground_jaws.duration 300

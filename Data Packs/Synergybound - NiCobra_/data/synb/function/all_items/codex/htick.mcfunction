@@ -1,0 +1,2 @@
+execute if score @s[tag=!synb.Item.codex.completed] synb.Item.codex.dmg_count matches 500000.. run playsound minecraft:block.enchantment_table.use player @s ~ ~ ~ 2 0.9
+execute if score @s synb.Item.codex.dmg_count matches 500000.. run tag @s add synb.Item.codex.completed

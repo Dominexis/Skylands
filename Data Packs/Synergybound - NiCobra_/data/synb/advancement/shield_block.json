@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "hit_player": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "blocked": true
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "synb:itemengine/triggers/shield_block"
+  }
+}

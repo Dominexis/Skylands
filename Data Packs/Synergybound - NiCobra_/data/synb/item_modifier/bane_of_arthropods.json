@@ -1,0 +1,11 @@
+{
+  "function": "minecraft:set_enchantments",
+  "enchantments": {
+    "minecraft:bane_of_arthropods": {
+      "type": "minecraft:score",
+      "target": "this",
+      "score": "synb.IEEnch.BaneOfArthropods",
+      "scale": 1
+    }
+  }
+}

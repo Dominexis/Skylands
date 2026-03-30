@@ -1,0 +1,1 @@
+execute as @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.type.enemy,tag=synb.ctx.local,tag=synb.status.frozen,scores={synb.Status.Frozen=0..1}] run function synb:itemengine/player/damage_enemy_magic {dmg:3}

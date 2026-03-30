@@ -1,0 +1,3 @@
+execute if score @s synb.IEExecCount.shield_heal matches 2.. run return 0
+tag @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.type.enemy,tag=synb.ctx.local,tag=synb.item.shield_heal.triggered] add synb.item.shield_heal.unusable
+execute at @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.type.enemy,tag=synb.ctx.local,tag=synb.item.shield_heal.unusable] run particle minecraft:ash ~ ~0.7 ~ 0.2 0.7 0.2 0.01 10

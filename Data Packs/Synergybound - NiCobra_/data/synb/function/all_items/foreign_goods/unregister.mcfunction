@@ -1,0 +1,1 @@
+scoreboard objectives remove synb.Item.foreign_goods.reroll_count

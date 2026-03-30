@@ -1,0 +1,2 @@
+attribute @s minecraft:attack_knockback modifier remove synb.m:item.combat_goo.passive
+execute unless score @s synb.Status.Sneak matches 1 run attribute @s minecraft:attack_knockback modifier add synb.m:item.combat_goo.passive 5 add_value

@@ -1,0 +1,1 @@
+$execute positioned ~3 ~ ~ run function synb:elements/collectible/spawn {item_col_id:$(item),pool_name:"gift"}

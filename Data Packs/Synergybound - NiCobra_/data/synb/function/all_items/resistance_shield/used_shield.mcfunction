@@ -1,0 +1,1 @@
+function synb:all_items/resistance_shield/_resistance

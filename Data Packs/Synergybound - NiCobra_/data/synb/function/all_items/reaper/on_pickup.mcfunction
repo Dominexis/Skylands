@@ -1,0 +1,1 @@
+scoreboard objectives add synb.Item.reaper.delay dummy

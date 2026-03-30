@@ -1,0 +1,1 @@
+scoreboard players reset @s synb.Item.counter_attack.speed_duration

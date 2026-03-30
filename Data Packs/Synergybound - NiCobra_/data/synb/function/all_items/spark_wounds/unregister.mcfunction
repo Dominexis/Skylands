@@ -1,0 +1,1 @@
+scoreboard objectives remove synb.Item.spark_wounds.last_player_id

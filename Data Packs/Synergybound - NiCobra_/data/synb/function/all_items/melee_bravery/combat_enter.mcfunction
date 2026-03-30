@@ -1,0 +1,1 @@
+tag @s add synb.item.melee_bravery.buffed

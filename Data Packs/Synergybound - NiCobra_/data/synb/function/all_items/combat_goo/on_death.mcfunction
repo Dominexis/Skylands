@@ -1,0 +1,1 @@
+attribute @s minecraft:attack_knockback modifier remove synb.m:item.combat_goo.passive

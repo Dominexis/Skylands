@@ -1,0 +1,1 @@
+scoreboard objectives add synb.Item.foreign_goods.reroll_count dummy

@@ -1,0 +1,1 @@
+scoreboard objectives add synb.Item.counter_attack.speed_duration dummy

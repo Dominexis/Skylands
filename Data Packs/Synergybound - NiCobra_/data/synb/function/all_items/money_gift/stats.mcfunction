@@ -1,0 +1,1 @@
+scoreboard players add @s synb.IEStat.Magic 3

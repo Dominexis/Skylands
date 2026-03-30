@@ -1,0 +1,1 @@
+scoreboard players reset @s synb.Item.growing_dmg.room_count

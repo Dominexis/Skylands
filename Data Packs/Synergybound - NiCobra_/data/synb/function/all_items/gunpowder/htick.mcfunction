@@ -1,0 +1,5 @@
+# Need two tags because gunpowder.victim can be added inside through executor during damage
+tag @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.type.enemy,scores={synb.Item.gunpowder.hits=1..},tag=synb.ctx.local] add synb.item.gunpowder.next
+scoreboard players remove @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.item.gunpowder.next,tag=synb.ctx.local] synb.Item.gunpowder.hits 1
+execute as @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.type.enemy,tag=synb.item.gunpowder.next,tag=synb.ctx.local,sort=random] at @s run function synb:itemengine/player/damage_enemy_magic {dmg:2}
+tag @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.type.enemy,tag=synb.ctx.local] remove synb.item.gunpowder.next

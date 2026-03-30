@@ -1,0 +1,1 @@
+scoreboard objectives remove synb.Item.codex.dmg_count

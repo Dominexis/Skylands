@@ -1,0 +1,1 @@
+scoreboard players set @s synb.Item.fragile_bottle.nohit 1

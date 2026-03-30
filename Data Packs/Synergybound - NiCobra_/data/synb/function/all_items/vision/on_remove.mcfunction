@@ -1,0 +1,1 @@
+tag @s remove synb.item.vision.sneaking

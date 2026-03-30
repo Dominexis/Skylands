@@ -1,0 +1,3 @@
+execute if score #enemy_hurt_dmg_type synb.Tmp.Ctx matches 1 run tag @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.ctx.enemy_hurt_target,limit=1] add synb.item.combo.melee
+execute if score #enemy_hurt_dmg_type synb.Tmp.Ctx matches 2 run tag @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.ctx.enemy_hurt_target,limit=1] add synb.item.combo.ranged
+execute as @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.ctx.enemy_hurt_target,limit=1] at @s run function synb:all_items/combo/_trigger
