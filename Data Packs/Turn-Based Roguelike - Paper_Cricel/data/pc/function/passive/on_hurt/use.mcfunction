@@ -13,12 +13,12 @@ execute if data entity @s data.effect.robust run function pc:passive/on_hurt/rob
 execute if data storage pc:temp passive.math run function pc:sys/object/passive/math/use
 
 # 跟效果有關的
-    # 在計算護甲之前
+# 在計算護甲之前
 execute if data entity @s data.effect.thorn run function pc:passive/on_hurt/thorn/use
 
 execute if data entity @s data.shield anchored eyes positioned ^ ^ ^ run function pc:passive/on_hurt/shield/use
 
-    # 在計算護甲之後
+# 在計算護甲之後
 #execute if data entity @s data.effect.regen_shield run function pc:passive/on_hurt/regen_shield/use
 execute if data entity @s data.effect.frighten run function pc:passive/on_hurt/frighten/use
 execute if data entity @s data.effect.dragon_scale run function pc:passive/on_hurt/dragon_scale/use

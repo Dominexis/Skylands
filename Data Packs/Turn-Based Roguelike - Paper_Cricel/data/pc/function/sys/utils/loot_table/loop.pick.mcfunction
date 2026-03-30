@@ -9,4 +9,4 @@ function pc:sys/utils/loot_table/choose with entity @s data
 kill @s
 data remove storage pc:temp loot.slot[0]
 
-execute if data storage pc:temp loot.slot[0] as @n[type=marker,tag=pc.temp,sort=random,distance=..0.01] run function pc:sys/utils/loot_table/loop.pick
+execute if data storage pc:temp loot.slot[0] as @n[type=minecraft:marker,distance=..0.01,tag=pc.temp,sort=random] run function pc:sys/utils/loot_table/loop.pick

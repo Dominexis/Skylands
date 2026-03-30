@@ -5,13 +5,13 @@ execute if score @s pc.duration matches 42.. run return run function pc:object/e
 # Victim
 scoreboard players reset #rotate pc.main
 execute store success score #is_diagonal pc.main if entity @s[tag=pc.sys.rotate_diagonal]
-execute positioned ~-1.5 ~-100 ~-1.5 if entity @e[predicate=pc:object/all_neutral,type=!player,nbt=!{data:{id:"ender_dragon"}},dx=2,dy=200,dz=2,limit=1] store result score #rotate pc.main run function pc:object/ender_dragon/walk1/detect/use
-execute positioned ~-1.5 ~-100 ~-1.5 as @e[type=marker,tag=pc.intent.now,nbt={data:{id:[walk]}},dx=2,dy=200,dz=2,limit=1] positioned as @s run function pc:object/ender_dragon/walk1/2
+execute positioned ~-1.5 ~-100 ~-1.5 if entity @e[type=!minecraft:player,dx=2,dy=200,dz=2,limit=1,predicate=pc:object/all_neutral,nbt=!{data:{id:"ender_dragon"}}] store result score #rotate pc.main run function pc:object/ender_dragon/walk1/detect/use
+execute positioned ~-1.5 ~-100 ~-1.5 as @e[type=minecraft:marker,dx=2,dy=200,dz=2,tag=pc.intent.now,limit=1,nbt={data:{id:["walk"]}}] positioned as @s run function pc:object/ender_dragon/walk1/2
 function pc:object/ender_dragon/walk1/dash/wave/use
 
 # Done
 execute if score #rotate pc.main matches 1 run return run function pc:object/ender_dragon/walk1/3
-execute unless entity @e[type=marker,tag=pc.intent.now,nbt={data:{id:[walk]}},x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0,limit=1] run return run function pc:object/ender_dragon/walk1/clear
+execute unless entity @e[type=minecraft:marker,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0,tag=pc.intent.now,limit=1,nbt={data:{id:["walk"]}}] run return run function pc:object/ender_dragon/walk1/clear
 
 execute if score #is_diagonal pc.main matches 0 run tp @s ^ ^ ^4
 execute if score #is_diagonal pc.main matches 1 run tp @s ^ ^ ^5.656

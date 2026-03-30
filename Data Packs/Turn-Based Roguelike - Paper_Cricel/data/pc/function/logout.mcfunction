@@ -9,9 +9,9 @@ tag @s remove pc.sys.rotate_diagonal
 tag @s remove pc.lobby.character.chose
 tag @s remove pc.tutorial.drop_item
 
-attribute @s minecraft:entity_interaction_range modifier remove no_interact
+attribute @s minecraft:entity_interaction_range modifier remove minecraft:no_interact
 
-    # TEMP tags
+# TEMP tags
 tag @s remove pc.lobby
 tag @s remove pc.summon
 tag @s remove pc.temp

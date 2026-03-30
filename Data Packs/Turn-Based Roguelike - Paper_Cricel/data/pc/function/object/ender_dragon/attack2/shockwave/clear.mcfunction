@@ -3,4 +3,4 @@
 kill @s
 
 # fx
-particle explosion ~ ~ ~ 0 0 0 0 0 force
+particle minecraft:explosion ~ ~ ~ 0 0 0 0 0 force

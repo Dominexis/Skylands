@@ -1,7 +1,7 @@
 
 # effect
-summon bat ~ ~0.5 ~ {Tags:["pc.summon","pc.object.mob","pc.fx.sleep"],attributes:[{id:scale,base:1.2}]}
+summon minecraft:bat ~ ~0.5 ~ {Tags:["pc.summon","pc.object.mob","pc.fx.sleep"],attributes:[{id:"minecraft:scale",base:1.2}]}
 
-    # Attribute
-data modify storage pc:temp summon set value {id:'dormancy_bat',hp:200,hpmax:200}
-execute as @n[type=bat,tag=pc.summon,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0] at @s run function pc:sys/object/summon/use
+# Attribute
+data modify storage pc:temp summon set value {id:"dormancy_bat",hp:200,hpmax:200}
+execute as @n[type=minecraft:bat,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0,tag=pc.summon] at @s run function pc:sys/object/summon/use

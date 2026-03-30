@@ -1,30 +1,105 @@
 {
     "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "paper",
-            "functions": [
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:custom_data": "{pc:{sys.shop:true,category:'shop/campfire',item:'cure',game_item:true}}",
-                  "minecraft:item_model": "pc:shop/cure",
-                  "minecraft:item_name": [{"text":"Cure","color":"yellow"}],
-                  "minecraft:lore": [
-                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Ability","color": "#f5b055","bold": true}],
-                    [{"text": "", "italic": false, "color": "white"}, {"text": "Heal for 50% of "}, {"text": "Max HP", "color": "#f1de61"}, {"font": "pc:default", "text": "8", "color": "white"}, {"text": "."}],
-                    "",
-                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Details","color": "#3fa0e1","bold": true}],
-                    [{"text":"","italic": false,"color": "white"},{"text":"● ","color":"#72bd7a"},{"text":"ᴄᴀᴛᴇɢᴏʀʏ : ᴏᴘᴛɪᴏɴ","color":"gray"}]
-                  ]
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:paper",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "pc:shop/cure",
+                                "minecraft:item_name": {
+                                    "text": "Cure",
+                                    "color": "yellow"
+                                },
+                                "minecraft:lore": [
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "extra": [
+                                            {
+                                                "text": ">>",
+                                                "color": "gray"
+                                            },
+                                            {
+                                                "text": "> ",
+                                                "color": "#72BD7A",
+                                                "bold": true
+                                            },
+                                            {
+                                                "text": "Ability",
+                                                "color": "#F5B055",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "white",
+                                        "extra": [
+                                            "Heal for 50% of ",
+                                            {
+                                                "text": "Max HP",
+                                                "color": "#F1DE61"
+                                            },
+                                            {
+                                                "font": "pc:default",
+                                                "text": "8",
+                                                "color": "white"
+                                            },
+                                            "."
+                                        ]
+                                    },
+                                    "",
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "extra": [
+                                            {
+                                                "text": ">>",
+                                                "color": "gray"
+                                            },
+                                            {
+                                                "text": "> ",
+                                                "color": "#72BD7A",
+                                                "bold": true
+                                            },
+                                            {
+                                                "text": "Details",
+                                                "color": "#3FA0E1",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "white",
+                                        "extra": [
+                                            {
+                                                "text": "\u25cf ",
+                                                "color": "#72BD7A"
+                                            },
+                                            {
+                                                "text": "\u1d04\u1d00\u1d1b\u1d07\u0262\u1d0f\u0280\u028f : \u1d0f\u1d18\u1d1b\u026a\u1d0f\u0274",
+                                                "color": "gray"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{pc:{sys.shop:1b,category:\"shop/campfire\",item:\"cure\",game_item:1b}}"
+                        }
+                    ]
                 }
-              }
             ]
-          }
-        ]
-      }
+        }
     ]
 }

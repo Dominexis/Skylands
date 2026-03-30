@@ -1,3 +1,3 @@
 
 # effect
-data modify entity @s data.intent.type set value ['']
+data modify entity @s data.intent.type set value [""]

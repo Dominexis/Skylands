@@ -1,6 +1,6 @@
 
 # init
-fill 2519 0 5502 2552 0 5474 stone
+fill 2519 0 5502 2552 0 5474 minecraft:stone
 data remove storage pc:game combat
 
 # effect

@@ -4,15 +4,15 @@ scoreboard players set #value pc.main 600
 function pc:passive/shield/use
 
 scoreboard players set #value pc.main 3
-function pc:passive/effect/apply {effect:robust}
+function pc:passive/effect/apply {effect:"robust"}
 
 scoreboard players set #value pc.main 1
-function pc:passive/effect/apply {effect:thorn}
+function pc:passive/effect/apply {effect:"thorn"}
 
 # fx
 function pc:fx/text/use {text:{text:"Thorn",color:"#d7ef9b"}}
-playsound minecraft:entity.blaze.shoot master @a[predicate=pc:player/ingame,predicate=sl:player,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0] ~ ~ ~ 1 1 1
-playsound minecraft:block.vault.open_shutter master @a[predicate=pc:player/ingame,predicate=sl:player,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0] ~ ~ ~ 1 0.75 1
+playsound minecraft:entity.blaze.shoot master @a[x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0,predicate=pc:player/ingame,predicate=sl:player] ~ ~ ~ 1 1 1
+playsound minecraft:block.vault.open_shutter master @a[x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0,predicate=pc:player/ingame,predicate=sl:player] ~ ~ ~ 1 0.75 1
 
 particle minecraft:flame ~ ~ ~ 0.0 0 1.0 0.5 0 force
 particle minecraft:flame ~ ~ ~ -0.024 0 0.928 0.5 0 force
@@ -140,39 +140,39 @@ particle minecraft:flame ~ ~ ~ 0.071 0 0.783 0.5 0 force
 particle minecraft:flame ~ ~ ~ 0.047 0 0.855 0.5 0 force
 particle minecraft:flame ~ ~ ~ 0.024 0 0.928 0.5 0 force
 
-particle flame ~ ~ ~ 1.0 0 0.0 0.5 0 force
-particle flame ~ ~ ~ 0.985 0 0.174 0.5 0 force
-particle flame ~ ~ ~ 0.94 0 0.342 0.5 0 force
-particle flame ~ ~ ~ 0.866 0 0.5 0.5 0 force
-particle flame ~ ~ ~ 0.766 0 0.643 0.5 0 force
-particle flame ~ ~ ~ 0.643 0 0.766 0.5 0 force
-particle flame ~ ~ ~ 0.5 0 0.866 0.5 0 force
-particle flame ~ ~ ~ 0.342 0 0.94 0.5 0 force
-particle flame ~ ~ ~ 0.174 0 0.985 0.5 0 force
-particle flame ~ ~ ~ 0.0 0 1.0 0.5 0 force
-particle flame ~ ~ ~ -0.174 0 0.985 0.5 0 force
-particle flame ~ ~ ~ -0.342 0 0.94 0.5 0 force
-particle flame ~ ~ ~ -0.5 0 0.866 0.5 0 force
-particle flame ~ ~ ~ -0.643 0 0.766 0.5 0 force
-particle flame ~ ~ ~ -0.766 0 0.643 0.5 0 force
-particle flame ~ ~ ~ -0.866 0 0.5 0.5 0 force
-particle flame ~ ~ ~ -0.94 0 0.342 0.5 0 force
-particle flame ~ ~ ~ -0.985 0 0.174 0.5 0 force
-particle flame ~ ~ ~ -1.0 0 0.0 0.5 0 force
-particle flame ~ ~ ~ -0.985 0 -0.174 0.5 0 force
-particle flame ~ ~ ~ -0.94 0 -0.342 0.5 0 force
-particle flame ~ ~ ~ -0.866 0 -0.5 0.5 0 force
-particle flame ~ ~ ~ -0.766 0 -0.643 0.5 0 force
-particle flame ~ ~ ~ -0.643 0 -0.766 0.5 0 force
-particle flame ~ ~ ~ -0.5 0 -0.866 0.5 0 force
-particle flame ~ ~ ~ -0.342 0 -0.94 0.5 0 force
-particle flame ~ ~ ~ -0.174 0 -0.985 0.5 0 force
-particle flame ~ ~ ~ -0.0 0 -1.0 0.5 0 force
-particle flame ~ ~ ~ 0.174 0 -0.985 0.5 0 force
-particle flame ~ ~ ~ 0.342 0 -0.94 0.5 0 force
-particle flame ~ ~ ~ 0.5 0 -0.866 0.5 0 force
-particle flame ~ ~ ~ 0.643 0 -0.766 0.5 0 force
-particle flame ~ ~ ~ 0.766 0 -0.643 0.5 0 force
-particle flame ~ ~ ~ 0.866 0 -0.5 0.5 0 force
-particle flame ~ ~ ~ 0.94 0 -0.342 0.5 0 force
-particle flame ~ ~ ~ 0.985 0 -0.174 0.5 0 force
+particle minecraft:flame ~ ~ ~ 1.0 0 0.0 0.5 0 force
+particle minecraft:flame ~ ~ ~ 0.985 0 0.174 0.5 0 force
+particle minecraft:flame ~ ~ ~ 0.94 0 0.342 0.5 0 force
+particle minecraft:flame ~ ~ ~ 0.866 0 0.5 0.5 0 force
+particle minecraft:flame ~ ~ ~ 0.766 0 0.643 0.5 0 force
+particle minecraft:flame ~ ~ ~ 0.643 0 0.766 0.5 0 force
+particle minecraft:flame ~ ~ ~ 0.5 0 0.866 0.5 0 force
+particle minecraft:flame ~ ~ ~ 0.342 0 0.94 0.5 0 force
+particle minecraft:flame ~ ~ ~ 0.174 0 0.985 0.5 0 force
+particle minecraft:flame ~ ~ ~ 0.0 0 1.0 0.5 0 force
+particle minecraft:flame ~ ~ ~ -0.174 0 0.985 0.5 0 force
+particle minecraft:flame ~ ~ ~ -0.342 0 0.94 0.5 0 force
+particle minecraft:flame ~ ~ ~ -0.5 0 0.866 0.5 0 force
+particle minecraft:flame ~ ~ ~ -0.643 0 0.766 0.5 0 force
+particle minecraft:flame ~ ~ ~ -0.766 0 0.643 0.5 0 force
+particle minecraft:flame ~ ~ ~ -0.866 0 0.5 0.5 0 force
+particle minecraft:flame ~ ~ ~ -0.94 0 0.342 0.5 0 force
+particle minecraft:flame ~ ~ ~ -0.985 0 0.174 0.5 0 force
+particle minecraft:flame ~ ~ ~ -1.0 0 0.0 0.5 0 force
+particle minecraft:flame ~ ~ ~ -0.985 0 -0.174 0.5 0 force
+particle minecraft:flame ~ ~ ~ -0.94 0 -0.342 0.5 0 force
+particle minecraft:flame ~ ~ ~ -0.866 0 -0.5 0.5 0 force
+particle minecraft:flame ~ ~ ~ -0.766 0 -0.643 0.5 0 force
+particle minecraft:flame ~ ~ ~ -0.643 0 -0.766 0.5 0 force
+particle minecraft:flame ~ ~ ~ -0.5 0 -0.866 0.5 0 force
+particle minecraft:flame ~ ~ ~ -0.342 0 -0.94 0.5 0 force
+particle minecraft:flame ~ ~ ~ -0.174 0 -0.985 0.5 0 force
+particle minecraft:flame ~ ~ ~ -0.0 0 -1.0 0.5 0 force
+particle minecraft:flame ~ ~ ~ 0.174 0 -0.985 0.5 0 force
+particle minecraft:flame ~ ~ ~ 0.342 0 -0.94 0.5 0 force
+particle minecraft:flame ~ ~ ~ 0.5 0 -0.866 0.5 0 force
+particle minecraft:flame ~ ~ ~ 0.643 0 -0.766 0.5 0 force
+particle minecraft:flame ~ ~ ~ 0.766 0 -0.643 0.5 0 force
+particle minecraft:flame ~ ~ ~ 0.866 0 -0.5 0.5 0 force
+particle minecraft:flame ~ ~ ~ 0.94 0 -0.342 0.5 0 force
+particle minecraft:flame ~ ~ ~ 0.985 0 -0.174 0.5 0 force

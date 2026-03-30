@@ -1,37 +1,192 @@
 {
     "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "paper",
-            "functions": [
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:custom_data": "{pc:{item_name:{text:'Wireless Repair'},category:'repair',item:'wireless',durability:1,energy:1,rc:true,game_item:true}}",
-                  "minecraft:item_model": "anvil","minecraft:max_stack_size": 1,"minecraft:consumable": {"consume_seconds": 94879487},
-                  "minecraft:lore": [
-                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Ability","color": "#f5b055","bold": true}],
-                    [{"text": "", "italic": false, "color": "white"}, {"text": "Place a 4 "}, {"text": "HP", "color": "#f1de61"}, {"font": "pc:default", "text": "8", "color": "white"}, {"text": " Anvil. When an item is"}],
-                    [{"text": "", "italic": false, "color": "white"}, {"text": "being repaired, it remains available"}],
-                    [{"text": "", "italic": false, "color": "white"}, {"text": "for use. It repairs 2 "}, {"text": "Durability", "color": "#f1de61"}, {"font": "pc:default", "text": "1", "color": "white"}, {"text": " per"}],
-                    [{"text": "", "italic": false, "color": "white"}, {"text": "turn for 3 turns. Can active "}],
-                    [{"text": "", "italic": false, "color": "white"}, {"text": "Repair Mode", "color": "#d983f4"}, {"text": " from anywhere."}],
-                    "",
-                    [{"text": "", "italic": false, "color": "gray"}, {"text": "Every turn when no any Anvil exist:"}],
-                    [{"text": "", "italic": false, "color": "white"}, {"text": "Restore 1 "}, {"text": "Durability", "color": "#f1de61"}, {"font": "pc:default", "text": "1", "color": "white"}, {"text": "."}],
-                    "",
-                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Details","color": "#3fa0e1","bold": true}],
-                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴅᴜʀᴀʙɪʟɪᴛʏ : 1"},{"font":"pc:default","text":"1","color": "white"}],
-                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴄᴀᴛᴇɢᴏʀʏ : ʀᴇᴘᴀɪʀ"}]
-                  ]
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:paper",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "anvil",
+                                "minecraft:max_stack_size": 1,
+                                "minecraft:consumable": {
+                                    "consume_seconds": 94879487
+                                },
+                                "minecraft:lore": [
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "extra": [
+                                            {
+                                                "text": ">>",
+                                                "color": "gray"
+                                            },
+                                            {
+                                                "text": "> ",
+                                                "color": "#72BD7A",
+                                                "bold": true
+                                            },
+                                            {
+                                                "text": "Ability",
+                                                "color": "#F5B055",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "white",
+                                        "extra": [
+                                            "Place a 4 ",
+                                            {
+                                                "text": "HP",
+                                                "color": "#F1DE61"
+                                            },
+                                            {
+                                                "font": "pc:default",
+                                                "text": "8",
+                                                "color": "white"
+                                            },
+                                            " Anvil. When an item is"
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "white",
+                                        "extra": [
+                                            "being repaired, it remains available"
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "white",
+                                        "extra": [
+                                            "for use. It repairs 2 ",
+                                            {
+                                                "text": "Durability",
+                                                "color": "#F1DE61"
+                                            },
+                                            {
+                                                "font": "pc:default",
+                                                "text": "1",
+                                                "color": "white"
+                                            },
+                                            " per"
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "white",
+                                        "extra": [
+                                            "turn for 3 turns. Can active "
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "white",
+                                        "extra": [
+                                            {
+                                                "text": "Repair Mode",
+                                                "color": "#D983F4"
+                                            },
+                                            " from anywhere."
+                                        ]
+                                    },
+                                    "",
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "gray",
+                                        "extra": [
+                                            "Every turn when no any Anvil exist:"
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "white",
+                                        "extra": [
+                                            "Restore 1 ",
+                                            {
+                                                "text": "Durability",
+                                                "color": "#F1DE61"
+                                            },
+                                            {
+                                                "font": "pc:default",
+                                                "text": "1",
+                                                "color": "white"
+                                            },
+                                            "."
+                                        ]
+                                    },
+                                    "",
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "extra": [
+                                            {
+                                                "text": ">>",
+                                                "color": "gray"
+                                            },
+                                            {
+                                                "text": "> ",
+                                                "color": "#72BD7A",
+                                                "bold": true
+                                            },
+                                            {
+                                                "text": "Details",
+                                                "color": "#3FA0E1",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "gray",
+                                        "extra": [
+                                            {
+                                                "text": "\u25cf ",
+                                                "color": "#72BD7A"
+                                            },
+                                            "\u1d05\u1d1c\u0280\u1d00\u0299\u026a\u029f\u026a\u1d1b\u028f : 1",
+                                            {
+                                                "font": "pc:default",
+                                                "text": "1",
+                                                "color": "white"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "gray",
+                                        "extra": [
+                                            {
+                                                "text": "\u25cf ",
+                                                "color": "#72BD7A"
+                                            },
+                                            "\u1d04\u1d00\u1d1b\u1d07\u0262\u1d0f\u0280\u028f : \u0280\u1d07\u1d18\u1d00\u026a\u0280"
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{pc:{item_name:{text:\"Wireless Repair\"},category:\"repair\",item:\"wireless\",durability:1,energy:1,rc:1b,game_item:1b}}"
+                        }
+                    ]
                 }
-              }
             ]
-          }
-        ]
-      }
+        }
     ]
 }

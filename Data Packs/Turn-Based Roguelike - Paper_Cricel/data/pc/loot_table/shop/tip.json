@@ -1,26 +1,101 @@
 {
     "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "paper",
-            "functions": [
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:custom_data": "{pc:{category:'shop',item:'cure',game_item:true,tip_item:true}}",
-                  "minecraft:item_model": "pc:shop/tip",
-                  "minecraft:item_name": ["",{"color":"#72bd7a","text":"ℹ"},{"color":"white","text":" How to check effects?"}],
-                  "minecraft:lore": [
-                      [{"italic":false,"color":"white","text":""},{"color":"blue","text":"Drop an item"},{"color":"gray","text":" to "},{"color":"yellow","text":"view its effects"}],[{"italic":false,"color":"white","text":""},{"color":"gray","text":"(like "},{"color":"#7abff1","text":"Regeneration"},{"color":"gray","text":"). This "},{"color":"yellow","text":"also works"}],[{"italic":false,"color":"white","text":""},{"color":"gray","text":"for items "},{"color":"blue","text":"dropped from a chest"},{"color":"gray","text":"."}]
-                  ]
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:paper",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "pc:shop/tip",
+                                "minecraft:item_name": {
+                                    "text": "",
+                                    "extra": [
+                                        {
+                                            "color": "#72BD7A",
+                                            "text": "\u2139"
+                                        },
+                                        {
+                                            "color": "white",
+                                            "text": " How to check effects?"
+                                        }
+                                    ]
+                                },
+                                "minecraft:lore": [
+                                    {
+                                        "italic": false,
+                                        "color": "white",
+                                        "text": "",
+                                        "extra": [
+                                            {
+                                                "color": "blue",
+                                                "text": "Drop an item"
+                                            },
+                                            {
+                                                "color": "gray",
+                                                "text": " to "
+                                            },
+                                            {
+                                                "color": "yellow",
+                                                "text": "view its effects"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "italic": false,
+                                        "color": "white",
+                                        "text": "",
+                                        "extra": [
+                                            {
+                                                "color": "gray",
+                                                "text": "(like "
+                                            },
+                                            {
+                                                "color": "#7ABFF1",
+                                                "text": "Regeneration"
+                                            },
+                                            {
+                                                "color": "gray",
+                                                "text": "). This "
+                                            },
+                                            {
+                                                "color": "yellow",
+                                                "text": "also works"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "italic": false,
+                                        "color": "white",
+                                        "text": "",
+                                        "extra": [
+                                            {
+                                                "color": "gray",
+                                                "text": "for items "
+                                            },
+                                            {
+                                                "color": "blue",
+                                                "text": "dropped from a chest"
+                                            },
+                                            {
+                                                "color": "gray",
+                                                "text": "."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{pc:{category:\"shop\",item:\"cure\",game_item:1b,tip_item:1b}}"
+                        }
+                    ]
                 }
-              }
             ]
-          }
-        ]
-      }
+        }
     ]
 }

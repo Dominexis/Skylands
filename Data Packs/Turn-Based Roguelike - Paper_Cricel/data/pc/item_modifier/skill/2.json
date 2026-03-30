@@ -1,8 +1,8 @@
 {
-  "function": "minecraft:set_custom_data",
-  "tag": {
-    "pc": {
-      "category": "skill2"
+    "function": "minecraft:set_custom_data",
+    "tag": {
+        "pc": {
+            "category": "skill2"
+        }
     }
-  }
 }

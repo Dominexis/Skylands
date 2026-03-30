@@ -35,7 +35,7 @@ execute if score @s pc.duration matches 30 run tp @s ^ ^-0.813 ^-1.827
 execute if score @s pc.duration matches 31 run tp @s ^ ^-1.486 ^-1.338
 execute if score @s pc.duration matches 32 run tp @s ^ ^-1.902 ^-0.618
 execute if score @s pc.duration matches 33 run tp @s ^ ^-2.0 ^0.0
-execute if score @s pc.duration matches 33.. run kill @e[type=marker,tag=pc.mob.ender_dragon.walk1.center,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0]
+execute if score @s pc.duration matches 33.. run kill @e[type=minecraft:marker,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0,tag=pc.mob.ender_dragon.walk1.center]
 
 # rotate
 execute if score @s pc.duration matches 1 at @s run function pc:object/ender_dragon/walk1/spin_marker/1
@@ -44,5 +44,5 @@ execute if score @s pc.duration matches 25 at @s run function pc:object/ender_dr
 execute if score @s pc.duration matches 29 at @s run function pc:object/ender_dragon/walk1/spin_marker/4
 
 # fx
-execute at @s run particle dragon_breath ^-1 ^ ^ 0.05 0.05 0.05 0.025 2 force
-execute at @s run particle dragon_breath ^1 ^ ^ 0.05 0.05 0.05 0.025 2 force
+execute at @s run particle minecraft:dragon_breath ^-1 ^ ^ 0.05 0.05 0.05 0.025 2 force
+execute at @s run particle minecraft:dragon_breath ^1 ^ ^ 0.05 0.05 0.05 0.025 2 force

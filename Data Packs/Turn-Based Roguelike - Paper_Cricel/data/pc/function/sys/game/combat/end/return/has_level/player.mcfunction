@@ -6,10 +6,10 @@ tag @s remove pc.sys.rc
 
 gamemode adventure @s
 $tp @s $(rest_area)
-effect give @s blindness 1 0 true
+effect give @s minecraft:blindness 1 0 true
 attribute @s minecraft:scale base reset
 attribute @s minecraft:step_height base reset
-attribute @s minecraft:entity_interaction_range modifier remove no_interact
+attribute @s minecraft:entity_interaction_range modifier remove minecraft:no_interact
 execute at @s run function sl:api/set_checkpoint
 
 # fx

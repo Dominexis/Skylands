@@ -1,31 +1,130 @@
 {
     "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "paper",
-            "functions": [
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:custom_data": "{pc:{item_name:{text:'Pinpoint Strike'},category:'skill',item:'pinpoint_strike',tip:{vulnerable:true},durability:4,energy:1,rc:true,game_item:true}}",
-                  "minecraft:item_model": "minecraft:tipped_arrow","potion_contents": {"custom_color":13714998},"minecraft:max_stack_size": 1,"minecraft:consumable": {"consume_seconds": 94879487},"tooltip_display":{"hidden_components": ["potion_contents"]},
-                  "minecraft:lore": [
-                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Ability","color": "#f5b055","bold": true}],
-                    [{"text": "", "italic": false, "color": "white"}, {"text": "Deal 4 damage and"}],
-                    [{"text": "", "italic": false, "color": "white"}, {"text": "apply 2 "}, {"text": "Vulnerable", "color": "#7abff1"}, {"text": "."}],
-                    "",
-                    [{"text":"","italic": false},{"text":">>","color": "gray"},{"text":"> ","color": "#72bd7a","bold": true},{"text":"Details","color": "#3fa0e1","bold": true}],
-                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴅᴜʀᴀʙɪʟɪᴛʏ : 4"},{"font":"pc:default","text":"1","color":"white"}],
-                    [{"text":"","italic": false,"color": "gray"},{"text":"● ","color":"#72bd7a"},{"text":"ᴄᴀᴛᴇɢᴏʀʏ : ꜱᴋɪʟʟ"}]
-                  ]
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:paper",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "minecraft:tipped_arrow",
+                                "minecraft:potion_contents": {
+                                    "custom_color": 13714998
+                                },
+                                "minecraft:max_stack_size": 1,
+                                "minecraft:consumable": {
+                                    "consume_seconds": 94879487
+                                },
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "potion_contents"
+                                    ]
+                                },
+                                "minecraft:lore": [
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "extra": [
+                                            {
+                                                "text": ">>",
+                                                "color": "gray"
+                                            },
+                                            {
+                                                "text": "> ",
+                                                "color": "#72BD7A",
+                                                "bold": true
+                                            },
+                                            {
+                                                "text": "Ability",
+                                                "color": "#F5B055",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "white",
+                                        "extra": [
+                                            "Deal 4 damage and"
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "white",
+                                        "extra": [
+                                            "apply 2 ",
+                                            {
+                                                "text": "Vulnerable",
+                                                "color": "#7ABFF1"
+                                            },
+                                            "."
+                                        ]
+                                    },
+                                    "",
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "extra": [
+                                            {
+                                                "text": ">>",
+                                                "color": "gray"
+                                            },
+                                            {
+                                                "text": "> ",
+                                                "color": "#72BD7A",
+                                                "bold": true
+                                            },
+                                            {
+                                                "text": "Details",
+                                                "color": "#3FA0E1",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "gray",
+                                        "extra": [
+                                            {
+                                                "text": "\u25cf ",
+                                                "color": "#72BD7A"
+                                            },
+                                            "\u1d05\u1d1c\u0280\u1d00\u0299\u026a\u029f\u026a\u1d1b\u028f : 4",
+                                            {
+                                                "font": "pc:default",
+                                                "text": "1",
+                                                "color": "white"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "",
+                                        "italic": false,
+                                        "color": "gray",
+                                        "extra": [
+                                            {
+                                                "text": "\u25cf ",
+                                                "color": "#72BD7A"
+                                            },
+                                            "\u1d04\u1d00\u1d1b\u1d07\u0262\u1d0f\u0280\u028f : \ua731\u1d0b\u026a\u029f\u029f"
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{pc:{item_name:{text:\"Pinpoint Strike\"},category:\"skill\",item:\"pinpoint_strike\",tip:{vulnerable:1b},durability:4,energy:1,rc:1b,game_item:1b}}"
+                        }
+                    ]
                 }
-              }
             ]
-          }
-        ]
-      }
+        }
     ]
 }

@@ -1,7 +1,1 @@
-{
-    "parent": "minecraft:item/generated",
-    "textures": {
-      "layer0": "pc:item/start_game"
-    }
-  }
-  
+{"parent": "minecraft:item/generated", "textures": {"layer0": "pc:item/start_game", "particle": "pc:item/start_game"}}

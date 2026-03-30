@@ -1,9 +1,9 @@
 [
-  {
-    "condition": "minecraft:entity_scores",
-    "entity": "this",
-    "scores": {
-      "pc.object.is_neutral": 1
+    {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+            "pc.object.is_neutral": 1
+        }
     }
-  }
 ]

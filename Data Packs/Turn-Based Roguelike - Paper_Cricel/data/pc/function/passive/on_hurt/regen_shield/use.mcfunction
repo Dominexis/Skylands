@@ -14,6 +14,6 @@ function pc:sys/utils/math/set {id:"entity @s data.effect.regeneration"}
 
 # fx
 function pc:fx/text/use {text:[{text:"Regen Shield",color:"#92e781"}]}
-particle entity_effect{color:[0.471,1.000,0.471,1.00]} ~ ~1 ~ 0.2 0.5 0.2 1 20 force
-playsound minecraft:entity.illusioner.prepare_mirror master @a[predicate=pc:player/ingame,predicate=sl:player,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0] ~ ~ ~ 0.75 2 0.75
-playsound minecraft:entity.zombie.attack_iron_door master @a[predicate=pc:player/ingame,predicate=sl:player,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0] ~ ~ ~ 0.25 1.25 0.25
+particle minecraft:entity_effect{color:[0.471,1.0,0.471,1.0]} ~ ~1 ~ 0.2 0.5 0.2 1 20 force
+playsound minecraft:entity.illusioner.prepare_mirror master @a[x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0,predicate=pc:player/ingame,predicate=sl:player] ~ ~ ~ 0.75 2 0.75
+playsound minecraft:entity.zombie.attack_iron_door master @a[x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0,predicate=pc:player/ingame,predicate=sl:player] ~ ~ ~ 0.25 1.25 0.25

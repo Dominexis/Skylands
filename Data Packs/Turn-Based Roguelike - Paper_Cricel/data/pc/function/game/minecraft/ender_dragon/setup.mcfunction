@@ -12,23 +12,14 @@ data modify storage pc:game combat.coord.spawnpoint set value "2236 2 5507 -180 
 data modify storage pc:game combat.coord.backpoint set value "2236 7 5453"
 data modify storage pc:game combat.coord.forceload set value "2268 5516 2217 5460"
 
-    # Grids
+# Grids
 data modify storage pc:game combat.grid_center set value [4,3]
 
-data modify storage pc:game combat.grid set value [\
-    [{type:hole},{type:spac},{type:spac},{type:spac},{type:spac},{type:spac},{type:hole}],\
-    [{type:spac},{type:spac},{type:spac},{type:spac},{type:spac},{type:spac},{type:spac}],\
-    [{type:spac},{type:spac},{type:spac},{type:spac},{type:spac},{type:spac},{type:spac}],\
-    [{type:spac},{type:spac},{type:spac},{type:wall},{type:spac},{type:spac},{type:spac}],\
-    [{type:spac},{type:spac},{type:spac},{type:spac},{type:spac},{type:spac},{type:spac}],\
-    [{type:spac},{type:spac},{type:spac},{type:spac},{type:spac},{type:spac},{type:spac}],\
-    [{type:spac},{type:spac},{type:spac},{type:spac},{type:spac},{type:spac},{type:spac}],\
-    [{type:hole},{type:spac},{type:spac},{type:spac},{type:spac},{type:spac},{type:hole}],\
-]
+data modify storage pc:game combat.grid set value [[{type:"hole"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"hole"}],[{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"}],[{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"}],[{type:"spac"},{type:"spac"},{type:"spac"},{type:"wall"},{type:"spac"},{type:"spac"},{type:"spac"}],[{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"}],[{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"}],[{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"}],[{type:"hole"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"spac"},{type:"hole"}]]
 
-data modify storage pc:game combat.grid[4][3].lair set value {type:mob, id:[ender_dragon]}
-data modify storage pc:game combat.grid[3][1].lair set value {type:mob, id:[end_crystal]}
-data modify storage pc:game combat.grid[1][3].lair set value {type:mob, id:[end_crystal]}
-data modify storage pc:game combat.grid[3][5].lair set value {type:mob, id:[end_crystal]}
+data modify storage pc:game combat.grid[4][3].lair set value {type:"mob",id:["ender_dragon"]}
+data modify storage pc:game combat.grid[3][1].lair set value {type:"mob",id:["end_crystal"]}
+data modify storage pc:game combat.grid[1][3].lair set value {type:"mob",id:["end_crystal"]}
+data modify storage pc:game combat.grid[3][5].lair set value {type:"mob",id:["end_crystal"]}
 
-data modify storage pc:game combat.grid[7][3].lair set value {type:ally,id:[player]}
+data modify storage pc:game combat.grid[7][3].lair set value {type:"ally",id:["player"]}

@@ -1,6 +1,6 @@
 
-summon marker ^ ^ ^ {UUID:[I;1561659369,1386039665,-1526196046,1596228456]}
-summon marker ^ ^ ^100 {UUID:[I;-79995807,1168656296,-1303631518,1176127950]}
+summon minecraft:marker ^ ^ ^ {UUID:[I;1561659369,1386039665,-1526196046,1596228456]}
+summon minecraft:marker ^ ^ ^100 {UUID:[I;-79995807,1168656296,-1303631518,1176127950]}
 
 data modify storage pc:temp vibration.x1 set from entity 5d1507e9-529d-4971-a508-18b25f248368 Pos[0]
 data modify storage pc:temp vibration.y1 set from entity 5d1507e9-529d-4971-a508-18b25f248368 Pos[1]

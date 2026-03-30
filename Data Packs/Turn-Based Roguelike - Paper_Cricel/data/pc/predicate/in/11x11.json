@@ -1,10 +1,14 @@
 {
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "distance": {
-      "x": {"max": 21.5},
-      "z": {"max": 21.5}
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "distance": {
+            "x": {
+                "max": 21.5
+            },
+            "z": {
+                "max": 21.5
+            }
+        }
     }
-  }
 }

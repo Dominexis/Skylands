@@ -1,11 +1,11 @@
 
 # effect
-data merge entity @s {Tags:[pc.rest_area,pc.rest_area.trader],NoAI:1b,Invulnerable:1b,CustomNameVisible:1b}
-setblock ~ ~1 ~ air
-setblock ~ ~1 ~ purple_shulker_box[facing=up]
-setblock ~ ~ ~ barrier
+data merge entity @s {Tags:["pc.rest_area","pc.rest_area.trader"],NoAI:1b,Invulnerable:1b,CustomNameVisible:1b}
+setblock ~ ~1 ~ minecraft:air
+setblock ~ ~1 ~ minecraft:purple_shulker_box[facing=up]
+setblock ~ ~ ~ minecraft:barrier
 
-    # Settings
+# Settings
 data modify block ~ ~1 ~ CustomName set from storage pc:game shop.trader.name
 data modify entity @s data set from storage pc:game shop.trader.items
 

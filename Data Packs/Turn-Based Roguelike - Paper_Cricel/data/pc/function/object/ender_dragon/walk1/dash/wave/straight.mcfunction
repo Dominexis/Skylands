@@ -1,3 +1,3 @@
 
-execute positioned ^4 ^ ^ positioned ~-1.5 ~-100 ~-1.5 as @e[type=marker,tag=pc.intent.now,dx=2,dy=200,dz=2] if data entity @s {data:{id:[wave]}} positioned as @s run function pc:object/ender_dragon/walk1/dash/wave/2
-execute positioned ^-4 ^ ^ positioned ~-1.5 ~-100 ~-1.5 as @e[type=marker,tag=pc.intent.now,dx=2,dy=200,dz=2] if data entity @s {data:{id:[wave]}} positioned as @s run function pc:object/ender_dragon/walk1/dash/wave/2
+execute positioned ^4 ^ ^ positioned ~-1.5 ~-100 ~-1.5 as @e[type=minecraft:marker,dx=2,dy=200,dz=2,tag=pc.intent.now] if data entity @s {data:{id:["wave"]}} positioned as @s run function pc:object/ender_dragon/walk1/dash/wave/2
+execute positioned ^-4 ^ ^ positioned ~-1.5 ~-100 ~-1.5 as @e[type=minecraft:marker,dx=2,dy=200,dz=2,tag=pc.intent.now] if data entity @s {data:{id:["wave"]}} positioned as @s run function pc:object/ender_dragon/walk1/dash/wave/2

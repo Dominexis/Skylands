@@ -1,4 +1,4 @@
 
 # effect
-kill @n[type=text_display,tag=pc.grid.effect_info,distance=..100]
-execute as @e[type=item_display,tag=pc.select,distance=..100] at @s run function pc:sys/player/select/space/clear/use
+kill @n[type=minecraft:text_display,distance=..100,tag=pc.grid.effect_info]
+execute as @e[type=minecraft:item_display,distance=..100,tag=pc.select] at @s run function pc:sys/player/select/space/clear/use

@@ -2,7 +2,7 @@
 
 # effect
 function pc:sys/game/rest_area/purchase/affordable_value
-execute positioned ~ ~1 ~ summon chest_minecart run function pc:sys/item/return/inproperly_item
+execute positioned ~ ~1 ~ summon minecraft:chest_minecart run function pc:sys/item/return/inproperly_item
 
 execute store result score #max pc.main run data get entity @s data.item
 scoreboard players remove #max pc.main 1
