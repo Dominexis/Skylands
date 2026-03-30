@@ -408,8 +408,8 @@ teleport @s {pack_coords(plot_center, False, True, 65)}
         ],
         "frame": {
             "easy": "task",
-            "difficult": "goal",
-            "challenging": "challenge",
+            "challenging": "goal",
+            "difficult": "challenge",
         }[plot["difficulty"]],
         "description": [
             [

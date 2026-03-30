@@ -25,7 +25,7 @@
         "announce_to_chat": false,
         "hidden": false
     },
-    "parent": "sl:genre/difficult_parkour",
+    "parent": "sl:genre/challenging_parkour",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:impossible"

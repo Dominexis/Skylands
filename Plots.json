@@ -43,7 +43,7 @@
             "required_chunks": [],
             "regions": [],
             "genre": "parkour",
-            "difficulty": "difficult",
+            "difficulty": "challenging",
             "pvp": false,
             "max_players": 0,
             "weight": "light"
@@ -66,7 +66,7 @@
             "required_chunks": [],
             "regions": [],
             "genre": "pve",
-            "difficulty": "difficult",
+            "difficulty": "challenging",
             "pvp": false,
             "max_players": 1,
             "weight": "light"
@@ -115,7 +115,7 @@
             "required_chunks": [],
             "regions": [],
             "genre": "parkour",
-            "difficulty": "difficult",
+            "difficulty": "challenging",
             "pvp": false,
             "max_players": 0,
             "weight": "light"
@@ -165,7 +165,7 @@
             "required_chunks": [],
             "regions": [],
             "genre": "puzzle",
-            "difficulty": "difficult",
+            "difficulty": "challenging",
             "pvp": false,
             "max_players": 1,
             "weight": "light"
@@ -202,7 +202,7 @@
             ],
             "regions": [],
             "genre": "parkour",
-            "difficulty": "difficult",
+            "difficulty": "challenging",
             "pvp": false,
             "max_players": 1,
             "weight": "light"
@@ -232,7 +232,7 @@
             ],
             "regions": [],
             "genre": "puzzle",
-            "difficulty": "difficult",
+            "difficulty": "challenging",
             "pvp": false,
             "max_players": 1,
             "weight": "medium"
@@ -256,7 +256,7 @@
             "required_chunks": [],
             "regions": [],
             "genre": "parkour",
-            "difficulty": "difficult",
+            "difficulty": "challenging",
             "pvp": false,
             "max_players": 0,
             "weight": "light"
