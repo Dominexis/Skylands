@@ -328,6 +328,29 @@
             "pvp": false,
             "max_players": 0,
             "weight": "light"
+        },
+
+        {
+            "name": "CELESTIOPELAGO v0.9",
+            "namespace": "celpel",
+            "description": "Become the final beta tester for a classified military project in the distant future. Steampunk-inspired; minimal parkour; singleplayer recommended.",
+            "authors": [
+                "PsyKat777"
+            ],
+            "icon": {
+                "id": "minecraft:chiseled_copper"
+            },
+            "spawn": "-1846 222 -6395 0 0",
+            "collectibles": [
+                "-1792 231 -6397"
+            ],
+            "required_chunks": [],
+            "regions": [],
+            "genre": "puzzle",
+            "difficulty": "easy",
+            "pvp": false,
+            "max_players": 3,
+            "weight": "light"
         }
     ]
 }
