@@ -1,0 +1,3 @@
+# Distributes the boots, so that all players have them in a multiplayer game
+scoreboard players set @a[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] celpel.boots_distributed 1
+give @a[nbt=!{Inventory:[{id:"minecraft:leather_boots"}]},x=-1775,y=226,z=-6376,distance=..250,team=sl.player] leather_boots[dyed_color=6960055,custom_name=[{"text":"Telepad Boots","italic":false,"color":"#6A00FF"}],lore=[[{"text":"Some high-tech boots invented by the Republic","italic":false}],[{"text":"of Zygartia. Stand on the unoxidized bulb of a","italic":false}],[{"text":"telepad while wearing them to use them.","italic":false}]],unbreakable={}]

@@ -1,0 +1,10 @@
+# Tests if a player is wearing the telepad boots and is standing on a telepad, then runs the correct function
+execute as @a[nbt={equipment:{feet:{id:"minecraft:leather_boots"}}},x=-1775,y=226,z=-6376,distance=..250,team=sl.player] at @s if block ~ ~-2 ~ red_terracotta run function celpel:telepads/to_platform
+execute as @a[nbt={equipment:{feet:{id:"minecraft:leather_boots"}}},x=-1775,y=226,z=-6376,distance=..250,team=sl.player] at @s if block ~ ~-2 ~ orange_terracotta run function celpel:telepads/from_platform
+execute as @a[nbt={equipment:{feet:{id:"minecraft:leather_boots"}}},x=-1775,y=226,z=-6376,distance=..250,team=sl.player] at @s if block ~ ~-2 ~ yellow_terracotta if score @r[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] celpel.lever_telepad matches 1 run function celpel:telepads/to_bearing
+execute as @a[nbt={equipment:{feet:{id:"minecraft:leather_boots"}}},x=-1775,y=226,z=-6376,distance=..250,team=sl.player] at @s if block ~ ~-2 ~ lime_terracotta if score @r[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] celpel.lever_telepad matches 1 run function celpel:telepads/from_bearing
+execute as @a[nbt={equipment:{feet:{id:"minecraft:leather_boots"}}},x=-1775,y=226,z=-6376,distance=..250,team=sl.player] at @s if block ~ ~-2 ~ green_terracotta run function celpel:telepads/to_interlocked
+execute as @a[nbt={equipment:{feet:{id:"minecraft:leather_boots"}}},x=-1775,y=226,z=-6376,distance=..250,team=sl.player] at @s if block ~ ~-2 ~ cyan_terracotta run function celpel:telepads/from_interlocked
+execute as @a[nbt={equipment:{feet:{id:"minecraft:leather_boots"}}},x=-1775,y=226,z=-6376,distance=..250,team=sl.player] at @s if block ~ ~-2 ~ light_blue_terracotta run function celpel:telepads/to_belt_drive
+execute as @a[nbt={equipment:{feet:{id:"minecraft:leather_boots"}}},x=-1775,y=226,z=-6376,distance=..250,team=sl.player] at @s if block ~ ~-2 ~ blue_terracotta run function celpel:telepads/from_belt_drive
+execute as @a[nbt={equipment:{feet:{id:"minecraft:leather_boots"}}},x=-1775,y=226,z=-6376,distance=..250,team=sl.player] at @s if block ~ ~-2 ~ purple_terracotta run function celpel:telepads/to_bottom

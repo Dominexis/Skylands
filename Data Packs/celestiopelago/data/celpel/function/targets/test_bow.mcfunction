@@ -1,0 +1,1 @@
+execute if score @r[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] celpel.bow_shot matches 1.. run function celpel:targets/refill_arrows

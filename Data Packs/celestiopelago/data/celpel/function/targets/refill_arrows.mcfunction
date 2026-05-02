@@ -1,0 +1,3 @@
+scoreboard players set @a[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] celpel.bow_shot 0
+give @r[x=-1775,y=226,z=-6376,distance=..250,team=sl.player,gamemode=!creative,nbt={Inventory:[{id:"minecraft:bow"}]}] spectral_arrow[custom_name=[{"text":"Duplicator Arrow","italic":false}],lore=[[{"text":"An arrow made of an unusual material. When","italic":false}],[{"text":"shot, it copies itself, shooting one copy and","italic":false}],[{"text":"leaving you with the other copy.","italic":false}]]]
+execute as @e[type=spectral_arrow,x=-1775,y=226,z=-6376,distance=..250] run data merge entity @s {pickup:0}

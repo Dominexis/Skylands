@@ -1,0 +1,2 @@
+# Tests if the hidden redstone lamp is powered due to the placed repeater and pressed button, starting the vaporization sequence if it is
+execute if block -1790 244 -6406 redstone_lamp[lit=true] run function celpel:vaporizing/vaporize_1
