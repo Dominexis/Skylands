@@ -1,0 +1,10 @@
+#check if players have all bile before proceeding
+#tellraw if not
+execute if score player erictho_objective matches 0 if score bile1 erictho_objective matches 0 if score bile2 erictho_objective matches 0 at @s run tellraw @a [{"text":"[\"\",{\"text\":\"There are more to explore in the area. \",\"color\":\"yellow\"},\"\\n\",{\"text\":\"Checkpoint not set\",\"italic\":true,\"color\":\"red\"}]","hover_event":{"action":"show_text","value":[{"text":"Collect the items from the area before proceeding","italic":true,"color":"aqua"}]}}]
+execute if score player erictho_objective matches 0 if score bile1 erictho_objective matches 1 if score bile2 erictho_objective matches 1 as @s run function erictho:part1/succeedcheck
+
+execute if score player erictho_objective matches 1 if score bile3 erictho_objective matches 0 if score bile4 erictho_objective matches 0 run tellraw @a [{"text":"[\"\",{\"text\":\"There are more to explore in the area. \",\"color\":\"yellow\"},\"\\n\",{\"text\":\"Checkpoint not set\",\"italic\":true,\"color\":\"red\"}]","hover_event":{"action":"show_text","value":[{"text":"Collect the items from the area before proceeding","italic":true,"color":"aqua"}]}}]
+execute if score player erictho_objective matches 1 if score bile3 erictho_objective matches 1 if score bile4 erictho_objective matches 1 as @s run function erictho:part1/succeedcheck
+
+execute if score player erictho_objective matches 2 if score bile5 erictho_objective matches 0 if score bile6 erictho_objective matches 0 run tellraw @a [{"text":"[\"\",{\"text\":\"There are more to explore in the area. \",\"color\":\"yellow\"},\"\\n\",{\"text\":\"Checkpoint not set\",\"italic\":true,\"color\":\"red\"}]","hover_event":{"action":"show_text","value":[{"text":"Collect the items from the area before proceeding","italic":true,"color":"aqua"}]}}]
+execute if score player erictho_objective matches 2 if score bile5 erictho_objective matches 1 if score bile6 erictho_objective matches 1 as @s run function erictho:part1/succeedcheck
