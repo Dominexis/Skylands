@@ -4,3 +4,4 @@ execute if score #plot.demo.state sl.value matches 1.. run scoreboard players ad
 execute if score #plot.pc.state sl.value matches 1.. run scoreboard players add #medium_plot_count sl.value 1
 
 scoreboard players set #heavy_plot_count sl.value 0
+execute if score #plot.synb.state sl.value matches 1.. run scoreboard players add #heavy_plot_count sl.value 1
