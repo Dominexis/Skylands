@@ -1,2 +1,2 @@
-scoreboard players add player erictho_checkpoint 1
+scoreboard players add erictho.player erictho.checkpoint 1
 setblock ~ ~-3 ~ redstone_lamp[lit=true] replace

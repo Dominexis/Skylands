@@ -2,31 +2,25 @@
 
 #reset and clear everything
 #kill entities
-kill @e[type=interaction]
+kill @e[type=interaction,distance=..100]
 
-#remove tags 
 
 #to stop loops when is 1
 #each section have their own number to reset? need to think through
-scoreboard players set player erictho_endloop 1
-
+scoreboard players set erictho.player erictho.endloop 1
+#clear scheduled functions
+schedule clear erictho:part1/loop
+schedule clear erictho:part2/loop
+#to reset loops so theyre active
+scoreboard players set erictho.player erictho.endloop 0
+scoreboard players set erictho.player erictho.checkpoint 0
 
 #reset scores
-scoreboard players set player erictho_checkpoint 0
+scoreboard players set erictho.player erictho.checkpoint 0
 
-scoreboard players set bile1 erictho_objective 0
-scoreboard players set bile2 erictho_objective 0
-scoreboard players set bile3 erictho_objective 0
-scoreboard players set bile4 erictho_objective 0
-scoreboard players set bile5 erictho_objective 0
-scoreboard players set bile6 erictho_objective 0
-
-#to reset loops so theyre active
-scoreboard players set player erictho_endloop 0
-
-scoreboard players set player erictho_checkpoint 0
-
-scoreboard players set @a[team=erictho_player] erictho_checkpoint 0
-
-#remove team
-team remove erictho_player
+scoreboard players set erictho.bile1 erictho.objective 0
+scoreboard players set erictho.bile2 erictho.objective 0
+scoreboard players set erictho.bile3 erictho.objective 0
+scoreboard players set erictho.bile4 erictho.objective 0
+scoreboard players set erictho.bile5 erictho.objective 0
+scoreboard players set erictho.bile6 erictho.objective 0
