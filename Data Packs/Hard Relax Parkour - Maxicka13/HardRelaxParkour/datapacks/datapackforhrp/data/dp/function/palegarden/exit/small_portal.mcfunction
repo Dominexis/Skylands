@@ -1,0 +1,2 @@
+execute unless score @s level matches 5 run tellraw @s ["","This portal is not available yet. Come back later\n\n", "Этот портал пока что закрыт для вас, приходите в следующий раз.\n\n"]
+execute if score @s level matches 5 run function dp:palegarden/exit/exit
