@@ -1,5 +1,4 @@
 execute as @a[distance=..300,predicate=sl:player] at @s run function dphardrelaxparkour:tick_player
-execute as @a at @s run function dphardrelaxparkour:tick_player
 
 # Start Door
 execute as @e[type=minecraft:interaction,tag=dphardrelaxparkour.startButton] if data entity @s interaction run function dphardrelaxparkour:main_door/open_door
