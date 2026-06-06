@@ -413,6 +413,29 @@
             "pvp": false,
             "max_players": 12,
             "weight": "heavy"
+        },
+
+        {
+            "name": "Hard Relax Parkour",
+            "namespace": "dphardrelaxparkour",
+            "description": "Hard Relax Parkour",
+            "authors": [
+                "Maxicka13"
+            ],
+            "icon": {
+                "id": "minecraft:grass_block"
+            },
+            "spawn": "3321 6 5354 90 0",
+            "collectibles": [
+                "3124 17 5327"
+            ],
+            "required_chunks": [],
+            "regions": [],
+            "genre": "parkour",
+            "difficulty": "easy",
+            "pvp": false,
+            "max_players": 10,
+            "weight": "medium"
         }
     ]
 }
