@@ -1,0 +1,1 @@
+$summon vex ~ ~ ~ {life_ticks:500,bound_pos:[I;$(x),$(y),$(z)]}

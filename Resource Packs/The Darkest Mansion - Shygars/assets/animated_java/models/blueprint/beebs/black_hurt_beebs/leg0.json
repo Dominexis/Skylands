@@ -1,0 +1,11 @@
+{
+	"parent": "animated_java:blueprint/beebs/leg0",
+	"textures": {
+		"0": "animated_java:blueprint/beebs/hurt_black_beebs",
+		"1": "animated_java:blueprint/beebs/hurt_beebs",
+		"2": "animated_java:blueprint/beebs/empty",
+		"5": "animated_java:blueprint/beebs/empty",
+		"6": "animated_java:blueprint/beebs/hurt_beebs_mlg_glasses",
+		"14": "animated_java:blueprint/beebs/empty"
+	}
+}

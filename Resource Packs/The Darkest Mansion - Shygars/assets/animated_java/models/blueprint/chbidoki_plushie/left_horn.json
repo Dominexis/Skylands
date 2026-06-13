@@ -1,0 +1,48 @@
+{
+	"textures": {
+		"0": "animated_java:blueprint/chbidoki_plushie/chibidoki_plushie",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [6, 8, 7],
+			"to": [9, 14, 10],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [8, 8, 8]
+			},
+			"faces": {
+				"north": {
+					"uv": [10.5, 4.75, 9.75, 6.25],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [11.25, 4.75, 10.5, 6.25],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [12, 4.75, 11.25, 6.25],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [9.75, 4.75, 9, 6.25],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [9.75, 4.75, 10.5, 4],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [10.5, 4, 11.25, 4.75],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}

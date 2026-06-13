@@ -1,0 +1,1 @@
+$execute as @s at @s anchored eyes facing $(x) $(y) $(z) positioned ^ ^ ^5 rotated as @s positioned ^ ^ ^$(smoothing) facing entity @s eyes facing ^ ^ ^-1 run rotate @s $(y_rotation) $(x_rotation)

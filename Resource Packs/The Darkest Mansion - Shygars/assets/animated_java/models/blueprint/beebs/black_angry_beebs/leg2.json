@@ -1,0 +1,8 @@
+{
+	"parent": "animated_java:blueprint/beebs/leg2",
+	"textures": {
+		"0": "animated_java:blueprint/beebs/beebs_black_wool",
+		"2": "animated_java:blueprint/beebs/empty",
+		"14": "animated_java:blueprint/beebs/empty"
+	}
+}

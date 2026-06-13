@@ -1,0 +1,73 @@
+{
+  "music.enter_the_darkness.intro": {
+  "category": "music",
+  "sounds": [ {
+    "name": "music/enter_the_darkness_intro",
+    "stream": true
+    }
+    ]
+  },
+
+  "music.enter_the_darkness.loop": {
+  "category": "music",
+  "sounds": [ {
+    "name": "music/enter_the_darkness_loop",
+    "stream": true
+    }
+    ]
+  },
+
+  "music.deeper_into_the_abyss": {
+  "category": "music",
+  "sounds": [ {
+    "name": "music/deeper_into_the_abyss",
+    "stream": true
+    }
+    ]
+  },
+
+  "music.secrets_of_the_night_sky": {
+  "category": "music",
+  "sounds": [ {
+    "name": "music/secrets_of_the_night_sky",
+    "stream": true
+    }
+    ]
+  },
+
+  "music.evocating_tenebrosity.intro": {
+  "category": "music",
+  "sounds": [ {
+    "name": "music/evocating_tenebrosity_intro",
+    "stream": true
+    }
+    ]
+  },
+
+  "music.evocating_tenebrosity.loop": {
+  "category": "music",
+  "sounds": [ {
+    "name": "music/evocating_tenebrosity_loop",
+    "stream": true
+    }
+    ]
+  },
+
+  "music.out_of_pure_spite.intro": {
+  "category": "music",
+  "sounds": [ {
+    "name": "music/out_of_pure_spite_intro",
+    "stream": true
+    }
+    ]
+  },
+
+  "music.out_of_pure_spite.loop": {
+  "category": "music",
+  "sounds": [ {
+    "name": "music/out_of_pure_spite_loop",
+    "stream": true
+    }
+    ]
+  }
+}

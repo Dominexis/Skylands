@@ -1,0 +1,10 @@
+{
+	"replace": false,
+	"values": [
+		"animated_java:beebs/on_load",
+		"animated_java:chbidoki_plushie/on_load",
+		"animated_java:ravaged_mind/on_load",
+		"animated_java:skurleton/on_load",
+		"animated_java:spite/on_load"
+	]
+}

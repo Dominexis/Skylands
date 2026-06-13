@@ -1,0 +1,6 @@
+{
+	"parent": "animated_java:blueprint/ravaged_mind/body",
+	"textures": {
+		"0": "animated_java:blueprint/ravaged_mind/ravaged_mind_damaged"
+	}
+}

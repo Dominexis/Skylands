@@ -1,0 +1,3 @@
+$summon pillager $(x) $(y) $(z) {Silent:1b,DeathLootTable:"minecraft:empty",PersistenceRequired:1b,CanPickUpLoot:0b,Health:100f,Tags:["RavagedMind"],CustomName:"Ravaged Mind",active_effects:[{id:"minecraft:invisibility",amplifier:0,duration:-1,show_particles:0b}],attributes:[{id:"minecraft:knockback_resistance",base:1},{id:"minecraft:max_health",base:100},{id:"minecraft:movement_speed",base:0.15}]}
+$execute positioned $(x) $(y) $(z) run function animated_java:ravaged_mind/summon {args:{animation:"idle01",start_animation:true}}
+$execute positioned $(x) $(y) $(z) as @e[tag=RavagedMind,distance=..0.1] run ride @e[tag=aj.ravaged_mind.root,distance=..0.1,limit=1] mount @s
