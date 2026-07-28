@@ -1,0 +1,3 @@
+
+data merge entity @s {Tags:[pc.grid.infobar,pc.fx],alignment: "center", background: 1073741824, brightness: {block: 15, sky: 15}, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, transformation: {left_rotation: [-0.7071068f, 0.0f, 0.0f, 0.7071068f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.5000006f, 1.5000005f, 1.0f], translation: [0.0f, 0.1f, 0.15f]}}
+function sys:grid/infobar/update

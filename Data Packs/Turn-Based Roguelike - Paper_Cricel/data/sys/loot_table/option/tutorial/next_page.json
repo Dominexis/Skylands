@@ -1,0 +1,39 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:paper",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "sys:option/tutorial/next_page",
+                                "minecraft:custom_data": "{pc:{sys:{tutorial:1b},id:'next_page'}}",
+                                "minecraft:max_stack_size": 1,
+                                "minecraft:consumable": {
+                                    "consume_seconds": 94879487
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": {"text": "","italic": false,"extra": [{"nbt": "sys.item.option.tutorial.next_page", "storage": "pc:lang", "interpret": true}]}
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "mode": "replace_all",
+                            "lore": [
+                                {"nbt": "sys.lore.option.tutorial.next_page", "storage": "pc:lang", "interpret": true}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

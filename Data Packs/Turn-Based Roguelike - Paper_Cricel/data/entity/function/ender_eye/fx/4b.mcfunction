@@ -1,0 +1,3 @@
+
+execute if entity @s[tag=pc.entity.ender_eye.wing1] run return run data merge entity @s {transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 0.25f], translation: [-0.55f, -0.4625f, 0.0f]}, start_interpolation: 0, interpolation_duration: 30}
+execute if entity @s[tag=pc.entity.ender_eye.wing2] run return run data merge entity @s {transformation: {left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 0.25f], translation: [0.55f, -0.4625f, 0.0f]}, start_interpolation: 0, interpolation_duration: 30}

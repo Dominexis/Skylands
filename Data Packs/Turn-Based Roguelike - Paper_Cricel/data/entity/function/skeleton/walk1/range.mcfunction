@@ -1,0 +1,6 @@
+
+data modify entity @s data.intent.self set value {text:['walk']}
+
+data modify storage pc:temp intent set value {text:['walk'],facing:1b,is_walk:1b}
+data modify storage pc:temp range set value {type:"nearest",mode:"intent",nearest:{block:2,target:"ally"},avail:{hole:0b}}
+function sys:grid/range/use

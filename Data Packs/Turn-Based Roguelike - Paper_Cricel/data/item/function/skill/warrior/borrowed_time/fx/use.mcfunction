@@ -1,0 +1,21 @@
+
+function item:skill/warrior/borrowed_time/fx/2
+function item:skill/warrior/borrowed_time/fx/2
+function item:skill/warrior/borrowed_time/fx/2
+function item:skill/warrior/borrowed_time/fx/2
+function item:skill/warrior/borrowed_time/fx/2
+function item:skill/warrior/borrowed_time/fx/2
+function item:skill/warrior/borrowed_time/fx/2
+function item:skill/warrior/borrowed_time/fx/2
+function item:skill/warrior/borrowed_time/fx/2
+function item:skill/warrior/borrowed_time/fx/2
+function item:skill/warrior/borrowed_time/fx/2
+function item:skill/warrior/borrowed_time/fx/2
+function item:skill/warrior/borrowed_time/fx/2
+function item:skill/warrior/borrowed_time/fx/2
+function item:skill/warrior/borrowed_time/fx/2
+function item:skill/warrior/borrowed_time/fx/2
+function item:skill/warrior/borrowed_time/fx/2
+function item:skill/warrior/borrowed_time/fx/2
+function item:skill/warrior/borrowed_time/fx/2
+function item:skill/warrior/borrowed_time/fx/2

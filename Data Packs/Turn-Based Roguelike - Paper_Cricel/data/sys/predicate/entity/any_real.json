@@ -1,0 +1,19 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "pc.entity.enemy": 1
+            }
+        },
+        {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "pc.entity.ally": 1
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:paper",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "sys:option/hpmax",
+                                "minecraft:custom_data": "{pc:{sys:{shop:1b,game:1b},category:'shop/campfire',id:'hpmax'}}"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": {"text": "","italic": false,"color": "yellow","extra": [{"nbt": "sys.item.option.campfire.hpmax", "storage": "pc:lang", "interpret": true}]}
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "mode": "replace_all",
+                            "lore": [
+                                {"text": "","italic": false,"extra": [{"text": ">>","color": "gray"},{"text": "> ","color": "#72BD7A","bold": true},{"nbt": "sys.lore.ability","storage": "pc:lang","interpret": true}]},
+                                {"nbt": "sys.lore.option.campfire.hpmax", "storage": "pc:lang", "interpret": true},
+                                "",
+                                {"text": "","italic": false,"extra": [{"text": ">>","color": "gray"},{"text": "> ","color": "#72BD7A","bold": true},{"nbt": "sys.lore.details","storage": "pc:lang","interpret": true}]},
+                                {"text": "","italic": false,"color": "white","extra": [{"text": "● ","color": "#72BD7A"},{"nbt": "sys.lore.category","storage": "pc:lang","interpret": true,"color": "gray"},{"text": " : ","color": "gray"},{"nbt": "sys.lore.category_type.option","storage": "pc:lang","interpret": true,"color": "gray"}]}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

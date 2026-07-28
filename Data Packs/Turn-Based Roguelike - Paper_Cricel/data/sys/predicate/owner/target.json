@@ -1,0 +1,24 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "pc.target.id": {
+            "min": {
+                "type": "minecraft:score",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#self"
+                },
+                "score": "pc.target.id"
+            },
+            "max": {
+                "type": "minecraft:score",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#self"
+                },
+                "score": "pc.target.id"
+            }
+        }
+    }
+}

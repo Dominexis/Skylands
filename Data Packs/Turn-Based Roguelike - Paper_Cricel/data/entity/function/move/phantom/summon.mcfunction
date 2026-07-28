@@ -1,0 +1,6 @@
+
+summon minecraft:armor_stand ~ ~ ~ {Tags:[pc.summon,pc.entity.phantom],NoBasePlate:1b,ShowArms:true,Small:true,Pose:{Body:[0f,348f,0f],Head:[345f,0f,0f],LeftLeg:[23f,345f,0f],RightLeg:[349f,345f,0f],LeftArm:[20f,345f,0f],RightArm:[336f,345f,0f]},equipment:{head:{id:"player_head",components:{"minecraft:profile":{properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzE5YWViZGJlOGZjYjNmY2IwYzk4MDUzZjkwMjYxMTM4YTRkMmViNzJhOTVlZTYwMDg2YTE2YzY1YzRjZjAxZSJ9fX0="}]}}},chest:{id:"leather_chestplate",components:{dyed_color:3418972}},legs:{id:"leather_leggings",components:{dyed_color:3418972}},feet:{id:"leather_boots",components:{dyed_color:3418972}}}}
+
+data modify storage pc:temp summon set value {id:"move/phantom",team:'ally',hpmax:1}
+scoreboard players set @e[tag=pc.summon,type=minecraft:armor_stand,distance=..0.1,limit=1] pc.entity.repairer 1
+execute as @e[tag=pc.summon,type=minecraft:armor_stand,distance=..0.1,limit=1] at @s run function sys:entity/summon

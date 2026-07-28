@@ -1,0 +1,2 @@
+
+execute positioned ~-1.5 ~-100 ~-1.5 as @e[dx=2,dy=200,dz=2,tag=pc.temp,type=minecraft:marker,limit=1] at @s positioned ~-1.5 ~-100 ~-1.5 unless entity @e[dx=2,dy=200,dz=2,tag=pc.select,tag=!pc.select.clear,type=minecraft:item_display,limit=1] at @s run function sys:grid/space/per

@@ -1,0 +1,2 @@
+
+$execute as @e[tag=pc.hotbar.self,type=armor_stand,limit=1] run item modify entity 20060423-0-0-0-1 contents {function:"copy_custom_data",source:{type:"context",target:"this"},ops:[{op:"replace",source:"data.hotbar.$(hotbar)",target:"pc"}]}

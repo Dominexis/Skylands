@@ -1,0 +1,2 @@
+
+summon minecraft:item_display ~ ~ ~ {Tags:["pc.effect.cobweb_area","pc.fx"],brightness: {block: 15, sky: 15}, item: {count: 1, id: "minecraft:cobweb"}, shadow_strength: 0.0f, transformation: {left_rotation: [-0.7071068f, 0.0f, 0.0f, 0.7071068f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [3.0000007f, 3.0000005f, 1.0f], translation: [0.0f, 0.0f, 0.0f]}, view_range: 2.0f}

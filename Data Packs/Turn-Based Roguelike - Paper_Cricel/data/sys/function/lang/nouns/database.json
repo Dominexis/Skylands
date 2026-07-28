@@ -1,0 +1,828 @@
+{
+    "effect": [
+        {
+            "id": "strength",
+            "translations": {
+                "en_us": {
+                    "name": "Strength",
+                    "description": "Increases attack damage by X."
+                },
+                "zh_tw": {
+                    "name": "力量",
+                    "description": "增加 X 點攻擊傷害。"
+                },
+                "zh_cn": {
+                    "name": "力量",
+                    "description": "增加 X 点攻击伤害。"
+                }
+            }
+        },
+        {
+            "id": "strength_down",
+            "translations": {
+                "en_us": {
+                    "name": "Strength Down",
+                    "description": "At the end of this turn, lose X Strength."
+                },
+                "zh_tw": {
+                    "name": "力量下降",
+                    "description": "本回合結束時，失去 X 點力量。"
+                },
+                "zh_cn": {
+                    "name": "力量下降",
+                    "description": "本回合结束时，失去 X 点力量。"
+                }
+            }
+        },
+        {
+            "id": "vigor",
+            "translations": {
+                "en_us": {
+                    "name": "Vigor",
+                    "description": "Increases next attack damage by X."
+                },
+                "zh_tw": {
+                    "name": "活力",
+                    "description": "增加下次攻擊 X 點傷害。"
+                },
+                "zh_cn": {
+                    "name": "活力",
+                    "description": "增加下次攻击 X 点伤害。"
+                }
+            }
+        },
+        {
+            "id": "vulnerable",
+            "translations": {
+                "en_us": {
+                    "name": "Vulnerable",
+                    "description": "Takes 50% more damage for X turn."
+                },
+                "zh_tw": {
+                    "name": "易傷",
+                    "description": "受到的傷害增加 50%，持續 X 回合。"
+                },
+                "zh_cn": {
+                    "name": "易伤",
+                    "description": "受到的伤害增加 50%，持续 X 回合。"
+                }
+            }
+        },
+        {
+            "id": "critical_hit",
+            "translations": {
+                "en_us": {
+                    "name": "Critical Hit",
+                    "description": "Deals 50% more damage for X turn."
+                },
+                "zh_tw": {
+                    "name": "爆擊",
+                    "description": "造成的傷害增加 50%，持續 X 回合。"
+                },
+                "zh_cn": {
+                    "name": "暴击",
+                    "description": "造成的伤害增加 50%，持续 X 回合。"
+                }
+            }
+        },
+        {
+            "id": "weakness",
+            "translations": {
+                "en_us": {
+                    "name": "Weakness",
+                    "description": "Deals 25% less damage for X turn."
+                },
+                "zh_tw": {
+                    "name": "虛弱",
+                    "description": "造成的傷害減少 25%，持續 X 回合。"
+                },
+                "zh_cn": {
+                    "name": "虚弱",
+                    "description": "造成的伤害减少 25%，持续 X 回合。"
+                }
+            }
+        },
+        {
+            "id": "robust",
+            "translations": {
+                "en_us": {
+                    "name": "Robust",
+                    "description": "Takes 25% less damage for X turn."
+                },
+                "zh_tw": {
+                    "name": "強健",
+                    "description": "受到的傷害減少 25%，持續 X 回合。"
+                },
+                "zh_cn": {
+                    "name": "强健",
+                    "description": "受到的伤害减少 25%，持续 X 回合。"
+                }
+            }
+        },
+        {
+            "id": "regeneration",
+            "translations": {
+                "en_us": {
+                    "name": "Regeneration",
+                    "description": "At the start of each turn, restore 1 HP."
+                },
+                "zh_tw": {
+                    "name": "再生",
+                    "description": "每回合開始時，回復 1 點血量。"
+                },
+                "zh_cn": {
+                    "name": "再生",
+                    "description": "每回合开始时，回复 1 点血量。"
+                }
+            }
+        },
+        {
+            "id": "misery",
+            "translations": {
+                "en_us": {
+                    "name": "Misery",
+                    "description": "At the start of each turn, lose 1 HP."
+                },
+                "zh_tw": {
+                    "name": "苦痛",
+                    "description": "每回合開始時，失去 1 點血量。"
+                },
+                "zh_cn": {
+                    "name": "苦痛",
+                    "description": "每回合开始时，失去 1 点血量。"
+                }
+            }
+        },
+        {
+            "id": "vampire",
+            "translations": {
+                "en_us": {
+                    "name": "Vampire",
+                    "description": "On hit, restore X HP."
+                },
+                "zh_tw": {
+                    "name": "吸血",
+                    "description": "造成傷害時，回復 X 點血量。"
+                },
+                "zh_cn": {
+                    "name": "吸血",
+                    "description": "造成伤害时，回复 X 点血量。"
+                }
+            }
+        },
+        {
+            "id": "dragon_scale",
+            "translations": {
+                "en_us": {
+                    "name": "Dragon Scale",
+                    "description": "You can only deal X damage this turn."
+                },
+                "zh_tw": {
+                    "name": "龍鱗",
+                    "description": "本回合你只能造成 X 點傷害。"
+                },
+                "zh_cn": {
+                    "name": "龙鳞",
+                    "description": "本回合你只能造成 X 点伤害。"
+                }
+            }
+        },
+        {
+            "id": "energized",
+            "translations": {
+                "en_us": {
+                    "name": "Energized",
+                    "description": "Gain X additional Energy next turn."
+                },
+                "zh_tw": {
+                    "name": "充能",
+                    "description": "下回合額外獲得 X 點能量。"
+                },
+                "zh_cn": {
+                    "name": "充能",
+                    "description": "下回合额外获得 X 点能量。"
+                }
+            }
+        },
+        {
+            "id": "gentle",
+            "translations": {
+                "en_us": {
+                    "name": "Gentle",
+                    "description": "Next X items this turn will not lose Durability."
+                },
+                "zh_tw": {
+                    "name": "溫柔",
+                    "description": "本回合下 X 個物品不會失去耐久度。"
+                },
+                "zh_cn": {
+                    "name": "温柔",
+                    "description": "本回合下 X 个物品不会失去耐久度。"
+                }
+            }
+        },
+        {
+            "id": "rusty",
+            "translations": {
+                "en_us": {
+                    "name": "Rusty",
+                    "description": "When using Skill Item, loss Durability twice."
+                },
+                "zh_tw": {
+                    "name": "生鏽",
+                    "description": "使用技能物品時，失去兩倍的耐久度。"
+                },
+                "zh_cn": {
+                    "name": "生锈",
+                    "description": "使用技能物品时，失去两倍的耐久度。"
+                }
+            }
+        },
+        {
+            "id": "piglin_ts",
+            "translations": {
+                "en_us": {
+                    "name": "Piglin, Together, Strong",
+                    "description": "On death, all other enemies gain X Strength."
+                },
+                "zh_tw": {
+                    "name": "豬豬，一起，強大",
+                    "description": "死亡時，所有其他敵人獲得 X 點力量。"
+                },
+                "zh_cn": {
+                    "name": "猪猪，一起，强大",
+                    "description": "死亡时，所有其他敌人获得 X 点力量。"
+                }
+            }
+        },
+        {
+            "id": "enmity_gaze",
+            "translations": {
+                "en_us": {
+                    "name": "Gaze of Enmity",
+                    "description": "Whenever you use an item, if you and this enemy are facing each other: It gains X Strength this turn."
+                },
+                "zh_tw": {
+                    "name": "對目成仇",
+                    "description": "每當你使用物品時，若你與該敵人正面相對：敵人本回合獲得 X 點力量。"
+                },
+                "zh_cn": {
+                    "name": "反目成仇",
+                    "description": "每当你使用物品时，若你与该敌人正面相对：敌人本回合获得 X 点力量。"
+                }
+            }
+        },
+        {
+            "id": "tnt_tank",
+            "translations": {
+                "en_us": {
+                    "name": "C₇H₅N₃O₆ Tank",
+                    "description": "Whenever its Move Intent was interrupted, \ndeal X damage to everyone within a 9-block cross."
+                },
+                "zh_tw": {
+                    "name": "C₇H₅N₃O₆ 坦克",
+                    "description": "每當其移動意圖被打斷，對 9格十字\n範圍內所有人造成 X 點傷害。"
+                },
+                "zh_cn": {
+                    "name": "C₇H₅N₃O₆ 坦克",
+                    "description": "每当其移动意图被打断，对 9格十字\n范围内所有人造成 X 点伤害。"
+                }
+            }
+        },
+        {
+            "id": "flaming_touch",
+            "translations": {
+                "en_us": {
+                    "name": "Flaming Touch",
+                    "description": "On attack, apply X Fire Area to the attacked blocks."
+                },
+                "zh_tw": {
+                    "name": "烈焰之觸",
+                    "description": "攻擊時，在被攻擊的方塊上施加 X 層火焰區域。"
+                },
+                "zh_cn": {
+                    "name": "烈焰之触",
+                    "description": "攻击时，在被攻击的方块上施加 X 层火焰区域。"
+                }
+            }
+        },
+        {
+            "id": "dragonbreath_area/mark",
+            "translations": {
+                "en_us": {
+                    "name": "DragonMark",
+                    "description": "Whenever you gain DragonMark, take X damage."
+                },
+                "zh_tw": {
+                    "name": "龍之印記",
+                    "description": "每當獲得龍之印記時，受到 X 點傷害。"
+                },
+                "zh_cn": {
+                    "name": "龙之印记",
+                    "description": "每当获得龙之印记时，受到 X 点伤害。"
+                }
+            }
+        },
+        {
+            "id": "iron_resolve",
+            "translations": {
+                "en_us": {
+                    "name": "Iron Resolve",
+                    "description": "Deal 50% more damage. Restore 1 HP at the start of your turn."
+                },
+                "zh_tw": {
+                    "name": "鋼鐵意志",
+                    "description": "造成的傷害增加 50%。在你的回合開始時回復 1 點血量。"
+                },
+                "zh_cn": {
+                    "name": "钢铁意志",
+                    "description": "造成的伤害增加 50%。在你的回合开始时回复 1 点血量。"
+                }
+            }
+        },
+        {
+            "id": "repair_material",
+            "translations": {
+                "en_us": {
+                    "name": "Repair Material",
+                    "description": "When the enemy killed Anvil, restore 12 HP."
+                },
+                "zh_tw": {
+                    "name": "修復材料",
+                    "description": "當敵人擊殺鐵砧時，回復 12 點血量。"
+                },
+                "zh_cn": {
+                    "name": "修复材料",
+                    "description": "当敌人击杀铁砧时，回复 12 点血量。"
+                }
+            }
+        },
+        {
+            "id": "netting",
+            "translations": {
+                "en_us": {
+                    "name": "Netting",
+                    "description": "At the start of each turn, release 1 Cobweb Area within 5x5 block."
+                },
+                "zh_tw": {
+                    "name": "佈網",
+                    "description": "每回合開始時，在 5x5 方塊內釋放 1 層蜘蛛網區域。"
+                },
+                "zh_cn": {
+                    "name": "布网",
+                    "description": "每回合开始时，在 5x5 方块内释放 1 层蜘蛛网区域。"
+                }
+            }
+        },
+        {
+            "id": "booty",
+            "translations": {
+                "en_us": {
+                    "name": "Booty",
+                    "description": "Disable your Skill Item this turn."
+                },
+                "zh_tw": {
+                    "name": "贓物",
+                    "description": "本回合禁用你的技能物品。"
+                },
+                "zh_cn": {
+                    "name": "赃物",
+                    "description": "本回合禁用你的技能物品。"
+                }
+            }
+        },
+        {
+            "id": "minion",
+            "translations": {
+                "en_us": {
+                    "name": "Minion",
+                    "description": "Minions abandon combat when no non-minion enemy remains."
+                },
+                "zh_tw": {
+                    "name": "爪牙",
+                    "description": "沒有任何非爪牙敵人時，爪牙會放棄戰鬥。"
+                },
+                "zh_cn": {
+                    "name": "爪牙",
+                    "description": "没有任何非爪牙敌人时，爪牙会放弃战斗。"
+                }
+            }
+        },
+        {
+            "id": "enormous",
+            "translations": {
+                "en_us": {
+                    "name": "Enormous",
+                    "description": "On hit, Repel all allies on the attacked blocks."
+                },
+                "zh_tw": {
+                    "name": "碩大",
+                    "description": "造成傷害時，將被攻擊的方塊上的所有友軍擊退。"
+                },
+                "zh_cn": {
+                    "name": "硕大",
+                    "description": "造成伤害时，将被攻击的方块上的所有友军击退。"
+                }
+            }
+        },
+        {
+            "id": "undying_shell",
+            "translations": {
+                "en_us": {
+                    "name": "Undying Shell",
+                    "description": "When this dies, it revives at full HP after 3 turns."
+                },
+                "zh_tw": {
+                    "name": "不死之軀",
+                    "description": "死亡時，會在 3 回合後滿血量復活。"
+                },
+                "zh_cn": {
+                    "name": "不死之躯",
+                    "description": "死亡时，会在 3 回合后满血量复活。"
+                }
+            }
+        }
+    ],
+    "area_effect": [
+        {
+            "id": "fire_area",
+            "translations": {
+                "en_us": {
+                    "name": "Fire Area",
+                    "description": "At the start of each turn, units on this block take X damage."
+                },
+                "zh_tw": {
+                    "name": "火焰區域",
+                    "description": "每回合開始時，該方塊上的生物受到 X 點傷害。"
+                },
+                "zh_cn": {
+                    "name": "火焰区域",
+                    "description": "每回合开始时，该方块上的生物受到 X 点伤害。"
+                }
+            }
+        },
+        {
+            "id": "rail_area",
+            "translations": {
+                "en_us": {
+                    "name": "Rail Area",
+                    "description": "Move Item can select this block at anywhere."
+                },
+                "zh_tw": {
+                    "name": "鐵軌區域",
+                    "description": "移動物品可選擇任意此類方塊。"
+                },
+                "zh_cn": {
+                    "name": "铁轨区域",
+                    "description": "移动物品可选择任意此类方块。"
+                }
+            }
+        },
+        {
+            "id": "dragonbreath_area",
+            "translations": {
+                "en_us": {
+                    "name": "DragonBreath Area",
+                    "description": "At the end of the next X turns, units on this block gain 1 DragonMark."
+                },
+                "zh_tw": {
+                    "name": "龍息區域",
+                    "description": "接下來 X 回合結束時，處於該方塊的生物獲得 1 層龍之印記。"
+                },
+                "zh_cn": {
+                    "name": "龙息区域",
+                    "description": "接下来 X 回合结束时，处于该方块的生物获得 1 层龙之印记。"
+                }
+            }
+        },
+        {
+            "id": "cobweb_area",
+            "translations": {
+                "en_us": {
+                    "name": "Cobweb Area",
+                    "description": "Set Max Durability of Move Item to 1 this turn."
+                },
+                "zh_tw": {
+                    "name": "蜘蛛網區域",
+                    "description": "將本回合移動物品的最大耐久度設為 1。"
+                },
+                "zh_cn": {
+                    "name": "蜘蛛网区域",
+                    "description": "将本回合移动物品的最大耐久度设为 1。"
+                }
+            }
+        },
+        {
+            "id": "void_area",
+            "translations": {
+                "en_us": {
+                    "name": "Void Area",
+                    "description": "This block becomes a Hole for X turn. Units on this block lose 999 Strength temporarily."
+                },
+                "zh_tw": {
+                    "name": "虛空區域",
+                    "description": "此方塊在 X 回合內變為空洞。處於該方塊的生物暫時失去 999 點力量。"
+                },
+                "zh_cn": {
+                    "name": "虚空区域",
+                    "description": "此方块在 X 回合内变为空洞。处于该方块的生物暂时失去 999 点力量。"
+                }
+            }
+        }
+    ],
+    "entity": [
+        {
+            "id": "anvil",
+            "translations": {
+                "en_us": {
+                    "name": "Anvil",
+                    "description": "Right-click it to active Repair Mode, and disable your item."
+                },
+                "zh_tw": {
+                    "name": "鐵砧",
+                    "description": "右鍵以啟動修復模式，並禁用你的物品。"
+                },
+                "zh_cn": {
+                    "name": "铁砧",
+                    "description": "右键以启动修复模式，并禁用你的物品。"
+                }
+            }
+        },
+        {
+            "id": "phantom",
+            "translations": {
+                "en_us": {
+                    "name": "Phantom",
+                    "description": "● When use Move Item, it teleports to the previous block.\n● Select its block to switch position without losing Durability instead.\n● It copies your selectable block."
+                },
+                "zh_tw": {
+                    "name": "幻影",
+                    "description": "● 每當使用移動物品時，它會傳送至前一個方塊。\n● 選擇他所處的方塊可交換位置、不消耗耐久度。\n● 它會複製你可選擇的方塊。"
+                },
+                "zh_cn": {
+                    "name": "幻影",
+                    "description": "● 每当使用移动物品时，它会传送至前一个方块。\n● 选择他所处的方块可交换位置、不消耗耐久度。\n● 它会复制你可选择的方块。"
+                }
+            }
+        }
+    ],
+    "intent": [
+        {
+            "id": "attack",
+            "translations": {
+                "en_us": {
+                    "name": "Attack",
+                    "description": "This enemy intends to Attack for X damage."
+                },
+                "zh_tw": {
+                    "name": "攻擊",
+                    "description": "該敵人試圖 攻擊 並造成 X 點傷害。"
+                },
+                "zh_cn": {
+                    "name": "攻击",
+                    "description": "该敌人试图 攻击 并造成 X 点伤害。"
+                }
+            }
+        },
+        {
+            "id": "bomb_attack",
+            "translations": {
+                "en_us": {
+                    "name": "Self-destruction Attack",
+                    "description": "This enemy intends to Attack for X damage, then dies."
+                },
+                "zh_tw": {
+                    "name": "自爆攻擊",
+                    "description": "該敵人試圖 攻擊 並造成 X 點傷害，隨後死亡。"
+                },
+                "zh_cn": {
+                    "name": "自爆攻击",
+                    "description": "该敌人试图 攻击 并造成 X 点伤害，随后死亡。"
+                }
+            }
+        },
+        {
+            "id": "deadly_attack",
+            "translations": {
+                "en_us": {
+                    "name": "Deadly Attack",
+                    "description": "This enemy intends to fiercely Attack for X damage."
+                },
+                "zh_tw": {
+                    "name": "致命攻擊",
+                    "description": "該敵人試圖猛烈 攻擊 並造成 X 點傷害。"
+                },
+                "zh_cn": {
+                    "name": "致命攻击",
+                    "description": "该敌人试图猛烈 攻击 并造成 X 点伤害。"
+                }
+            }
+        },
+        {
+            "id": "defense",
+            "translations": {
+                "en_us": {
+                    "name": "Defense",
+                    "description": "This enemy intends to Block on its turn."
+                },
+                "zh_tw": {
+                    "name": "防禦",
+                    "description": "該敵人試圖在本回合 格擋 。"
+                },
+                "zh_cn": {
+                    "name": "防御",
+                    "description": "该敌人试图在本回合 格挡。"
+                }
+            }
+        },
+        {
+            "id": "walk",
+            "translations": {
+                "en_us": {
+                    "name": "Move",
+                    "description": "This enemy intends to Move to other blocks."
+                },
+                "zh_tw": {
+                    "name": "移動",
+                    "description": "該敵人試圖 移動 至其他方塊。"
+                },
+                "zh_cn": {
+                    "name": "移动",
+                    "description": "该敌人试图 移动 至其他方块。"
+                }
+            }
+        },
+        {
+            "id": "repair",
+            "translations": {
+                "en_us": {
+                    "name": "Repair Mode",
+                    "description": "This Anvil intends to repair item for X turn, then dies."
+                },
+                "zh_tw": {
+                    "name": "修復模式",
+                    "description": "此鐵砧試圖修復物品 X 回合，隨後死亡。"
+                },
+                "zh_cn": {
+                    "name": "修复模式",
+                    "description": "此铁砧试图修复物品 X 回合，随后死亡。"
+                }
+            }
+        },
+        {
+            "id": "buff",
+            "translations": {
+                "en_us": {
+                    "name": "Buff",
+                    "description": "This enemy intends to apply a Buff."
+                },
+                "zh_tw": {
+                    "name": "增益",
+                    "description": "該敵人試圖施加 增益 。"
+                },
+                "zh_cn": {
+                    "name": "增益",
+                    "description": "该敌人试图施加 增益。"
+                }
+            }
+        },
+        {
+            "id": "debuff",
+            "translations": {
+                "en_us": {
+                    "name": "Debuff",
+                    "description": "This enemy intends to apply a Debuff."
+                },
+                "zh_tw": {
+                    "name": "減益",
+                    "description": "該敵人試圖施加 減益 。"
+                },
+                "zh_cn": {
+                    "name": "减益",
+                    "description": "该敌人试图施加 减益。"
+                }
+            }
+        },
+        {
+            "id": "heal",
+            "translations": {
+                "en_us": {
+                    "name": "Heal",
+                    "description": "This enemy intends to Heal."
+                },
+                "zh_tw": {
+                    "name": "治療",
+                    "description": "該敵人試圖進行 治療 。"
+                },
+                "zh_cn": {
+                    "name": "治疗",
+                    "description": "该敌人试图进行 治疗。"
+                }
+            }
+        },
+        {
+            "id": "summon",
+            "translations": {
+                "en_us": {
+                    "name": "Summon",
+                    "description": "This enemy intends to Summon more enemies."
+                },
+                "zh_tw": {
+                    "name": "召喚",
+                    "description": "該敵人試圖 召喚 更多敵人。"
+                },
+                "zh_cn": {
+                    "name": "召唤",
+                    "description": "该敌人试图 召唤 更多敌人。"
+                }
+            }
+        },
+        {
+            "id": "stun",
+            "translations": {
+                "en_us": {
+                    "name": "Stunned",
+                    "description": "This enemy can't act on its next turn."
+                },
+                "zh_tw": {
+                    "name": "眩暈",
+                    "description": "該敵人下一回合無法行動。"
+                },
+                "zh_cn": {
+                    "name": "眩晕",
+                    "description": "该敌人下一回合无法行动。"
+                }
+            }
+        }
+    ],
+    "custom": [
+        {
+            "id": "shield",
+            "translations": {
+                "en_us": {
+                    "name": "Shield",
+                    "description": "Block incoming damage."
+                },
+                "zh_tw": {
+                    "name": "護盾",
+                    "description": " 格擋 即將受到的傷害。"
+                },
+                "zh_cn": {
+                    "name": "护盾",
+                    "description": " 格挡 即将受到的伤害。"
+                }
+            }
+        },
+        {
+            "id": "repel",
+            "translations": {
+                "en_us": {
+                    "name": "Repel",
+                    "description": "Knockback target for 1 block."
+                },
+                "zh_tw": {
+                    "name": "擊退",
+                    "description": "將目標擊退 1 格。"
+                },
+                "zh_cn": {
+                    "name": "击退",
+                    "description": "将目标击退 1 格。"
+                }
+            }
+        },
+        {
+            "id": "n-cross",
+            "translations": {
+                "en_us": {
+                    "name": "N-block Cross",
+                    "description": "A cross area extending outward from yourself. \ne.g. a 2-block cross:\n □ □ ■ □ □\n □ □ ■ □ □  x = Self\n ■ ■ x ■ ■  ■ = Selected Area\n □ □ ■ □ □\n □ □ ■ □ □"
+                },
+                "zh_tw": {
+                    "name": "N 格十字",
+                    "description": "以自身為中心往外的十字範圍。\n例如 2 格十字：\n □ □ ■ □ □\n □ □ ■ □ □  x = 自身\n ■ ■ x ■ ■  ■ = 選取範圍\n □ □ ■ □ □\n □ □ ■ □ □"
+                },
+                "zh_cn": {
+                    "name": "N 格十字",
+                    "description": "以自身为中心往外的十字范围。\n例如 2 格十字：\n □ □ ■ □ □\n □ □ ■ □ □  x = 自身\n ■ ■ x ■ ■  ■ = 选取范围\n □ □ ■ □ □\n □ □ ■ □ □"
+                }
+            }
+        },
+        {
+            "id": "nxn",
+            "translations": {
+                "en_us": {
+                    "name": "NxN Block",
+                    "description": "A rectangular area extending outward from yourself. \ne.g. 3x3 block:\n □ □ □ □ □\n □ ■ ■ ■ □  x = Self\n □ ■ x ■ □  ■ = Selected Area\n □ ■ ■ ■ □\n □ □ □ □ □"
+                },
+                "zh_tw": {
+                    "name": "NxN 格",
+                    "description": "以自身為中心往外的矩形範圍。\n例如 3x3 格：\n □ □ □ □ □\n □ ■ ■ ■ □  x = 自身\n □ ■ x ■ □  ■ = 選取範圍\n □ ■ ■ ■ □\n □ □ □ □ □"
+                },
+                "zh_cn": {
+                    "name": "NxN 格",
+                    "description": "以自身为中心往外的矩形范围。\n例如 3x3 格：\n □ □ □ □ □\n □ ■ ■ ■ □  x = 自身\n □ ■ x ■ □  ■ = 选取范围\n □ ■ ■ ■ □\n □ □ □ □ □"
+                }
+            }
+        }
+    ]
+}

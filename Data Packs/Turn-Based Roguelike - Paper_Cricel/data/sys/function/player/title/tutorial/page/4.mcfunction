@@ -1,0 +1,8 @@
+
+scoreboard players add #combat.tutorial.page_4.carousel pc.main 1
+scoreboard players operation #combat.tutorial.page_4.carousel pc.main %= #4 sl.value
+execute if score #combat.tutorial.page_4.carousel pc.main matches 0 run title @s title {"text":"\u0400\uf001\u0401\uf001\u0402\uf001\u0403\uf001\u0404\uf000\u0405\uf001\u0406\uf001\u0407\uf001\u0408\uf001\u0409\uf000\u040a\uf001\u040b\uf001\u040c\uf001\u040d\uf001\u040e","font":"sys:tutorial"}
+execute if score #combat.tutorial.page_4.carousel pc.main matches 1 run title @s title {"text":"\u0500\uf001\u0501\uf001\u0502\uf001\u0503\uf001\u0504\uf000\u0505\uf001\u0506\uf001\u0507\uf001\u0508\uf001\u0509\uf000\u050a\uf001\u050b\uf001\u050c\uf001\u050d\uf001\u050e","font":"sys:tutorial"}
+execute if score #combat.tutorial.page_4.carousel pc.main matches 2 run title @s title {"text":"\u0600\uf001\u0601\uf001\u0602\uf001\u0603\uf001\u0604\uf000\u0605\uf001\u0606\uf001\u0607\uf001\u0608\uf001\u0609\uf000\u060a\uf001\u060b\uf001\u060c\uf001\u060d\uf001\u060e","font":"sys:tutorial"}
+execute if score #combat.tutorial.page_4.carousel pc.main matches 3 run title @s title {"text":"\u0500\uf001\u0501\uf001\u0502\uf001\u0503\uf001\u0504\uf000\u0505\uf001\u0506\uf001\u0507\uf001\u0508\uf001\u0509\uf000\u050a\uf001\u050b\uf001\u050c\uf001\u050d\uf001\u050e","font":"sys:tutorial"}
+title @s actionbar {"nbt":"sys.tutorial.page.4","storage":"pc:lang","interpret":true}

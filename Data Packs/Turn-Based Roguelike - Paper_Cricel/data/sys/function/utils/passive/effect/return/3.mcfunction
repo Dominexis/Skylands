@@ -1,0 +1,2 @@
+
+$function effect:$(id)/$(passive)
