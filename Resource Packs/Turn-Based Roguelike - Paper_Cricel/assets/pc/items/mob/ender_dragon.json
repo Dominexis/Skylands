@@ -1,7 +1,7 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "pc:mob/ender_dragon",
+    "model": "pc:mob/item/ender_dragon",
     "tints": [
       {
         "type": "minecraft:custom_model_data",
