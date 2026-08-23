@@ -1,5 +1,0 @@
-
-summon minecraft:text_display ~ ~-3.0 ~ {Tags:[pc.fx,pc.skill.yama_double.new_turn.per,pc.summon], Passengers: [\
-{alignment: "center", background: -1687479290, brightness: {block: 15, sky: 15}, default_background: 0b, id: "minecraft:text_display", line_width: 200, see_through: 0b, shadow: 0b, shadow_strength: 0.0f, text: "   ", transformation: {left_rotation: [-0.25881907f, 0.0f, 0.0f, 0.96592593f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.0f, 12.5f, 1.0f], translation: [0.0f, 1.1920929E-7f, -1.75f]}, view_range: 2.0f}], \
-alignment: "center", background: -1687479290, brightness: {block: 15, sky: 15}, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, shadow_strength: 0.0f, text: "   ", transformation: {left_rotation: [0.0f, 0.96592593f, -0.25881907f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.0f, 12.5f, 1.0f], translation: [0.0f, -2.2780895E-4f, -1.75f]}, view_range: 2.0f}
-execute as @e[tag=pc.summon,type=text_display,limit=1] run function item:skill/warrior/yama_double/new_turn/fx/per/data

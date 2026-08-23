@@ -1,2 +1,0 @@
-
-function sys:effect/descent

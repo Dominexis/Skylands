@@ -1,0 +1,5 @@
+
+execute if function pc:sys/grid/range/type/0 run return 1
+execute positioned ^4 ^ ^ if function pc:sys/grid/range/type/0 run return 1
+execute positioned ^-4 ^ ^ if function pc:sys/grid/range/type/0 run return 1
+return fail

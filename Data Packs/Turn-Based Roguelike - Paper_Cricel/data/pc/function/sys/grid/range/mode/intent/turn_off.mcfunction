@@ -1,0 +1,3 @@
+
+scoreboard players operation #self pc.origin.id = #intent.owner pc.entity.id
+execute positioned ~-1.5 ~-100 ~-1.5 run kill @e[tag=pc.intent,predicate=pc:sys/owner/origin,type=minecraft:marker,dx=2,dy=200,dz=2,limit=1]

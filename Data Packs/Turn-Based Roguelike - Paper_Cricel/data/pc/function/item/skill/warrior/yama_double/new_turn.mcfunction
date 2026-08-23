@@ -1,0 +1,2 @@
+
+execute as @e[predicate=pc:sys/entity/enemy,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0,type=!minecraft:giant] at @s positioned ~-1.5 ~-100 ~-1.5 at @e[tag=pc.grid,dx=2,dy=200,dz=2,type=minecraft:marker,limit=1] run function pc:item/skill/warrior/yama_double/new_turn/use

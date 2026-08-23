@@ -1,0 +1,5 @@
+
+function pc:entity/spider_cave/walk1/fx/use
+
+# fx
+playsound pc:sys/cartoon_raise master @a ~ ~1024 ~ 0 1 0.5

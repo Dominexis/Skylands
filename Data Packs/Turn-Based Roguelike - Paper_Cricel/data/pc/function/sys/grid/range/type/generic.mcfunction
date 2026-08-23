@@ -1,0 +1,2 @@
+
+$execute positioned ~1.5 ~100 ~1.5 as @e[tag=pc.grid,type=marker,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0] $(condition) function pc:sys/grid/range/type/$(type) at @s run function pc:sys/grid/range/mode/$(mode)/use with storage pc:temp range

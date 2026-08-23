@@ -31,7 +31,7 @@ summon item_display 2536 63 5608 {UUID:[I;537265187,0,65536,1],view_range:0}
 # 20060423-0-0-0-2
 summon text_display 2536 63 5608 {UUID:[I;537265187,0,0,2],view_range:0}
 
-function sys:lang/en_us
+function pc:sys/lang/en_us
 
 # Predicate
 scoreboard objectives add pc.player.inlobby dummy
@@ -75,6 +75,6 @@ scoreboard players set #4500 sl.value 4500
 scoreboard players set #9000 sl.value 9000
 
 # Lobby
-schedule function sys:lobby/reset 5t
+schedule function pc:sys/lobby/reset 5t
 
 # say Plot On
