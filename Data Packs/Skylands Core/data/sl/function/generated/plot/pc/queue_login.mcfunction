@@ -7,8 +7,8 @@ execute if score #is_available sl.value matches 0 run return 0
 function sl:plot/logout
 
 # Set plot ID
-scoreboard players set @s sl.plot 327684
-scoreboard players set @s sl.fade_plot 327684
+scoreboard players set @s sl.plot 229380
+scoreboard players set @s sl.fade_plot 229380
 
 # Turn plot on if it is currently off
 execute if score #plot.pc.state sl.value matches 0 run function sl:generated/plot/pc/queue_on

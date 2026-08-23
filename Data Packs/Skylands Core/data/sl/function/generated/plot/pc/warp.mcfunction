@@ -1,2 +1,2 @@
 # Teleport player to plot
-teleport @s 2304 65 5376
+teleport @s 2304 65 3840

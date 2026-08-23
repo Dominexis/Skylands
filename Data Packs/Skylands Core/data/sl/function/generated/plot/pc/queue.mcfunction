@@ -1,8 +1,8 @@
 # Put all players into their queued position
-gamemode spectator @a[gamemode=!spectator,scores={sl.plot=327684}]
-team join sl.queue @a[scores={sl.plot=327684},team=!sl.queue]
-effect give @a[scores={sl.plot=327684}] minecraft:blindness infinite 0 true
-teleport @a[scores={sl.plot=327684}] ~ 512 ~ 0 0
+gamemode spectator @a[gamemode=!spectator,scores={sl.plot=229380}]
+team join sl.queue @a[scores={sl.plot=229380},team=!sl.queue]
+effect give @a[scores={sl.plot=229380}] minecraft:blindness infinite 0 true
+teleport @a[scores={sl.plot=229380}] ~ 512 ~ 0 0
 
 # Check if plot is loaded and run on/off function accordingly
 execute store result score #is_loaded sl.value run function sl:generated/plot/pc/is_loaded

@@ -3,7 +3,7 @@ execute store result score #is_available sl.value run function sl:generated/plot
 execute if score #is_available sl.value matches 0 run return 0
 
 # Schedule login via fade out
-scoreboard players set @s sl.fade_plot 327684
+scoreboard players set @s sl.fade_plot 229380
 function sl:player/fade/out
 
 # Return 1 to mark success
