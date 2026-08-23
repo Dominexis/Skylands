@@ -1,13 +1,82 @@
 {
-    "sword_pull_up": {"sounds": ["pc:sword_pull_up"]},
-    "buff": {"sounds": ["pc:buff"]},
-    "pinpoint_strike": {"sounds": ["pc:pinpoint_strike"]},
-    "magical_spike": {"sounds": ["pc:magical_spike"]},
-    "teleport": {"sounds": ["pc:teleport"]},
-    "electricity": {"sounds": ["pc:electricity"]},
-    "squeak": {"sounds": ["pc:squeak"]},
-    "shut_up": {"sounds": ["pc:shut_up"]},
-    "ender_dragon_roar": {"sounds": ["pc:ender_dragon_roar"]},
-    "nine_sols_parry": {"sounds": ["pc:nine_sols_parry"]},
-    "decorated_pot": {"sounds": ["pc:decorated_pot"]}
+    "sys/black_hole": {
+        "sounds": [
+            "pc:sys/black_hole"
+        ]
+    },
+    "sys/buff": {
+        "sounds": [
+            "pc:sys/buff"
+        ]
+    },
+    "sys/blood_hit": {
+        "sounds": [
+            "pc:sys/blood_hit"
+        ]
+    },
+    "sys/magical_spike": {
+        "sounds": [
+            "pc:sys/magical_spike"
+        ]
+    },
+    "sys/teleport": {
+        "sounds": [
+            "pc:sys/teleport"
+        ]
+    },
+    "sys/electricity": {
+        "sounds": [
+            "pc:sys/electricity"
+        ]
+    },
+    "sys/squeak": {
+        "sounds": [
+            "pc:sys/squeak"
+        ]
+    },
+    "sys/ender_dragon_roar": {
+        "sounds": [
+            "pc:sys/ender_dragon_roar"
+        ]
+    },
+    "sys/nine_sols_parry": {
+        "sounds": [
+            "pc:sys/nine_sols_parry"
+        ]
+    },
+    "sys/pipe": {
+        "sounds": [
+            "pc:sys/pipe"
+        ]
+    },
+    "sys/dr_explosion": {
+        "sounds": [
+            "pc:sys/dr_explosion"
+        ]
+    },
+    "sys/cartoon_fall": {
+        "sounds": [
+            "pc:sys/cartoon_fall"
+        ]
+    },
+    "sys/cartoon_raise": {
+        "sounds": [
+            "pc:sys/cartoon_raise"
+        ]
+    },
+    "sys/gold_greed": {
+        "sounds": [
+            "pc:sys/gold_greed"
+        ]
+    },
+    "sys/minecart_hit": {
+        "sounds": [
+            "pc:sys/minecart_hit"
+        ]
+    },
+    "sys/decorated_pot": {
+        "sounds": [
+            "pc:sys/decorated_pot"
+        ]
+    }
 }

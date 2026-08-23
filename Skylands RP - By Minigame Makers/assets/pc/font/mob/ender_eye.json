@@ -1,0 +1,11 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "pc:mob/font/ender_eye/digit.png",
+            "ascent": 8,
+            "height": 10,
+            "chars": ["\u0001"]
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "format_version": "1.21.11",
+    "credit": "Made with Blockbench",
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "pc:item/mob/skeleton_continu/dagger"
+    },
+    "display": {
+        "thirdperson_lefthand": {
+            "rotation": [
+                -20,
+                90,
+                0
+            ],
+            "translation": [
+                0,
+                -9.5,
+                -0.75
+            ]
+        }
+    }
+}

@@ -1,0 +1,312 @@
+{
+    "format_version": "1.21.11",
+    "credit": "Made with Blockbench",
+    "parent": "block/block",
+    "texture_size": [
+        64,
+        64
+    ],
+    "textures": {
+        "1": "pc:item/item/repair/rugged",
+        "particle": "pc:item/item/repair/rugged"
+    },
+    "elements": [
+        {
+            "name": "Anvil base",
+            "from": [
+                2,
+                0,
+                2
+            ],
+            "to": [
+                14,
+                4,
+                14
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        7,
+                        3,
+                        8
+                    ],
+                    "texture": "#1"
+                },
+                "east": {
+                    "uv": [
+                        7,
+                        1.5,
+                        10,
+                        2.5
+                    ],
+                    "texture": "#1"
+                },
+                "south": {
+                    "uv": [
+                        7,
+                        1.5,
+                        10,
+                        2.5
+                    ],
+                    "texture": "#1"
+                },
+                "west": {
+                    "uv": [
+                        7,
+                        2.5,
+                        10,
+                        3.5
+                    ],
+                    "texture": "#1"
+                },
+                "up": {
+                    "uv": [
+                        3,
+                        7,
+                        0,
+                        4
+                    ],
+                    "texture": "#1"
+                },
+                "down": {
+                    "uv": [
+                        6,
+                        4,
+                        3,
+                        7
+                    ],
+                    "texture": "#1",
+                    "cullface": "down"
+                }
+            }
+        },
+        {
+            "name": "Lower narrow portion",
+            "from": [
+                4,
+                4,
+                3
+            ],
+            "to": [
+                12,
+                5,
+                13
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        7,
+                        3.75,
+                        9,
+                        4
+                    ],
+                    "texture": "#1"
+                },
+                "east": {
+                    "uv": [
+                        7,
+                        3.5,
+                        9.5,
+                        3.75
+                    ],
+                    "texture": "#1"
+                },
+                "south": {
+                    "uv": [
+                        7,
+                        7,
+                        9,
+                        7.25
+                    ],
+                    "texture": "#1"
+                },
+                "west": {
+                    "uv": [
+                        7,
+                        3.5,
+                        9.5,
+                        3.75
+                    ],
+                    "texture": "#1"
+                },
+                "up": {
+                    "uv": [
+                        7,
+                        4,
+                        5,
+                        1.5
+                    ],
+                    "texture": "#1"
+                }
+            }
+        },
+        {
+            "name": "Wider section beneath top portion",
+            "from": [
+                6,
+                5,
+                4
+            ],
+            "to": [
+                10,
+                10,
+                12
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        5,
+                        7,
+                        6,
+                        8.25
+                    ],
+                    "texture": "#1"
+                },
+                "east": {
+                    "uv": [
+                        3,
+                        7,
+                        5,
+                        8.25
+                    ],
+                    "texture": "#1"
+                },
+                "south": {
+                    "uv": [
+                        6,
+                        7,
+                        7,
+                        8.25
+                    ],
+                    "texture": "#1"
+                },
+                "west": {
+                    "uv": [
+                        3,
+                        7,
+                        5,
+                        8.25
+                    ],
+                    "texture": "#1"
+                }
+            }
+        },
+        {
+            "name": "Anvil top",
+            "from": [
+                2.5,
+                9.5,
+                -0.5
+            ],
+            "to": [
+                13.5,
+                16.5,
+                16.5
+            ],
+            "rotation": {
+                "angle": 0,
+                "axis": "y",
+                "origin": [
+                    16,
+                    0,
+                    16
+                ]
+            },
+            "faces": {
+                "north": {
+                    "uv": [
+                        6,
+                        5.5,
+                        8.5,
+                        7
+                    ],
+                    "texture": "#1"
+                },
+                "east": {
+                    "uv": [
+                        5,
+                        0,
+                        9,
+                        1.5
+                    ],
+                    "texture": "#1"
+                },
+                "south": {
+                    "uv": [
+                        6,
+                        4,
+                        8.5,
+                        5.5
+                    ],
+                    "texture": "#1"
+                },
+                "west": {
+                    "uv": [
+                        5,
+                        0,
+                        9,
+                        1.5
+                    ],
+                    "texture": "#1"
+                },
+                "up": {
+                    "uv": [
+                        0,
+                        0,
+                        2.5,
+                        4
+                    ],
+                    "texture": "#1"
+                },
+                "down": {
+                    "uv": [
+                        2.5,
+                        4,
+                        5,
+                        0
+                    ],
+                    "texture": "#1"
+                }
+            }
+        }
+    ],
+    "display": {
+        "gui": {
+            "rotation": [
+                30,
+                45,
+                0
+            ],
+            "translation": [
+                0,
+                -0.75,
+                0
+            ],
+            "scale": [
+                0.6,
+                0.6,
+                0.6
+            ]
+        },
+        "fixed": {
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                0.5,
+                0.5,
+                0.5
+            ]
+        },
+        "on_shelf": {
+            "rotation": [
+                0,
+                90,
+                0
+            ]
+        }
+    }
+}
