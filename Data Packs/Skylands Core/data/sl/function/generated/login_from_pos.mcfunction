@@ -15,6 +15,7 @@ execute if entity @s[x=3584,y=-64,z=0,dx=511,dy=511,dz=511] run return run funct
 execute if entity @s[x=-2048,y=-64,z=-6656,dx=511,dy=511,dz=511] run return run function sl:generated/plot/celpel/api/login
 execute if entity @s[x=3072,y=-64,z=-2560,dx=511,dy=511,dz=511] run return run function sl:generated/plot/synb/api/login
 execute if entity @s[x=3072,y=-64,z=5120,dx=511,dy=511,dz=511] run return run function sl:generated/plot/dphardrelaxparkour/api/login
+execute if entity @s[x=0,y=-64,z=4608,dx=511,dy=511,dz=511] run return run function sl:generated/plot/mmgplays/api/login
 
 # Warn player if they aren't in a plot
 tellraw @s {text:"You are not on an island",color:"red",type:"text"}

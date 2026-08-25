@@ -14,3 +14,4 @@ execute if score #plot.skywardsteam.state sl.value matches 1.. positioned 3840 0
 execute if score #plot.celpel.state sl.value matches 1.. positioned -1792 0 -6400 run function sl:generated/plot/celpel/main
 execute if score #plot.synb.state sl.value matches 1.. positioned 3328 0 -2304 run function sl:generated/plot/synb/main
 execute if score #plot.dphardrelaxparkour.state sl.value matches 1.. positioned 3328 0 5376 run function sl:generated/plot/dphardrelaxparkour/main
+execute if score #plot.mmgplays.state sl.value matches 1.. positioned 256 0 4864 run function sl:generated/plot/mmgplays/main

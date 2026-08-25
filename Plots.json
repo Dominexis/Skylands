@@ -445,6 +445,29 @@
             "pvp": false,
             "max_players": 10,
             "weight": "medium"
+        },
+
+        {
+            "name": "Connective Isles",
+            "namespace": "mmgplays",
+            "description": "A set of small islands and planets surrounding the central island where the bottle resides",
+            "authors": [
+                "MMGplays"
+            ],
+            "icon": {
+                "id": "minecraft:iron_chain"
+            },
+            "spawn": "440 255 4807 71 -7",
+            "collectibles": [
+                "196 274 4981"
+            ],
+            "required_chunks": [],
+            "regions": [],
+            "genre": "parkour",
+            "difficulty": "easy",
+            "pvp": false,
+            "max_players": 10,
+            "weight": "light"
         }
     ]
 }
