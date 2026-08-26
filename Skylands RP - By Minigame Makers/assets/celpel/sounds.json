@@ -1,0 +1,11 @@
+{
+    "1": { "category": "master", "sounds": [ "celpel:1" ] },
+    "2": { "category": "master", "sounds": [ "celpel:2" ] },
+    "5": { "category": "master", "sounds": [ "celpel:5" ] },
+    "6": { "category": "master", "sounds": [ "celpel:6" ] },
+    "fan": { "category": "master", "sounds": [ "celpel:fan" ] },
+    "ol_1": { "category": "master", "sounds": [ "celpel:ol_1" ] },
+    "ol_2": { "category": "master", "sounds": [ "celpel:ol_2" ] },
+    "ol_3": { "category": "master", "sounds": [ "celpel:ol_3" ] },
+    "ol_4": { "category": "master", "sounds": [ "celpel:ol_4" ] }
+}

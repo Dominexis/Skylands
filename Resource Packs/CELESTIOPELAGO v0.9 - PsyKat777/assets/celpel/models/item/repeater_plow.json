@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/handheld", 
+	"textures": {
+		"layer0": "celpel:item/repeater_plow", "particle": "celpel:item/repeater_plow"
+	}
+}

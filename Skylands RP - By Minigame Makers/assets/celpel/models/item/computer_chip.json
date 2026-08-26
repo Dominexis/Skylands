@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/handheld", 
+	"textures": {
+		"layer0": "celpel:item/computer_chip", "particle": "celpel:item/computer_chip"
+	}
+}
