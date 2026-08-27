@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:entity",
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "minecraft:loot_table",
+            "value": "sanct:material/bone"
+        }],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                    "sanct.thrown_book_time": 1
+                }
+            }
+        ]
+    }]
+}

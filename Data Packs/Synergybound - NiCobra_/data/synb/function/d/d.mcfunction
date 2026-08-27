@@ -1,0 +1,1 @@
+function synb:d/obtain {item:_debug}

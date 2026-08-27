@@ -1,0 +1,11 @@
+{
+  "function": "minecraft:set_enchantments",
+  "enchantments": {
+    "minecraft:sharpness": {
+      "type": "minecraft:score",
+      "target": "this",
+      "score": "synb.IEEnch.Sharpness",
+      "scale": 1
+    }
+  }
+}

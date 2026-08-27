@@ -1,0 +1,1 @@
+scoreboard players set @s synb.Item.counter_attack.speed_duration 30

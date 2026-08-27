@@ -1,0 +1,2 @@
+# Tests to see if a player has received the boots
+execute if entity @a[nbt={Inventory:[{id:"minecraft:leather_boots"}]},x=-1775,y=226,z=-6376,distance=..250,team=sl.player] if score @r[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] celpel.boots_distributed matches 0 run function celpel:multiplayer/distribute_boots

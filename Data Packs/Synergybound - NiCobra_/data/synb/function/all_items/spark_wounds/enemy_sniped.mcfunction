@@ -1,0 +1,1 @@
+execute as @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.type.enemy] if score @s synb.Item.spark_wounds.last_player_id = @a[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,team=sl.player,tag=synb.ctx.generic_player_src,limit=1] synb.IEPlayer.Registered run scoreboard players reset @s synb.Item.spark_wounds.last_player_id

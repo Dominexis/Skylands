@@ -1,0 +1,1 @@
+scoreboard objectives add synb.Item.cystal_sharp.cd dummy

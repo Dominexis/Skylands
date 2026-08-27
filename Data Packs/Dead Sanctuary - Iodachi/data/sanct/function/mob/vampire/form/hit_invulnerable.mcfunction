@@ -1,0 +1,2 @@
+execute as @e[x=-2352,y=48,z=2256,dx=94,dy=62,dz=94,type=minecraft:vindicator,nbt={HurtTime:10s},limit=1] at @s run function sanct:mob/vampire/form/hit_invulnerable_apply
+advancement revoke @s only sanct:mob/vampire/hit_invulnerable

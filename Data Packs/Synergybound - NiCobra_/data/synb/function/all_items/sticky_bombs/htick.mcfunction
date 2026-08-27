@@ -1,0 +1,2 @@
+execute as @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=minecraft:marker,tag=synb.type.death_detector,tag=synb.ctx.local,scores={synb.Item.sticky_bombs.delay=1..}] at @s unless entity @e[type=minecraft:item_display,tag=synb.item.sticky_bombs.bomb,distance=..4] \
+    run summon minecraft:item_display ~ ~ ~ {Tags:["synb.type.item_associate","synb.item.sticky_bombs.bomb"],item:{id:"minecraft:firework_star"},billboard:"vertical",transformation:{left_rotation:[0f,1f,0f,1f],right_rotation:[0f,1f,0f,1f],translation:[0f,0f,0f],scale:[0.45f,0.45f,0.45f]}}

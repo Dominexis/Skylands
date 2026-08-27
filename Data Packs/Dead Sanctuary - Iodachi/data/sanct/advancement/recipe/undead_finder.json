@@ -1,0 +1,32 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:custom_data": {
+                                "undead_finder": {}
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+
+        "acknowledged": {"trigger": "minecraft:impossible"}
+    },
+    "requirements": [["acquired","acknowledged"]],
+    "rewards": {
+        "recipes": [
+            "sanct:undead_finder"
+        ],
+        "function": "sanct:player/recipe_acquire"
+    }
+}

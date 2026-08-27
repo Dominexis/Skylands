@@ -1,0 +1,1 @@
+function synb:itemengine/player/heal {heal_amount:4}

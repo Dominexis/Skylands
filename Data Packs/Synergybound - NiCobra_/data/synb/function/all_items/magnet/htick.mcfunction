@@ -1,0 +1,3 @@
+execute if score @s synb.IEExecCount.magnet matches 1 run tp @e[type=minecraft:item,tag=synb.type.dropped_money,nbt={PickupDelay:0s},distance=..5,tag=synb.ctx.local] ~ ~ ~
+execute if score @s synb.IEExecCount.magnet matches 2 run tp @e[type=minecraft:item,tag=synb.type.dropped_money,nbt={PickupDelay:0s},distance=..10,tag=synb.ctx.local] ~ ~ ~
+execute if score @s synb.IEExecCount.magnet matches 3.. run tp @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=minecraft:item,tag=synb.type.dropped_money,nbt={PickupDelay:0s},tag=synb.ctx.local] ~ ~ ~

@@ -1,6 +1,4 @@
 
-# effect
-data remove storage pc:data root
-execute store result storage pc:data index int 1 run scoreboard players get @s sl.id
-function pc:sys/player/data/load2 with storage pc:data
-data remove storage pc:data index
+item replace entity 20060423-0-0-0-1 contents from entity @s armor.body
+data modify storage pc:utils data set from entity 20060423-0-0-0-1 item.components."minecraft:custom_data".data
+item replace entity 20060423-0-0-0-1 contents with air

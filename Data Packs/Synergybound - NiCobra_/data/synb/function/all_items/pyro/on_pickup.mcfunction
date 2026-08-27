@@ -1,0 +1,1 @@
+scoreboard objectives add synb.Item.pyro.fire_health dummy

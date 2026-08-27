@@ -1,0 +1,14 @@
+# Tests for things regarding components
+execute if block -1800 222 -6403 lever[powered=false] if score @r[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] celpel.lever_telepad matches 1 run function celpel:components/deactivate_telepad
+execute if block -1800 222 -6403 lever[powered=true] if score @r[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] celpel.lever_telepad matches 0 run function celpel:components/activate_telepad
+execute if block -1800 220 -6400 copper_chest{Items:[{Slot: 13b, id:"minecraft:copper_ingot"}]} run function celpel:strings/trigger/5
+execute if block -1784 224 -6400 pearlescent_froglight if score @r[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] celpel.fan_active matches 0 run function celpel:components/activate_fan
+execute as @a[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] if score @s celpel.blow_played matches 0 if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:levitation":{amplifier:{min:0}}}}} run function celpel:components/play_blow
+execute as @a[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] if score @s celpel.blow_played matches 1 unless predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:levitation":{amplifier:{min:0}}}}} run scoreboard players set @s celpel.blow_played 0
+execute if block -1793 225 -6394 resin_brick_wall if block -1791 224 -6394 resin_brick_wall if block -1794 223 -6394 resin_brick_wall if block -1790 222 -6394 resin_brick_wall if block -1792 221 -6394 resin_brick_wall if score @r[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] celpel.wires_placed matches 0 run function celpel:components/wires_success
+execute if block -1793 225 -6394 resin_brick_wall if block -1791 224 -6394 resin_brick_wall if block -1794 223 -6394 resin_brick_wall if block -1790 222 -6394 resin_brick_wall if block -1792 221 -6394 resin_brick_wall unless block -1792 233 -6407 target[power=0] if score @r[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] celpel.door_opened matches 0 run function celpel:components/prepare_door
+execute unless block -1792 233 -6407 target[power=0] unless block -1793 225 -6394 resin_brick_wall run function celpel:components/buzzer
+execute unless block -1792 233 -6407 target[power=0] unless block -1791 224 -6394 resin_brick_wall run function celpel:components/buzzer
+execute unless block -1792 233 -6407 target[power=0] unless block -1794 223 -6394 resin_brick_wall run function celpel:components/buzzer
+execute unless block -1792 233 -6407 target[power=0] unless block -1790 222 -6394 resin_brick_wall run function celpel:components/buzzer
+execute unless block -1792 233 -6407 target[power=0] unless block -1792 221 -6394 resin_brick_wall run function celpel:components/buzzer

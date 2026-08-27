@@ -1,0 +1,10 @@
+{
+	"replace": false,
+	"values": [
+		"animated_java:beebs/root/on_tick",
+		"animated_java:chbidoki_plushie/root/on_tick",
+		"animated_java:ravaged_mind/root/on_tick",
+		"animated_java:skurleton/root/on_tick",
+		"animated_java:spite/root/on_tick"
+	]
+}

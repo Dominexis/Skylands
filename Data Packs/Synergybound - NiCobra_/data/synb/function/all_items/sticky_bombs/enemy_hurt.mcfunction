@@ -1,0 +1,2 @@
+execute unless score #enemy_hurt_dmg_type synb.Tmp.Ctx matches 2 run return 0
+execute as @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.ctx.enemy_hurt_target] on passengers as @s[scores={synb.Item.sticky_bombs.delay=1..}] run function synb:all_items/sticky_bombs/_explosion

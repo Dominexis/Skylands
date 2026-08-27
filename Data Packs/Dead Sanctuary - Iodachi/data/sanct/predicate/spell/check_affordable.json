@@ -1,0 +1,15 @@
+{
+    "condition": "minecraft:value_check",
+    "value": {
+        "type": "minecraft:storage",
+        "storage": "sanct:storage",
+        "path": "root.material_price.has_quantity"
+    },
+    "range": {
+        "min": {
+            "type": "minecraft:storage",
+            "storage": "sanct:storage",
+            "path": "root.material_price.price"
+        }
+    }
+}

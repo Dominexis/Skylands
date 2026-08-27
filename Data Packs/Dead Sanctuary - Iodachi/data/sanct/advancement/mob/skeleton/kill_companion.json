@@ -1,0 +1,23 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "skeleton_kill_companion": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "entity": {
+                    "type": "minecraft:skeleton_horse",
+                    "passenger": {
+                        "type": "minecraft:stray"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:mob/skeleton/companion/kill"
+    }
+}

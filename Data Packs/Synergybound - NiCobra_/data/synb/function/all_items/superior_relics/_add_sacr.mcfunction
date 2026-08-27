@@ -1,0 +1,3 @@
+execute store result storage synb.d:tmp args.env int 1 run scoreboard players get @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=minecraft:marker,tag=synb.mark.arena,tag=synb.ctx.local,limit=1] synb.ASys.ArenaID
+data modify storage synb.d:tmp args.pool_name set value "sacr"
+execute as @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=minecraft:villager,tag=synb.type.merchant,tag=synb.ctx.local] at @s run function synb:elements/merchant/add_offer with storage synb.d:tmp args

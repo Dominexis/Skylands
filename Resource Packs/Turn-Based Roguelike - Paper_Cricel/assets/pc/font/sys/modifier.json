@@ -1,0 +1,31 @@
+{
+    "providers": [
+        {
+            "chars": [
+                ""
+            ],
+            "file": "pc:sys/font/modifier/enemy.png",
+            "type": "bitmap",
+            "ascent": 7,
+            "height": 10
+        },
+        {
+            "chars": [
+                ""
+            ],
+            "file": "pc:sys/font/modifier/money.png",
+            "type": "bitmap",
+            "ascent": 7,
+            "height": 10
+        },
+        {
+            "chars": [
+                ""
+            ],
+            "file": "pc:sys/font/modifier/skill_slot.png",
+            "type": "bitmap",
+            "ascent": 7,
+            "height": 10
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+$attribute @s minecraft:entity_interaction_range modifier add sanct:slot_reach $(reach) add_multiplied_base

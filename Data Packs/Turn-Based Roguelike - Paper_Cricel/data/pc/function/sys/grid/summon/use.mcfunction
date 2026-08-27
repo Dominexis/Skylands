@@ -1,5 +1,4 @@
 
-# effect
 data modify storage pc:temp grid set from storage pc:game combat.grid
 execute store result score #x1 pc.main run data get storage pc:game combat.grid_center[0]
 execute store result score #y1 pc.main run data get storage pc:game combat.grid_center[1]

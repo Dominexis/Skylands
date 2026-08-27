@@ -1,0 +1,3 @@
+$execute store success storage sanct:storage root.execute_result byte 1 run data modify storage sanct:storage root.spell_cast.spell set from storage sanct:storage root.loaded_player.spell_list.$(category)[$(spell)]
+execute if data storage sanct:storage {root:{execute_result:0b}} run return run tellraw @s {"text":"Spell not found.","color":"red"}
+function sanct:player/cast/cast_spell with storage sanct:storage root.spell_cast

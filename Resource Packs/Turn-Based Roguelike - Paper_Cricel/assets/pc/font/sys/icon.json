@@ -1,0 +1,71 @@
+{
+    "providers": [
+        {
+            "type": "reference",
+            "id": "pc:sys/space"
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/icon/energy.png",
+            "ascent": 10,
+            "height": 14,
+            "chars": [
+                "0"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/icon/durability.png",
+            "ascent": 10,
+            "height": 14,
+            "chars": [
+                "1"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/icon/hp.png",
+            "ascent": 10,
+            "height": 14,
+            "chars": [
+                "2"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/icon/money.png",
+            "ascent": 10,
+            "height": 14,
+            "chars": [
+                "3"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/icon/pause.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": [
+                "4"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/icon/discord.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uf001"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/icon/x.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uf002"
+            ]
+        }
+    ]
+}

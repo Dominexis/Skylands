@@ -1,0 +1,9 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "sl:player"
+        }
+    ]
+}

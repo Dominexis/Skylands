@@ -1,0 +1,6 @@
+# "Threads" the increment strings into the map, causing them to activate when required
+execute as @r[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] if block -1841 227 -6395 lever[powered=true] if score @s celpel.lever_bridge matches 0 if score @s celpel.levers_active matches 0 run function celpel:strings/trigger/3
+execute as @r[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] if block -1841 227 -6395 lever[powered=false] if score @s celpel.lever_bridge matches 1 if score @s celpel.levers_active matches 0 run function celpel:strings/trigger/4
+execute as @r[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] at @s if block ~ ~-2 ~ white_glazed_terracotta if score @s celpel.end_reached matches 0 run function celpel:strings/trigger/6
+execute as @r[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] if block -1792 221 -6397 lever[powered=true] if score @s celpel.lever_pulley matches 0 if score @s celpel.levers_active matches 0 run function celpel:strings/trigger/7
+execute as @r[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] if block -1792 221 -6397 lever[powered=false] if score @s celpel.lever_pulley matches 1 if score @s celpel.levers_active matches 0 run function celpel:strings/trigger/8

@@ -1,0 +1,1 @@
+scoreboard objectives remove synb.Item.electric_arcs.zap_cooldown

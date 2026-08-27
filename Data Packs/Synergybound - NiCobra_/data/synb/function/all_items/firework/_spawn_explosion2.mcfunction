@@ -1,0 +1,2 @@
+$summon minecraft:firework_rocket ~ ~ ~ {LifeTime:0,Silent:1b,FireworksItem:{id:"minecraft:firework_rocket",count:1,components: \
+    {"minecraft:fireworks":{explosions:[{shape:"$(shape)",colors:$(colors),fade_colors:$(fade_colors),has_twinkle:$(twinkle),has_trail:$(trail)}]}}}}

@@ -1,0 +1,188 @@
+{
+    "type": "minecraft:command",
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "minecraft:alternatives",
+            "children": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:decorated_pot",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:value_check",
+                                "value": {
+                                    "type": "minecraft:storage",
+                                    "storage": "sanct:storage",
+                                    "path": "root.summon.skeleton.companion_count"
+                                },
+                                "range": {
+                                    "min": 1
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:score",
+                                "target": {
+                                    "type": "minecraft:fixed",
+                                    "name": "#experience_total"
+                                },
+                                "score": "sanct.numbers"
+                            },
+                            "range": {
+                                "min": 315
+                            }
+                        }
+                    ],
+                    "functions": [{
+                        "function": "minecraft:set_custom_data",
+                        "tag": {
+                            "arguments": {
+                                "power_scale": 0,
+                                "fetch": "skeleton.companion_count",
+                                "operation": "add #count sanct.numbers 1",
+                                "return": "skeleton.companion_count byte 1",
+                                "message": "\"§d§o - Skeleton Riders now spawn with a beast companion\"",
+                                "command": "return 1"
+                            }
+                        }
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:decorated_pot",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:storage",
+                                "storage": "sanct:storage",
+                                "path": "root.summon.skeleton.companion_count"
+                            },
+                            "range": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        },
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:uniform",
+                                "min": 0,
+                                "max": 6
+                            },
+                            "range": {
+                                "max": 0
+                            }
+                        }
+                    ],
+                    "functions": [{
+                        "function": "minecraft:set_custom_data",
+                        "tag": {
+                            "arguments": {
+                                "power_scale": 0,
+                                "fetch": "skeleton.companion_count",
+                                "operation": "add #count sanct.numbers 1",
+                                "return": "skeleton.companion_count byte 1",
+                                "message": "[{text:\" - Skeleton Rider companions \",color:light_purple,italic:true},{score:{name:\"#var\",objective:\"sanct.numbers\"}},\" -> \",{score:{name:\"#count\",objective:\"sanct.numbers\"}}]",
+                                "command": "return 1"
+                            }
+                        }
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:decorated_pot",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:storage",
+                                "storage": "sanct:storage",
+                                "path": "root.summon.skeleton.stat.danger_movement_speed"
+                            },
+                            "range": {
+                                "max": 140
+                            }
+                        },
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:uniform",
+                                "min": 0,
+                                "max": 2
+                            },
+                            "range": {
+                                "max": 0
+                            }
+                        }
+                    ],
+                    "functions": [{
+                        "function": "minecraft:set_custom_data",
+                        "tag": {
+                            "arguments": {
+                                "power_scale": 1,
+                                "fetch": "skeleton.stat.danger_movement_speed",
+                                "operation": "operation #count sanct.numbers += #danger_increase sanct.numbers",
+                                "return": "skeleton.stat.danger_movement_speed short 1",
+                                "message": "[{text:\" - Skeleton speed \",color:red,italic:true},{score:{name:\"#var\",objective:\"sanct.numbers\"}},\"% -> \",{score:{name:\"#count\",objective:\"sanct.numbers\"}},\"%\"]",
+                                "command": "execute as @e[x=-2352,y=48,z=2256,dx=94,dy=62,dz=94,type=minecraft:skeleton] run attribute @s minecraft:movement_speed modifier add sanct:danger_update .03 add_multiplied_base"
+                            }
+                        }
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:decorated_pot",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:uniform",
+                                "min": 0,
+                                "max": 1
+                            },
+                            "range": {
+                                "max": 0
+                            }
+                        }
+                    ],
+                    "functions": [{
+                        "function": "minecraft:set_custom_data",
+                        "tag": {
+                            "arguments": {
+                                "power_scale": 1.5,
+                                "fetch": "skeleton.stat.danger_attack_damage",
+                                "operation": "operation #count sanct.numbers += #danger_increase sanct.numbers",
+                                "return": "skeleton.stat.danger_attack_damage short 1",
+                                "message": "[{text:\" - Skeleton damage \",color:red,italic:true},{score:{name:\"#var\",objective:\"sanct.numbers\"}},\"% -> \",{score:{name:\"#count\",objective:\"sanct.numbers\"}},\"%\"]",
+                                "command": "execute as @e[x=-2352,y=48,z=2256,dx=94,dy=62,dz=94,type=minecraft:skeleton] run attribute @s minecraft:attack_damage modifier add sanct:danger_update .045 add_multiplied_base"
+                            }
+                        }
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:decorated_pot",
+                    "functions": [{
+                        "function": "minecraft:set_custom_data",
+                        "tag": {
+                            "arguments": {
+                                "power_scale": 2,
+                                "fetch": "skeleton.stat.danger_max_health",
+                                "operation": "operation #count sanct.numbers += #danger_increase sanct.numbers",
+                                "return": "skeleton.stat.danger_max_health short 1",
+                                "message": "[{text:\" - Skeleton health \",color:red,italic:true},{score:{name:\"#var\",objective:\"sanct.numbers\"}},\"% -> \",{score:{name:\"#count\",objective:\"sanct.numbers\"}},\"%\"]",
+                                "command": "return 1"
+                            }
+                        }
+                    }]
+                }
+            ]
+        }]
+    }]
+}

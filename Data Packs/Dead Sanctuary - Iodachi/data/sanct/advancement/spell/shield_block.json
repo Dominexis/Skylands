@@ -1,0 +1,20 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "shield_block_damage": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "damage": {
+                    "blocked": true
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:spell/buff/shield/block_damage"
+    }
+}

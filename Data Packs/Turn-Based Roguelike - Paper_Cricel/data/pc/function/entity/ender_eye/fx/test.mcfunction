@@ -1,0 +1,5 @@
+
+summon minecraft:item_display ~ ~ ~ {Tags: [pc.entity.ender_eye], item: {count: 1, id: "minecraft:ender_eye"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.5f], translation: [0.03f, -0.725f, 0.0f]}, Passengers: [\
+    {Tags: [pc.entity.ender_eye.wing, pc.entity.ender_eye.wing1], id: "minecraft:item_display", item: {count: 1, id: "minecraft:feather"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 0.25f], translation: [-0.55f, -0.4625f, 0.0f]}},\
+    {Tags: [pc.entity.ender_eye.wing, pc.entity.ender_eye.wing2], id: "minecraft:item_display", item: {count: 1, id: "minecraft:feather"}, transformation: {left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 0.25f], translation: [0.55f, -0.4625f, 0.0f]}}\
+]}

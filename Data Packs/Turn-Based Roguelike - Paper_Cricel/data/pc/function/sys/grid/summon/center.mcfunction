@@ -1,6 +1,5 @@
 
-# effect
 tag @s add pc.grid.center
-function pc:sys/game/combat/loot/clear/use
+function pc:sys/combat/end/win/chest/clear/use
 
 # fx

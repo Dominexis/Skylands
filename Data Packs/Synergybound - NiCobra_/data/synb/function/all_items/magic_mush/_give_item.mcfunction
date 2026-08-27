@@ -1,0 +1,4 @@
+data modify storage synb.d:tmp expr.magic_choice set value ["barrel", "combo", "crystal_edge", "dash", "ender_pearl", "firework", "frostbite", "global_curse", "ground_jaws", "gunpowder", "invisibility", "living_shield", "pushback", "pure_shield", "pyro", "reaper", "sharp_tip", "shield_heal", "spirit_fire", "sticky_bombs", "thunder", "vibration", "void_shield"]
+$data modify storage synb.d:tmp args.item_col_id set from storage synb.d:tmp expr.magic_choice[$(rand_choice)]
+data modify storage synb.d:tmp args.pool_name set value "shop"
+function synb:elements/collectible/spawn with storage synb.d:tmp args

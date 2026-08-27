@@ -1,0 +1,1 @@
+scoreboard objectives remove synb.Item.growing_dmg.room_count

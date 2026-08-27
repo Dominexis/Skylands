@@ -1,0 +1,1 @@
+function synb:all_items/enchanter/_rand_ench

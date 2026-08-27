@@ -1,0 +1,10 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "level1"            :{"trigger": "minecraft:impossible"},
+        "level2"            :{"trigger": "minecraft:impossible"},
+        "level3"            :{"trigger": "minecraft:impossible"},
+        "level4"            :{"trigger": "minecraft:impossible"}
+    },
+    "requirements": [["level1","level2","level3","level4"]]
+}

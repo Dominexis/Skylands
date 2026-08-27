@@ -1,6 +1,2 @@
 
-# effect
-execute store result storage pc:data index int 1 run scoreboard players get @s sl.id
-function pc:sys/player/data/save2 with storage pc:data
-data remove storage pc:data index
-data remove storage pc:data root
+item modify entity @s armor.body {"function": "minecraft:copy_custom_data","source": {"type": "minecraft:storage","source": "pc:utils"},"ops": [{"source": "data","target": "data","op": "replace"}]}

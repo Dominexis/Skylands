@@ -1,0 +1,2 @@
+execute at @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.ctx.enemy_blocked_src,tag=!synb.item.shield_heal.unusable] at @s run function synb:itemengine/player/heal {heal_amount:1}
+execute as @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.ctx.enemy_blocked_src,tag=!synb.item.shield_heal.unusable] at @s run function synb:all_items/shield_heal/_blocked

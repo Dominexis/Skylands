@@ -1,0 +1,51 @@
+{
+    "type": "minecraft:command",
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "minecraft:item",
+            "name": "minecraft:book",
+            "functions": [
+                {
+                    "function": "minecraft:set_name",
+                    "name": "§bNew Spells Available!"
+                },
+                {
+                    "function": "minecraft:set_lore",
+                    "mode": "replace_all",
+                    "lore": [
+                        [
+                            {
+                                "text": "§7§oHold §r[",
+                                "color": "white",
+                                "italic": false
+                            },
+                            {
+                                "keybind": "key.use"
+                            },
+                            "]§7§o while selected to read."
+                        ]
+                    ]
+                },
+                {
+                    "function": "minecraft:set_custom_data",
+                    "tag": "{spellbook:1b}"
+                },
+                {
+                    "function": "minecraft:set_components",
+                    "components": {
+                        "minecraft:consumable": {
+                            "consume_seconds": 999999,
+                            "animation": "block",
+                            "has_consume_particles": false,
+                            "sound": "minecraft:item.book.page_turn"
+                        },
+                        "minecraft:item_model": "sanct:book_closed",
+                        "minecraft:max_stack_size": 1,
+                        "minecraft:enchantment_glint_override": true
+                    }
+                }
+            ]
+        }]
+    }]
+}

@@ -1,0 +1,821 @@
+{
+    "providers": [
+        {
+            "type": "space",
+            "advances": {
+                "": -39,
+                "": -1.5
+            }
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/check_intent/1.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "Ā"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/check_intent/2.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "ā"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/check_intent/3.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "Ă"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/check_intent/4.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "ă"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/check_intent/5.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "Ą"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/check_intent/6.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "ą"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/check_intent/7.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "Ć"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/check_intent/8.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "ć"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/check_intent/9.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "Ĉ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/check_intent/10.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "ĉ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/check_intent/11.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "Ċ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/check_intent/12.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "ċ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/check_intent/13.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "Č"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/check_intent/14.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "č"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/check_intent/15.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "Ď"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_item/1.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "Ȁ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_item/2.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "ȁ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_item/3.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "Ȃ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_item/4.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "ȃ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_item/5.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "Ȅ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_item/6.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "ȅ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_item/7.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "Ȇ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_item/8.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "ȇ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_item/9.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "Ȉ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_item/10.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "ȉ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_item/11.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "Ȋ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_item/12.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "ȋ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_item/13.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "Ȍ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_item/14.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "ȍ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_item/15.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "Ȏ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_repair/1.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "̀"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_repair/2.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "́"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_repair/3.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "̂"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_repair/4.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "̃"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_repair/5.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "̄"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_repair/6.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "̅"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_repair/7.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "̆"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_repair/8.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "̇"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_repair/9.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "̈"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_repair/10.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "̉"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_repair/11.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "̊"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_repair/12.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "̋"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_repair/13.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "̌"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_repair/14.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "̍"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/use_repair/15.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "̎"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/1/1.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "Ѐ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/1/2.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "Ё"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/1/3.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "Ђ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/1/4.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "Ѓ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/1/5.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "Є"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/1/6.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "Ѕ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/1/7.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "І"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/1/8.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "Ї"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/1/9.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "Ј"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/1/10.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "Љ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/1/11.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "Њ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/1/12.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "Ћ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/1/13.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "Ќ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/1/14.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "Ѝ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/1/15.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "Ў"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/2/1.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "Ԁ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/2/2.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "ԁ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/2/3.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "Ԃ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/2/4.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "ԃ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/2/5.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "Ԅ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/2/6.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "ԅ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/2/7.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "Ԇ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/2/8.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "ԇ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/2/9.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "Ԉ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/2/10.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "ԉ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/2/11.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "Ԋ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/2/12.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "ԋ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/2/13.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "Ԍ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/2/14.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "ԍ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/2/15.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "Ԏ"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/3/1.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "؀"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/3/2.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "؁"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/3/3.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "؂"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/3/4.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "؃"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/3/5.png",
+            "ascent": 10,
+            "height": 10,
+            "chars": [
+                "؄"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/3/6.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "؅"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/3/7.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "؆"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/3/8.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "؇"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/3/9.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "؈"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/3/10.png",
+            "ascent": 3,
+            "height": 10,
+            "chars": [
+                "؉"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/3/11.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "؊"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/3/12.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "؋"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/3/13.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "،"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/3/14.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "؍"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/tutorial/different_intent/3/15.png",
+            "ascent": -4,
+            "height": 10,
+            "chars": [
+                "؎"
+            ]
+        }
+    ]
+}

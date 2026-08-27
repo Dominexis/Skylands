@@ -1,0 +1,2 @@
+execute at @e[type=#sanct:undead,tag=sanct.damage_target,distance=..10,nbt={HurtTime:10s},limit=1] run function sanct:spell/buff/sprint_damage/effect/effect
+advancement revoke @s only sanct:spell/sprint_damage/damage damage

@@ -1,0 +1,2 @@
+
+summon minecraft:item_display ~ ~ ~ {Tags:[pc.entity.iron_golem.attack2.fx2],item: {count: 1, id: "minecraft:iron_block"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.5f, 1.5f, 1.5f], translation: [0.0f, 0.75f, 0.0f]},teleport_duration:1}

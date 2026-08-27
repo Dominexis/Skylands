@@ -1,0 +1,77 @@
+{
+    "providers": [
+        {
+            "type": "space",
+            "advances": {
+                " ": 4
+            }
+        },
+        {
+            "type": "reference",
+            "id": "pc:sys/space"
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/background/turn_actionbar.png",
+            "ascent": 19,
+            "height": 32,
+            "chars": [
+                "0"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/background/turn_subtitle.png",
+            "ascent": 10,
+            "height": 16,
+            "chars": [
+                "1"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/background/restarea_actionbar.png",
+            "ascent": 19,
+            "height": 32,
+            "chars": [
+                "2"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/background/restarea_hotbar/default.png",
+            "ascent": 116,
+            "height": 180,
+            "chars": [
+                "\u1000"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/background/restarea_hotbar/3skill.png",
+            "ascent": 116,
+            "height": 180,
+            "chars": [
+                "\u1001"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/background/restarea_hotbar/4skill.png",
+            "ascent": 116,
+            "height": 180,
+            "chars": [
+                "\u1002"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/background/restarea_hotbar/5skill.png",
+            "ascent": 116,
+            "height": 180,
+            "chars": [
+                "\u1003"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,3 @@
+execute as @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=minecraft:block_display,tag=synb.item.pyro.fire,tag=synb.ctx.local] at @s if block ~ ~-0.5 ~ minecraft:air run tp @s ~ ~-0.5 ~
+execute if score t6 synb.TickCycle matches 1 as @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=minecraft:block_display,tag=synb.item.pyro.fire,tag=synb.ctx.local] at @s positioned ~0.5 ~0.5 ~0.5 run function synb:all_items/pyro/_fire_hit
+execute at @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=minecraft:block_display,tag=synb.item.pyro.fire,tag=synb.ctx.local] run particle minecraft:smoke ~0.5 ~0.2 ~0.5 0.3 0.5 0.3 0.01 1

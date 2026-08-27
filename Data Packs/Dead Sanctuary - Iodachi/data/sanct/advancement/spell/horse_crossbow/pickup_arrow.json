@@ -1,0 +1,51 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "pickup_arrow": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:any_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "slots": {
+                                        "inventory.*": {
+                                            "items": "minecraft:arrow"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "slots": {
+                                        "hotbar.*": {
+                                            "items": "minecraft:arrow"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "items": [
+                    {
+                        "items": "minecraft:arrow"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:spell/alchemy/horse_crossbow/clear_arrow"
+    }
+}

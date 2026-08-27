@@ -1,0 +1,446 @@
+{
+    "providers": [
+        {
+            "type": "space",
+            "advances": {
+                " ": 4
+            }
+        },
+        {
+            "type": "reference",
+            "id": "pc:sys/number"
+        },
+        {
+            "chars": [
+                "\ue001"
+            ],
+            "file": "pc:sys/font/effect/strength.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue002"
+            ],
+            "file": "pc:sys/font/effect/strength_down.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue003"
+            ],
+            "file": "pc:sys/font/effect/vigor.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue004"
+            ],
+            "file": "pc:sys/font/effect/vulnerable.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue005"
+            ],
+            "file": "pc:sys/font/effect/critical_hit.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue006"
+            ],
+            "file": "pc:sys/font/effect/weakness.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue007"
+            ],
+            "file": "pc:sys/font/effect/robust.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue008"
+            ],
+            "file": "pc:sys/font/effect/regeneration.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue009"
+            ],
+            "file": "pc:sys/font/effect/misery.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue00a"
+            ],
+            "file": "pc:sys/font/effect/vampire.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue00b"
+            ],
+            "file": "pc:sys/font/effect/dragon_scale.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue00c"
+            ],
+            "file": "pc:sys/font/effect/energized.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue00d"
+            ],
+            "file": "pc:sys/font/effect/gentle.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue00e"
+            ],
+            "file": "pc:sys/font/effect/rusty.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue00f"
+            ],
+            "file": "pc:sys/font/effect/piglin_ts.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue010"
+            ],
+            "file": "pc:sys/font/effect/enmity_gaze.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue011"
+            ],
+            "file": "pc:sys/font/effect/tnt_tank.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue012"
+            ],
+            "file": "pc:sys/font/effect/flaming_touch.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue013"
+            ],
+            "file": "pc:sys/font/effect/dragonbreath_area/mark.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue014"
+            ],
+            "file": "pc:sys/font/effect/iron_resolve.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue015"
+            ],
+            "file": "pc:sys/font/effect/repair_material.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue016"
+            ],
+            "file": "pc:sys/font/effect/netting.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue017"
+            ],
+            "file": "pc:sys/font/effect/booty.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue018"
+            ],
+            "file": "pc:sys/font/effect/minion.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue019"
+            ],
+            "file": "pc:sys/font/effect/enormous.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue01a"
+            ],
+            "file": "pc:sys/font/effect/undying_shell.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue201"
+            ],
+            "file": "pc:sys/font/effect/fire_area.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue202"
+            ],
+            "file": "pc:sys/font/effect/rail_area.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue203"
+            ],
+            "file": "pc:sys/font/effect/dragonbreath_area.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue204"
+            ],
+            "file": "pc:sys/font/effect/cobweb_area.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue205"
+            ],
+            "file": "pc:sys/font/effect/void_area.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue401"
+            ],
+            "file": "pc:sys/font/entity/anvil.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue402"
+            ],
+            "file": "pc:sys/font/entity/phantom.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue501"
+            ],
+            "file": "pc:sys/font/intent/attack.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue502"
+            ],
+            "file": "pc:sys/font/intent/bomb_attack.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue503"
+            ],
+            "file": "pc:sys/font/intent/deadly_attack.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue504"
+            ],
+            "file": "pc:sys/font/intent/defense.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue505"
+            ],
+            "file": "pc:sys/font/intent/walk.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue506"
+            ],
+            "file": "pc:sys/font/intent/repair.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue507"
+            ],
+            "file": "pc:sys/font/intent/buff.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue508"
+            ],
+            "file": "pc:sys/font/intent/debuff.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue509"
+            ],
+            "file": "pc:sys/font/intent/heal.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue50a"
+            ],
+            "file": "pc:sys/font/intent/summon.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue50b"
+            ],
+            "file": "pc:sys/font/intent/stun.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue301"
+            ],
+            "file": "pc:sys/font/custom/shield.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue302"
+            ],
+            "file": "pc:sys/font/custom/repel.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue303"
+            ],
+            "file": "pc:sys/font/custom/n-cross.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        },
+        {
+            "chars": [
+                "\ue304"
+            ],
+            "file": "pc:sys/font/custom/nxn.png",
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 14
+        }
+    ]
+}

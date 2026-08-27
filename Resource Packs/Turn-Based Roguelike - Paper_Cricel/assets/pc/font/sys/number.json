@@ -1,0 +1,13 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "pc:sys/font/number.png",
+            "ascent": 7,
+            "height": 7,
+            "chars": [
+                "0123456789-*"
+            ]
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "id": "minecraft:diamond_sword"
+            "id": "minecraft:golden_sword"
         },
         "title": [
             {
@@ -19,7 +19,7 @@
         "announce_to_chat": false,
         "hidden": false
     },
-    "parent": "sl:genre/difficult_pve",
+    "parent": "sl:genre/pve",
     "criteria": {
         "tick": {
             "trigger": "minecraft:tick"

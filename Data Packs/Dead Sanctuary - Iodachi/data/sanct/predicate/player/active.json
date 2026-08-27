@@ -1,0 +1,51 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "sl:player"
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific": {
+                    "type": "minecraft:player",
+                    "advancements": {
+                        "sanct:tags": {
+                            "active": true
+                        }
+                    }
+                },
+                "location": {
+                    "position": {
+                        "x": {
+                            "min": -2368,
+                            "max": -2242
+                        },
+                        "y": {
+                            "min": -15,
+                            "max": 143
+                        },
+                        "z": {
+                            "min": 2240,
+                            "max": 2366
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:value_check",
+            "value": {
+                "type": "minecraft:score",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#sanct_active"
+                },
+                "score": "sanct.numbers"
+            },
+            "range": 1
+        }
+    ]
+}

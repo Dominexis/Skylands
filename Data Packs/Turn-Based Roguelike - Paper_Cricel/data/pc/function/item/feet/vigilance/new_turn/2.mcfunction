@@ -1,3 +1,3 @@
 
-data modify storage pc:temp desc set value {category:"move",energy:-9487}
-function pc:sys/item/refresh/use
+data modify entity @s data.hotbar.move.db.modifiers append value {id:"feet.vigilance",operation:"+"}
+execute store result entity @s data.hotbar.move.db.modifiers[-1].value int 1 run scoreboard players get #feet.vigilance.count pc.main

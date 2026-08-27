@@ -1,0 +1,30 @@
+{
+    "function": "minecraft:set_written_book_pages",
+    "mode": "insert",
+    "pages": [
+        [
+            "   §4§l§nThe Necradage§7§o\n \"Raise the dead. Slay the dead. Raise more dead.\"\n\n-------------------\n",
+            [
+                {
+                    "text":"",
+                    "hover_event": {
+                        "action": "show_text",
+                        "value": "Spawns a §6Husk§r nearby that drops §2Rotten Flesh§r."
+                    },
+                    "click_event": {
+                        "action": "run_command",
+                        "command": "trigger sanct.trigger set 50"
+                    }
+                },
+                {
+                    "text": "CREATE HUSK",
+                    "color": "gold",
+                    "shadow_color": -1577058304,
+                    "bold": true
+                },
+                "\nCost: §22 hearts"
+            ],
+            "\n§7§o-------------------"
+        ]
+    ]
+}

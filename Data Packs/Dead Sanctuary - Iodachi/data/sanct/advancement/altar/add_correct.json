@@ -1,0 +1,165 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        
+        "add_air": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "entity": {
+                    "type": "minecraft:glow_item_frame",
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": -2319,
+                                "max": -2318
+                            },
+                            "y": {
+                                "min": 62,
+                                "max": 63
+                            },
+                            "z": {
+                                "min": 2319,
+                                "max": 2320
+                            }
+                        }
+                    }
+                },
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "rune": {
+                                "upgraded": true,
+                                "air": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        
+        "add_earth": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "entity": {
+                    "type": "minecraft:glow_item_frame",
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": -2319,
+                                "max": -2318
+                            },
+                            "y": {
+                                "min": 62,
+                                "max": 63
+                            },
+                            "z": {
+                                "min": 2318,
+                                "max": 2319
+                            }
+                        }
+                    }
+                },
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "rune": {
+                                "upgraded": true,
+                                "earth": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        
+        "add_fire": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "entity": {
+                    "type": "minecraft:glow_item_frame",
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": -2318,
+                                "max": -2317
+                            },
+                            "y": {
+                                "min": 62,
+                                "max": 63
+                            },
+                            "z": {
+                                "min": 2319,
+                                "max": 2320
+                            }
+                        }
+                    }
+                },
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "rune": {
+                                "upgraded": true,
+                                "fire": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        
+        "add_water": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "entity": {
+                    "type": "minecraft:glow_item_frame",
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": -2318,
+                                "max": -2317
+                            },
+                            "y": {
+                                "min": 62,
+                                "max": 63
+                            },
+                            "z": {
+                                "min": 2318,
+                                "max": 2319
+                            }
+                        }
+                    }
+                },
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "rune": {
+                                "upgraded": true,
+                                "water": true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [["add_air","add_earth","add_fire","add_water"]],
+    "rewards": {
+        "function": "sanct:plot/altar/add_correct"
+    }
+}

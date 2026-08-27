@@ -1,0 +1,2 @@
+execute if score @s synb.IEPlayer.CurrentAmmo matches 1.. run return 0
+execute as @e[type=minecraft:arrow,distance=..5] at @s on origin if entity @s[tag=synb.ctx.generic_player_src] run tag @e[type=arrow,distance=0] add synb.item.golden_arrow.special

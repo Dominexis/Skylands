@@ -1,0 +1,11 @@
+{
+    "condition": "minecraft:value_check",
+    "value": {
+        "type": "minecraft:storage",
+        "storage": "sanct:storage",
+        "path": "root.death.flesh"
+    },
+    "range": {
+        "min": 100
+    }
+}

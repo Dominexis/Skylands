@@ -1,0 +1,41 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "flesh": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:score",
+                                "target": {
+                                    "type": "minecraft:fixed",
+                                    "name": "#level"
+                                },
+                                "score": "sanct.numbers"
+                            },
+                            "range": {
+                                "min": 1
+                            }
+                        }
+                    }
+                ],
+                "items": [
+                    {
+                        "items": "minecraft:rotten_flesh"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:inventory/acquire_material/flesh"
+    }
+}

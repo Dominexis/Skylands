@@ -1,0 +1,11 @@
+execute at @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.pos.arena3.spawn_K] run function synb:enemies/spawn_enemies {class:runner,variant:3}
+execute at @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.pos.arena3.spawn_I] run function synb:enemies/spawn_enemies {class:runner,variant:3}
+execute at @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.pos.arena3.spawn_U] run function synb:enemies/spawn_enemies {class:beast,variant:1}
+execute at @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.pos.arena3.spawn_W] run function synb:enemies/spawn_enemies {class:beast,variant:1}
+execute at @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.pos.arena3.spawn_Q] run function synb:enemies/spawn_enemies {class:evader,variant:1}
+execute at @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.pos.arena3.spawn_A] run function synb:enemies/spawn_enemies {class:fragile_trio,variant:4}
+execute at @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.pos.arena3.spawn_E] run function synb:enemies/spawn_enemies {class:fragile_trio,variant:4}
+execute at @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.pos.arena3.spawn_F] run function synb:enemies/spawn_enemies {class:knight,variant:4}
+execute at @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.pos.arena3.spawn_H] run function synb:enemies/spawn_enemies {class:knight,variant:4}
+execute at @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.pos.arena3.spawn_Z] run function synb:enemies/spawn_enemies {class:knight,variant:4}
+execute at @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.pos.arena3.spawn_J] run function synb:enemies/spawn_enemies {class:archer,variant:3}

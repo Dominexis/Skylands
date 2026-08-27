@@ -1,0 +1,2 @@
+# Increments the timer by 1 each tick while the function is running
+execute if score @r[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] celpel.string_active matches 1.. run scoreboard players add @a[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] celpel.string_timer 1

@@ -1,0 +1,12 @@
+{
+	"pack": {
+		"pack_format": 61,
+		"description": "data pack for The Darkest Mansion",
+		"supported_formats": {
+			"min_inclusive": 61,
+			"max_inclusive": 70
+		},
+		"min_format": 88,
+		"max_format": 9999999
+	}
+}

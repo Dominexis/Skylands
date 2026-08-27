@@ -1,0 +1,2 @@
+scoreboard players set @s sanct.respawn_timer 11
+item replace entity @s[predicate=!sanct:mob/skeleton/is_melee] weapon.mainhand with minecraft:stone_sword[attribute_modifiers=[{id:"sanct:skeleton_melee",type:"minecraft:attack_damage",operation:"add_value",amount:1.5}]]

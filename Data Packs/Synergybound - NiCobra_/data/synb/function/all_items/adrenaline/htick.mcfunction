@@ -1,0 +1,1 @@
+scoreboard players remove @s[scores={synb.Item.adrenaline.speed=1..}] synb.Item.adrenaline.speed 1

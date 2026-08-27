@@ -1,0 +1,2 @@
+scoreboard players add @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.ctx.enemy_attacker_src] synb.Status.Frozen 60
+execute if entity @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.ctx.enemy_attacker_src] run playsound minecraft:entity.breeze.land neutral @a ~ ~ ~ 1 0.8

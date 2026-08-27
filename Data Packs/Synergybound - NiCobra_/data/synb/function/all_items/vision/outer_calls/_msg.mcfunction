@@ -1,0 +1,1 @@
+$tellraw @s [{"text":"- ","color":"gray"},$(item_label),{"text":" [?]","color":"#666666","hover_event":{"action":"show_text","value":$(text_array)}}]

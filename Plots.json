@@ -43,7 +43,7 @@
             "required_chunks": [],
             "regions": [],
             "genre": "parkour",
-            "difficulty": "difficult",
+            "difficulty": "challenging",
             "pvp": false,
             "max_players": 0,
             "weight": "light"
@@ -66,7 +66,7 @@
             "required_chunks": [],
             "regions": [],
             "genre": "pve",
-            "difficulty": "difficult",
+            "difficulty": "challenging",
             "pvp": false,
             "max_players": 1,
             "weight": "light"
@@ -115,7 +115,7 @@
             "required_chunks": [],
             "regions": [],
             "genre": "parkour",
-            "difficulty": "difficult",
+            "difficulty": "challenging",
             "pvp": false,
             "max_players": 0,
             "weight": "light"
@@ -165,7 +165,7 @@
             "required_chunks": [],
             "regions": [],
             "genre": "puzzle",
-            "difficulty": "difficult",
+            "difficulty": "challenging",
             "pvp": false,
             "max_players": 1,
             "weight": "light"
@@ -202,7 +202,7 @@
             ],
             "regions": [],
             "genre": "parkour",
-            "difficulty": "difficult",
+            "difficulty": "challenging",
             "pvp": false,
             "max_players": 1,
             "weight": "light"
@@ -223,19 +223,251 @@
                 "2176 17 5453"
             ],
             "required_chunks": [
-                "2536 5624",
-                "2520 5603",
-                "2525 5595",
-                "2531 5592",
-                "2549 5598",
-                "2176 5453"
+                "2513 5585 2559 5631",
+                "2176 5453",
+                "2552 5505 2519 5471",
+                "2314 5573 2281 5524",
+                "2442 5514 2390 5455",
+                "2203 5574 2149 5524",
+                "2268 5516 2217 5460",
+                "2436 5568 2396 5528",
+                "2262 5573 2213 5523",
+                "2452 5512 2503 5452",
+                "2384 5512 2323 5456",
+                "2520 5564 2552 5532",
+                "2313 5508 2279 5460",
+                "2490 5562 2462 5534",
+                "2378 5572 2335 5527"
             ],
             "regions": [],
-            "genre": "puzzle",
+            "genre": "minigame",
             "difficulty": "difficult",
             "pvp": false,
             "max_players": 1,
             "weight": "medium"
+        },
+
+        {
+            "name": "Sci-fi Outpost",
+            "namespace": "futuristic",
+            "description": "Fun Parkour spread out amongst a futuristic cityscape.",
+            "authors": [
+                "MegaMinerDL",
+                "elscreato"
+            ],
+            "icon": {
+                "id": "minecraft:purpur_block"
+            },
+            "spawn": "-3381 70 4882 -180 0",
+            "collectibles": [
+                "-3355 160 4860"
+            ],
+            "required_chunks": [],
+            "regions": [],
+            "genre": "parkour",
+            "difficulty": "challenging",
+            "pvp": false,
+            "max_players": 0,
+            "weight": "light"
+        },
+
+        {
+            "name": "Dead Sanctuary",
+            "namespace": "sanct",
+            "description": "A peaceful resting place for the deceased. Or, for sorcerers like yourself, a source of limitless corpses! Raise the dead, slay the dead, use their remains to perform powerful wizardry and ascend yourself to godhood! All for the purpose of passing that stupid barrier and claiming your Cloud in a Bottle.",
+            "authors": [
+                "Iodachi"
+            ],
+            "icon": {
+                "id": "minecraft:pale_oak_sapling"
+            },
+            "spawn": "-2310 7 2307 0 0",
+            "collectibles": [
+                "-2318 84 2309"
+            ],
+            "required_chunks": [
+                "-2345 2295",
+                "-2329 2279",
+                "-2329 2295",
+                "-2329 2311",
+                "-2329 2327",
+                "-2313 2263",
+                "-2313 2279",
+                "-2313 2295",
+                "-2313 2311",
+                "-2313 2327",
+                "-2297 2263",
+                "-2297 2279",
+                "-2297 2295",
+                "-2297 2311",
+                "-2297 2327",
+                "-2297 2343",
+                "-2281 2279",
+                "-2281 2295",
+                "-2281 2327",
+                "-2265 2295",
+                "-2265 2311"
+            ],
+            "regions": [],
+            "genre": "pve",
+            "difficulty": "challenging",
+            "pvp": false,
+            "max_players": 0,
+            "weight": "light"
+        },
+
+        {
+            "name": "Skyward Steam",
+            "namespace": "skywardsteam",
+            "description": "Dive into a steampunk universe where mines, minecarts, and flying ships await. Explore aerial landscapes, travel across suspended rails, and uncover secrets hidden beneath the steam-powered engines. Jump from platform to platform, searching for new adventures around every corner of the sky!",
+            "authors": [
+                "WizzarD_"
+            ],
+            "icon": {
+                "id": "minecraft:iron_pickaxe"
+            },
+            "spawn": "3869 57 201 0 0",
+            "collectibles": [
+                "3859 65 202"
+            ],
+            "required_chunks": [],
+            "regions": [],
+            "genre": "parkour",
+            "difficulty": "easy",
+            "pvp": false,
+            "max_players": 0,
+            "weight": "light"
+        },
+
+        {
+            "name": "CELESTIOPELAGO v0.9",
+            "namespace": "celpel",
+            "description": "Become the final beta tester for a classified military project in the distant future. Steampunk-inspired; minimal parkour; singleplayer recommended.",
+            "authors": [
+                "PsyKat777"
+            ],
+            "icon": {
+                "id": "minecraft:chiseled_copper"
+            },
+            "spawn": "-1846 222 -6395 0 0",
+            "collectibles": [
+                "-1792 231 -6397"
+            ],
+            "required_chunks": [],
+            "regions": [],
+            "genre": "puzzle",
+            "difficulty": "easy",
+            "pvp": false,
+            "max_players": 3,
+            "weight": "light"
+        },
+
+        {
+            "name": "Synergybound",
+            "namespace": "synb",
+            "description": "A true roguelike minigame, build synergies between 100+ unique relics to become overpowered and beat the arenas !",
+            "authors": [
+                "NiCobra_"
+            ],
+            "icon": {
+                "id": "minecraft:crossbow"
+            },
+            "spawn": "3352 69 -2399",
+            "collectibles": [
+                "3311 100 -2221",
+                "3331 154 -2288"
+            ],
+            "required_chunks": [
+                "3352 -2395",
+                "3332 -2375",
+                "3334 -2362",
+                "3323 -2360",
+                "3322 -2375",
+                "3303 -2361",
+                "3307 -2349",
+                "3306 -2375",
+                "3288 -2358",
+                "3290 -2381",
+                "3290 -2344",
+                "3282 -2297",
+                "3275 -2291",
+                "3274 -2284",
+                "3283 -2285",
+                "3301 -2282",
+                "3273 -2267",
+                "3283 -2266",
+                "3299 -2271",
+                "3316 -2269",
+                "3320 -2250",
+                "3307 -2248",
+                "3315 -2277",
+                "3318 -2293",
+                "3309 -2222",
+                "3338 -2282",
+                "3337 -2294",
+                "3347 -2291",
+                "3347 -2285",
+                "3338 -2296",
+                "3356 -2310",
+                "3362 -2317",
+                "3367 -2323",
+                "3378 -2322",
+                "3381 -2316",
+                "3380 -2295",
+                "3337 -2281"
+            ],
+            "regions": [],
+            "genre": "pve",
+            "difficulty": "challenging",
+            "pvp": false,
+            "max_players": 12,
+            "weight": "heavy"
+        },
+
+        {
+            "name": "Hard Relax Parkour",
+            "namespace": "dphardrelaxparkour",
+            "description": "Hard Relax Parkour",
+            "authors": [
+                "Maxicka13"
+            ],
+            "icon": {
+                "id": "minecraft:grass_block"
+            },
+            "spawn": "3321 6 5354 90 0",
+            "collectibles": [
+                "3124 17 5327"
+            ],
+            "required_chunks": [],
+            "regions": [],
+            "genre": "parkour",
+            "difficulty": "easy",
+            "pvp": false,
+            "max_players": 10,
+            "weight": "medium"
+        },
+
+        {
+            "name": "Connective Isles",
+            "namespace": "mmgplays",
+            "description": "A set of small islands and planets surrounding the central island where the bottle resides",
+            "authors": [
+                "MMGplays"
+            ],
+            "icon": {
+                "id": "minecraft:iron_chain"
+            },
+            "spawn": "440 255 4807 71 -7",
+            "collectibles": [
+                "196 274 4981"
+            ],
+            "required_chunks": [],
+            "regions": [],
+            "genre": "parkour",
+            "difficulty": "easy",
+            "pvp": false,
+            "max_players": 10,
+            "weight": "light"
         }
     ]
 }

@@ -1,0 +1,1 @@
+execute as @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=minecraft:marker,tag=synb.ctx.enemy_killed_detector,scores={synb.Item.sticky_bombs.delay=1..}] run function synb:all_items/sticky_bombs/_explosion

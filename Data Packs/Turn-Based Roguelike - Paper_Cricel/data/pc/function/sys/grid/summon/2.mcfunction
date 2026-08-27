@@ -1,5 +1,4 @@
 
-# effect
 scoreboard players operation #x3 pc.main = #x2 pc.main
 scoreboard players operation #y3 pc.main = #y2 pc.main
 execute store result storage pc:temp grid[0][0].offset_x int 4 run scoreboard players operation #x3 pc.main -= #x1 pc.main

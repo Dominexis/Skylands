@@ -1,0 +1,159 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:cooked_beef",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:max_stack_size": 99
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type_specific": {
+                                    "type": "minecraft:player",
+                                    "advancements": {
+                                        "sanct:tags": {
+                                            "saturation": false
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_apple",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:max_stack_size": 99
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:raw_iron",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type_specific": {
+                                    "type": "minecraft:player",
+                                    "advancements": {
+                                        "sanct:tags": {
+                                            "totem": false
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_name": "Potion of Strength",
+                                "minecraft:item_model": "minecraft:potion",
+                                "minecraft:max_stack_size": 1,
+                                "minecraft:potion_contents": {
+                                    "custom_effects": [{
+                                        "id": "minecraft:strength",
+                                        "duration": 1800
+                                    }]
+                                },
+                                "minecraft:consumable": {
+                                    "animation": "drink",
+                                    "has_consume_particles": false,
+                                    "sound": "entity.generic.drink"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:blade_pottery_sherd",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": {
+                                "rune": {}
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "mode": "replace_all",
+                            "lore": [
+                                "§7§oCraft with §f1 Bone§3§7§o to upgrade.",
+                                "",
+                                "§7When in Inventory:",
+                                "§9+0.5 Attack Damage"
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_name": "§3Rune",
+                                "minecraft:max_stack_size": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:crossbow",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_name": "Firework Launcher",
+                                "minecraft:damage": 464,
+                                "minecraft:charged_projectiles": [{
+                                    "id": "minecraft:firework_rocket",
+                                    "components": {
+                                        "minecraft:fireworks": {
+                                            "flight_duration": 3,
+                                            "explosions": [
+                                                {
+                                                    "shape":"small_ball",
+                                                    "colors":[12582938]
+                                                },{
+                                                    "shape":"small_ball",
+                                                    "colors":[14670554]
+                                                },{
+                                                    "shape":"small_ball",
+                                                    "colors":[15466496]
+                                                },{
+                                                    "shape":"small_ball",
+                                                    "colors":[1445947]
+                                                },{
+                                                    "shape":"small_ball",
+                                                    "colors":[16777215]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

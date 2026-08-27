@@ -1,0 +1,1 @@
+scoreboard objectives add synb.Item.revenge.dmg_inc dummy

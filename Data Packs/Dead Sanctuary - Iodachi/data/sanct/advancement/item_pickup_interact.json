@@ -1,0 +1,37 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        
+        "attack": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "entity": {
+                    "type": "minecraft:interaction",
+                    "team": "sanct.item_pickup"
+                }
+            }
+        },
+
+        "interact": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "entity": {
+                    "type": "minecraft:interaction",
+                    "team": "sanct.item_pickup"
+                }
+            }
+        }
+    },
+    "requirements": [["attack","interact"]],
+    "rewards": {
+        "function": "sanct:inventory/item_pickup/interact"
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "function": "minecraft:sequence",
+    "functions": [
+        {
+            "function": "minecraft:reference",
+            "name": "sanct:book/build/base"
+        },
+        {
+            "function": "minecraft:reference",
+            "name": "sanct:book/build/primative",
+            "conditions": [{
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                            "type": "minecraft:fixed",
+                            "name": "#level"
+                        },
+                        "score": "sanct.numbers"
+                    },
+                    "range": {
+                        "min": 1
+                    }
+                }
+            }]
+        },
+        {
+            "function": "minecraft:reference",
+            "name": "sanct:book/build/levelled",
+            "conditions": [{
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                        "type": "minecraft:fixed",
+                        "name": "#level"
+                    },
+                    "score": "sanct.numbers"
+                },
+                "range": {
+                    "min": 1
+                }
+            }]
+        }
+    ]
+}

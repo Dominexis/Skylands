@@ -1,0 +1,369 @@
+{
+    "function": "minecraft:sequence",
+    "functions": [
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                [
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual[0]",
+                        "color": "dark_purple"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual_seperator[0]"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual[1]"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual_seperator[1]"
+                    }
+                ]
+            ]
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "append",
+            "conditions": [
+                {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:storage",
+                        "storage": "sanct:storage",
+                        "path": "root.build_page.ritual_count"
+                    },
+                    "range": {
+                        "min": 2
+                    }
+                }
+            ],
+            "lore": [
+                [
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual[2]",
+                        "color": "dark_purple"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual_seperator[2]"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual[3]"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual_seperator[3]"
+                    }
+                ]
+            ]
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "append",
+            "conditions": [
+                {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:storage",
+                        "storage": "sanct:storage",
+                        "path": "root.build_page.ritual_count"
+                    },
+                    "range": {
+                        "min": 4
+                    }
+                }
+            ],
+            "lore": [
+                [
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual[4]",
+                        "color": "dark_purple"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual_seperator[4]"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual[5]"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual_seperator[5]"
+                    }
+                ]
+            ]
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "append",
+            "conditions": [
+                {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:storage",
+                        "storage": "sanct:storage",
+                        "path": "root.build_page.ritual_count"
+                    },
+                    "range": {
+                        "min": 6
+                    }
+                }
+            ],
+            "lore": [
+                [
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual[6]",
+                        "color": "dark_purple"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual_seperator[6]"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual[7]"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual_seperator[7]"
+                    }
+                ]
+            ]
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "append",
+            "conditions": [
+                {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:storage",
+                        "storage": "sanct:storage",
+                        "path": "root.build_page.ritual_count"
+                    },
+                    "range": {
+                        "min": 8
+                    }
+                }
+            ],
+            "lore": [
+                [
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual[8]",
+                        "color": "dark_purple"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual_seperator[8]"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual[9]"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual_seperator[9]"
+                    }
+                ]
+            ]
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "append",
+            "conditions": [
+                {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:storage",
+                        "storage": "sanct:storage",
+                        "path": "root.build_page.ritual_count"
+                    },
+                    "range": {
+                        "min": 10
+                    }
+                }
+            ],
+            "lore": [
+                [
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.ritual[10]",
+                        "color": "dark_purple"
+                    }
+                ]
+            ]
+        },
+
+
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "append",
+            "lore": [
+                "",
+                [
+                    "§e§nEnhancements:"
+                ],
+                [
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.buff[0]",
+                        "color": "gold"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.buff_seperator[0]"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.buff[1]"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.buff_seperator[1]"
+                    }
+                ]
+            ]
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "append",
+            "conditions": [
+                {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:storage",
+                        "storage": "sanct:storage",
+                        "path": "root.build_page.buff_count"
+                    },
+                    "range": {
+                        "min": 2
+                    }
+                }
+            ],
+            "lore": [
+                [
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.buff[2]",
+                        "color": "gold"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.buff_seperator[2]"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.buff[3]"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.buff_seperator[3]"
+                    }
+                ]
+            ]
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "append",
+            "conditions": [
+                {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:storage",
+                        "storage": "sanct:storage",
+                        "path": "root.build_page.buff_count"
+                    },
+                    "range": {
+                        "min": 4
+                    }
+                }
+            ],
+            "lore": [
+                [
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.buff[4]",
+                        "color": "gold"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.buff_seperator[4]"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.buff[5]"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.buff_seperator[5]"
+                    }
+                ]
+            ]
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "append",
+            "conditions": [
+                {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:storage",
+                        "storage": "sanct:storage",
+                        "path": "root.build_page.buff_count"
+                    },
+                    "range": {
+                        "min": 6
+                    }
+                }
+            ],
+            "lore": [
+                [
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.buff[6]",
+                        "color": "gold"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.buff_seperator[6]"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.buff[7]"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.buff_seperator[7]"
+                    }
+                ]
+            ]
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "append",
+            "conditions": [
+                {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:storage",
+                        "storage": "sanct:storage",
+                        "path": "root.build_page.buff_count"
+                    },
+                    "range": {
+                        "min": 8
+                    }
+                }
+            ],
+            "lore": [
+                [
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.buff[8]",
+                        "color": "gold"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.buff_seperator[8]"
+                    },{
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_page.buff[9]"
+                    }
+                ]
+            ]
+        }
+    ]
+}

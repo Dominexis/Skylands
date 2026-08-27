@@ -8,10 +8,10 @@ scoreboard players set #plot.pc.state sl.value 0
 function pc:plot_off
 
 # Remove collectible entities
-kill @e[type=minecraft:item_display,x=2048,y=-64,z=5120,dx=511,dy=511,dz=511,tag=sl.collectible]
+kill @e[type=minecraft:item_display,x=2048,y=-64,z=2048,dx=511,dy=511,dz=3583,tag=sl.collectible]
 
 # Unforceload chunks
 function sl:generated/plot/pc/unforceload
 
 # Send any players that happen to be in the plot to lobby
-execute as @a[scores={sl.plot=327684}] at @s run function sl:player/lobby
+execute as @a[scores={sl.plot=229380}] at @s run function sl:player/lobby

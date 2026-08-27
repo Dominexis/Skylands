@@ -1,0 +1,2 @@
+
+summon silverfish ~ ~100 ~ {Tags:[pc.fx,pc.skill.yama_double.flame],HasVisualFire:1b,attributes:[{id:"scale",base:2}],active_effects:[{id:"invisibility",duration:-1,amplifier:1b,show_particles:0b}],NoAI:1b}

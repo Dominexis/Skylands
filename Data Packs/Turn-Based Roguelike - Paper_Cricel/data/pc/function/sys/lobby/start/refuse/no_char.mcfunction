@@ -1,5 +1,3 @@
 
 # fx
-function pc:fx/refuse_info/use {text:[{text:"Select a Character"}]}
-
-return fail
+function pc:sys/fx/refuse_info/use {text:{nbt:"sys.refuse.no_char",storage:"pc:lang",interpret:1b}}

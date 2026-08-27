@@ -1,0 +1,1 @@
+scoreboard players reset @s synb.Item.arrow_grinder.stacks

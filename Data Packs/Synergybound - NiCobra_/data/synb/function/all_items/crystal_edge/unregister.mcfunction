@@ -1,0 +1,1 @@
+scoreboard objectives remove synb.Item.cystal_sharp.cd

@@ -1,0 +1,1 @@
+give @p diamond_boots[trim={material:"minecraft:iron",pattern:"minecraft:shaper"},item_model="minecraft:air_walker_boots",custom_name={"color":"aqua","italic":false,"text":"Air Walker Boots"},tooltip_display={hidden_components:["trim"]}] 1

@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "left_click": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "team": "pc.utils.button"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "pc:sys/utils/button/left_click/trigger"
+  }
+}

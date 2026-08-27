@@ -1,0 +1,1 @@
+scoreboard players add @s synb.IEPlayer.CurrentAmmo 2

@@ -1,0 +1,545 @@
+{
+    "function": "minecraft:sequence",
+    "functions": [
+        {
+            "function": "minecraft:set_written_book_pages",
+            "mode": "replace_section",
+            "offset": 20,
+            "pages": [
+                [
+                    "",
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.buff.list[0].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 150"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[0].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[0].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.buff.seperators[0]",
+                        "interpret": true
+                    },
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.buff.list[1].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 151"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[1].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[1].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.buff.seperators[1]",
+                        "interpret": true
+                    },
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.buff.list[2].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 152"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[2].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[2].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.buff.seperators[2]",
+                        "interpret": true
+                    },
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.buff.list[3].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 153"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[3].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[3].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.buff.seperators[3]",
+                        "interpret": true
+                    },
+                    {
+                        "text": "§6§l[§6back§l]",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": "Table of Contents"
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 1
+                        }
+                    },
+                    "          1/",
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.buff.page_count"
+                    },
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.buff.page_arrows[0]",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": "Next Page"
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 22
+                        }
+                    }
+                ]
+            ]
+        },
+        {
+            "function": "minecraft:set_written_book_pages",
+            "mode": "replace_section",
+            "offset": 21,
+            "conditions": [{
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "sanct:storage",
+                    "path": "root.build_book.buff.page_count"
+                },
+                "range": {
+                    "min": 2
+                }
+            }],
+            "pages": [
+                [
+                    "",
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.buff.list[4].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 154"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[4].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[4].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.buff.seperators[4]",
+                        "interpret": true
+                    },
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.buff.list[5].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 155"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[5].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[5].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.buff.seperators[5]",
+                        "interpret": true
+                    },
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.buff.list[6].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 156"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[6].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[6].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.buff.seperators[6]",
+                        "interpret": true
+                    },
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.buff.list[7].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 157"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[7].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[7].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.buff.seperators[7]",
+                        "interpret": true
+                    },
+                    {
+                        "text": "§6§l[§6back§l]",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": "Table of Contents"
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 1
+                        }
+                    },
+                    "     ",
+                    {
+                        "text": "§6§l[§6<§l]",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": "Previous Page"
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 21
+                        }
+                    },
+                    " 2/",
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.buff.page_count"
+                    },
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.buff.page_arrows[1]",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": "Next Page"
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 23
+                        }
+                    }
+                ]
+            ]
+        },
+        {
+            "function": "minecraft:set_written_book_pages",
+            "mode": "replace_section",
+            "offset": 22,
+            "conditions": [{
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "sanct:storage",
+                    "path": "root.build_book.buff.page_count"
+                },
+                "range": {
+                    "min": 3
+                }
+            }],
+            "pages": [
+                [
+                    "",
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.buff.list[8].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 158"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[8].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[8].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.buff.seperators[8]",
+                        "interpret": true
+                    },
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.buff.list[9].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 159"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[9].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[9].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.buff.seperators[9]",
+                        "interpret": true
+                    },
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.buff.list[10].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 160"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[10].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[10].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.buff.seperators[10]",
+                        "interpret": true
+                    },
+                    [
+                        {
+                            "text":"",
+                            "hover_event": {
+                                "action": "show_text",
+                                "value": {
+                                    "storage": "sanct:storage",
+                                    "nbt": "root.build_book.buff.list[11].description",
+                                    "interpret": true
+                                }
+                            },
+                            "click_event": {
+                                "action": "run_command",
+                                "command": "trigger sanct.trigger set 161"
+                            }
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[11].title",
+                            "shadow_color": -922746880,
+                            "bold": true
+                        },
+                        {
+                            "storage": "sanct:storage",
+                            "nbt": "root.build_book.buff.list[11].price",
+                            "interpret": true
+                        }
+                    ],
+                    {
+                        "storage": "sanct:storage",
+                        "nbt": "root.build_book.buff.seperators[11]",
+                        "interpret": true
+                    },
+                    {
+                        "text": "§6§l[§6back§l]",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": "Table of Contents"
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 1
+                        }
+                    },
+                    "     ",
+                    {
+                        "text": "§6§l[§6<§l]",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": "Previous Page"
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 22
+                        }
+                    },
+                    " 3/3"
+                ]
+            ]
+        }
+    ]
+}

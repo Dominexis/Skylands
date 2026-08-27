@@ -1,0 +1,74 @@
+{
+	"textures": {
+		"0": "animated_java:blueprint/beebs/sheep_fur",
+		"1": "animated_java:blueprint/beebs/sheep",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [6, -4, 6],
+			"to": [10, 8, 10],
+			"faces": {
+				"north": {
+					"uv": [1, 10, 2, 16],
+					"texture": "#1"
+				},
+				"east": {
+					"uv": [0, 10, 1, 16],
+					"texture": "#1"
+				},
+				"south": {
+					"uv": [3, 10, 4, 16],
+					"texture": "#1"
+				},
+				"west": {
+					"uv": [2, 10, 3, 16],
+					"texture": "#1"
+				},
+				"up": {
+					"uv": [1, 8, 2, 10],
+					"texture": "#1"
+				},
+				"down": {
+					"uv": [2, 8, 3, 10],
+					"texture": "#1"
+				}
+			}
+		},
+		{
+			"from": [5.5, 1.5, 5.5],
+			"to": [10.5, 8.5, 10.5],
+			"faces": {
+				"north": {
+					"uv": [1, 10, 2, 13],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [0, 10, 1, 13],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [3, 10, 4, 13],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [2, 10, 3, 13],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [1, 8, 2, 10],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [2, 8, 3, 10],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}

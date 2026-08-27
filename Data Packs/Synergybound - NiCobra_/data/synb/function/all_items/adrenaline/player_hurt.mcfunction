@@ -1,0 +1,1 @@
+scoreboard players set @s synb.Item.adrenaline.speed 40

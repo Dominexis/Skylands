@@ -1,0 +1,1 @@
+summon minecraft:marker ~ ~ ~ {Tags:["synb.type.item_associate","synb.item.electric_arcs.source","synb.item.electric_arcs.dummy"]}

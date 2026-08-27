@@ -1,0 +1,22 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "zombie_experience": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:zombie"
+                },
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:mob/zombie/experience"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "sanct:item/gui_icon",
+    "textures": {
+        "layer0": "sanct:item/slot_lock"
+    }
+}

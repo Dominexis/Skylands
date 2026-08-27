@@ -1,0 +1,1 @@
+scoreboard objectives remove synb.Item.counter_attack.speed_duration

@@ -1,0 +1,7 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "sanct:item/book_closed"
+    },
+    "hand_animation_on_swap": false
+}

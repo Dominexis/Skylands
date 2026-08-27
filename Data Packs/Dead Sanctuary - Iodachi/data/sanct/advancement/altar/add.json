@@ -1,0 +1,33 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "add_other": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "minecraft:glow_item_frame"
+                        }
+                    },
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:reference",
+                            "name": "sanct:item/altar/ignore"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:plot/altar/add"
+    }
+}

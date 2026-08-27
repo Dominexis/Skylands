@@ -1,0 +1,2 @@
+execute as @n[x=-2352,y=48,z=2256,dx=94,dy=62,dz=94,type=minecraft:skeleton_horse,tag=sanct.lightning_delay,sort=random] at @s summon minecraft:lightning_bolt run effect give @e[type=minecraft:skeleton_horse,tag=sanct.lightning_delay,distance=0,limit=1] minecraft:resistance 1 255 true
+tag @e[x=-2352,y=48,z=2256,dx=94,dy=62,dz=94,type=minecraft:skeleton_horse,tag=sanct.lightning_delay] remove sanct.lightning_delay

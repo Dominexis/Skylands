@@ -1,0 +1,1 @@
+attribute @s minecraft:knockback_resistance modifier remove synb.m:item.knockback_immune.passive

@@ -1,0 +1,2 @@
+tellraw @s ["",{text:"[§c§nBleeding Edge§r]",hover_event:{action:"show_item",id:"netherite_shovel",components:{item_name:"§c§nBleeding Edge",lore:["§7§oSweep attacks hit all enemies within 8 blocks.","","§7When in Main Hand:"," §28 Attack Damage"," §22.6 Attack Speed","§9+1 Sweeping Damage Ratio","§9+8 Sweeping Range"],tooltip_display:{hidden_components:["attribute_modifiers"]}}}}," §7§oYesyesyes! Now again with blood!"]
+playsound minecraft:entity.breeze.idle_ground neutral @s ~ ~ ~ 1 1.5

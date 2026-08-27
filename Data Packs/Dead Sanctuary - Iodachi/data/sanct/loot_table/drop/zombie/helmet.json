@@ -1,0 +1,116 @@
+{
+    "type": "minecraft:entity",
+    "pools": [{
+        "rolls": 1,
+        "conditions": [
+            {
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "slots": {
+                            "armor.head": {
+                                "items": "minecraft:egg"
+                            }
+                        }
+                    }
+                }
+            }
+        ],
+        "entries": [{
+            "type": "minecraft:alternatives",
+            "children": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:leather_helmet",
+                    "conditions": [{
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "armor.head": {
+                                    "items": "minecraft:leather_helmet"
+                                }
+                            }
+                        }
+                    }],
+                    "functions": [{
+                        "function": "minecraft:set_damage",
+                        "damage": {
+                            "type": "minecraft:uniform",
+                            "min": 0,
+                            "max": 1
+                        }
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:chainmail_helmet",
+                    "conditions": [{
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "armor.head": {
+                                    "items": "minecraft:chainmail_helmet"
+                                }
+                            }
+                        }
+                    }],
+                    "functions": [
+                        {
+                            "function": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0,
+                                "max": 1
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "!minecraft:rarity": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_helmet",
+                    "conditions": [{
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "armor.head": {
+                                    "items": "minecraft:iron_helmet"
+                                }
+                            }
+                        }
+                    }],
+                    "functions": [{
+                        "function": "minecraft:set_damage",
+                        "damage": {
+                            "type": "minecraft:uniform",
+                            "min": 0,
+                            "max": 1
+                        }
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_helmet",
+                    "functions": [{
+                        "function": "minecraft:set_damage",
+                        "damage": {
+                            "type":"minecraft:uniform",
+                            "min": 0,
+                            "max": 1
+                        }
+                    }]
+                }
+            ]
+        }]
+    }]
+}

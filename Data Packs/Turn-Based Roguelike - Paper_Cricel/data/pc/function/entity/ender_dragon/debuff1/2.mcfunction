@@ -1,0 +1,2 @@
+
+execute positioned ^ ^1.25 ^1.0 facing entity @e[predicate=pc:sys/entity/player,limit=1,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0,type=!minecraft:giant] feet run function pc:entity/ender_dragon/debuff1/ball/use

@@ -1,0 +1,266 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "diamond": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "armor.feet": {
+                                    "items": "minecraft:diamond_boots",
+                                    "predicates": {
+                                        "minecraft:damage": {
+                                            "damage": {
+                                                "min": 1
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "gamemode": ["adventure","survival"]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:any_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "slots": {
+                                        "hotbar.*": {
+                                            "items": "#sanct:zombie_armor_repair/diamond/boots"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "slots": {
+                                        "inventory.*": {
+                                            "items": "#sanct:zombie_armor_repair/diamond/boots"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "items": [{
+                    "items": "#sanct:zombie_armor_repair/diamond/boots"
+                }]
+            }
+        },
+
+        "iron": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "armor.feet": {
+                                    "items": "minecraft:iron_boots",
+                                    "predicates": {
+                                        "minecraft:damage": {
+                                            "damage": {
+                                                "min": 1
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "gamemode": ["adventure","survival"]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:any_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "slots": {
+                                        "hotbar.*": {
+                                            "items": "#sanct:zombie_armor_repair/iron/boots"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "slots": {
+                                        "inventory.*": {
+                                            "items": "#sanct:zombie_armor_repair/iron/boots"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "items": [{
+                    "items": "#sanct:zombie_armor_repair/iron/boots"
+                }]
+            }
+        },
+
+        "chainmail": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "armor.feet": {
+                                    "items": "minecraft:chainmail_boots",
+                                    "predicates": {
+                                        "minecraft:damage": {
+                                            "damage": {
+                                                "min": 1
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "gamemode": ["adventure","survival"]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:any_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "slots": {
+                                        "hotbar.*": {
+                                            "items": "#sanct:zombie_armor_repair/chainmail/boots"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "slots": {
+                                        "inventory.*": {
+                                            "items": "#sanct:zombie_armor_repair/chainmail/boots"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "items": [{
+                    "items": "#sanct:zombie_armor_repair/chainmail/boots"
+                }]
+            }
+        },
+
+        "leather": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "armor.feet": {
+                                    "items": "minecraft:leather_boots",
+                                    "predicates": {
+                                        "minecraft:damage": {
+                                            "damage": {
+                                                "min": 1
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "gamemode": ["adventure","survival"]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:any_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "slots": {
+                                        "hotbar.*": {
+                                            "items": "minecraft:leather_boots"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "slots": {
+                                        "inventory.*": {
+                                            "items": "minecraft:leather_boots"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "items": [{
+                    "items": "minecraft:leather_boots"
+                }]
+            }
+        }
+    },
+    "requirements": [
+        ["chainmail","diamond","iron","leather"]
+    ],
+    "rewards": {
+        "function": "sanct:spell/ritual/zombie_armor/repair/boots"
+    }
+}

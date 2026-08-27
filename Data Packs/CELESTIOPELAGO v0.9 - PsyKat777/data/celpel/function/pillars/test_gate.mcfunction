@@ -1,0 +1,2 @@
+# Tests if the 4 pillars have been solved and opens the gate if they have
+execute as @r[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] if score @s celpel.pillar_intro matches 4 if score @s celpel.pillar_lower matches 3 if score @s celpel.pillar_upper matches 8 if score @s celpel.pillar_trio matches 8 if score @s celpel.pillars_completed matches 0 run function celpel:pillars/gate_1

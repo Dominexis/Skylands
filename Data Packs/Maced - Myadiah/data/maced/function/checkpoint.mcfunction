@@ -6,7 +6,6 @@ execute align xyz run particle minecraft:totem_of_undying ~0.5 ~ ~0.5 0.5 0.75 0
 
 execute align xyz run summon minecraft:marker ~0.5 ~ ~0.5 {Tags:["maced.checkpoint_marker"]}
 
-execute positioned 5888 64 -3328 as @a[distance=..250,tag=maced.in_game,team=sl.player] at @s run function sl:api/set_checkpoint
 setblock ~ ~-1 ~ minecraft:diamond_block
 
 scoreboard players add checkpoint_count maced.Scores 1

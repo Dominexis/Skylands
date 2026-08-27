@@ -1,0 +1,48 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "zombie_armor_kill": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "weapon.mainhand": {
+                                    "predicates": {
+                                        "minecraft:custom_data": {
+                                            "weapon_sweeping": {
+                                                "blood": true
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "entity": {
+                    "type": "minecraft:zombie",
+                    "slots": {
+                        "armor.head": {
+                            "predicates": {
+                                "minecraft:custom_data": {
+                                    "elite": {}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:spell/alchemy/weapon_sweeping/blood/whisper/zombie_armor_kill"
+    }
+}

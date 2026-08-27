@@ -1,0 +1,1 @@
+tag @s add synb.item.spelldust.active

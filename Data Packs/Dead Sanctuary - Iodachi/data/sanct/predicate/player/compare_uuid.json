@@ -1,0 +1,85 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:value_check",
+            "value": {
+                "type": "minecraft:storage",
+                "storage": "sanct:storage",
+                "path": "root.loaded_player.uuid[0]"
+            },
+            "range": {
+                "min": {
+                    "type": "minecraft:storage",
+                    "storage": "sanct:storage",
+                    "path": "root.compare_uuid[0]"
+                },
+                "max": {
+                    "type": "minecraft:storage",
+                    "storage": "sanct:storage",
+                    "path": "root.compare_uuid[0]"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:value_check",
+            "value": {
+                "type": "minecraft:storage",
+                "storage": "sanct:storage",
+                "path": "root.loaded_player.uuid[1]"
+            },
+            "range": {
+                "min": {
+                    "type": "minecraft:storage",
+                    "storage": "sanct:storage",
+                    "path": "root.compare_uuid[1]"
+                },
+                "max": {
+                    "type": "minecraft:storage",
+                    "storage": "sanct:storage",
+                    "path": "root.compare_uuid[1]"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:value_check",
+            "value": {
+                "type": "minecraft:storage",
+                "storage": "sanct:storage",
+                "path": "root.loaded_player.uuid[2]"
+            },
+            "range": {
+                "min": {
+                    "type": "minecraft:storage",
+                    "storage": "sanct:storage",
+                    "path": "root.compare_uuid[2]"
+                },
+                "max": {
+                    "type": "minecraft:storage",
+                    "storage": "sanct:storage",
+                    "path": "root.compare_uuid[2]"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:value_check",
+            "value": {
+                "type": "minecraft:storage",
+                "storage": "sanct:storage",
+                "path": "root.loaded_player.uuid[3]"
+            },
+            "range": {
+                "min": {
+                    "type": "minecraft:storage",
+                    "storage": "sanct:storage",
+                    "path": "root.compare_uuid[3]"
+                },
+                "max": {
+                    "type": "minecraft:storage",
+                    "storage": "sanct:storage",
+                    "path": "root.compare_uuid[3]"
+                }
+            }
+        }
+    ]
+}

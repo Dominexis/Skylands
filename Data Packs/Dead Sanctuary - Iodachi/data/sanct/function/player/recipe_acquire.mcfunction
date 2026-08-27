@@ -1,0 +1,1 @@
+advancement grant @s only sanct:tags acquired_recipe

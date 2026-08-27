@@ -1,0 +1,45 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+
+        "arrow_full": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "damage": {
+                    "blocked": false,
+                    "type": {
+                        "source_entity": {
+                            "type": "minecraft:pillager"
+                        }
+                    }
+                }
+            }
+        },
+        
+        "arrow_blocked": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "damage": {
+                    "blocked": true,
+                    "type": {
+                        "source_entity": {
+                            "type": "minecraft:pillager"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [["arrow_full","arrow_blocked"]],
+    "rewards": {
+        "function": "sanct:mob/vampire/vulnerable/arrow_hit"
+    }
+}

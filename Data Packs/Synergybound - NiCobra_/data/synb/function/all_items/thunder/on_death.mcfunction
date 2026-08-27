@@ -1,0 +1,1 @@
+scoreboard players reset @s synb.Item.thunder.strike_count

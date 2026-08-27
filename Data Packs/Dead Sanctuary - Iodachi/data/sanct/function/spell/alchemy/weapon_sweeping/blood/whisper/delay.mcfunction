@@ -1,0 +1,1 @@
+scoreboard players set #weapon_sweeping_whisper_delay sanct.numbers 0

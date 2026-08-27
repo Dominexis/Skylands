@@ -1,0 +1,2 @@
+execute at @e[x=-2352,y=48,z=2256,dx=94,dy=62,dz=94,type=minecraft:arrow,tag=sanct.kills_horses] run kill @e[type=minecraft:skeleton_horse,distance=..3,nbt={HurtTime:10s}]
+advancement revoke @s only sanct:spell/horse_crossbow/slay_horse

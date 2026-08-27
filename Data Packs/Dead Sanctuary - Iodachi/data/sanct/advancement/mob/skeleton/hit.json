@@ -1,0 +1,46 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "hit_mount": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "damage": {
+                    "type": {
+                        "is_direct": true
+                    }
+                },
+                "entity": {
+                    "type": "minecraft:skeleton_horse",
+                    "passenger": {
+                        "type": "minecraft:skeleton"
+                    }
+                }
+            }
+        },
+        "hit_skeleton": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "damage": {
+                    "type": {
+                        "is_direct": true
+                    }
+                },
+                "entity": {
+                    "type": "minecraft:skeleton"
+                }
+            }
+        }
+    },
+    "requirements": [["hit_mount","hit_skeleton"]],
+    "rewards": {
+        "function": "sanct:mob/skeleton/hit"
+    }
+}

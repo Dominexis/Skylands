@@ -1,0 +1,11 @@
+{
+  "function": "minecraft:set_enchantments",
+  "enchantments": {
+    "minecraft:quick_charge": {
+      "type": "minecraft:score",
+      "target": "this",
+      "score": "synb.IEEnch.QuickCharge",
+      "scale": 1
+    }
+  }
+}

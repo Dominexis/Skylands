@@ -1,0 +1,3 @@
+
+execute on passengers if entity @s[tag=pc.intent.icon.self,tag=!pc.intent.icon.clear] run function pc:sys/entity/intent/icon/clear/use
+execute as @e[tag=pc.intent.icon.grid,tag=!pc.intent.icon.clear,type=minecraft:text_display,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0] at @s run function pc:sys/entity/intent/icon/clear/use

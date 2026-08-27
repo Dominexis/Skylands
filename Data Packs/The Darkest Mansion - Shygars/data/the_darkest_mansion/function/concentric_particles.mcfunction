@@ -1,0 +1,1 @@
+$particle minecraft:nautilus ~ ~1.15 ~ $(x) $(y) $(z) 7 0 force

@@ -1,0 +1,34 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "paper",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:equippable": {
+                                    "slot": "body",
+                                    "equip_sound": "minecraft:intentionally_empty",
+                                    "allowed_entities": "minecraft:player",
+                                    "dispensable": false,
+                                    "swappable": false,
+                                    "damage_on_hurt": false,
+                                    "equip_on_interact": false,
+                                    "can_be_sheared": false
+                                },
+                                "minecraft:max_stack_size": 1,
+                                "minecraft:custom_data": {
+                                    "data": {}
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

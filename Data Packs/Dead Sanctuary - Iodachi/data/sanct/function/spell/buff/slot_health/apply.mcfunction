@@ -1,0 +1,1 @@
+$attribute @s minecraft:max_health modifier add sanct:slot_health $(max_health) add_value

@@ -1,0 +1,1 @@
+attribute @s minecraft:entity_interaction_range modifier remove synb.m:item.range_increase.range

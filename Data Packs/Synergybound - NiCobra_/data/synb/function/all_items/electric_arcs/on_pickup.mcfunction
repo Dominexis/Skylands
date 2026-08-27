@@ -1,0 +1,1 @@
+scoreboard objectives add synb.Item.electric_arcs.zap_cooldown dummy

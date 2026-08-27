@@ -1,0 +1,2 @@
+execute unless score #enemy_hurt_dmg_type synb.Tmp.Ctx matches 1.. run return 0
+tag @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.ctx.enemy_hurt_target] add synb.item.electric_arcs.source

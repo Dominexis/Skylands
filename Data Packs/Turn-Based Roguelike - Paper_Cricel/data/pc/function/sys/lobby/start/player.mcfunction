@@ -1,5 +1,4 @@
 
-# effect
 scoreboard players reset @s pc.player.inlobby
 scoreboard players set @s pc.player.ingame 1
 
@@ -12,4 +11,4 @@ attribute @s minecraft:entity_interaction_range base set 0
 # fx
 title @s times 0 0 20
 title @s title {text:"A",font:"sl:fade",type:"text"}
-playsound minecraft:entity.warden.attack_impact master @s ~ ~ ~ 1 0 1
+playsound minecraft:entity.warden.attack_impact master @s ~ ~1024 ~ 0 0 1

@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:entity",
+    "pools": [{
+        "rolls": 1,
+        "conditions": [{
+            "condition": "minecraft:value_check",
+            "value": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 100
+            },
+            "range": {
+                "min": 1,
+                "max": {
+                    "type": "minecraft:storage",
+                    "storage": "sanct:storage",
+                    "path": "root.ritual.more_flesh.chance"
+                }
+            }
+        }],
+        "entries": [{
+            "type": "minecraft:loot_table",
+            "value": "sanct:material/flesh",
+            "functions": [{
+                "function": "minecraft:set_count",
+                "count": {
+                    "type": "minecraft:storage",
+                    "storage": "sanct:storage",
+                    "path": "root.ritual.more_flesh.count"
+                }
+            }]
+        }]
+    }]
+}

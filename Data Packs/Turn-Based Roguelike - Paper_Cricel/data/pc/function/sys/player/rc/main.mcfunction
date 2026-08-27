@@ -1,4 +1,3 @@
 
-# effect
-execute if entity @s[tag=pc.sys.rc,advancements={pc:sys/rc=false}] run tag @s remove pc.sys.rc
-advancement revoke @s only pc:sys/rc
+tag @s[advancements={pc:sys/player/rc=false}] remove pc.player.rc.using
+advancement revoke @s only pc:sys/player/rc

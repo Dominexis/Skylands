@@ -1,0 +1,12 @@
+{
+	"pack": {
+		"pack_format": 46,
+		"description": "Resource Pack for The Darkest Mansion",
+		"supported_formats": {
+			"min_inclusive": 46,
+			"max_inclusive": 54
+		},
+		"min_format": 69,
+		"max_format": 9999999
+	}
+}

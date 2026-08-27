@@ -1,0 +1,2 @@
+execute if score @s synb.Item.counter_attack.speed_duration matches 1.. run scoreboard players remove @s synb.Item.counter_attack.speed_duration 1
+execute if score @s synb.Item.counter_attack.speed_duration matches 28 run playsound minecraft:block.anvil.land player @a ~ ~ ~ 0.5 2

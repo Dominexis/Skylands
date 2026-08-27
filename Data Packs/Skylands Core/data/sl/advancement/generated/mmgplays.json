@@ -1,0 +1,34 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:iron_chain"
+        },
+        "title": [
+            {
+                "text": "Connective Isles"
+            }
+        ],
+        "frame": "task",
+        "description": [
+            [
+                {
+                    "text": "A set of small islands and planets surrounding the central island where the bottle resides",
+                    "color": "green"
+                },
+                {
+                    "text": "\n\nMMGplays",
+                    "color": "gold"
+                }
+            ]
+        ],
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "parent": "sl:genre/parkour",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

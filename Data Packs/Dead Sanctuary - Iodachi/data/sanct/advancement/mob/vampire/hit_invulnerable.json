@@ -1,0 +1,27 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "hit_invulnerable_vampire": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "entity": {
+                    "type": "minecraft:vindicator",
+                    "effects": {
+                        "minecraft:resistance": {
+                            "amplifier": {
+                                "min": 100
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:mob/vampire/form/hit_invulnerable"
+    }
+}

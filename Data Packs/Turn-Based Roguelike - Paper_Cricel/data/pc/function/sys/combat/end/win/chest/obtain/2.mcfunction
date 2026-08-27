@@ -1,0 +1,4 @@
+
+execute if predicate {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"slots": {"player.cursor": {"predicates": {"minecraft:custom_data": "{pc:{sys:{loot:1b}}}"}}}}} run return run item replace entity 20060423-0-0-0-1 contents from entity @s player.cursor
+execute if predicate {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"slots": {"weapon.offhand": {"predicates": {"minecraft:custom_data": "{pc:{sys:{loot:1b}}}"}}}}} run return run item replace entity 20060423-0-0-0-1 contents from entity @s weapon.offhand
+execute if predicate {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"slots": {"container.*": {"predicates": {"minecraft:custom_data": "{pc:{sys:{loot:1b}}}"}}}}} run return run data modify entity 20060423-0-0-0-1 item set from entity @s Inventory[{components:{"minecraft:custom_data":{pc:{sys:{loot:1b}}}}}]

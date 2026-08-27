@@ -1,0 +1,38 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "blood": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#level"
+                            },
+                            "score": "sanct.numbers"
+                        },
+                        "range": {
+                            "max": 2
+                        }
+                    }
+                ],
+                "items": [
+                    {
+                        "items": "minecraft:fermented_spider_eye"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:inventory/acquire_material/blood"
+    }
+}

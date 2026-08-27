@@ -1,0 +1,3 @@
+# Tests if the conditions needed to open the gate things are met, and opens them in that instance
+execute if block -1824 200 -6271 copper_bulb[lit=true] if block -1831 200 -6264 copper_bulb[lit=true] if block -1838 200 -6271 copper_bulb[lit=true] if score @r[x=-1775,y=226,z=-6376,distance=..250,team=sl.player] celpel.bulbs_lit matches 0 run function celpel:repeaters/first_gate_1
+execute if block -1820 198 -6271 copper_chest{Items:[{Slot: 13b, id:"minecraft:repeater", count:3}]} run function celpel:repeaters/second_gate_1

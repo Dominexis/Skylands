@@ -1,0 +1,1 @@
+scoreboard objectives add synb.Item.vision.last_hp dummy

@@ -1,0 +1,1 @@
+execute as @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=minecraft:marker,tag=synb.ctx.enemy_killed_detector,limit=1] at @s positioned ~ ~-1 ~ run function synb:all_items/chill_shock/_shock

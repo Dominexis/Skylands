@@ -1,0 +1,11 @@
+{
+  "function": "minecraft:set_enchantments",
+  "enchantments": {
+    "minecraft:sweeping_edge": {
+      "type": "minecraft:score",
+      "target": "this",
+      "score": "synb.IEEnch.SweepingEdge",
+      "scale": 1
+    }
+  }
+}

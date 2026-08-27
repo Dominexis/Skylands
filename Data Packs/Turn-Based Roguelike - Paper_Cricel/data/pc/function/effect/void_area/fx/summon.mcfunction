@@ -1,0 +1,2 @@
+
+summon minecraft:item_display ~ ~ ~ {Tags:["pc.effect.void_area","pc.fx"],item: {count: 1, id: "minecraft:black_concrete"}, transformation: {left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.0f, 0.01f, 0.0f], translation: [0.0f, 0.0f, 0.0f]}}

@@ -1,0 +1,1 @@
+execute as @e[x=-2352,y=48,z=2256,dx=94,dy=62,dz=94,type=minecraft:silverfish,predicate=sanct:mob/vampire/blood_block_changed] on passengers run item replace entity @s contents with minecraft:red_stained_glass

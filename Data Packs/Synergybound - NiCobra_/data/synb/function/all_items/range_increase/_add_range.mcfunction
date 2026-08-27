@@ -1,0 +1,1 @@
+$attribute @s minecraft:entity_interaction_range modifier add synb.m:item.range_increase.range $(range) add_value

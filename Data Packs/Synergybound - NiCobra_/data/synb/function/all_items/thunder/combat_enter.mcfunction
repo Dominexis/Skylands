@@ -1,0 +1,1 @@
+scoreboard players add @s synb.Item.thunder.strike_count 1

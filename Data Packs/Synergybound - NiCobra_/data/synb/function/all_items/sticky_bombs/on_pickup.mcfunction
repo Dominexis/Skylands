@@ -1,0 +1,1 @@
+scoreboard objectives add synb.Item.sticky_bombs.delay dummy

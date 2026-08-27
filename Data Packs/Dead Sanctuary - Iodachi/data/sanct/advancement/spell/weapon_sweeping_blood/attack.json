@@ -1,0 +1,56 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "weapon_sweeping_blood_attack": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "weapon.mainhand": {
+                                    "predicates": {
+                                        "minecraft:custom_data": {
+                                            "weapon_sweeping": {
+                                                "blood": true
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "flags": {
+                                "is_on_ground": true
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "minecraft:is_player_attack",
+                                "expected": true
+                            },
+                            {
+                                "id": "minecraft:mace_smash",
+                                "expected": false
+                            }
+                        ]
+                    },
+                    "dealt": {
+                        "min": 8
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:spell/alchemy/weapon_sweeping/blood/attack"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:command",
+    "pools": [{
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:loot_table",
+                "value": "sanct:spell/slot_loot/rare",
+                "weight": 1
+            },
+            {
+                "type": "minecraft:loot_table",
+                "value": "sanct:spell/slot_loot/uncommon",
+                "weight": 2
+            },
+            {
+                "type": "minecraft:loot_table",
+                "value": "sanct:spell/slot_loot/common",
+                "weight": 4
+            }
+        ]
+    }]
+}

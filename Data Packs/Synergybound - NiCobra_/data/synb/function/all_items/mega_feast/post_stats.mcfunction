@@ -1,0 +1,1 @@
+scoreboard players operation @s synb.IEStat.HP *= num2 synb.Const

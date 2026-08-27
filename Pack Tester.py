@@ -246,36 +246,29 @@ def test_command(command: str, line_number: int, path: Path, is_animated_java: b
         return
     if command.strip().startswith("#"):
         return
+    if command.strip().startswith("$"):
+        command = command.strip()[1:]
     arguments = parse_tokens(command, " ", True)
 
-    test_command_arguments(arguments, line_number, path)
-
-    # Don't test target selectors that are part of tellraw commands inside of Animated Java
-    if is_animated_java and len(arguments) > 0 and arguments[0] == "tellraw":
-        return
-    
-    # Don't test target selectors that are part of a playsound command or particle command
-    if len(arguments) > 0 and arguments[0] in ["playsound", "particle", "stopsound"]:
-        return
-
-    # Test target selectors
-    for argument in arguments:
-        if argument.startswith("@"):
-            test_target_selector(argument, line_number, path)
+    test_command_arguments([], arguments, line_number, path, is_animated_java)
 
     
 
-def test_command_arguments(arguments: list[str], line_number: int, path: Path):
+def test_command_arguments(previous_arguments: list[str], arguments: list[str], line_number: int, path: Path, is_animated_java: bool):
     if len(arguments) == 0:
         return
+    
+    test_target_selectors(previous_arguments, line_number, path, is_animated_java)
 
     # Handle execute sub-commands
     if arguments[0] == "execute" and len(arguments) > 1:
-        test_execute_command(arguments[1:], line_number, path)
+        test_execute_command(arguments[:1], arguments[1:], line_number, path, is_animated_java)
+        return
     
     # Handle return run command
     if arguments[0] == "return" and len(arguments) > 2 and arguments[1] == "run":
-        test_command_arguments(arguments[2:], line_number, path)
+        test_command_arguments(arguments[:2], arguments[2:], line_number, path, is_animated_java)
+        return
 
     # Handle scoreboard commands
     if arguments[0] == "scoreboard" and len(arguments) > 1:
@@ -371,126 +364,145 @@ def test_command_arguments(arguments: list[str], line_number: int, path: Path):
     if arguments[0] == "worldborder" and len(arguments) > 2:
         log_error("Do not modify the world border.", line_number, path)
 
+    test_target_selectors(arguments, line_number, path, is_animated_java)
 
 
-def test_execute_command(arguments: list[str], line_number: int, path: Path):
+
+def test_execute_command(previous_arguments: list[str], arguments: list[str], line_number: int, path: Path, is_animated_java: bool):
     if len(arguments) == 0:
         return
+    
+    test_target_selectors(previous_arguments, line_number, path, is_animated_java)
 
     # align
     if arguments[0] == "align" and len(arguments) >= 2:
-        test_execute_command(arguments[2:], line_number, path)
+        test_execute_command(arguments[:2], arguments[2:], line_number, path, is_animated_java)
 
     # anchored
     if arguments[0] == "anchored" and len(arguments) >= 2:
-        test_execute_command(arguments[2:], line_number, path)
+        test_execute_command(arguments[:2], arguments[2:], line_number, path, is_animated_java)
 
     # as
     if arguments[0] == "as" and len(arguments) >= 2:
-        test_execute_command(arguments[2:], line_number, path)
+        test_execute_command(arguments[:2], arguments[2:], line_number, path, is_animated_java)
 
     # at
     if arguments[0] == "at" and len(arguments) >= 2:
-        test_execute_command(arguments[2:], line_number, path)
+        test_execute_command(arguments[:2], arguments[2:], line_number, path, is_animated_java)
 
     # facing
     if arguments[0] == "facing" and len(arguments) >= 4:
-        test_execute_command(arguments[4:], line_number, path)
+        test_execute_command(arguments[:4], arguments[4:], line_number, path, is_animated_java)
 
     # in
     # RULE: Do not use dimensions other than the overworld.
     if arguments[0] == "in" and len(arguments) >= 2:
         log_error("Do not use dimensions other than the overworld.", line_number, path)
-        test_execute_command(arguments[2:], line_number, path)
+        test_execute_command(arguments[:2], arguments[2:], line_number, path, is_animated_java)
 
     # on
     if arguments[0] == "on" and len(arguments) >= 2:
-        test_execute_command(arguments[2:], line_number, path)
+        test_execute_command(arguments[:2], arguments[2:], line_number, path, is_animated_java)
 
     # positioned
     if arguments[0] == "positioned" and len(arguments) >= 2:
         if arguments[1] == "as" and len(arguments) >= 3:
-            test_execute_command(arguments[3:], line_number, path)
+            test_execute_command(arguments[:3], arguments[3:], line_number, path, is_animated_java)
         elif arguments[1] == "over" and len(arguments) >= 3:
-            test_execute_command(arguments[3:], line_number, path)
+            test_execute_command(arguments[:3], arguments[3:], line_number, path, is_animated_java)
         elif len(arguments) >= 4:
-            test_execute_command(arguments[4:], line_number, path)
+            test_execute_command(arguments[:4], arguments[4:], line_number, path, is_animated_java)
 
     # rotated
     if arguments[0] == "rotated" and len(arguments) >= 3:
-        test_execute_command(arguments[3:], line_number, path)
+        test_execute_command(arguments[:3], arguments[3:], line_number, path, is_animated_java)
 
     # run
     if arguments[0] == "run" and len(arguments) >= 1:
-        test_command_arguments(arguments[1:], line_number, path)
+        test_command_arguments(arguments[:1], arguments[1:], line_number, path, is_animated_java)
 
     # store
     if arguments[0] == "store" and len(arguments) > 2:
         if arguments[2] == "block" and len(arguments) >= 9:
-            test_command_arguments(arguments[9:], line_number, path)
+            test_command_arguments(arguments[:9], arguments[9:], line_number, path, is_animated_java)
         if arguments[2] == "bossbar" and len(arguments) >= 5:
-            test_command_arguments(arguments[5:], line_number, path)
+            test_command_arguments(arguments[:5], arguments[5:], line_number, path, is_animated_java)
         if arguments[2] == "entity" and len(arguments) >= 7:
-            test_command_arguments(arguments[7:], line_number, path)
+            test_command_arguments(arguments[:7], arguments[7:], line_number, path, is_animated_java)
         if arguments[2] == "score" and len(arguments) >= 5:
             test_scoreboard_objective(arguments[4], line_number, path)
-            test_command_arguments(arguments[5:], line_number, path)
+            test_command_arguments(arguments[:5], arguments[5:], line_number, path, is_animated_java)
         if arguments[2] == "storage" and len(arguments) >= 7:
-            test_command_arguments(arguments[7:], line_number, path)
+            test_command_arguments(arguments[:7], arguments[7:], line_number, path, is_animated_java)
 
     # summon
     if arguments[0] == "summon" and len(arguments) >= 2:
-        test_execute_command(arguments[2:], line_number, path)
+        test_execute_command(arguments[:2], arguments[2:], line_number, path, is_animated_java)
 
     # if/unless
     if arguments[0] in ("if", "unless") and len(arguments) > 1:
         if arguments[1] == "biome" and len(arguments) >= 6:
-            test_execute_command(arguments[6:], line_number, path)
+            test_execute_command(arguments[:6], arguments[6:], line_number, path, is_animated_java)
 
         if arguments[1] == "block" and len(arguments) >= 6:
-            test_execute_command(arguments[6:], line_number, path)
+            test_execute_command(arguments[:6], arguments[6:], line_number, path, is_animated_java)
 
         if arguments[1] == "blocks" and len(arguments) >= 12:
-            test_execute_command(arguments[12:], line_number, path)
+            test_execute_command(arguments[:12], arguments[12:], line_number, path, is_animated_java)
 
         if arguments[1] == "data" and len(arguments) > 2:
             if arguments[2] == "block" and len(arguments) >= 7:
-                test_execute_command(arguments[7:], line_number, path)
+                test_execute_command(arguments[:7], arguments[7:], line_number, path, is_animated_java)
             if arguments[2] == "entity" and len(arguments) >= 5:
-                test_execute_command(arguments[5:], line_number, path)
+                test_execute_command(arguments[:5], arguments[5:], line_number, path, is_animated_java)
             if arguments[2] == "storage" and len(arguments) >= 5:
-                test_execute_command(arguments[5:], line_number, path)
+                test_execute_command(arguments[:5], arguments[5:], line_number, path, is_animated_java)
 
         if arguments[1] == "dimension" and len(arguments) >= 3:
-            test_execute_command(arguments[3:], line_number, path)
+            test_execute_command(arguments[:3], arguments[3:], line_number, path, is_animated_java)
 
         if arguments[1] == "entity" and len(arguments) >= 3:
-            test_execute_command(arguments[3:], line_number, path)
+            test_execute_command(arguments[:3], arguments[3:], line_number, path, is_animated_java)
 
         if arguments[1] == "function" and len(arguments) >= 3:
-            test_execute_command(arguments[3:], line_number, path)
+            test_execute_command(arguments[:3], arguments[3:], line_number, path, is_animated_java)
 
         if arguments[1] == "items" and len(arguments) > 2:
             if arguments[2] == "block" and len(arguments) >= 8:
-                test_execute_command(arguments[8:], line_number, path)
+                test_execute_command(arguments[:8], arguments[8:], line_number, path, is_animated_java)
             if arguments[2] == "entity" and len(arguments) >= 6:
-                test_execute_command(arguments[6:], line_number, path)
+                test_execute_command(arguments[:6], arguments[6:], line_number, path, is_animated_java)
 
         if arguments[1] == "loaded" and len(arguments) >= 5:
-            test_execute_command(arguments[5:], line_number, path)
+            test_execute_command(arguments[:5], arguments[5:], line_number, path, is_animated_java)
 
         if arguments[1] == "predicate" and len(arguments) >= 3:
-            test_execute_command(arguments[3:], line_number, path)
+            test_execute_command(arguments[:3], arguments[3:], line_number, path, is_animated_java)
 
         if arguments[1] == "score" and len(arguments) > 4:
             if arguments[4] == "matches" and len(arguments) >= 6:
                 test_scoreboard_objective(arguments[3], line_number, path)
-                test_execute_command(arguments[6:], line_number, path)
+                test_execute_command(arguments[:6], arguments[6:], line_number, path, is_animated_java)
             elif len(arguments) >= 7:
                 test_scoreboard_objective(arguments[3], line_number, path)
                 test_scoreboard_objective(arguments[6], line_number, path)
-                test_execute_command(arguments[7:], line_number, path)
+                test_execute_command(arguments[:7], arguments[7:], line_number, path, is_animated_java)
 
+
+
+def test_target_selectors(arguments: list[str], line_number: int, path: Path, is_animated_java: bool):
+    # Don't test target selectors that are part of tellraw commands inside of Animated Java
+    if is_animated_java and len(arguments) > 0 and arguments[0] == "tellraw":
+        return
+    
+    # Don't test target selectors that are part of a playsound command or particle command
+    if len(arguments) > 0 and arguments[0] in ["playsound", "particle", "stopsound"]:
+        return
+
+    # Test target selectors
+    for argument in arguments:
+        if argument.startswith("@"):
+            test_target_selector(argument, line_number, path)
 
 
 
@@ -521,8 +533,8 @@ def test_target_selector(target_selector: str, line_number: int, path: Path):
 
     # RULE: All non-@s target selectors must include distance restrictions.
     if target_selector[1] != "s" and "distance" not in used_arguments and not (
-        "dx" in used_arguments and
-        "dy" in used_arguments and
+        "dx" in used_arguments or
+        "dy" in used_arguments or
         "dz" in used_arguments
     ):
         log_error("All non-@s target selectors must include distance restrictions.", line_number, path)

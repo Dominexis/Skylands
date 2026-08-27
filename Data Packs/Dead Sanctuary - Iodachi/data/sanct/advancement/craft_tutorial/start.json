@@ -1,0 +1,40 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+        "start": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:player/active"
+                    },
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "sanct:inventory/alchemy/weapon_sweeping"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "sanct:craft_tutorial/crafted_with_bone": false
+                                }
+                            }
+                        }
+                    }
+                ],
+                "items": [
+                    {
+                        "items": "minecraft:bone"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "sanct:inventory/craft_tutorial/start"
+    }
+}

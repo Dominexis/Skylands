@@ -1,0 +1,6 @@
+{
+	"parent": "animated_java:blueprint/spite/right_arm",
+	"textures": {
+		"0": "animated_java:blueprint/spite/spite_charging"
+	}
+}

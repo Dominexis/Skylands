@@ -1,0 +1,38 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+
+        "attack": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "entity": {
+                    "type": "minecraft:interaction",
+                    "team": "sanct.spell.totem"
+                }
+            }
+        },
+
+        "interact": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "entity": {
+                    "type": "minecraft:interaction",
+                    "team": "sanct.spell.totem"
+                }
+            }
+        }
+
+    },
+    "requirements": [["attack","interact"]],
+    "rewards": {
+        "function": "sanct:spell/alchemy/totem/interact"
+    }
+}

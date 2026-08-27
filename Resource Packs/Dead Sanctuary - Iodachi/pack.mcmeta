@@ -1,0 +1,31 @@
+{
+    "pack": {
+        "description": [
+            "",
+            {
+                "text": "Skylands",
+                "color": "gold",
+                "bold": true
+            },
+            "\n",
+            {
+                "text": "By ",
+                "color": "gray"
+            },
+            {
+                "text": "Minigame Makers",
+                "color": "blue"
+            },
+            {
+                "text": " - ",
+                "color": "gray"
+            },
+            {
+                "text": "0.0.0",
+                "color": "gold"
+            }
+        ],
+        "min_format": 69,
+        "max_format": 69
+    }
+}

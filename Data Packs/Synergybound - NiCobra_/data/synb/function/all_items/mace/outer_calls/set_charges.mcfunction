@@ -1,0 +1,1 @@
+$item replace entity @s weapon.offhand with minecraft:wind_charge $(wind_charges_count)

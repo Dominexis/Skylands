@@ -1,5 +1,3 @@
 
 # fx
-function pc:fx/refuse_info/use {text:[{text:"Game Already Started"}]}
-
-return fail
+function pc:sys/fx/refuse_info/use {text:{nbt:"sys.refuse.started",storage:"pc:lang",interpret:1b}}

@@ -1,0 +1,72 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+
+        "rune_air": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "recipe_id": "sanct:rune/air"
+            }
+        },
+
+        "rune_earth": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "recipe_id": "sanct:rune/earth"
+            }
+        },
+
+        "rune_fire": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "recipe_id": "sanct:rune/fire"
+            }
+        },
+
+        "rune_water": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "recipe_id": "sanct:rune/water"
+            }
+        },
+
+        "undead_finder": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "recipe_id": "sanct:undead_finder"
+            }
+        },
+
+        "weapon_sweeping": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "recipe_id": "sanct:weapon_sweeping/bone"
+            }
+        }
+    },
+    "requirements": [["rune_air","rune_earth","rune_fire","rune_water","undead_finder","weapon_sweeping"]]
+}

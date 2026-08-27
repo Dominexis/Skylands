@@ -1,0 +1,70 @@
+{
+    "parent": "sanct:tags",
+    "criteria": {
+
+        "add_page": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "entity": {
+                    "type": "minecraft:glow_item_frame"
+                },
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "stat_page": true
+                        }
+                    }
+                }
+            }
+        },
+
+        "add_slot_lock": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "entity": {
+                    "type": "minecraft:glow_item_frame"
+                },
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "slot_lock": {}
+                        }
+                    }
+                }
+            }
+        },
+
+        "add_open_book": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "player": [{
+                    "condition": "minecraft:reference",
+                    "name": "sanct:player/active"
+                }],
+                "entity": {
+                    "type": "minecraft:glow_item_frame"
+                },
+                "item": {
+                    "items": "minecraft:written_book",
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "spellbook": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [["add_page","add_slot_lock","add_open_book"]],
+    "rewards": {
+        "function": "sanct:plot/altar/add_ignore"
+    }
+}

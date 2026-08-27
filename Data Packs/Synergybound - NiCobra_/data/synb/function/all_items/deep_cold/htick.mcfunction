@@ -1,0 +1,3 @@
+# Not exactly 50% decreasing per item, but close enough
+execute if score @s synb.IEExecCount.deep_cold matches 1 run scoreboard players add @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.type.enemy,scores={synb.Status.Frozen=2..},tag=synb.ctx.local] synb.Status.Frozen 1
+execute if score @s synb.IEExecCount.deep_cold matches 2.. if score t3 synb.TickCycle matches 1 run scoreboard players add @e[x=3078,y=0,z=-2554,dx=500,dy=255,dz=500,type=!minecraft:player,tag=synb.type.enemy,scores={synb.Status.Frozen=2..},tag=synb.ctx.local] synb.Status.Frozen 1

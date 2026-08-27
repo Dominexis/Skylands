@@ -1,16 +1,18 @@
 
-tag @s add pc.sys.rc
-tag @s add pc.user
+# if (already hold) :
+execute if entity @s[tag=pc.player.rc.using] run return fail
+tag @s add pc.player.rc.using
 
-# Player Data
-data modify storage pc:temp rc.now set from entity @s SelectedItem.components."minecraft:custom_data".pc
-data modify storage pc:temp rc.now.category2 set from storage pc:temp rc.now.category
-execute if data storage pc:temp {rc:{now:{category:"skill1"}}} run data modify storage pc:temp rc.now.category2 set value skill
-execute if data storage pc:temp {rc:{now:{category:"skill2"}}} run data modify storage pc:temp rc.now.category2 set value skill
-execute if data storage pc:temp {rc:{now:{category:"skill3"}}} run data modify storage pc:temp rc.now.category2 set value skill
+# elif (is in act) : say §e§l[DEBUG]§r still in act.
+execute if score $act.running pc.game matches 1 run return fail
 
-scoreboard players operation #this pc.main = @s sl.id
-execute as @e[type=!minecraft:player,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0,predicate=pc:object/ally_player] if score @s sl.id = #this pc.main at @s run function pc:sys/player/rc/2
+# else :
+tag @s add pc.self
+scoreboard players operation #self sl.id = @s sl.id
+tag @e[predicate=pc:sys/entity/player,predicate=pc:sys/owner/player,type=armor_stand,limit=1,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0] add pc.player.now
+data modify storage pc:temp rc_item set from entity @s SelectedItem.components."minecraft:custom_data".pc
 
-tag @s remove pc.user
-data remove storage pc:temp rc
+function pc:sys/player/rc/2
+
+tag @e[tag=pc.player.now,type=armor_stand,limit=1,x=2048.0,y=-130.0,z=5120.0,dx=512.0,dy=450.0,dz=512.0] remove pc.player.now
+tag @s remove pc.self
