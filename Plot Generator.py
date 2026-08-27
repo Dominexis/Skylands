@@ -427,7 +427,7 @@ teleport @s {pack_coords(plot_center, False, True, 65)}
         "announce_to_chat": False,
         "hidden": False
     },
-    "parent": f"sl:genre/{"" if plot["difficulty"] == "easy" else f"{plot["difficulty"]}_"}{plot["genre"]}",
+    "parent": f"sl:genre/{"" if plot["difficulty"] == "easy" or plot["genre"] == "minigame" else f"{plot["difficulty"]}_"}{plot["genre"]}",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:impossible"
