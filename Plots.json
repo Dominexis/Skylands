@@ -468,6 +468,32 @@
             "pvp": false,
             "max_players": 10,
             "weight": "light"
+        },
+
+        {
+            "name": "Erictho's Trials",
+            "namespace": "erictho",
+            "description": "You've entered Erictho's lair and she has her wicked claws firmly grasped onto her new prey.",
+            "authors": [
+                "LiseJ68",
+                "Maggiewee",
+                "Max_Matrix",
+                "Rainswings"
+            ],
+            "icon": {
+                "id": "minecraft:cauldron"
+            },
+            "spawn": "6372 69 3907 90 0",
+            "collectibles": [
+                "6399 66 3840"
+            ],
+            "required_chunks": [],
+            "regions": [],
+            "genre": "parkour",
+            "difficulty": "challenging",
+            "pvp": false,
+            "max_players": 8,
+            "weight": "medium"
         }
     ]
 }
