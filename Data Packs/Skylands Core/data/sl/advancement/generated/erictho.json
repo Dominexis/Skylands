@@ -1,0 +1,34 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:cauldron"
+        },
+        "title": [
+            {
+                "text": "Erictho's Trials"
+            }
+        ],
+        "frame": "goal",
+        "description": [
+            [
+                {
+                    "text": "You've entered Erictho's lair and she has her wicked claws firmly grasped onto her new prey.",
+                    "color": "green"
+                },
+                {
+                    "text": "\n\nLiseJ68, Maggiewee, Max_Matrix, Rainswings",
+                    "color": "gold"
+                }
+            ]
+        ],
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "parent": "sl:genre/challenging_parkour",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
